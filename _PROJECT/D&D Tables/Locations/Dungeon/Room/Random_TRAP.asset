@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daaa7a4c98399e747adf0ec045fde088, type: 3}
+  m_Name: Random_TRAP
+  m_EditorClassIdentifier: 
+  _shortSentence:
+    Value: 
+    Editing: 0
+  Sentence:
+    Value: 
+    Editing: 0
+  Tables:
+  - {fileID: 11400000, guid: 8c36a2d2d4fb28642919ab7c0f06d151, type: 2}
+  - {fileID: 11400000, guid: ffe417ef43c273c40b95a63c574d23c0, type: 2}
+  - {fileID: 11400000, guid: 7a73d3af2b94613488db7957e2c59f95, type: 2}

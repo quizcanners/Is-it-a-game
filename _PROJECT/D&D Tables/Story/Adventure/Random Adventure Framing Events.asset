@@ -1,0 +1,311 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Random Adventure Framing Events
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: https://docs.google.com/spreadsheets/d/e/2PACX-1vQTVjKE5CW87o6f-7ZXn3ZxAwrXgh-WNcHMm-JbkWkgKV6qaZRYQL988Jj0HMMDmFSg3xQlqX5bjLtX/pub?
+    pages:
+    - pageName: Unnamed
+      pageIndex: 788651672
+    _selectedPage: 0
+  _dicesToRoll: 64000000
+  elements:
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: "Anniversary of a monarch\u2019s reign"
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Anniversary of an important event
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Arena event
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Arrival of a caravan or ship
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Arrival of a circus
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Arrival of an important NPC
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Arrival of marching modrons
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Artistic performance
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Athletic event
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Birth of a child
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Birthday of an important NPC
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Civic festival
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Comet appearance
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Commemoration of a past tragedy
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Consecration of a new temple
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Coronation
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Council meeting
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Equinox or solstice
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Execution
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Fertility festival
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Full moon
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Funeral
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Graduation of cadets or wizards
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Harvest festival
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Holy day
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Investiture of a knight or other noble
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Lunar eclipse
+    _includeName: 1
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+    Name: Midsummer festival
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Midwinter festival
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Migration of monsters
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: "Monarch\u2019s ball"
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: New moon
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: New year
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Pardoning of a prisoner
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Planar conjunction
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Planetary alignment
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Priestly investiture
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Procession of ghosts
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Remembrance for soldiers lost in war
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Royal address or proclamation
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Royal audience day
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Signing of a treaty
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Solar eclipse
+    _includeName: 1
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+    Name: Tournament
+    _includeName: 1
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+    Name: Trial
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Violent uprising
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Wedding or wedding anniversary
+    _includeName: 1
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+    Name: Concurrence of two events (roll twice, ignoring results of 99 or 100)
+    _includeName: 1

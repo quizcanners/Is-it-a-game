@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca62794a7a689984ca0f269b2878bc98, type: 3}
+  m_Name: Dialogue - Vox Abrams
+  m_EditorClassIdentifier: 
+  _data:
+    _value: inBr|705|name|4|root|cond|6|t|1|1||sub|137|e|39|name|16|New Interaction]|cond|6|t|1|1|||e|40|name|17|New
+      Interaction]1|cond|6|t|1|1|||e|40|name|17|New Interaction]2|cond|6|t|1|1||||el|511|e|445|ref|11|InterAction|Conds|164|wb|33|e|6|t|1|1||e|6|t|1|1||e|6|t|1|1|||v|104|0|20|ind|12|gi|0||ti|0||||1|20|ind|12|gi|0||ti|0||||0|20|ind|12|gi|0||ti|0||||1|20|ind|12|gi|0||ti|0|||||t|1|0|ic|1|0||txts|33|txs|16|s|10|t|5|Hello|||ins|2|-1||opt|159|e|70|cnd|6|t|1|1||t|15|txts|7|1|2|HI|||ts2b|27|txs|10|s|5|t|0||||ins|2|-1|||e|77|cnd|6|t|1|1||t|22|txts|13|1|8|No
+      Hello|||ts2b|27|txs|10|s|5|t|0||||ins|2|-1||||fin|26|e|20|ind|12|gi|0||ti|0|||||is|1|4||e|53|txts|44|txs|27|s|21|t|15|Give
+      me a drink|||ins|2|-1||||ie|1|0|is|1|2||

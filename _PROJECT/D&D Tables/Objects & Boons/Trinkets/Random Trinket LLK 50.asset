@@ -1,0 +1,349 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Random Trinket LLK 50
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: https://docs.google.com/spreadsheets/d/e/2PACX-1vS3cWbEFM_ZZKa8dBKxSdBbidWZ8U4nv_ItT2mjqGSF9izMNamq7wHVsN7YaCZtu_D7F8PZPZhCpkka/pub?
+    pages:
+    - pageName: PHB
+      pageIndex: 1716932601
+    _selectedPage: 0
+  _dicesToRoll: 64000000
+  elements:
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A handheld device containing a glowing green gem that darkens when no oxygen
+      is present
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A foot-long, egg-shaped object made from stitched leather
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A black metal cylinder that dictates the history of an unknown plant or
+      animal species when held
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A cylindrical jar containing a pickled crustacean of unknown origin
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small thumb-button storage cylinder that releases a useless iron key
+      when pressed
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An unusual heraldic cloak pin that emits a short musical fanfare when tapped
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A handheld tube that sucks in dust when squeezed and captures it in a detachable
+      compartment
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A scintillating disk of unknown material
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A dial that can be twisted to slowly click back to its origin, whereupon
+      it emits a loud ringing noise
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A hovering, apple-sized orb of metal that follows you around
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: The petrified cocoon of an unknown insect
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A bronze gauntlet set with many slots, and which violently expels any object
+      pressed into those slots
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A box that plays an illusory message in an unknown language when opened
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A rod that causes you to forget the last five minutes when you press a
+      button near its tip
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A palm-sized cylinder that emits a harmless ray of glowing blue light when
+      squeezed
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A bead that suppresses your hearing when secreted inside either ear, causing
+      you to be deafened
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An amulet that displays your current health as a green bar above your head,
+      with the bar retracting as your hit point total decreases
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A casket containing one hundred tasteless blue pills that produce no discernible
+      effect when swallowed
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A metal mechanical puzzle with no apparent solution
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A metal spinning top that never tips over when spun
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Two strips of cloth-like material, each coated with a soft, hair-like fuzz
+      on one side
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A simple wire pyramid that preserves any foodstuffs it is placed over
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A star chart labeled in an unknown script
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A rectangle of black glass that displays indecipherable arcane runes when
+      you swipe your finger across it
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A schematic that shows the inner workings of an impossibly complex device
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An odd pair of comfortable shoes made from supple, multicolored material
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A mirror that makes you appear more beautiful when you tap your reflection
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A mechanical metal puppy that playfully follows you around when activated
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A talking bracelet that speaks only to correct your grammar
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A bar of soap that can remove any stain
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A journal in Common, written by someone in a world similar to but not quite
+      the same as your own
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A tub containing one serving of disgusting but nutritious goop that refills
+      itself slowly over the course of one week
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An instruction manual for activating a mysterious, world-destroying device
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small supple disk that displays weird moving symbols when placed over
+      either eye
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A tiny desk set with large, colorful buttons, each of which plays a discordant
+      musical fanfare when pressed
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A pair of tinted spectacles that reduce the glare of the sun when worn
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An inflatable bedroll made from an unknown material, and which slowly deflates
+      when used
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A rod tipped with a blunt metal pincer whose grip can be adjusted by turning
+      a screw
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A battered helmet with a transparent orange visor that flips into place
+      when donned
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An animated map of a mysterious city that appears to be tracking the movements
+      of five creatures
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A cylinder of mist that holds your hair perfectly in shape when sprayed
+      onto your head
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A talking wand that tells you the name of any plant you point it at
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A metal bracelet that displays the number of steps you've taken since your
+      last long rest
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A tiny handheld device that projects a glowing dot onto whatever you point
+      it at
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A rectangular piece of glass that displays a twelve-digit countdown on
+      its surface
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A wall chart of mysterious formulae arranged into a color-coded grid
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A handheld device that solves any math problem you input using its buttons
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A ball of speckled brown fur that appears to be alive
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A complicated crystal board game that you don't know how to play
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A large glass rectangle that displays a storm of black and white patterns
+      when you press a button on its underside

@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Random Adventure Dungeon Goal
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: https://docs.google.com/spreadsheets/d/e/2PACX-1vQTVjKE5CW87o6f-7ZXn3ZxAwrXgh-WNcHMm-JbkWkgKV6qaZRYQL988Jj0HMMDmFSg3xQlqX5bjLtX/pub?
+    pages:
+    - pageName: Unnamed
+      pageIndex: 0
+    _selectedPage: 0
+  _dicesToRoll: 14000000
+  elements:
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: "Stop the dungeon\u2019s monstrous inhabitants from raiding the surface
+      world."
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: "Foil a villain\u2019s evil scheme."
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Destroy a magical threat inside the dungeon.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Acquire treasure.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Find a particular item for a specific purpose.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Retrieve a stolen item hidden in the dungeon.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Find information needed for a special purpose.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Rescue a captive.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Discover the fate of a previous adventuring party.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Find an NPC who disappeared in the area.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Slay a dragon or some other challenging monster.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Discover the nature and origin of a strange location or phenomenon.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Pursue fleeing foes taking refuge in the dungeon.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Escape from captivity in the dungeon.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Clear a ruin so it can be rebuilt and reoccupied.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Discover why a villain is interested in the dungeon.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Win a bet or complete a rite of passage by surviving in the dungeon for
+      a certain amount of time.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Parley with a villain in the dungeon.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Hide from a threat outside the dungeon.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Roll twice, ignoring results of 20.
+    _includeName: 1

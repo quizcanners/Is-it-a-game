@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Dungeon Location
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: 
+    pages: []
+    _selectedPage: 0
+    columns: []
+  _dicesToRoll: 0a000000
+  elements:
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: e4a09f3f53b258740ba0df3183e9978c, type: 2}
+    - {fileID: 11400000, guid: e4a09f3f53b258740ba0df3183e9978c, type: 2}
+    - {fileID: 11400000, guid: e4a09f3f53b258740ba0df3183e9978c, type: 2}
+    - {fileID: 11400000, guid: e4a09f3f53b258740ba0df3183e9978c, type: 2}
+    Description:
+      Value: 
+      Editing: 0
+    Name: Square, 4 doors
+  - Chances: 1
+    subTables:
+    - {fileID: 0}
+    Description:
+      Value: 
+      Editing: 0
+    Name: Desert
+  - Chances: 1
+    subTables:
+    - {fileID: 0}
+    Description:
+      Value: 
+      Editing: 0
+    Name: Forest
+  - Chances: 1
+    subTables:
+    - {fileID: 0}
+    Description:
+      Value: 
+      Editing: 0
+    Name: 
+  - Chances: 6
+    subTables:
+    - {fileID: 0}
+    Description:
+      Value: 
+      Editing: 0
+    Name: 

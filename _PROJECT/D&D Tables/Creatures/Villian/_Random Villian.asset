@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daaa7a4c98399e747adf0ec045fde088, type: 3}
+  m_Name: _Random Villian
+  m_EditorClassIdentifier: 
+  _shortSentence:
+    Value: '{3}, who seeks {0} by {1}'
+  Sentence:
+    Value: '{3} who schemes {0} using {1}. His weakness is: {2}'
+  Tables:
+  - {fileID: 11400000, guid: 1b0c5c29854341b42820715807d7a682, type: 2}
+  - {fileID: 11400000, guid: 58279f6d3c0a901419898072e94f9b58, type: 2}
+  - {fileID: 11400000, guid: 466757d889e057048a4d5e57f0cb3c67, type: 2}
+  - {fileID: 11400000, guid: cd35f5d51e69ac24fb16147d19dc7373, type: 2}

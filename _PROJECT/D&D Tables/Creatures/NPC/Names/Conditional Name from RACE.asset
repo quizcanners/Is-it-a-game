@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e49fe92a3509944c881f45850bca248, type: 3}
+  m_Name: Conditional Name from RACE
+  m_EditorClassIdentifier: 
+  _elements:
+  - Condition: 3
+    Table: {fileID: 11400000, guid: 68cb5614599bce84c863ea5fecccfe7d, type: 2}
+  - Condition: 4
+    Table: {fileID: 11400000, guid: 93524fced04a4e8429b57e428faf4ced, type: 2}
+  - Condition: 2
+    Table: {fileID: 11400000, guid: 4150c084cceab2144ad0900239f986c0, type: 2}
+  - Condition: 8
+    Table: {fileID: 11400000, guid: 4c26aca4d736d0c42917f98f2ff76c7b, type: 2}
+  - Condition: 7
+    Table: {fileID: 11400000, guid: 503bcedec354b1642acd5da1f405b468, type: 2}
+  - Condition: 6
+    Table: {fileID: 11400000, guid: e9e499c05e573294c8a2d579d843b929, type: 2}
+  - Condition: 1
+    Table: {fileID: 11400000, guid: 86cad81a7eeb56242ac188cb682464ab, type: 2}
+  - Condition: 0
+    Table: {fileID: 11400000, guid: 4bd2ec7c04e257c4bb6f2b4a0ef94939, type: 2}
+  - Condition: 5
+    Table: {fileID: 11400000, guid: 7173582f2c4b51e4f882242d050d2e64, type: 2}
+  _defaultOne: 1

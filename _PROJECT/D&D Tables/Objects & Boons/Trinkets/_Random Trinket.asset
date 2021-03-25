@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: _Random Trinket
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: 
+    pages: []
+    _selectedPage: 0
+  _dicesToRoll: 0c00000008000000
+  elements:
+  - Chances: 2
+    subTables:
+    - {fileID: 11400000, guid: 55e2e8ccebefa574abe3776e27b34d2c, type: 2}
+    Description:
+      Value: '{0}'
+    Name: Trinket Icewind Dale (25)
+    _includeName: 0
+  - Chances: 3
+    subTables:
+    - {fileID: 11400000, guid: da41471cb2c7ec840a19076da2b88d95, type: 2}
+    Description:
+      Value: '{0}'
+    Name: Trinket COS 50
+    _includeName: 0
+  - Chances: 2
+    subTables:
+    - {fileID: 11400000, guid: 8ebc72ce4a3df9c4d861cd70a7785896, type: 2}
+    Description:
+      Value: '{0}'
+    Name: Trinket LLK 50
+    _includeName: 0
+  - Chances: 3
+    subTables:
+    - {fileID: 11400000, guid: f2048a9f548cae54f85512462a9db88d, type: 2}
+    Description:
+      Value: '{0}'
+    Name: Trinket VRGR
+    _includeName: 0
+  - Chances: 2
+    subTables:
+    - {fileID: 11400000, guid: e115c30784638004dabe2d1f1b39ca18, type: 2}
+    Description:
+      Value: '{0}'
+    Name: Trinket Elemental Evil
+    _includeName: 0
+  - Chances: 3
+    subTables:
+    - {fileID: 11400000, guid: 71ef740c2ee21814983092f92d9ffceb, type: 2}
+    Description:
+      Value: '{0}'
+    Name: Trinket PHB
+    _includeName: 0
+  - Chances: 2
+    subTables:
+    - {fileID: 11400000, guid: 523f5ca5d40c4144b94c3f5b0ddcd5a1, type: 2}
+    Description:
+      Value: '{0}'
+    Name: Trinket TWBTW
+    _includeName: 0
+  - Chances: 2
+    subTables:
+    - {fileID: 11400000, guid: 67d2ef47b97eeff4b8d383ff0434b8eb, type: 2}
+    Description:
+      Value: '{0}'
+    Name: Trinket Acquisitions Incorporated
+    _includeName: 0

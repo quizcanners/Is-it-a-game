@@ -1,0 +1,326 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Halfling Names Male
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: https://docs.google.com/spreadsheets/d/e/2PACX-1vRI9DqgmZQCeSHXMrRtNh9e_8fQLQB_8o3SmRucWSFO9-bcfHT4Lz6tyIsW8FdpeI-aYk6w1rNq8cDh/pub?output=csv
+    url: https://docs.google.com/spreadsheets/d/e/2PACX-1vTFSTYejGLPbFTtSwvDCWf7VOpPx90NYI0P36Ur7-Xad7I4lBIkNjpbLcoHRc5WKaG-jDkZ4k01UUpE/pub?
+    pages:
+    - pageName: Halfling Male
+      pageIndex: 1427451532
+    _selectedPage: 0
+    columns:
+    - d100
+    - Name
+  _dicesToRoll: 64000000
+  elements:
+  - Chances: 2
+    subTables: []
+    Name: Alton
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Ander
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Bernie
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Bobbin
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Cade
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Callus
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Corrin
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Dannad
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Danniel
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Eddie
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Egart
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Eldon
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Errich
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Fildo
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Finnan
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Franklin
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Garret
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Garth
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Gilbert
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Gob
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Harol
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Igor
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Jasper
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Keith
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Kevin
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Lazam
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Lerry
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Lindal
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Lyle
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Merric
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Mican
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Milo
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Morrin
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Nebin
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Nevil
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Osborn
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Ostran
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Oswalt
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Perrin
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Poppy
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Reed
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Roscoe
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Sam
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Shardon
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Tye
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Ulmo
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Wellby
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Wendel
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Wenner
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Wes
+    Description:
+      Description: 
+      _editing: 0

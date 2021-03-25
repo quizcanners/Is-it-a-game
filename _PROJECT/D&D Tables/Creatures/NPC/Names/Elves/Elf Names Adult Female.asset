@@ -1,0 +1,326 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Elf Names Adult Female
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: https://docs.google.com/spreadsheets/d/e/2PACX-1vRI9DqgmZQCeSHXMrRtNh9e_8fQLQB_8o3SmRucWSFO9-bcfHT4Lz6tyIsW8FdpeI-aYk6w1rNq8cDh/pub?output=csv
+    url: https://docs.google.com/spreadsheets/d/e/2PACX-1vTFSTYejGLPbFTtSwvDCWf7VOpPx90NYI0P36Ur7-Xad7I4lBIkNjpbLcoHRc5WKaG-jDkZ4k01UUpE/pub?
+    pages:
+    - pageName: Elf Female Adult
+      pageIndex: 596212554
+    _selectedPage: 0
+    columns:
+    - d100
+    - Name
+  _dicesToRoll: 64000000
+  elements:
+  - Chances: 2
+    subTables: []
+    Name: Adrie
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Ahinar
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Althaea
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Anastrianna
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Andraste
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Antinua
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Arara
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Baelitae
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Bethrynna
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Birel
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Caelynn
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Chaedi
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Claira
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Dara
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Drusilia
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Elama
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Enna
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Faral
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Felosial
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Hatae
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Ielenia
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Ilanis
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Irann
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Jarsali
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Jelenneth
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Keyleth
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Leshanna
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Lia
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Maiathah
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Malquis
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Meriele
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Mialee
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Myathethil
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Naivara
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Quelenna
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Quillathe
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Ridaro
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Sariel
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Shanairla
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Shava
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Silaqui
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Sumnes
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Theirastra
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Thiala
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Tiaathque
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Traulam
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Vadania
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Valanthe
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Valna
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Xanaphia
+    Description:
+      Description: 
+      _editing: 0

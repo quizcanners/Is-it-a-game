@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Random Appearance
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: https://docs.google.com/spreadsheets/d/1Gldbm-fxLZSY3b9hGpRL_t_tbL0dx6O4IOzyzIz3WqI/edit#gid=886490155
+    url: https://docs.google.com/spreadsheets/d/e/2PACX-1vQk5mZ3ToEPQKPbvtYvsZUDq0beEPhC2skiKVCA8zznqAp_qVrTNDlqd4AJjWU6Bou6MveWjyCgtdKT/pub?
+    pages:
+    - pageName: Appearance
+      pageIndex: 349935419
+    _selectedPage: 0
+    columns:
+    - d20
+    - Name
+  _dicesToRoll: 14000000
+  elements:
+  - Chances: 1
+    subTables: []
+    Name: 'Distinctive jewelry: earrings, necklace, circlet, bracelets'
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 1
+    subTables: []
+    Name: Piercings
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 1
+    subTables: []
+    Name: Flamboyant or outlandish clothes
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 1
+    subTables: []
+    Name: Formal, clean clothes
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 1
+    subTables: []
+    Name: Ragged, dirty clothes
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 1
+    subTables: []
+    Name: Pronounced scar
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 1
+    subTables: []
+    Name: Missing teeth
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 1
+    subTables: []
+    Name: Missing fingers
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 1
+    subTables: []
+    Name: Unusual eye color (or two different colors)
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 1
+    subTables: []
+    Name: Tattoos
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 1
+    subTables: []
+    Name: Birthmark
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 1
+    subTables: []
+    Name: Unusual skin color
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 1
+    subTables: []
+    Name: Bald
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 1
+    subTables: []
+    Name: Braided beard or hair
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 1
+    subTables: []
+    Name: Unusual hair color
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 1
+    subTables: []
+    Name: Nervous eye twitch
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 1
+    subTables: []
+    Name: Distinctive nose
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 1
+    subTables: []
+    Name: Distinctive posture (crooked or rigid)
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 1
+    subTables: []
+    Name: Exceptionally beautiful
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 1
+    subTables: []
+    Name: Exceptionally ugly
+    Description:
+      Description: 
+      _editing: 0

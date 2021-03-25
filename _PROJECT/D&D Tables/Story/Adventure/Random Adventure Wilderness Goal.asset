@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Random Adventure Wilderness Goal
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: https://docs.google.com/spreadsheets/d/e/2PACX-1vQTVjKE5CW87o6f-7ZXn3ZxAwrXgh-WNcHMm-JbkWkgKV6qaZRYQL988Jj0HMMDmFSg3xQlqX5bjLtX/pub?
+    pages:
+    - pageName: Unnamed
+      pageIndex: 637929549
+    _selectedPage: 0
+  _dicesToRoll: 14000000
+  elements:
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Locate a dungeon or other site of interest (roll on the Dungeon Goals table
+      to find out why).
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Assess the scope of a natural or unnatural disaster.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Escort an NPC to a destination.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: "Arrive at a destination without being seen by the villain\u2019s forces."
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Stop monsters from raiding caravans and farms.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Establish trade with a distant town.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Protect a caravan traveling to a distant town.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Map a new land.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Find a place to establish a colony.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Find a natural resource.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Hunt a specific monster.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Return home from a distant place.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Obtain information from a reclusive hermit.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Find an object that was lost in the wilds.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Discover the fate of a missing group of explorers.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Pursue fleeing foes.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Assess the size of an approaching army.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Escape the reign of a tyrant.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Protect a wilderness site from attackers.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Roll twice, ignoring results of 20.
+    _includeName: 1

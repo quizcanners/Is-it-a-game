@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Music
+  m_EditorClassIdentifier: 
+  m_GroupName: Music
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 56c5a8e40bb487c458a0fdd8bae07db2
+  m_SerializeEntries:
+  - m_GUID: fb783898dfbacac4aae61a8407e1849a
+    m_Address: Assets/Prototype-Core/Services/Audio/Data/Music/See The Light_Piano
+      Loop_01.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 8300000, guid: fb783898dfbacac4aae61a8407e1849a, type: 3}
+    m_TargetAsset: {fileID: 8300000, guid: fb783898dfbacac4aae61a8407e1849a, type: 3}
+  - m_GUID: 32e41d7c132d9ab40b827472c2637228
+    m_Address: Assets/Prototype-Core/Services/Audio/Data/Music/The Journey Begins_Full
+      Loop (With Drums).wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 8300000, guid: 32e41d7c132d9ab40b827472c2637228, type: 3}
+    m_TargetAsset: {fileID: 8300000, guid: 32e41d7c132d9ab40b827472c2637228, type: 3}
+  - m_GUID: 2c647aa2f80c08e40b1e3596a3b362f0
+    m_Address: Assets/Prototype-Core/Services/Audio/Data/Music/To Mars And Back_Strings
+      Solo Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 8300000, guid: 2c647aa2f80c08e40b1e3596a3b362f0, type: 3}
+    m_TargetAsset: {fileID: 8300000, guid: 2c647aa2f80c08e40b1e3596a3b362f0, type: 3}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 15b6bd71e2d240c4eb290b0cb368ecec, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 900a8ee5d3c9bff42a421d908fb007cb, type: 2}
+    - {fileID: 11400000, guid: f91fc8454e292004c81118085e388a4c, type: 2}

@@ -1,0 +1,551 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Random General Furnishings and Appointments
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: https://docs.google.com/spreadsheets/d/e/2PACX-1vRI9DqgmZQCeSHXMrRtNh9e_8fQLQB_8o3SmRucWSFO9-bcfHT4Lz6tyIsW8FdpeI-aYk6w1rNq8cDh/pub?
+    pages:
+    - pageName: 
+      pageIndex: 237062186
+    _selectedPage: 0
+  _dicesToRoll: 64000000
+  elements:
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Altar
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Armchair
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Armoire
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Arras or curtain
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Bag
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Barrel (40 gallons)
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Bed
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Bench
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Blanket
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Box (large)
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Brazier and charcoal
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Bucket
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Buffet cabinet
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Bunks
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Butt (huge cask, 125 gallons)
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Cabinet
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Candelabrum
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Carpet (large)
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Cask (40 gallons)
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Chandelier
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Charcoal
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Chair, plain
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Chair, padded
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Chair, padded, or divan
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Chest, large
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Chest, medium
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Chest of drawers
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Closet (wardrobe)
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Coal
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Couch
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Crate
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Cresset
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Cupboard
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Cushion
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Dais
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Desk
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Fireplace and wood
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Fireplace with mantle
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Firkin (small cask, 10 gallons)
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Fountain
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Fresco
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Grindstone
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Hamper
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Hassock
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Hogshead (large cask, 65 gallons)
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Idol (large)
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Keg (small barrel, 20 gallons)
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: LoomLoom
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Mat
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Mattress
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Pail
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Painting
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Pallet
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Pedestal
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Pegs
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Pillow
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Pipe (large cask, 105 gallons)
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Quilt
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Rug (small or medium)
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Rushes
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Sack
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Sconce
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Screen
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Sheet
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Shelf
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Shrine
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Sideboard
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Sofa
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Staff, normal
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Stand
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Statue
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Stool, high
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Stool, normal
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Table, large
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Table, long
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Table, low
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Table, round
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Table, small
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Table, trestle
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tapestry
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Throne
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Trunk
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tub
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tun (huge cask, 250 gallons)
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Urn
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Wall basin and font
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Wood billets
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Workbench

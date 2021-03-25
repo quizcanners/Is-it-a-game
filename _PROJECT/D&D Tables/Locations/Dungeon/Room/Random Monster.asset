@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47751544fe409e44a85768efe5307147, type: 3}
+  m_Name: Random Monster
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: 
+    pages: []
+    _selectedPage: 0
+    columns: []
+  _dicesToRoll: 080000000c000000
+  elements:
+  - Chances: 1
+    Name: Displacer Beast
+  - Chances: 1
+    Name: Gnoll
+  - Chances: 1
+    Name: Hyenas
+  - Chances: 1
+    Name: Gnoll pack lord
+  - Chances: 1
+    Name: Dryad
+  - Chances: 1
+    Name: Satyr
+  - Chances: 1
+    Name: Centaurus
+  - Chances: 1
+    Name: Scout
+  - Chances: 1
+    Name: Pixie
+  - Chances: 1
+    Name: Owlbear
+  - Chances: 1
+    Name: Elk
+  - Chances: 1
+    Name: Giant Elk
+  - Chances: 1
+    Name: Blink Dog
+  - Chances: 1
+    Name: Faerie dragon
+  - Chances: 1
+    Name: Druid
+  - Chances: 1
+    Name: Treant
+  - Chances: 1
+    Name: Druid
+  - Chances: 1
+    Name: Treant
+  - Chances: 1
+    Name: unicorn

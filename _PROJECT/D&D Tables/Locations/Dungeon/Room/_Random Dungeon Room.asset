@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daaa7a4c98399e747adf0ec045fde088, type: 3}
+  m_Name: _Random Dungeon Room
+  m_EditorClassIdentifier: 
+  _shortSentence:
+    Value: '{5} with {3}'
+    Editing: 0
+  Sentence:
+    Value: 'As you enter the {5}, {4}, you notice {3}. The air is {0}, smells {2}.
+      You hear {1}.
+
+
+      There is {6} in the corner. Inside players may find {8}
+      and a {9}.
+
+
+      There is also a {14} that {13}.'
+    Editing: 0
+  Tables:
+  - {fileID: 11400000, guid: c3890c01fe2e0b54b9f4d8abed562389, type: 2}
+  - {fileID: 11400000, guid: d10110ebe67288e4cab85de3ae79bc8d, type: 2}
+  - {fileID: 11400000, guid: 4c5e2ec533c299a42bafc676d8681b3b, type: 2}
+  - {fileID: 11400000, guid: 1603306593e518c46bb428dbdacfca68, type: 2}
+  - {fileID: 11400000, guid: 0edb0628b1a33ce439212a9650317bae, type: 2}
+  - {fileID: 11400000, guid: c27582ef3f626964eb3455fc1f8c4102, type: 2}
+  - {fileID: 11400000, guid: 7fdacc96e7f61e24f8a4f38dac28088e, type: 2}
+  - {fileID: 11400000, guid: b7a33608f21a733489a1e5b4e56576cf, type: 2}
+  - {fileID: 11400000, guid: 4de84ef4d6cce1349853e9e72980925a, type: 2}
+  - {fileID: 11400000, guid: de04a270c798fc443899f7192ff022ac, type: 2}
+  - {fileID: 11400000, guid: 43cf892febe97b04394a582f9bf06dbf, type: 2}
+  - {fileID: 11400000, guid: 3b47db368dbdbc84ebf203e20e6b33ca, type: 2}
+  - {fileID: 11400000, guid: c77feee94e604154c9632c21024978e4, type: 2}
+  - {fileID: 11400000, guid: 839568cf8366aeb47a2da9e913aa9fb0, type: 2}
+  - {fileID: 11400000, guid: 80aabac4b58e34942aad0202c95be7c1, type: 2}

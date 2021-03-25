@@ -1,0 +1,632 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Random Trinket VRGR
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: https://docs.google.com/spreadsheets/d/e/2PACX-1vS3cWbEFM_ZZKa8dBKxSdBbidWZ8U4nv_ItT2mjqGSF9izMNamq7wHVsN7YaCZtu_D7F8PZPZhCpkka/pub?
+    pages:
+    - pageName: PHB
+      pageIndex: 2093983729
+    _selectedPage: 0
+  _dicesToRoll: 64000000
+  elements:
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A picture you drew as a child of your imaginary friend
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A lock that opens when blood is dripped in its keyhole
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Clothes stolen from a scarecrow
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: 'A spinning top carved with four faces: happy, sad, wrathful, and dead'
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: The necklace of a sibling who died on the day you were born
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A wig from someone executed by beheading
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: The unopened letter to you from your dying father
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A pocket watch that runs backward for an hour every midnight
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A winter coat stolen from a dying soldier
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A bottle of invisible ink that can only be read at sunset
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A wineskin that refills when interred with a dead person for a night
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A set of silverware used by a king for his last meal
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A spyglass that always shows the world suffering a terrible storm
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A cameo with the profile's face scratched away
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A lantern with a black candle that never runs out and that burns with green
+      flame
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A teacup from a child's tea set, stained with blood
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A little black book that records your dreams, and yours alone, when you
+      sleep
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A necklace formed of the interlinked holy symbols of a dozen deities
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A noose that feels heavier than it should
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A birdcage into which small birds fly but once inside never eat or leave
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A lepidopterist's box filled with dead moths with skull-like patterns on
+      their wings
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A jar of pickled ghouls' tongues
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: The wooden hand of a notorious pirate
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A urn with the ashes of a dead relative
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A hand mirror backed with a bronze depiction of a medusa
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Pallid leather gloves crafted with ivory fingernails
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Dice made from the knuckles of a notorious charlatan
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A ring of keys for forgotten locks
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Nails from the coffin of a murderer
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A key to the family crypt
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A bouquet of funerary flowers that always looks and smells fresh
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A switch used to discipline you as a child
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A music box that plays by itself whenever someone holding it dances
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A walking cane with an iron ferrule that strikes sparks on stone
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A flag from a ship lost at sea
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A porcelain doll's head that always seems to be looking at you
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A wolf's head wrought in silver that is also a whistle
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small mirror that shows a much older version of the viewer
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small, worn book of children's nursery rhymes
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A mummified raven claw
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A broken pendant of a silver dragon that's always cold to the touch
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small locked box that quietly hums a lovely melody at night, but you
+      always forget it in the morning
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An inkwell that makes one a little nauseous when staring at it
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An old doll made from a dark, dense wood and missing a hand and a foot
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A black executioner's hood
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A pouch made of flesh, with a sinew drawstring
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A tiny spool of black thread that never runs out
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A tiny clockwork figurine of a dancer that's missing a gear and doesn't
+      work
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A black wooden pipe that creates puffs of smoke that look like skulls
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A vial of perfume, the scent of which only certain creatures can detect
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A stone that emits a single endless sigh
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A rag doll with two red dots on its neck
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A spring-loaded toy with a missing crank
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A mason jar containing a harmless but agitated, animate ooze
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A black wooden die with 1's on all the faces
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A child's portrait with "born" written on the back, along with next year's
+      date
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A dagger-sized shark tooth
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A finger that's taken root in a small pot
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A toolbox containing the remains of a dangerous but broken clockwork arachnid
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A pitcher-sized, opalescent snail shell that occasionally, inexplicably
+      shudders or tips over
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: The logbook of an ice-breaking ship called The Haifisch
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small portrait of you as a child, alongside your identically dressed
+      twin
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A silver pocket watch with thirteen hours marked on the face
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A woodcut of a wolf devouring its own hind leg
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A planchette etched with raven skulls
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A moist coral figurine of a lamprey with arms, legs, and a bipedal stance
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A bronze fingertrap sculpted with roaring tigers
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A pearl necklace that turns red under the full moon
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A fossil of a fish with humanoid features
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A plague doctor's mask
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A paper talisman with smudged ink
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A locket containing the smeared image of an eyeless figure
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A canopic jar with a lid sculpted like a goat
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A jack-o'-lantern made from a small, pale gourd
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A single high-heeled, iron shoe
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A candle made from a severed hand
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A clockwork device that beats like a heart
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A blank masquerade mask
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A glass eye with a live worm inside
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A sheet with two eyeholes cut in it
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: The deed to someplace called Tergeron Manor
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An ornate, wax-sealed crimson envelope that resists all attempts to open
+      it
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A mourning veil trimmed in black lace
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A straitjacket covered in charcoal runes
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A tattered, burlap mask with a crooked smile painted on it
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A green ribbon designed to be worn as a choker
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Dentures with mismatched, sharpened teeth
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A warm, fist-sized egg case
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A copper ring with "mine" engraved on the inside
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A glass ampoule containing a neon green fluid
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An eye patch embroidered with a holy symbol
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A severed big toe with a nail that continues to grow
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A journal that has been heavily redacted
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A glove with a mouth-like design stitched on the palm
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An ornate but empty reliquary made of silver and fractured glass
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A ceramic figure of a cat with too many eyes
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A crumpled paper ticket bearing the words "admit none"
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An electrum coin with your face on one side
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A shrunken gremishka head that twitches when anyone casts magic nearby
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A sunburst amulet with a red stone at the center

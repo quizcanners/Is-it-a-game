@@ -1,0 +1,353 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Random Noises
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: https://docs.google.com/spreadsheets/d/e/2PACX-1vRI9DqgmZQCeSHXMrRtNh9e_8fQLQB_8o3SmRucWSFO9-bcfHT4Lz6tyIsW8FdpeI-aYk6w1rNq8cDh/pub?
+    pages:
+    - pageName: Air
+      pageIndex: 222612341
+    _selectedPage: 0
+  _dicesToRoll: 64000000
+  elements:
+  - Chances: 5
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Bang or slam
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Bellowing
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Buzzing
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Chanting
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Chiming
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Chirping
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Clanking
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Clashing
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Clicking
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Coughing
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Creaking
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Drumming
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Footsteps ahead
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Footsteps approaching
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Footsteps behind
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Footsteps receding
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Footsteps to the side
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Giggling (faint)
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Gong
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Grating
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Groaning
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Grunting
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Hissing
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Horn or trumpet sounding
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Howling
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Humming
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Jingling
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Knocking
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Laughter
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Moaning
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Murmuring
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Music
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Rattling
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Ringing
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Rustling
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Scratching or scrabbling
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Screaming
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Scuttling
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Shuffling
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Slithering
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Snapping
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Sneezing
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Sobbing
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Splashing
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Splintering
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Squeaking
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Squealing
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tapping
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Thud
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Thumping
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tinkling
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Twanging
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Whining
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Whispering
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Whistling

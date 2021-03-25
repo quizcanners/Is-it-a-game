@@ -1,0 +1,208 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Random Settlement Government
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: 
+    pages: []
+    _selectedPage: 0
+  _dicesToRoll: 64000000
+  elements:
+  - Chances: 8
+    subTables: []
+    Description:
+      Value: One hereditary ruler wields absolute power. The autocrat either is supported
+        by a well-developed bureaucracy or military or stands as the only authority
+        in an otherwise anarchic society. The dynastic ruler could be immortal or
+        undead. Aundair and Karrnath, two kingdoms in the Eberron campaign setting,
+        have autocrats with royal blood in their veins. Whereas Queen Aurala of Aundair
+        relies on wizards and spies to enforce her will, Kaius, the vampire king
+        of Karrnath, has a formidable army of living and undead soldiers under his
+        command.
+      Editing: 0
+    Name: Autocracy
+  - Chances: 5
+    subTables: []
+    Description:
+      Value: Various departments compose the government, each responsible for an
+        aspect of rule. The department heads, ministers, or secretaries answer to
+        a figurehead autocrat or council.
+      Editing: 0
+    Name: Bureaucracy
+  - Chances: 6
+    subTables: []
+    Description:
+      Value: "Each individual city or town within the confederacy governs itself,
+        but all contribute to a league or federation that promotes (at least in theory)
+        the common good of all member states. Conditions and attitudes toward the
+        central government vary from place to place within the confederacy. The Lords\u2019
+        Alliance in the Forgotten Realms setting is a loose confederacy of cities,
+        while the Mror Holds in the Eberron campaign setting is a confederacy of
+        allied dwarf clans."
+      Editing: 0
+    Name: Confederacy
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: Citizens or their elected representatives determine the laws in a democracy.
+        A bureaucracy or military carries out the day-to-day work of government,
+        with positions filled through open elections.
+      Editing: 0
+    Name: Democracy
+  - Chances: 5
+    subTables: []
+    Description:
+      Value: "One supreme ruler holds absolute authority, but his or her rule isn\u2019t
+        necessarily dynastic. In other respects this resembles an autocracy. In the
+        Greyhawk campaign setting, a half-demon named Iuz is the dictator of a conquered
+        land that bears his name."
+      Editing: 0
+    Name: Dictatorship
+  - Chances: 15
+    subTables: []
+    Description:
+      Value: The typical government of Europe in the Middle Ages, a feudalistic society
+        consists of layers of lords and vassals. The vassals provide soldiers or
+        scutage (payment in lieu of military service) to the lords, who in turn promise
+        protection to their vassals.
+      Editing: 0
+    Name: Feudalism
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: Elders preside over this society. In some cases, long-lived races such
+        as elves or dragons are entrusted with the leadership of the land.
+      Editing: 0
+    Name: Gerontocracy
+  - Chances: 9
+    subTables: []
+    Description:
+      Value: A feudal or bureaucratic government where every member, except one,
+        is subordinate to another member. In the Dragonlance campaign setting, the
+        dragonarmies of Krynn form a military hierarchy, with the Dragon Highlords
+        as leaders under the dragon queen Takhisis.
+      Editing: 0
+    Name: Hierarchy
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: The governing body is composed of spellcasters who rule directly as
+        oligarchs or feudal lords, or participate in a democracy or bureaucracy.
+        Examples include the Red Wizards of Thay in the Forgotten Realms campaign
+        setting and the sorcerer-kings of Athas in the Dark Sun campaign setting.
+      Editing: 0
+    Name: Magocracy
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: This society is governed by the eldest or most important members of
+        one gender. Drow cities are examples of theocratic matriarchies, for each
+        is ruled by a council of drow high priestesses who answer to Lolth, the Demon
+        Queen of Spiders.
+      Editing: 0
+    Name: Matriarchy
+  - Chances: 6
+    subTables: []
+    Description:
+      Value: Military leaders run the nation under martial law, using the army and
+        other armed forces. A militocracy might be based on an elite group of soldiers,
+        an order of dragon riders, or a league of sea princes. Solamnia, a nation
+        ruled by knights in the Dragonlance campaign setting, falls into this category.
+      Editing: 0
+    Name: Militocracy
+  - Chances: 10
+    subTables: []
+    Description:
+      Value: "A single hereditary sovereign wears the crown. Unlike the autocrat,
+        the monarch\u2019s powers are limited by law, and the ruler serves as the
+        head of a democracy, feudal state, or militocracy. The kingdom of Breland,
+        in the Eberron campaign setting, has both a parliament that makes laws and
+        a monarch who enforces them."
+      Editing: 0
+    Name: Monarchy
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: A small number of absolute rulers share power, possibly dividing the
+        land into districts or provinces under their control, or jointly ruling together.
+        A group of adventurers who take control of a nation together might form an
+        oligarchy. The Free City of Greyhawk is an oligarchy composed of various
+        faction leaders, with a Lord Mayor as its figurehead.
+      Editing: 0
+    Name: Oligarchy
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: This society is governed by the eldest or most important members of
+        one gender. Drow cities are examples of theocratic matriarchies, for each
+        is ruled by a council of drow high priestesses who answer to Lolth, the Demon
+        Queen of Spiders.
+      Editing: 0
+    Name: Patriarchy
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: The most intelligent and educated people oversee the society, often
+        with a bureaucracy to handle the day-to-day work of government. In the Forgotten
+        Realms, scholarly monks preside over the fortress-library of Candlekeep,
+        overseen by a master of lore called the Keeper.
+      Editing: 0
+    Name: Mericocracy
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: "Society is governed by the wealthy. The elite form a ruling council,
+        purchase representation at the court of a figurehead monarch, or rule by
+        default because money is the true power in the realm. Many cities in the
+        Forgotten Realms campaign setting, including Waterdeep and Baldur\u2019s
+        Gate, are plutocracies."
+      Editing: 0
+    Name: Plutocracy
+  - Chances: 7
+    subTables: []
+    Description:
+      Value: Government is entrusted to representatives of an established electorate
+        who rule on behalf of the electors. Any democracy in which only landowners
+        or certain classes can vote could be considered a republic.
+      Editing: 0
+    Name: Republic
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: Conquerors and representatives of another government wield power, ruling
+        the settlement or region as part of a larger empire. The satraps are bureaucrats
+        and military officers, or unusual characters or monsters. The cities of Highport
+        and Suderham in the Greyhawk campaign setting are satrapies controlled by
+        agents of a vicious gang of marauders known as the Slave Lords.
+      Editing: 0
+    Name: Satrapy
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: "This government is composed of groups or individuals primarily seeking
+        wealth for themselves, often at the expense of their subjects. The grasping
+        Bandit Kingdoms in the Greyhawk campaign setting are prime examples. A kingdom
+        run by thieves\u2019 guilds would also fall into this category."
+      Editing: 0
+    Name: Kleptocracy
+  - Chances: 5
+    subTables: []
+    Description:
+      Value: "Rulership falls to a direct representative or a collection of agents
+        of a deity. The centers of power in a theocracy are usually located on sacred
+        sites. In the Eberron campaign setting, the nation of Thrane is a theocracy
+        devoted to the Silver Flame, a divine spirit that resides in Thrane\u2019s
+        capital of Flamekeep."
+      Editing: 0
+    Name: Theocracy

@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 6e6401aeee3d0074f843922c04077622
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Nodesto Caps Condensed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 88e149beda6c67346b127bd4fbc3ac46, type: 3}
+  - {fileID: 12800000, guid: 032ae4a1009a46b4f80be6685a79df40, type: 3}
+  - {fileID: 12800000, guid: 8a50e6eced6e9214e8b2cd6c9780669b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

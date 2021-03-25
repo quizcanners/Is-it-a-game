@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Random Allignment
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: https://docs.google.com/spreadsheets/d/1Gldbm-fxLZSY3b9hGpRL_t_tbL0dx6O4IOzyzIz3WqI/edit#gid=886490155
+    url: https://docs.google.com/spreadsheets/d/e/2PACX-1vQk5mZ3ToEPQKPbvtYvsZUDq0beEPhC2skiKVCA8zznqAp_qVrTNDlqd4AJjWU6Bou6MveWjyCgtdKT/pub?
+    pages:
+    - pageName: Allignment
+      pageIndex: 652903010
+    _selectedPage: 0
+  _dicesToRoll: 14000000
+  elements:
+  - Chances: 2
+    subTables:
+    - {fileID: 11400000, guid: c382146b22fcf2941af9d0ea27ca5446, type: 2}
+    - {fileID: 11400000, guid: 1ed76f42d75668e458d47d2f0298b01a, type: 2}
+    Description:
+      Value: ( {0} & {1})
+    Name: Lawful good
+    _includeName: 1
+  - Chances: 2
+    subTables:
+    - {fileID: 11400000, guid: 68eec92c15529cd4eb64a86abea23ba2, type: 2}
+    - {fileID: 11400000, guid: 1ed76f42d75668e458d47d2f0298b01a, type: 2}
+    Description:
+      Value: with {0} & {1} ideals
+    Name: Neutral good
+    _includeName: 1
+  - Chances: 2
+    subTables:
+    - {fileID: 11400000, guid: 6f1b528238ed76542af407a91755bdd4, type: 2}
+    - {fileID: 11400000, guid: 1ed76f42d75668e458d47d2f0298b01a, type: 2}
+    Description:
+      Value: with {0} & {1} ideals
+    Name: Chaotic good
+    _includeName: 1
+  - Chances: 3
+    subTables:
+    - {fileID: 11400000, guid: c382146b22fcf2941af9d0ea27ca5446, type: 2}
+    - {fileID: 11400000, guid: 68eec92c15529cd4eb64a86abea23ba2, type: 2}
+    Description:
+      Value: with {0} & {1} ideals
+    Name: Lawful neutral
+    _includeName: 1
+  - Chances: 2
+    subTables:
+    - {fileID: 11400000, guid: 68eec92c15529cd4eb64a86abea23ba2, type: 2}
+    - {fileID: 11400000, guid: cb919b7be19ac2242b0d02a043358745, type: 2}
+    Description:
+      Value: with {0} & {1} ideals
+    Name: Neutral
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: 6f1b528238ed76542af407a91755bdd4, type: 2}
+    - {fileID: 11400000, guid: 68eec92c15529cd4eb64a86abea23ba2, type: 2}
+    Description:
+      Value: with {0} & {1} ideals
+    Name: Chaotic neutral
+    _includeName: 1
+  - Chances: 3
+    subTables:
+    - {fileID: 11400000, guid: c382146b22fcf2941af9d0ea27ca5446, type: 2}
+    - {fileID: 11400000, guid: aa5de66630129144dba0b05211d5c8ea, type: 2}
+    Description:
+      Value: with {0} & {1} ideals
+    Name: Lawful evil
+    _includeName: 1
+  - Chances: 3
+    subTables:
+    - {fileID: 11400000, guid: 68eec92c15529cd4eb64a86abea23ba2, type: 2}
+    - {fileID: 11400000, guid: aa5de66630129144dba0b05211d5c8ea, type: 2}
+    Description:
+      Value: with {0} & {1} ideals
+    Name: Neutral evil
+    _includeName: 1
+  - Chances: 2
+    subTables:
+    - {fileID: 11400000, guid: 6f1b528238ed76542af407a91755bdd4, type: 2}
+    - {fileID: 11400000, guid: aa5de66630129144dba0b05211d5c8ea, type: 2}
+    Description:
+      Value: with {0} & {1} ideals
+    Name: Chaotic evil
+    _includeName: 1

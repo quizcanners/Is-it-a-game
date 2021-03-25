@@ -1,0 +1,638 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Random Trinket TWBTW
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: https://docs.google.com/spreadsheets/d/e/2PACX-1vS3cWbEFM_ZZKa8dBKxSdBbidWZ8U4nv_ItT2mjqGSF9izMNamq7wHVsN7YaCZtu_D7F8PZPZhCpkka/pub?
+    pages:
+    - pageName: Unnamed
+      pageIndex: 0
+    _selectedPage: 0
+  _dicesToRoll: 64000000
+  elements:
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Cookie cutter shaped like a unicorn
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Two yew rings linked together
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Silver hand mirror with a nymph-shaped handle
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Painted wooden key whose teeth change configuration every day at dawn
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Delicate silver cameo with pictures of twin children opposite one another
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Golden pendant charm shaped like a leprechaun
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tiny wooden box containing a croquet set sized for pixies or sprites
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tiny pair of sharp, iron scissors
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Chess piece shaped like a dancing satyr wearing a bishop's hat and clutching
+      a gnarled staff
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Saltshaker shaped like a wizard's tower
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Crystal orb that allows an elf who holds it to sleep
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Pendant that shows the phases of the moon
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Large iron fingernail
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tiny electrum whistle that only Fey can hear
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Wooden jigsaw puzzle piece as big as a saucer, with a painted image of
+      a jug on it
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Spool of glistening silver thread
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Sheet of music that goblins find upsetting when they hear it played or
+      sung
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Rotten ogre's tooth with the Elvish glyph for "moon" etched into it
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Vitrified eye of a displacer beast
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tiny duskwood coffin containing the ashes of a troll
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Old invitation to a banquet in the Summer Court, written in ink on vellum
+      in Sylvan
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Gossamer shawl that glows faintly in moonlight
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Ball-and-cup toy that plays a short, victorious jingle whenever the ball
+      lands in the cup
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Sprite's skull covered in ink fingerprints
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Silver fork with the outer tines bent sideways
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A soot-stained sock in which a nugget of coal magically appears each day
+      at dawn
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tiny wooden stool (sized for a pixie or sprite) that gives splinters to
+      those who hold it
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tiny clockwork dragonfly that slowly beats its wings (but can't fly) when
+      wound up
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Toy unicorn made of wood, painted with bright colors
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Pixie plushie that sings when you squeeze it
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: 1-inch-square painting of a sleeping elf
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Thimble that helps you daydream when worn
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Pumpkin cupcake that magically regenerates itself in its paper cup each
+      day at dawn
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Fake Three-Dragon Ante card depicting a faerie dragon
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Teacup made from a varnished mushroom cap that magically keeps its liquid
+      contents lukewarm
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Rock that floats and is small enough to hide in your closed fist
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tiny bottle filled with rainwater collected from the Feywild
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Opalescent conch shell that laughs when you hold it to your ear
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Vial of viscous liquid labeled "Fomorian spit. Do not drink!"
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Wax candle that roars and crackles like a bonfire while lit
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Potted daffodil that sways when near a source of music
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: 8-ounce, glass wine bottle that magically reassembles itself 1 minute after
+      being broken
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tiny wooden sylph figurehead from a model ship
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tiny pumpkin-shaped cauldron carved out of bog oak
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Bar of soap that smells like something memorable from your childhood
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Piece of orange parchment folded to look like a knight astride a unicorn
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tinted glasses so dark that they can't be seen through
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: 8-inch-long glass ant figurine
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Piece of parchment bearing a child's drawing of an oni
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tiny hourglass without sand in it
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Empty vial with corked ends at the top and bottom
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Pair of green leprechaun boots tied together by their laces
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Smoking pipe made from a tree root
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Red cap that droops down to one's shoulders when worn
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Mask that helps you remember your dreams if you wear it while you sleep
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Notebook that shows what's written on it only when held upside down
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Wooden top with four sides, each bearing the image of child enjoying a
+      different season
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tiny beehive wig made for sprites or pixies
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Wooden mouse figurine that squeaks when held
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Stuffed oni doll with a creepy smile and one missing eye
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Empty bag labeled "Candy"
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tinted glass monocle that makes things look green
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Black executioner's hood sized for a pixie or sprite
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Piano key carved from a satyr's horn
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tiny wooden lute with cat hairs for strings
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Iron needle with an eye that refuses to let thread pass through it
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tiny sundial that casts a shadow only in moonlight
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Wooden pan flute that attracts harmless local fauna when played
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Silvered pinecone
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Flask of spectral glowworms that change color to reflect the mood of the
+      flask's holder
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Wooden apple painted blue
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tuning fork that sounds the tone for the F key
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Nunchaku sized for a pixie or sprite
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Copper coin with a smiling satyr's face on one side and a satyr's skull
+      on the other
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Severed chicken's foot attached to a leather cord
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Collection of baby teeth in a tiny wooden box
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Pinwheel whirligig that spins even when there's no wind
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Child's parasol covered in moss and leaves
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Wooden magnifying glass missing its lens
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Glossy mushroom with a red, bell-shaped cap that jingles when shook
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Pouch of seeds that smell like home
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Petrified robin's egg
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Wooden spoon with a hole in the center
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Paper wasp nest in a jar
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Sprig of rosemary wrapped with ribbon at one end
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tiny, unfurnished dollhouse sized for a pixie child
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: "Paintbrush made entirely of ceramic\u2014even the bristles"
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Candlestick whose candlelight looks like a tiny, dancing fairy made of
+      fire
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Spectacle frames in the shape of butterfly wings
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Set of false wooden teeth
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tiny book of fairytales
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Rucksack in which one potato magically appears each day at dawn
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Pixie's winter jacket lined with fox fur
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tasseled wine charm shaped like a sprite
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Weak magnetic wand
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: 100-sided die the size of a plum, cut from coal
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Glass slipper, missing its mate
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tiny dreamcatcher
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Barbell sized for a pixie or sprite
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Music box that plays a sprightly tune you remember from your childhood

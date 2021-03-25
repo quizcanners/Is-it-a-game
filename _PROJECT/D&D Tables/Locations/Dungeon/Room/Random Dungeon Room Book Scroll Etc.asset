@@ -1,0 +1,323 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Random Dungeon Room Book Scroll Etc
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: https://docs.google.com/spreadsheets/d/e/2PACX-1vRI9DqgmZQCeSHXMrRtNh9e_8fQLQB_8o3SmRucWSFO9-bcfHT4Lz6tyIsW8FdpeI-aYk6w1rNq8cDh/pub?
+    pages:
+    - pageName: 
+      pageIndex: 1612970513
+    _selectedPage: 0
+  _dicesToRoll: 64000000
+  elements:
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Account records
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: "Alchemist\u2019s notebook"
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Almanac
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Bestiary
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Biography
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Book of heraldry
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Book of myths
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Book of pressed flowers
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Calendar
+  - Chances: 5
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Catalog
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Contract
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Diary
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Dictionary
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Doodles or sketches
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Forged document
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Grammar workbook
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Heretical text
+  - Chances: 5
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Historical text
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Last will and testament
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Legal code
+  - Chances: 8
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Letter
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: "Lunatic\u2019s ravings"
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Magic tricks (not a spellbook)
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Magic scroll
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Map or atlas
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Memoir
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Navigational chart or star chart
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Novel
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Painting
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Poetry
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Prayer book
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Property deed
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Recipe book or cookbook
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Record of a criminal trial
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Royal proclamation
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Sheet music
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Spellbook
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Text on armor making
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Text on astrology
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Text on brewing
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Text on exotic flora or fauna
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Text on herbalism
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Text on local flora
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Text on mathematics
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Text on masonry
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Text on medicine
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Theological text
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tome of forbidden lore
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Travelogue for an exotic land
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Travelogue of the planes

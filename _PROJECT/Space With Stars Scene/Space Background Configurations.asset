@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 217b468c0ffccc7409919f6cc94ae525, type: 3}
+  m_Name: Space Background Configurations
+  m_EditorClassIdentifier: 
+  dic:
+    keys:
+    - mushroom.planet.name0
+    - mushroom.planet.name1
+    - mushroom.planet.name2
+    - mushroom.planet.name3
+    - mushroom.galaxies
+    values:
+    - _key: mushroom.planet.name0
+      LightSourcePosition: {x: 0.51, y: 0.53}
+      LightColor: {r: 0.108777426, g: 0, b: 0.20754719, a: 1}
+      CloudsColor: {r: 0.022286694, g: 0, b: 0.6226415, a: 1}
+      CloudsColor2: {r: 0.105882354, g: 0.5568628, b: 0.4043732, a: 1}
+      BackgroundColor: {r: 0.4245283, g: 0, b: 0.39155516, a: 1}
+      Size: 0.68
+      Type: 0
+      HasDysonSphere: 0
+      HasFog: 1
+      GyroidFog: 1
+      Visibility: 1
+    - _key: mushroom.planet.name1
+      LightSourcePosition: {x: 0.63, y: 0.51}
+      LightColor: {r: 0, g: 0.22591859, b: 0.6132076, a: 1}
+      CloudsColor: {r: 0.036648147, g: 0, b: 0.14150941, a: 1}
+      CloudsColor2: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      BackgroundColor: {r: 0, g: 0.096125685, b: 0.46226418, a: 1}
+      Size: 1.18
+      Type: 1
+      HasDysonSphere: 0
+      HasFog: 1
+      GyroidFog: 0
+      Visibility: 1
+    - _key: mushroom.planet.name2
+      LightSourcePosition: {x: 0.72, y: 0.44}
+      LightColor: {r: 0.4433962, g: 0.13923599, b: 0, a: 1}
+      CloudsColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      CloudsColor2: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      BackgroundColor: {r: 0.3490566, g: 0.18058832, b: 0.12019401, a: 1}
+      Size: 0.75
+      Type: 1
+      HasDysonSphere: 1
+      HasFog: 0
+      GyroidFog: 0
+      Visibility: 1
+    - _key: mushroom.planet.name3
+      LightSourcePosition: {x: 0.48, y: 0.49}
+      LightColor: {r: 0.38679248, g: 0.14993641, b: 0, a: 1}
+      CloudsColor: {r: 0.25943398, g: 1, b: 0.53533113, a: 1}
+      CloudsColor2: {r: 0.9718795, g: 0, b: 1, a: 1}
+      BackgroundColor: {r: 0, g: 0.33122367, b: 0.4245283, a: 1}
+      Size: 0.7
+      Type: 1
+      HasDysonSphere: 0
+      HasFog: 1
+      GyroidFog: 1
+      Visibility: 1
+    - _key: mushroom.galaxies
+      LightSourcePosition: {x: 0.5, y: 0.5}
+      LightColor: {r: 1, g: 1, b: 0.36320752, a: 1}
+      CloudsColor: {r: 0, g: 0.16199735, b: 0.23584908, a: 1}
+      CloudsColor2: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      BackgroundColor: {r: 0.04650232, g: 0.050573006, b: 0.103773594, a: 1}
+      Size: 1
+      Type: 1
+      HasDysonSphere: 0
+      HasFog: 0
+      GyroidFog: 0
+      Visibility: 0

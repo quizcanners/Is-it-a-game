@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 1c63ce1b0eca2af4baf08b2902ab47c4
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Scaly Sans Caps
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 25b92b655835a2a4fa9c9bad4abe22bd, type: 3}
+  - {fileID: 12800000, guid: b67edccc8416a57449dda730466d2172, type: 3}
+  - {fileID: 12800000, guid: 69eb620f64a11e940b7d49079bd29296, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

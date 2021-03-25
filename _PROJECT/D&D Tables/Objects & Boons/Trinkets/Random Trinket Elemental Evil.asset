@@ -1,0 +1,647 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Random Trinket Elemental Evil
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: https://docs.google.com/spreadsheets/d/e/2PACX-1vS3cWbEFM_ZZKa8dBKxSdBbidWZ8U4nv_ItT2mjqGSF9izMNamq7wHVsN7YaCZtu_D7F8PZPZhCpkka/pub?
+    pages:
+    - pageName: PHB
+      pageIndex: 1784970886
+    _selectedPage: 0
+  _dicesToRoll: 64000000
+  elements:
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A compass that always points to Mulmaster
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A paper fan that won't produce a breeze no matter how hard it's waved
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A petrified potato that resembles someone important to you
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A glass cup that can only be filled half way no matter how much liquid
+      is poured into it
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A mirror that only shows the back of your head
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small glass bird that when set down near water dips its head in as if
+      to get a drink
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A lady's coin purse containing two sharp fangs
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small sea conch with the words "From the beginning" painted on the lip
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A frost-covered silver locket that's frozen shut
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A seal which imprints a mysterious, unknown coat of arms into hard rock
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small wooden doll that when held brings back fond memories
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small handmirror which only reflects inanimate objects
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A glass eyeball that looks about of its own accordance, and can roll around
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A glass orb that replicates yesterday's weather inside itself
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A drinking cup, that randomly fills with fresh or salt water. Refilling
+      once emptied
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A deep blue piece of flint, that when struck with steel produces not a
+      spark but a drop of water
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A conch shell which is always damp and constantly drips saltwater
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A charred, half-melted pewter clasp that glows as if smoldering but releases
+      no heat
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A clockwork finch that flaps its wings in the presence of a breeze
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An unbreakable sealed jar of glowing water that hums when shaken
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small, finely polished geode whose crystals slowly fade between every
+      color of the spectrum
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A rough stone eye pulled from a petrified creature
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A stone smoking pipe that never needs lighting
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small whistle, that when blown, whispers a name of a person or place
+      unknown to you, instead of the whistle sound
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A fist sized rock that "beats" like a heart
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A pair of bronze scissors in the shape of a pair of leaping dolphins
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A bronze oil lamp which is rumored to have once held a genie
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A single gauntlet inscribed with a fire motif and an unfamiliar name in
+      Primordial
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A one-eyed little fish inside a spherical vial, much bigger than the vial's
+      neck, He has a cunning look
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: The tiny skull of a rabbit that whispers scathing insults when nobody is
+      looking
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A rag doll in the likeness of an owlbear
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: The desiccated body of a small eight-legged black lizard
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small toy boat made with a walnut shell, toothpick, and piece of cloth
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small pocket mirror that slowly fogs over while held
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Wind chimes that glow when the wind blows
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small, clay square with an unknown rune etched into one side
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A tea kettle that heats itself when filled with water
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An old scratched monocle which shows an underwater landscape whenever someone
+      looks through it
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A rose carved from coral
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A set of dice with elemental symbols and primordial runes instead of pips
+      or numbers
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An amulet filled with liquid that churns, freezes, or boils to match it's
+      wearer's mood
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small silver bell that makes a sound like quiet, distant thunder when
+      it's struck
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small vial of black sand that glows slightly in the moonlight
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small whale tooth with etched with an image of waves crashing upon a
+      beach
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An hourglass in which the sands pour upward instead of downward
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A glass pendant with a hole in the center that a mild breeze always blows
+      out of
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A soft feather that falls like a stone when dropped
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A large transparent gem that, when gripped tightly, whispers in Terran
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small crystal snowglobe that, when shaken, seems to form silhouettes
+      of dancing forms
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Half of a palm-sized geode that pulses dimly with purple light
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A book filled with writing that only appears when the book is held underwater
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A sealed envelope made of red leather that you haven't been able to open.
+      It smells of campfire
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A locket of hair that is rumored to have come from a famed fire genasi
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Flint and steel that, when used to start a fire, creates a random colored
+      flame
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A blank piece of wet parchment that never seems to dry
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small puzzle box made of brass, that is slightly warm to the touch
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A cloudy chunk of glass that is said to hold a spark of breath from a blue
+      dragon
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A crude chalice made of coal
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A miniature brass horn, silent when played, but fills the air with the
+      scent of warm and exotic spices
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An eye-sized blue pearl that floats in salt water
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A tuning fork made from a dark metal which glows with a pale, white light
+      during thunderstorms
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small vial that is always filled with the smell of autumn wind
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A clear marble that slowly rolls toward the nearest source of running water
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small collapsible silver cup that perspires constantly when opened
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An hourglass that tells time with falling mist instead of sand
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An ornate razor, which only cuts in freezing cold temperature
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A shark tooth covered in tiny etched words from a lost language
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A large brass coin with no markings or images on it
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small wooden box filled with a strange red clay
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A necklace with a small, rusted iron anchor
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small brass flute adorned with silver wire that is always faintly sounding
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A red and black Aarakocra feather
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A palm-sized stone with a hole in it, through which can be heard a constantly
+      whispering wind
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small conch shell covered in black crystal
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small music box made of brass. It features a pair of tiny automatons
+      that resemble Azer working at a forge
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A glass jar containing the preserved corpse of an unfamiliar aquatic creature
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A piece of petrified wood carved into the shape of a seashell
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A wooden puzzle cube covered in elemental symbols
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small stone cube that acts as a magnet when placed against another stone
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A ring made of a white metal. On the inside is a name etched in Auran
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A bracelet made of silvered fish hooks
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A journal filled with poetry hand-written in Primordial
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A yellow gemstone that glows dimly when a storm is nearby
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A charred chisel with an unfamiliar symbol stamped into its base
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A canteen filled with a foul smelling orange mud
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A faceless doll made of driftwood
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A heavy iron key bearing the name of a ship long lost to the sea
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small jewelry box made from the shell of a turtle
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A chess piece fashioned to look like fire myrmidon
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A spinning top with an image of one of the four elements on each side
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A single hoop earring made of a porous red stone
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An arrowhead carved from seasalt
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small comb made of blue coral
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Seven small beads of sandstone on a string, all different colors
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A romance chapbook written in Undercommon titled "Just one Layer of Grey"
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A tiny, broken clockwork Harpy
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An ivory whale statuette
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A fist-sized cog, covered in barnacles
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An eyepatch made of obsidian and a black leather cord
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A glass bottle with a tiny ship of unfamiliar design inside

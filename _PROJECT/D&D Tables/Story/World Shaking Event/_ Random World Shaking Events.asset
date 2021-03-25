@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: _ Random World Shaking Events
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: 
+    pages: []
+    _selectedPage: 0
+  _dicesToRoll: 0a000000
+  elements:
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: a341928eefbfe85408f9703ff038278a, type: 2}
+    Description:
+      Value: 
+    Name: New Leader or Era
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: a341928eefbfe85408f9703ff038278a, type: 2}
+    Description:
+      Value: 
+    Name: Fall of Leader or Era
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: 07d314d54a54e6c4f90cb3cbe1091486, type: 2}
+    Description:
+      Value: 
+    Name: Cataclysmic disaster
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: 95a61cd1c38802a42921535d11d12dfa, type: 2}
+    Description:
+      Value: 
+    Name: Assault or invasion
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Rebellion, revolution, overthrow
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: abbf763d344dd404a99fc43ecc2dbcc9, type: 2}
+    Description:
+      Value: 
+    Name: Extinction or depletion
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: 1c463ee160f86d3439ad3bb606161209, type: 2}
+    Description:
+      Value: 
+    Name: New organization
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: cbd63cb67562a1e4390be330a2f58e37, type: 2}
+    Description:
+      Value: 
+    Name: Discovery, expansion, invention
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Prediction, omen, prophecy
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: 12720c5d422f94047ae5cc066ccb72c7, type: 2}
+    Description:
+      Value: 
+    Name: Myth and legend
+    _includeName: 1

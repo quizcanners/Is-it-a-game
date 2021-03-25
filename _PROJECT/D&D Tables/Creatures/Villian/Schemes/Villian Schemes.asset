@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Villian Schemes
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: https://docs.google.com/spreadsheets/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/edit#gid=0
+    url: https://docs.google.com/spreadsheets/d/e/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/pub?
+    pages: []
+    _selectedPage: 0
+  _dicesToRoll: 08000000
+  elements:
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: c592ea2f79c9fdd4591a5ee0a0251af2, type: 2}
+    Description:
+      Value: '- {0}'
+    Name: Immorality
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: 7352b7b552f8cb24ebd08993ecf830c3, type: 2}
+    Description:
+      Value: 
+    Name: Influence
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: 7f512cc8615cd8244be00b23b66b5756, type: 2}
+    Description:
+      Value: 
+    Name: Magic
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: ba2630069d0582e4b80261b750795932, type: 2}
+    Description:
+      Value: 
+    Name: Mayhem
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: 3864384f3ce8e024f8374adfea556dc0, type: 2}
+    Description:
+      Value: 
+    Name: Passion
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: 3a830fd53a5ac4c45a8635ae7f7ecfb7, type: 2}
+    Description:
+      Value: 
+    Name: Power
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: 6604c996a11a89d4699496ad6fc5fc68, type: 2}
+    Description:
+      Value: 
+    Name: Revenge
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: f780795581a14f042a7a63089a525eb0, type: 2}
+    Description:
+      Value: 
+    Name: Wealth
+    _includeName: 1

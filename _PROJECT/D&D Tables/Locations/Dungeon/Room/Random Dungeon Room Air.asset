@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Random Dungeon Room Air
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: https://docs.google.com/spreadsheets/d/e/2PACX-1vRI9DqgmZQCeSHXMrRtNh9e_8fQLQB_8o3SmRucWSFO9-bcfHT4Lz6tyIsW8FdpeI-aYk6w1rNq8cDh/pub?
+    pages:
+    - pageName: Air
+      pageIndex: 670797686
+    _selectedPage: 0
+  _dicesToRoll: 64000000
+  elements:
+  - Chances: 60
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Clear and damp
+  - Chances: 10
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Clear and drafty
+  - Chances: 10
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Clear but cold
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Foggy or misty and cold
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Clear, with mist covering floor
+  - Chances: 5
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Clear and warm
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Hazy and humid
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Smoky or steamy
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Clear, with smoke covering ceiling
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Clear and windy

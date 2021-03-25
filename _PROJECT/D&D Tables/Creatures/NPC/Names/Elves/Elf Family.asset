@@ -1,0 +1,326 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Elf Family
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: https://docs.google.com/spreadsheets/d/e/2PACX-1vTFSTYejGLPbFTtSwvDCWf7VOpPx90NYI0P36Ur7-Xad7I4lBIkNjpbLcoHRc5WKaG-jDkZ4k01UUpE/pub?
+    pages:
+    - pageName: Elf Family
+      pageIndex: 1061476566
+    _selectedPage: 0
+    columns:
+    - d100
+    - Name
+  _dicesToRoll: 64000000
+  elements:
+  - Chances: 2
+    subTables: []
+    Name: Aloro
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Amakiir
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Amastacia
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Ariessus
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Arnuanna
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Berevan
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Caerdonel
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Caphaxath
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Casilltenirra
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Cithreth
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Dalanthan
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Eathalena
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Erenaeth
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Ethanasath
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Fasharash
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Firahel
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Floshem
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Galanodel
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Goltorah
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Hanali
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Holimion
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Horineth
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Iathrana
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Ilphelkiir
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Iranapha
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Koehlanna
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Lathalas
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Liadon
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Meliamne
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Mellerelel
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Mystralath
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: "Na\xEFlo"
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Netyoive
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Ofandrus
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Ostoroth
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Othronus
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Qualanthri
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Raethran
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Rothenel
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Selevarun
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Siannodel
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Suithrasas
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Sylvaranth
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Teinithra
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Tiltathana
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Wasanthi
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Withrethin
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Xiloscient
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Xistsrith
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Yaeldrin
+    Description:
+      Description: 
+      _editing: 0

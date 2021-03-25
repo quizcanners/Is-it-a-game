@@ -1,0 +1,154 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Villian Methods
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: 
+    pages: []
+    _selectedPage: 0
+  _dicesToRoll: 14000000
+  elements:
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: d0c88a0ab1d2bd142879ebc81f65dca6, type: 2}
+    Description:
+      Value: ': {0}'
+    Name: Agricultural devastation
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: ': {0}'
+    Name: Assault or beatings
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: ': {0}'
+    Name: Bounty hunting or assassination
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: 1ad5eda55e006ca499a945721b8cfe94, type: 2}
+    Description:
+      Value: ': {0}'
+    Name: Captivity or coercion
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: 7e45ebead97b5474684b6d77b4105467, type: 2}
+    Description:
+      Value: ': {0}'
+    Name: Confidence scams
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: e554b9ba420fa224bb252ba8069d862d, type: 2}
+    Description:
+      Value: ': {0}'
+    Name: Defamation
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: ': {0}'
+    Name: Dueling
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: bea299ace25122f43b4c6bc82cf7c20e, type: 2}
+    Description:
+      Value: ': {0}'
+    Name: Execution
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: ': {0}'
+    Name: Impersonation or disguise
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: ': {0}'
+    Name: Lying or perjury
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: 8035df1c4072e164c92c297d5ff9bc1d, type: 2}
+    Description:
+      Value: ': {0}'
+    Name: Magical mayhem
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: 8ccbeda8277a52e4f9279e6e4d402b9f, type: 2}
+    Description:
+      Value: ': {0}'
+    Name: Murder
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: ': {0}'
+    Name: Neglect
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: 60b3bb6f0e5d2fa46918a9a1acc80fbf, type: 2}
+    Description:
+      Value: ': {0}'
+    Name: Politics
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: 9b74ca5d5a0b3cb46b2f158a233f7707, type: 2}
+    Description:
+      Value: ': {0}'
+    Name: Religion
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: ': {0}'
+    Name: Stalking
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: 3c6aa7bb86f55e542970d16e6816c8c6, type: 2}
+    Description:
+      Value: ': {0}'
+    Name: Theft or Property Crime
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: a58b9ed79e0274041978f462e5c7cbbd, type: 2}
+    Description:
+      Value: ': {0}'
+    Name: Torture
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: d211c5890d993e84fbdc009cc109d12d, type: 2}
+    Description:
+      Value: ': {0}'
+    Name: Vice
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: 1974c894c6a236b46a35f107ecf49ff8, type: 2}
+    Description:
+      Value: ': {0}'
+    Name: Warfare
+    _includeName: 1

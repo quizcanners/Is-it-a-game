@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 051f7c7205927e549bda1d728ccaf163, type: 3}
+  m_Name: Conditional Human Celtic name from Culture
+  m_EditorClassIdentifier: 
+  _elements:
+  - Condition: 0
+    Table: {fileID: 11400000, guid: 1b317164e96a9de4a8fd6b705d49b52f, type: 2}
+  - Condition: 1
+    Table: {fileID: 11400000, guid: 180e48f537cedd843920d32ede99d962, type: 2}
+  _defaultOne: 1

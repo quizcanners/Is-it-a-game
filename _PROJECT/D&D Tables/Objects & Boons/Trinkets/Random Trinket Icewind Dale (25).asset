@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Random Trinket Icewind Dale (25)
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: https://docs.google.com/spreadsheets/d/e/2PACX-1vS3cWbEFM_ZZKa8dBKxSdBbidWZ8U4nv_ItT2mjqGSF9izMNamq7wHVsN7YaCZtu_D7F8PZPZhCpkka/pub?
+    pages:
+    - pageName: PHB
+      pageIndex: 223398415
+    _selectedPage: 0
+  _dicesToRoll: 64000000
+  elements:
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small wooden figurine of a yawning walrus, painted in red and black
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A pair of scrimshaw cufflinks with an image of a fisherman on a boat engraved
+      on them
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small iron key with a frayed blue and gold cord tied to it
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A small illustrated book of Northlander myths that has pages missing
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A damaged scrimshaw cameo depicting a merfolk
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A stone from a burial cairn with a tiny Dwarvish rune carved into it
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A ripped cloth sail with a symbol you don't recognize
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An Ulu knife with a scrimshaw handle
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A jar containing an unidentifiable, sweet, sticky substance
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A delicate glass ball painted with snowflakes, capped by a metal loop with
+      a tiny hook attached to it
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An expedition log with missing pages and a pressed flower used as a bookmark
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An owl figurine carved from whalebone
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A sewing box that smells of old wood and has three spools of blue thread
+      inside
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A scrimshaw-handled ink pen with black runic designs along its length
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A brooch made from a small insect encased in amber
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A scrimshaw pepper shaker etched with the letter W
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: An old, wooden-handled ice pick stained with blood that won't wash off
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A fabric doll bearing an angry expression
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A set of wind chimes made from seashells
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A beautiful silver tin that, when opened, emits the smell of rotting fish
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A bloodstained dreamcatcher made from fishing line, gold wire, and snowy
+      owlbear feathers
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A figurine of a polar bear made of ice that never melts
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A snow globe that doesn't need to be shaken
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A piece of sea glass shaped like a unicorn's horn
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: A dark blue scarf that gets lighter in shade the higher the altitude of
+      the wearer

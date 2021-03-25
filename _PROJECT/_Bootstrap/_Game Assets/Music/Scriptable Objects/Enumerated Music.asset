@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fdd28c8391931c419e0a232db913e76, type: 3}
+  m_Name: Enumerated Music
+  m_EditorClassIdentifier: 
+  defaultAsset: {fileID: 0}
+  enumeratedObjects:
+  - nameForInspector: None
+    list: []
+  - nameForInspector: MainMenu
+    list:
+    - {fileID: 11400000, guid: d8e5bed1a48609d428e373a500f62917, type: 2}
+  - nameForInspector: Loading
+    list:
+    - {fileID: 11400000, guid: 8dea3e9128f2a524e9b056a666f6afb4, type: 2}
+  - nameForInspector: Combat
+    list:
+    - {fileID: 11400000, guid: 1fe1be67b37819944b05509364da254d, type: 2}
+  - nameForInspector: Reward
+    list:
+    - {fileID: 11400000, guid: b839b2886b424cb4d966ee1e69938702, type: 2}
+  - nameForInspector: 5
+    list: []

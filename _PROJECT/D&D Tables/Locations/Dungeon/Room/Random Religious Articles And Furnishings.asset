@@ -1,0 +1,269 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Random Religious Articles And Furnishings
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: https://docs.google.com/spreadsheets/d/e/2PACX-1vRI9DqgmZQCeSHXMrRtNh9e_8fQLQB_8o3SmRucWSFO9-bcfHT4Lz6tyIsW8FdpeI-aYk6w1rNq8cDh/pub?
+    pages:
+    - pageName: Religious Articles And Furnishings
+      pageIndex: 383823986
+    _selectedPage: 0
+  _dicesToRoll: 64000000
+  elements:
+  - Chances: 5
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Altar
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Bells
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Brazier
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Candelabra
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Candles
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Candlesticks
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Cassocks
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Chimes
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Cloth, altar
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Columns or pillars
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Curtain or tapestry
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Drum
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Font
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Gong
+  - Chances: 6
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Holy or unholy symbol
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Holy or unholy writings
+  - Chances: 6
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Idol
+  - Chances: 5
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Incense burner
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Kneeling bench
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Lamp
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Lectern
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Mosaic
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Offertory container
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Paintings or frescoes
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Pews
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Pipes, musical
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Prayer rug
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Pulpit
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Rail
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Robes
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Screen
+  - Chances: 5
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Shrine
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Side chairs
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Stand
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Statue
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Throne
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Thurible
+  - Chances: 5
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Tripod
+  - Chances: 7
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Vestments
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Votive light
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Whistle

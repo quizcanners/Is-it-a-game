@@ -1,0 +1,326 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Elf Names Child
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: https://docs.google.com/spreadsheets/d/e/2PACX-1vRI9DqgmZQCeSHXMrRtNh9e_8fQLQB_8o3SmRucWSFO9-bcfHT4Lz6tyIsW8FdpeI-aYk6w1rNq8cDh/pub?output=csv
+    url: https://docs.google.com/spreadsheets/d/e/2PACX-1vTFSTYejGLPbFTtSwvDCWf7VOpPx90NYI0P36Ur7-Xad7I4lBIkNjpbLcoHRc5WKaG-jDkZ4k01UUpE/pub?
+    pages:
+    - pageName: Elf Child
+      pageIndex: 341346604
+    _selectedPage: 0
+    columns:
+    - d100
+    - Name
+  _dicesToRoll: 64000000
+  elements:
+  - Chances: 2
+    subTables: []
+    Name: Ael
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Ang
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Ara
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Ari
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Arn
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Aym
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Broe
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Bryn
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Cael
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Cy
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Dae
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Del
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Eli
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Eryn
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Faen
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Fera
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Gael
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Gar
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Innil
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Jar
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Kan
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Koeth
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Lael
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Lue
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Mai
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Mara
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Mella
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Mya
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Naeris
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Naill
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Nim
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Phann
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Py
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Rael
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Raer
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Ren
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Rinn
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Rua
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Sael
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Sai
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Sumi
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Syllin
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Ta
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Thia
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Tia
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Traki
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Vall
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Von
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Wil
+    Description:
+      Description: 
+      _editing: 0
+  - Chances: 2
+    subTables: []
+    Name: Za
+    Description:
+      Description: 
+      _editing: 0

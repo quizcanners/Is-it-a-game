@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Random Odors
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: https://docs.google.com/spreadsheets/d/e/2PACX-1vRI9DqgmZQCeSHXMrRtNh9e_8fQLQB_8o3SmRucWSFO9-bcfHT4Lz6tyIsW8FdpeI-aYk6w1rNq8cDh/pub?
+    pages:
+    - pageName: 
+      pageIndex: 238565931
+    _selectedPage: 0
+  _dicesToRoll: 64000000
+  elements:
+  - Chances: 3
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Acrid
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Chlorine
+  - Chances: 34
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Dank or moldy
+  - Chances: 10
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Earthy
+  - Chances: 8
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Manure
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Metallic
+  - Chances: 4
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Ozone
+  - Chances: 5
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Putrid
+  - Chances: 5
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Rotting vegetation
+  - Chances: 2
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Salty and wet
+  - Chances: 5
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Smoky
+  - Chances: 7
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Stale
+  - Chances: 6
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Sulfurous
+  - Chances: 5
+    subTables: []
+    Description:
+      Value: 
+      Editing: 0
+    Name: Urine

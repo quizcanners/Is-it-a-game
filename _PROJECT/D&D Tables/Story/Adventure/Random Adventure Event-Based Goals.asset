@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Random Adventure Event-Based Goals
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: https://docs.google.com/spreadsheets/d/e/2PACX-1vQTVjKE5CW87o6f-7ZXn3ZxAwrXgh-WNcHMm-JbkWkgKV6qaZRYQL988Jj0HMMDmFSg3xQlqX5bjLtX/pub?
+    pages:
+    - pageName: Unnamed
+      pageIndex: 1503634663
+    _selectedPage: 0
+  _dicesToRoll: 14000000
+  elements:
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Bring the villain to justice.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Clear the name of an innocent NPC.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Protect or hide an NPC.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Protect an object.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: "Discover the nature and origin of a strange phenomenon that might be the
+      villain\u2019s doing."
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Find a wanted fugitive.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Overthrow a tyrant.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Uncover a conspiracy to overthrow a ruler.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Negotiate peace between enemy nations or feuding families.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Secure aid from a ruler or council.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Help a villain find redemption.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Parley with a villain.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Smuggle weapons to rebel forces.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Stop a band of smugglers.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Gather intelligence on an enemy force.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Win a tournament.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: "Determine the villain\u2019s identity."
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Locate a stolen item.
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Make sure a wedding goes off without a hitch.
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000}
+    - {fileID: 11400000}
+    Description:
+      Value: 
+    Name: Roll twice, ignoring results of 20.
+    _includeName: 0

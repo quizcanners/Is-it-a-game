@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a23509c4efb34d47aa1c0dfef096c0f, type: 3}
+  m_Name: Random Human_Culture
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: 
+    pages: []
+    _selectedPage: 0
+  _dicesToRoll: 0c00000006000000
+  elements:
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Value: 0
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Value: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Value: 2
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Value: 3
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Value: 5
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Value: 7
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Value: 4
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Value: 12
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Value: 6
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Value: 8
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Value: 15
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Value: 9
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Value: 10
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Value: 11
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Value: 13
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Value: 14
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Value: 16

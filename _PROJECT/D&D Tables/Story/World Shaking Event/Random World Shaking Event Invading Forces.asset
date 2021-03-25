@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Random World Shaking Event Invading Forces
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-D6OnF7sC3su-f0qipjZ7y-j96hevGXuRud3HfCb3o_kbYkh8IOvl1SRNt5xrJDuvT6itY8cDhxg5/pub?
+    pages:
+    - pageName: Unnamed
+      pageIndex: 520875368
+    _selectedPage: 0
+  _dicesToRoll: 08000000
+  elements:
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: A criminal enterprise
+    _includeName: 1
+  - Chances: 1
+    subTables:
+    - {fileID: 11400000, guid: 857d30bd7c531fd4fa8d9ce981315257, type: 2}
+    - {fileID: 11400000, guid: b7a33608f21a733489a1e5b4e56576cf, type: 2}
+    Description:
+      Value: A {0} who wants {1}
+    Name: Monsters or a unique monster
+    _includeName: 0
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: A planar threat
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: A past adversary reawakened, reborn, or resurgent
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: A splinter faction
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: A savage tribe
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: A secret society
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: A traitorous ally
+    _includeName: 1

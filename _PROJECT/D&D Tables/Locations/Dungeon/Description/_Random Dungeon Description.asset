@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daaa7a4c98399e747adf0ec045fde088, type: 3}
+  m_Name: _Random Dungeon Description
+  m_EditorClassIdentifier: 
+  _shortSentence:
+    Value: 
+    Editing: 0
+  Sentence:
+    Value: 
+    Editing: 0
+  Tables:
+  - {fileID: 11400000, guid: df05b7b58a2901a4da365e1d7fbd8df6, type: 2}
+  - {fileID: 11400000, guid: 7dc73c7b82096d9429e94634bd90e59e, type: 2}
+  - {fileID: 11400000, guid: 5f6e8669069eb1b41b8f3c3d8d710672, type: 2}
+  - {fileID: 11400000, guid: f6d3003086a8ce54fba0097f8a40b98d, type: 2}
+  - {fileID: 11400000, guid: 588fae3f48023684baa4de18a21c18c9, type: 2}

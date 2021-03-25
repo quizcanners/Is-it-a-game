@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4a048873bc469340a255d49900ef1f6, type: 3}
+  m_Name: whitehawk.triggers
+  m_EditorClassIdentifier: 
+  booleans:
+    keys:
+    - New Trigger dictionary 3
+    - New Trigger dictionary 1
+    - New Trigger dictionary 2
+    - New Trigger dictionary 5
+    - New Trigger dictionary 4
+    values:
+    - hint: 
+    - hint: 
+    - hint: 
+    - hint: 
+    - hint: 
+  ints:
+    keys:
+    - New Trigger dictionary 5
+    - New Trigger dictionary 1
+    - New Trigger dictionary 2
+    - New Trigger dictionary 3
+    - New Trigger dictionary 4
+    - New Trigger dictionary 7
+    values:
+    - hint: 
+    - hint: 
+    - hint: 
+    - hint: 
+    - hint: 
+    - hint: 

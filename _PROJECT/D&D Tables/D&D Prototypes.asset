@@ -1,0 +1,2101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2abd82c1e806ad249ae045ff605fe9e5, type: 3}
+  m_Name: D&D Prototypes
+  m_EditorClassIdentifier: 
+  Characters:
+    keys:
+    - Vox Abrams
+    - Bob
+    - Lorely
+    - Abdul Eathalena
+    - Morgrim
+    - Luthien
+    - Silly Banana Shithead
+    - Najwa
+    - Shamash Turnuroth
+    - Asim
+    - Zaina
+    - Rashad
+    - Halimath Withrethin
+    - Akeem
+    - Hirrathak Akambherylliax
+    - Fazil
+    - Mehen Nackle
+    - Kalim
+    - Farouk
+    - Bassam
+    - Jamal
+    - Medrash Norixius
+    - Hamid
+    values:
+    - Seed:
+        _initialized: 1
+        _value: 637707
+      _name: Vox Abrams
+      Allignment:
+        Alligned: 1
+        Goodness: 1
+        Order: 0
+      Stats:
+        keys: 05000000
+        values:
+        - Value: 20
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 0200000008000000040000000c000000
+        values: 01000000020000000100000001000000
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 0000000001000000
+        values:
+        - _diagonalHalf: 0
+          _nonDIagonal: 12
+        - _diagonalHalf: 0
+          _nonDIagonal: 12
+      _nameDecided: 1
+      _manualName: 1
+      Level:
+        _value: 10
+      _raceEnumFallback:
+        isSet: 0
+        manualValue: 0
+      _classEnumFallback:
+        isSet: 0
+        manualValue: 0
+      subRace: 1
+      gender: 0
+      subClass: 0
+      ArmorProficiencies:
+        keys: 0100000000000000
+        values: 0100000001000000
+      WeaponProficiencies:
+        keys: 0100000004000000
+        values: 0100000001000000
+      ToolProficiencies:
+        keys: 
+        values: 
+      Wallet:
+        _currencies: 0000000000000000000000000000000000000000
+      Feats:
+        _values: 2800000027000000160000000a000000
+    - Seed:
+        _initialized: 1
+        _value: 691145
+      _name: Bob
+      Allignment:
+        Alligned: 1
+        Goodness: 1
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 
+      skillSet:
+        keys: 01000000060000000d00000011000000
+        values: 01000000010000000100000001000000
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      _nameDecided: 1
+      _manualName: 1
+      Level:
+        _value: 10
+      _raceEnumFallback:
+        isSet: 0
+        manualValue: 0
+      _classEnumFallback:
+        isSet: 0
+        manualValue: 0
+      subRace: 0
+      gender: 0
+      subClass: 0
+      ArmorProficiencies:
+        keys: 
+        values: 
+      WeaponProficiencies:
+        keys: 
+        values: 
+      ToolProficiencies:
+        keys: 
+        values: 
+      Wallet:
+        _currencies: 0000000000000000000000000000000000000000
+      Feats:
+        _values: 
+    - Seed:
+        _initialized: 1
+        _value: 348857
+      _name: Lorely
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      _nameDecided: 1
+      _manualName: 1
+      Level:
+        _value: 10
+      _raceEnumFallback:
+        isSet: 0
+        manualValue: 0
+      _classEnumFallback:
+        isSet: 0
+        manualValue: 0
+      subRace: 0
+      gender: 0
+      subClass: 0
+      ArmorProficiencies:
+        keys: 
+        values: 
+      WeaponProficiencies:
+        keys: 
+        values: 
+      ToolProficiencies:
+        keys: 
+        values: 
+      Wallet:
+        _currencies: 
+      Feats:
+        _values: 
+    - Seed:
+        _initialized: 1
+        _value: 348857
+      _name: gfyrtyr
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 
+      skillSet:
+        keys: 030000000a0000000e00000011000000
+        values: 01000000010000000100000001000000
+      savingThrowProficiencies:
+        keys: 000000000200000004000000
+        values: 010000000100000001000000
+      senses:
+        keys: 
+        values: []
+      _nameDecided: 1
+      _manualName: 0
+      Level:
+        _value: 10
+      _raceEnumFallback:
+        isSet: 0
+        manualValue: 0
+      _classEnumFallback:
+        isSet: 0
+        manualValue: 0
+      subRace: 0
+      gender: 0
+      subClass: 0
+      ArmorProficiencies:
+        keys: 01000000
+        values: 01000000
+      WeaponProficiencies:
+        keys: 010000000300000005000000
+        values: 010000000100000001000000
+      ToolProficiencies:
+        keys: 0100000002000000
+        values: 0100000001000000
+      Wallet:
+        _currencies: 
+      Feats:
+        _values: 070000000d0000000f000000
+    - Seed:
+        _initialized: 1
+        _value: 1018378
+      _name: Morgrim
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      _nameDecided: 1
+      _manualName: 1
+      Level:
+        _value: 10
+      _raceEnumFallback:
+        isSet: 0
+        manualValue: 0
+      _classEnumFallback:
+        isSet: 0
+        manualValue: 0
+      subRace: 0
+      gender: 0
+      subClass: 0
+      ArmorProficiencies:
+        keys: 
+        values: 
+      WeaponProficiencies:
+        keys: 
+        values: 
+      ToolProficiencies:
+        keys: 
+        values: 
+      Wallet:
+        _currencies: 
+      Feats:
+        _values: 
+    - Seed:
+        _initialized: 1
+        _value: 255408
+      _name: Luthien
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 0300000004000000
+        values: 0100000001000000
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      _nameDecided: 1
+      _manualName: 1
+      Level:
+        _value: 10
+      _raceEnumFallback:
+        isSet: 0
+        manualValue: 0
+      _classEnumFallback:
+        isSet: 0
+        manualValue: 0
+      subRace: 0
+      gender: 0
+      subClass: 0
+      ArmorProficiencies:
+        keys: 
+        values: 
+      WeaponProficiencies:
+        keys: 
+        values: 
+      ToolProficiencies:
+        keys: 
+        values: 
+      Wallet:
+        _currencies: 
+      Feats:
+        _values: 
+    - Seed:
+        _initialized: 1
+        _value: 255408
+      _name: Silly Banana Shithead
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      _nameDecided: 1
+      _manualName: 1
+      Level:
+        _value: 10
+      _raceEnumFallback:
+        isSet: 0
+        manualValue: 0
+      _classEnumFallback:
+        isSet: 0
+        manualValue: 0
+      subRace: 0
+      gender: 0
+      subClass: 0
+      ArmorProficiencies:
+        keys: 
+        values: 
+      WeaponProficiencies:
+        keys: 
+        values: 
+      ToolProficiencies:
+        keys: 
+        values: 
+      Wallet:
+        _currencies: 
+      Feats:
+        _values: 
+    - Seed:
+        _initialized: 1
+        _value: 521195
+      _name: Characters
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      _nameDecided: 0
+      _manualName: 0
+      Level:
+        _value: 1
+      _raceEnumFallback:
+        isSet: 0
+        manualValue: 0
+      _classEnumFallback:
+        isSet: 0
+        manualValue: 0
+      subRace: 0
+      gender: 1
+      subClass: 0
+      ArmorProficiencies:
+        keys: 
+        values: 
+      WeaponProficiencies:
+        keys: 
+        values: 
+      ToolProficiencies:
+        keys: 
+        values: 
+      Wallet:
+        _currencies: 
+      Feats:
+        _values: 
+    - Seed:
+        _initialized: 1
+        _value: 288405
+      _name: Shamash Turnuroth
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      _nameDecided: 1
+      _manualName: 1
+      Level:
+        _value: 1
+      _raceEnumFallback:
+        isSet: 0
+        manualValue: 0
+      _classEnumFallback:
+        isSet: 0
+        manualValue: 0
+      subRace: 1
+      gender: 0
+      subClass: 0
+      ArmorProficiencies:
+        keys: 
+        values: 
+      WeaponProficiencies:
+        keys: 
+        values: 
+      ToolProficiencies:
+        keys: 
+        values: 
+      Wallet:
+        _currencies: 
+      Feats:
+        _values: 
+    - Seed:
+        _initialized: 1
+        _value: 361574
+      _name: Characters 10
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 03000000
+        values: 01000000
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      _nameDecided: 0
+      _manualName: 0
+      Level:
+        _value: 1
+      _raceEnumFallback:
+        isSet: 0
+        manualValue: 0
+      _classEnumFallback:
+        isSet: 0
+        manualValue: 0
+      subRace: 0
+      gender: 0
+      subClass: 0
+      ArmorProficiencies:
+        keys: 
+        values: 
+      WeaponProficiencies:
+        keys: 
+        values: 
+      ToolProficiencies:
+        keys: 
+        values: 
+      Wallet:
+        _currencies: 
+      Feats:
+        _values: 
+    - Seed:
+        _initialized: 1
+        _value: 89927688
+      _name: Characters
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      _nameDecided: 0
+      _manualName: 0
+      Level:
+        _value: 1
+      _raceEnumFallback:
+        isSet: 0
+        manualValue: 0
+      _classEnumFallback:
+        isSet: 0
+        manualValue: 0
+      subRace: 0
+      gender: 1
+      subClass: 0
+      ArmorProficiencies:
+        keys: 
+        values: 
+      WeaponProficiencies:
+        keys: 
+        values: 
+      ToolProficiencies:
+        keys: 
+        values: 
+      Wallet:
+        _currencies: 
+      Feats:
+        _values: 
+    - Seed:
+        _initialized: 1
+        _value: 490461248
+      _name: Characters
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      _nameDecided: 0
+      _manualName: 0
+      Level:
+        _value: 1
+      _raceEnumFallback:
+        isSet: 0
+        manualValue: 0
+      _classEnumFallback:
+        isSet: 0
+        manualValue: 0
+      subRace: 0
+      gender: 0
+      subClass: 0
+      ArmorProficiencies:
+        keys: 
+        values: 
+      WeaponProficiencies:
+        keys: 
+        values: 
+      ToolProficiencies:
+        keys: 
+        values: 
+      Wallet:
+        _currencies: 
+      Feats:
+        _values: 
+    - Seed:
+        _initialized: 1
+        _value: 2062684416
+      _name: Characters 13
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      _nameDecided: 0
+      _manualName: 0
+      Level:
+        _value: 1
+      _raceEnumFallback:
+        isSet: 0
+        manualValue: 0
+      _classEnumFallback:
+        isSet: 0
+        manualValue: 0
+      subRace: 0
+      gender: 0
+      subClass: 0
+      ArmorProficiencies:
+        keys: 
+        values: 
+      WeaponProficiencies:
+        keys: 
+        values: 
+      ToolProficiencies:
+        keys: 
+        values: 
+      Wallet:
+        _currencies: 
+      Feats:
+        _values: 
+    - Seed:
+        _initialized: 1
+        _value: 308758816
+      _name: Characters 14
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      _nameDecided: 0
+      _manualName: 0
+      Level:
+        _value: 1
+      _raceEnumFallback:
+        isSet: 0
+        manualValue: 0
+      _classEnumFallback:
+        isSet: 0
+        manualValue: 0
+      subRace: 0
+      gender: 0
+      subClass: 0
+      ArmorProficiencies:
+        keys: 
+        values: 
+      WeaponProficiencies:
+        keys: 
+        values: 
+      ToolProficiencies:
+        keys: 
+        values: 
+      Wallet:
+        _currencies: 
+      Feats:
+        _values: 
+    - Seed:
+        _initialized: 1
+        _value: 1688875008
+      _name: Characters 15
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      _nameDecided: 0
+      _manualName: 0
+      Level:
+        _value: 1
+      _raceEnumFallback:
+        isSet: 0
+        manualValue: 0
+      _classEnumFallback:
+        isSet: 0
+        manualValue: 0
+      subRace: 0
+      gender: 0
+      subClass: 0
+      ArmorProficiencies:
+        keys: 
+        values: 
+      WeaponProficiencies:
+        keys: 
+        values: 
+      ToolProficiencies:
+        keys: 
+        values: 
+      Wallet:
+        _currencies: 
+      Feats:
+        _values: 
+    - Seed:
+        _initialized: 1
+        _value: 208668704
+      _name: Characters 16
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      _nameDecided: 0
+      _manualName: 0
+      Level:
+        _value: 1
+      _raceEnumFallback:
+        isSet: 0
+        manualValue: 0
+      _classEnumFallback:
+        isSet: 0
+        manualValue: 0
+      subRace: 0
+      gender: 0
+      subClass: 0
+      ArmorProficiencies:
+        keys: 
+        values: 
+      WeaponProficiencies:
+        keys: 
+        values: 
+      ToolProficiencies:
+        keys: 
+        values: 
+      Wallet:
+        _currencies: 
+      Feats:
+        _values: 
+    - Seed:
+        _initialized: 1
+        _value: 73595144
+      _name: Characters 17
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      _nameDecided: 0
+      _manualName: 0
+      Level:
+        _value: 1
+      _raceEnumFallback:
+        isSet: 0
+        manualValue: 0
+      _classEnumFallback:
+        isSet: 0
+        manualValue: 0
+      subRace: 0
+      gender: 0
+      subClass: 0
+      ArmorProficiencies:
+        keys: 
+        values: 
+      WeaponProficiencies:
+        keys: 
+        values: 
+      ToolProficiencies:
+        keys: 
+        values: 
+      Wallet:
+        _currencies: 
+      Feats:
+        _values: 
+    - Seed:
+        _initialized: 1
+        _value: 1273571456
+      _name: Characters 18
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      _nameDecided: 0
+      _manualName: 0
+      Level:
+        _value: 1
+      _raceEnumFallback:
+        isSet: 0
+        manualValue: 0
+      _classEnumFallback:
+        isSet: 0
+        manualValue: 0
+      subRace: 0
+      gender: 0
+      subClass: 0
+      ArmorProficiencies:
+        keys: 
+        values: 
+      WeaponProficiencies:
+        keys: 
+        values: 
+      ToolProficiencies:
+        keys: 
+        values: 
+      Wallet:
+        _currencies: 
+      Feats:
+        _values: 
+    - Seed:
+        _initialized: 1
+        _value: 862462592
+      _name: Characters
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      _nameDecided: 0
+      _manualName: 0
+      Level:
+        _value: 1
+      _raceEnumFallback:
+        isSet: 0
+        manualValue: 0
+      _classEnumFallback:
+        isSet: 0
+        manualValue: 0
+      subRace: 0
+      gender: 0
+      subClass: 0
+      ArmorProficiencies:
+        keys: 
+        values: 
+      WeaponProficiencies:
+        keys: 
+        values: 
+      ToolProficiencies:
+        keys: 
+        values: 
+      Wallet:
+        _currencies: 
+      Feats:
+        _values: 
+    - Seed:
+        _initialized: 1
+        _value: 646342720
+      _name: Characters 20
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      _nameDecided: 0
+      _manualName: 0
+      Level:
+        _value: 1
+      _raceEnumFallback:
+        isSet: 0
+        manualValue: 0
+      _classEnumFallback:
+        isSet: 0
+        manualValue: 0
+      subRace: 0
+      gender: 0
+      subClass: 0
+      ArmorProficiencies:
+        keys: 
+        values: 
+      WeaponProficiencies:
+        keys: 
+        values: 
+      ToolProficiencies:
+        keys: 
+        values: 
+      Wallet:
+        _currencies: 
+      Feats:
+        _values: 
+    - Seed:
+        _initialized: 1
+        _value: 2130915328
+      _name: Characters 21
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      _nameDecided: 0
+      _manualName: 0
+      Level:
+        _value: 1
+      _raceEnumFallback:
+        isSet: 0
+        manualValue: 0
+      _classEnumFallback:
+        isSet: 0
+        manualValue: 0
+      subRace: 0
+      gender: 0
+      subClass: 0
+      ArmorProficiencies:
+        keys: 
+        values: 
+      WeaponProficiencies:
+        keys: 
+        values: 
+      ToolProficiencies:
+        keys: 
+        values: 
+      Wallet:
+        _currencies: 
+      Feats:
+        _values: 
+    - Seed:
+        _initialized: 1
+        _value: 168174608
+      _name: Characters
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      _nameDecided: 0
+      _manualName: 0
+      Level:
+        _value: 1
+      _raceEnumFallback:
+        isSet: 0
+        manualValue: 0
+      _classEnumFallback:
+        isSet: 0
+        manualValue: 0
+      subRace: 0
+      gender: 0
+      subClass: 0
+      ArmorProficiencies:
+        keys: 
+        values: 
+      WeaponProficiencies:
+        keys: 
+        values: 
+      ToolProficiencies:
+        keys: 
+        values: 
+      Wallet:
+        _currencies: 
+      Feats:
+        _values: 
+    - Seed:
+        _initialized: 1
+        _value: 1230792832
+      _name: Characters 22
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      _nameDecided: 0
+      _manualName: 0
+      Level:
+        _value: 1
+      _raceEnumFallback:
+        isSet: 0
+        manualValue: 0
+      _classEnumFallback:
+        isSet: 0
+        manualValue: 0
+      subRace: 0
+      gender: 0
+      subClass: 0
+      ArmorProficiencies:
+        keys: 
+        values: 
+      WeaponProficiencies:
+        keys: 
+        values: 
+      ToolProficiencies:
+        keys: 
+        values: 
+      Wallet:
+        _currencies: 
+      Feats:
+        _values: 
+  Monsters:
+    keys:
+    - Displacer Beast
+    - Gnoll Pack Lord
+    - Hyena
+    - Gnoll
+    - Dryad
+    - Satyr
+    - Centaurus
+    - Scout
+    - Pixie
+    - Owlbear
+    - Elk
+    - Giant Elk
+    - Blink Dog
+    - Faerie dragon
+    - Druid
+    - Treant
+    - unicorn
+    - Ork
+    - Aboleth
+    values:
+    - Seed:
+        _initialized: 0
+        _value: 0
+      _name: Displacer Beast
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 000000000100000002000000030000000400000005000000
+        values:
+        - Value: 15
+        - Value: 9
+        - Value: 12
+        - Value: 15
+        - Value: 16
+        - Value: 13
+      LanguagesKnown: 
+      skillSet:
+        keys: 01000000060000000b0000000e000000
+        values: 01000000010000000100000002000000
+      savingThrowProficiencies:
+        keys: 0100000003000000
+        values: 0100000002000000
+      senses:
+        keys: 0000000001000000
+        values:
+        - _diagonalHalf: 0
+          _nonDIagonal: 12
+        - _diagonalHalf: 0
+          _nonDIagonal: 12
+      ChallengeRating: 4
+      Type: 0
+      _size: 1
+      Speed:
+        keys: 00000000
+        values:
+        - _diagonalHalf: 0
+          _nonDIagonal: 6
+      _hitDices_Fallback:
+        isSet: 0
+        manualValue: 15
+      Weapons: []
+      _naturalArmor:
+        isSet: 0
+        manualValue: 0
+    - Seed:
+        _initialized: 0
+        _value: 0
+      _name: Gnoll Pack Lord
+      Allignment:
+        Alligned: 1
+        Goodness: 2
+        Order: 2
+      Stats:
+        keys: 000000000100000002000000030000000400000005000000
+        values:
+        - Value: 16
+        - Value: 14
+        - Value: 13
+        - Value: 8
+        - Value: 11
+        - Value: 9
+      LanguagesKnown: 
+      skillSet:
+        keys: 02000000070000000d0000000f000000
+        values: 01000000010000000100000001000000
+      savingThrowProficiencies:
+        keys: 0200000003000000
+        values: 0100000001000000
+      senses:
+        keys: 01000000
+        values:
+        - _diagonalHalf: 0
+          _nonDIagonal: 12
+      ChallengeRating: 5
+      Type: 9
+      _size: 2
+      Speed:
+        keys: 00000000
+        values:
+        - _diagonalHalf: 0
+          _nonDIagonal: 6
+      _hitDices_Fallback:
+        isSet: 1
+        manualValue: 9
+      Weapons:
+      - Id: Dagger
+      - Id: Light hammer
+      _naturalArmor:
+        isSet: 0
+        manualValue: 0
+    - Seed:
+        _initialized: 0
+        _value: 0
+      _name: Hyena
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 
+      skillSet:
+        keys: 020000000400000008000000090000000a0000000c0000000d0000000f0000001000000011000000
+        values: 01000000010000000100000001000000010000000100000001000000010000000100000001000000
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      ChallengeRating: 0
+      Type: 0
+      _size: 2
+      Speed:
+        keys: 00000000
+        values:
+        - _diagonalHalf: 0
+          _nonDIagonal: 6
+      _hitDices_Fallback:
+        isSet: 0
+        manualValue: 0
+      Weapons: []
+      _naturalArmor:
+        isSet: 0
+        manualValue: 0
+    - Seed:
+        _initialized: 0
+        _value: 0
+      _name: Gnoll
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      ChallengeRating: 0
+      Type: 0
+      _size: 2
+      Speed:
+        keys: 00000000
+        values:
+        - _diagonalHalf: 0
+          _nonDIagonal: 6
+      _hitDices_Fallback:
+        isSet: 0
+        manualValue: 0
+      Weapons: []
+      _naturalArmor:
+        isSet: 0
+        manualValue: 0
+    - Seed:
+        _initialized: 0
+        _value: 0
+      _name: Dryad
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      ChallengeRating: 0
+      Type: 0
+      _size: 2
+      Speed:
+        keys: 00000000
+        values:
+        - _diagonalHalf: 0
+          _nonDIagonal: 6
+      _hitDices_Fallback:
+        isSet: 0
+        manualValue: 0
+      Weapons: []
+      _naturalArmor:
+        isSet: 0
+        manualValue: 0
+    - Seed:
+        _initialized: 0
+        _value: 0
+      _name: Satyr
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 000000000100000002000000030000000400000005000000
+        values:
+        - Value: 11
+        - Value: 13
+        - Value: 15
+        - Value: 10
+        - Value: 16
+        - Value: 8
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 0000000002000000
+        values: 0100000001000000
+      senses:
+        keys: 
+        values: []
+      ChallengeRating: 8
+      Type: 0
+      _size: 3
+      Speed:
+        keys: 00000000
+        values:
+        - _diagonalHalf: 0
+          _nonDIagonal: 6
+      _hitDices_Fallback:
+        isSet: 0
+        manualValue: 0
+      Weapons:
+      - Id: Light hammer
+      _naturalArmor:
+        isSet: 1
+        manualValue: 15
+    - Seed:
+        _initialized: 0
+        _value: 0
+      _name: Centaurus
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      ChallengeRating: 0
+      Type: 0
+      _size: 2
+      Speed:
+        keys: 00000000
+        values:
+        - _diagonalHalf: 0
+          _nonDIagonal: 6
+      _hitDices_Fallback:
+        isSet: 0
+        manualValue: 0
+      Weapons: []
+      _naturalArmor:
+        isSet: 0
+        manualValue: 0
+    - Seed:
+        _initialized: 0
+        _value: 0
+      _name: Scout
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      ChallengeRating: 0
+      Type: 0
+      _size: 2
+      Speed:
+        keys: 00000000
+        values:
+        - _diagonalHalf: 0
+          _nonDIagonal: 6
+      _hitDices_Fallback:
+        isSet: 0
+        manualValue: 0
+      Weapons: []
+      _naturalArmor:
+        isSet: 0
+        manualValue: 0
+    - Seed:
+        _initialized: 0
+        _value: 0
+      _name: Pixie
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      ChallengeRating: 0
+      Type: 0
+      _size: 2
+      Speed:
+        keys: 00000000
+        values:
+        - _diagonalHalf: 0
+          _nonDIagonal: 6
+      _hitDices_Fallback:
+        isSet: 0
+        manualValue: 0
+      Weapons: []
+      _naturalArmor:
+        isSet: 0
+        manualValue: 0
+    - Seed:
+        _initialized: 0
+        _value: 0
+      _name: Owlbear
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      ChallengeRating: 0
+      Type: 0
+      _size: 2
+      Speed:
+        keys: 00000000
+        values:
+        - _diagonalHalf: 0
+          _nonDIagonal: 6
+      _hitDices_Fallback:
+        isSet: 0
+        manualValue: 0
+      Weapons: []
+      _naturalArmor:
+        isSet: 0
+        manualValue: 0
+    - Seed:
+        _initialized: 0
+        _value: 0
+      _name: Elk
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      ChallengeRating: 0
+      Type: 0
+      _size: 2
+      Speed:
+        keys: 00000000
+        values:
+        - _diagonalHalf: 0
+          _nonDIagonal: 6
+      _hitDices_Fallback:
+        isSet: 0
+        manualValue: 0
+      Weapons: []
+      _naturalArmor:
+        isSet: 0
+        manualValue: 0
+    - Seed:
+        _initialized: 0
+        _value: 0
+      _name: Giant Elk
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      ChallengeRating: 0
+      Type: 0
+      _size: 2
+      Speed:
+        keys: 00000000
+        values:
+        - _diagonalHalf: 0
+          _nonDIagonal: 6
+      _hitDices_Fallback:
+        isSet: 0
+        manualValue: 0
+      Weapons: []
+      _naturalArmor:
+        isSet: 0
+        manualValue: 0
+    - Seed:
+        _initialized: 0
+        _value: 0
+      _name: Blink Dog
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      ChallengeRating: 0
+      Type: 0
+      _size: 2
+      Speed:
+        keys: 00000000
+        values:
+        - _diagonalHalf: 0
+          _nonDIagonal: 6
+      _hitDices_Fallback:
+        isSet: 0
+        manualValue: 0
+      Weapons: []
+      _naturalArmor:
+        isSet: 0
+        manualValue: 0
+    - Seed:
+        _initialized: 0
+        _value: 0
+      _name: Faerie dragon
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      ChallengeRating: 0
+      Type: 0
+      _size: 2
+      Speed:
+        keys: 00000000
+        values:
+        - _diagonalHalf: 0
+          _nonDIagonal: 6
+      _hitDices_Fallback:
+        isSet: 0
+        manualValue: 0
+      Weapons: []
+      _naturalArmor:
+        isSet: 0
+        manualValue: 0
+    - Seed:
+        _initialized: 0
+        _value: 0
+      _name: Druid
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      ChallengeRating: 0
+      Type: 0
+      _size: 2
+      Speed:
+        keys: 00000000
+        values:
+        - _diagonalHalf: 0
+          _nonDIagonal: 6
+      _hitDices_Fallback:
+        isSet: 0
+        manualValue: 0
+      Weapons: []
+      _naturalArmor:
+        isSet: 0
+        manualValue: 0
+    - Seed:
+        _initialized: 0
+        _value: 0
+      _name: Treant
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      ChallengeRating: 0
+      Type: 0
+      _size: 2
+      Speed:
+        keys: 00000000
+        values:
+        - _diagonalHalf: 0
+          _nonDIagonal: 6
+      _hitDices_Fallback:
+        isSet: 0
+        manualValue: 0
+      Weapons: []
+      _naturalArmor:
+        isSet: 0
+        manualValue: 0
+    - Seed:
+        _initialized: 0
+        _value: 0
+      _name: unicorn
+      Allignment:
+        Alligned: 0
+        Goodness: 0
+        Order: 0
+      Stats:
+        keys: 
+        values: []
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      ChallengeRating: 0
+      Type: 0
+      _size: 2
+      Speed:
+        keys: 00000000
+        values:
+        - _diagonalHalf: 0
+          _nonDIagonal: 6
+      _hitDices_Fallback:
+        isSet: 0
+        manualValue: 0
+      Weapons: []
+      _naturalArmor:
+        isSet: 0
+        manualValue: 0
+    - Seed:
+        _initialized: 0
+        _value: 0
+      _name: Ork
+      Allignment:
+        Alligned: 1
+        Goodness: 2
+        Order: 2
+      Stats:
+        keys: 000000000100000002000000030000000400000005000000
+        values:
+        - Value: 16
+        - Value: 12
+        - Value: 16
+        - Value: 7
+        - Value: 11
+        - Value: 10
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 
+        values: 
+      savingThrowProficiencies:
+        keys: 
+        values: 
+      senses:
+        keys: 
+        values: []
+      ChallengeRating: 3
+      Type: 9
+      _size: 2
+      Speed:
+        keys: 00000000
+        values:
+        - _diagonalHalf: 0
+          _nonDIagonal: 6
+      _hitDices_Fallback:
+        isSet: 1
+        manualValue: 2
+      Weapons:
+      - Id: Greatclub
+      _naturalArmor:
+        isSet: 1
+        manualValue: 13
+    - Seed:
+        _initialized: 0
+        _value: 0
+      _name: Aboleth
+      Allignment:
+        Alligned: 1
+        Goodness: 2
+        Order: 1
+      Stats:
+        keys: 000000000100000002000000030000000400000005000000
+        values:
+        - Value: 21
+        - Value: 9
+        - Value: 15
+        - Value: 18
+        - Value: 15
+        - Value: 18
+      LanguagesKnown: 00000000
+      skillSet:
+        keys: 060000000c000000
+        values: 0200000002000000
+      savingThrowProficiencies:
+        keys: 020000000300000004000000
+        values: 010000000100000001000000
+      senses:
+        keys: 01000000
+        values:
+        - _diagonalHalf: 0
+          _nonDIagonal: 24
+      ChallengeRating: 13
+      Type: 0
+      _size: 3
+      Speed:
+        keys: 0000000004000000
+        values:
+        - _diagonalHalf: 0
+          _nonDIagonal: 2
+        - _diagonalHalf: 0
+          _nonDIagonal: 8
+      _hitDices_Fallback:
+        isSet: 1
+        manualValue: 18
+      Weapons: []
+      _naturalArmor:
+        isSet: 0
+        manualValue: 0
+  RollTables:
+    keys:
+    - Random Monster
+    - _Random Villian
+    - _Random Dungeon
+    - _Random Sattlement
+    - _ Random World Shaking Events
+    - _Random Adventure
+    - _Random NPC
+    - _Random Encounter
+    - _Random Skill
+    - _Random Trinket
+    values:
+    - {fileID: 11400000, guid: 857d30bd7c531fd4fa8d9ce981315257, type: 2}
+    - {fileID: 11400000, guid: e3250706b56d4f84c8257ee0597f768a, type: 2}
+    - {fileID: 11400000, guid: 10591d0a9ce581e4ca1c8efa3f168d76, type: 2}
+    - {fileID: 11400000, guid: 724041a42387ee543bd33ccd752b6134, type: 2}
+    - {fileID: 11400000, guid: 89130f3079a6ff04d9ab1159ad4514e7, type: 2}
+    - {fileID: 11400000, guid: e8ea0e3a5bce4eb488182e28a86bad6e, type: 2}
+    - {fileID: 11400000, guid: cd35f5d51e69ac24fb16147d19dc7373, type: 2}
+    - {fileID: 11400000, guid: 2802919c4fd81b043b67212572ec2f66, type: 2}
+    - {fileID: 11400000, guid: 1e6e82a7888d64c4fa7e38c7741df17b, type: 2}
+    - {fileID: 11400000, guid: 12720c5d422f94047ae5cc066ccb72c7, type: 2}
+  EncounterCalculator:
+    PlayerCharacters:
+    - _fallbackName: Bob
+      _fallbackLevel:
+        _value: 1
+      _chracterId:
+        Id: Vox Abrams
+      _useCharacter: 1
+    - _fallbackName: Bob
+      _fallbackLevel:
+        _value: 1
+      _chracterId:
+        Id: Morgrim
+      _useCharacter: 1
+    - _fallbackName: Bob
+      _fallbackLevel:
+        _value: 1
+      _chracterId:
+        Id: Nakfein
+      _useCharacter: 1
+    - _fallbackName: Bob
+      _fallbackLevel:
+        _value: 1
+      _chracterId:
+        Id: Lilith
+      _useCharacter: 0
+    Monsters:
+    - _fallbackName: Bandit
+      fallbackCR: 4
+      _monsterId:
+        Id: Ork
+      _useMonster: 1
+      Count: 4
+    - _fallbackName: Some Ork Boss
+      fallbackCR: 7
+      _monsterId:
+        Id: 
+      _useMonster: 0
+      Count: 0
+  CombatTracker:
+    enemies:
+    - _hpInitialized: 0
+      _currentHp: 29
+      _creatureHealthState: 0
+      Initiative: 19
+      _exhaustion:
+        _level: 0
+      inspectedStuff:
+        _currentlyEntered: -1
+      MonsterId:
+        Id: Satyr
+    - _hpInitialized: 0
+      _currentHp: 0
+      _creatureHealthState: 0
+      Initiative: 12
+      _exhaustion:
+        _level: 0
+      inspectedStuff:
+        _currentlyEntered: -1
+      MonsterId:
+        Id: Gnoll Pack Lord
+    - _hpInitialized: 0
+      _currentHp: 51
+      _creatureHealthState: 0
+      Initiative: 5
+      _exhaustion:
+        _level: 0
+      inspectedStuff:
+        _currentlyEntered: -1
+      MonsterId:
+        Id: Displacer Beast
+    - _hpInitialized: 0
+      _currentHp: 0
+      _creatureHealthState: 0
+      Initiative: 13
+      _exhaustion:
+        _level: 0
+      inspectedStuff:
+        _currentlyEntered: -1
+      MonsterId:
+        Id: Hyena
+    characters:
+    - _hpInitialized: 0
+      _currentHp: 42
+      _creatureHealthState: 0
+      Initiative: 15
+      _exhaustion:
+        _level: 0
+      inspectedStuff:
+        _currentlyEntered: -1
+      Weapons:
+      - Id: Dagger
+      - Id: Javelin
+      CharacterId:
+        Id: Vox Abrams
+    - _hpInitialized: 0
+      _currentHp: 66
+      _creatureHealthState: 0
+      Initiative: 14
+      _exhaustion:
+        _level: 0
+      inspectedStuff:
+        _currentlyEntered: -1
+      Weapons:
+      - Id: Javelin
+      CharacterId:
+        Id: Lorely
+    - _hpInitialized: 0
+      _currentHp: 75
+      _creatureHealthState: 0
+      Initiative: 14
+      _exhaustion:
+        _level: 0
+      inspectedStuff:
+        _currentlyEntered: -1
+      Weapons: []
+      CharacterId:
+        Id: Silly Banana Shithead
+    _combatStarted: 1
+  DamageCalculator:
+    Attacks:
+    - AttackData:
+        Name: For Calculator
+        AttackBonus: 1
+        range:
+          ft: 5
+        DamageDice: 06000000
+        DamageType: 7
+        IsRange: 0
+        DamageBonus: 1
+      CritOn19: 1
+      Advantage: 1
+    - AttackData:
+        Name: For Calculator
+        AttackBonus: 1
+        range:
+          ft: 5
+        DamageDice: 0c000000
+        DamageType: 7
+        IsRange: 0
+        DamageBonus: 1
+      CritOn19: 1
+      Advantage: 0
+    - AttackData:
+        Name: For Calculator
+        AttackBonus: 1
+        range:
+          ft: 5
+        DamageDice: 06000000
+        DamageType: 7
+        IsRange: 0
+        DamageBonus: 1
+      CritOn19: 0
+      Advantage: 1
+    - AttackData:
+        Name: For Calculator
+        AttackBonus: 1
+        range:
+          ft: 5
+        DamageDice: 14000000
+        DamageType: 7
+        IsRange: 0
+        DamageBonus: 1
+      CritOn19: 0
+      Advantage: 0
+  DiceCalculator:
+    _dices:
+      keys: 020000000400000006000000080000000a0000000c0000001400000064000000
+      values:
+      - _count: 0
+        Rolls: []
+      - _count: 0
+        Rolls: []
+      - _count: 0
+        Rolls: []
+      - _count: 0
+        Rolls: []
+      - _count: 0
+        Rolls: []
+      - _count: 0
+        Rolls: []
+      - _count: 1
+        Rolls:
+        - _value: 14
+      - _count: 0
+        Rolls: []
+    _toAdd: 0
+  Fallbacks:
+    _name: {fileID: 11400000, guid: a903f3b945c41b2469c5e4892d850751, type: 2}
+    _race: {fileID: 11400000, guid: 26d8c9e08b2851b44b1ee8d8111393af, type: 2}
+    _class: {fileID: 11400000, guid: 11f3492c726720e488bf6ee151e419e6, type: 2}
+    _inspectedFallback:
+      _currentlyEntered: -1
+  _characterListMeta:
+    inspectedElement: 1
+    listSectionStartIndex: 0
+  _monsterListMeta:
+    inspectedElement: -1
+    listSectionStartIndex: 0
+  _rollTablesListMeta:
+    inspectedElement: -1
+    listSectionStartIndex: 0

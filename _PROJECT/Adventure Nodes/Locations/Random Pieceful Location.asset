@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e6e9b888bd1ee94f831adc3c948942d, type: 3}
+  m_Name: Random Pieceful Location
+  m_EditorClassIdentifier: 
+  RandomRollResults:
+  - _name: Dungeon Entrance
+    tableKey: _Random Sattlement
+    _data:
+      _value: r|1|y|v|1|0|p|71|e|42|r|1|y|v|1|2|p|24|e|18|r|1|y|v|2|16|p|0|||||e|17|r|1|y|v|1|2|p|0||||
+  - _name: Random NPC
+    tableKey: _Random NPC
+    _data:
+      _value: r|1|y|v|1|0|p|518|e|18|r|1|y|v|2|18|p|0|||e|17|r|1|y|v|1|9|p|0|||e|18|r|1|y|v|2|58|p|0|||e|17|r|1|y|v|1|5|p|0|||e|64|r|1|y|v|1|4|p|46|e|17|r|1|y|v|1|4|p|0|||e|17|r|1|y|v|1|4|p|0|||||e|17|r|1|y|v|1|3|p|0|||e|17|r|1|y|v|1|3|p|0|||e|17|r|1|y|v|1|3|p|0|||e|18|r|1|y|v|2|10|p|0|||e|17|r|1|y|v|1|7|p|0|||e|17|r|1|y|v|1|9|p|0|||e|17|r|1|y|v|1|5|p|0|||e|17|r|1|y|v|1|1|p|0|||e|113|r|1|y|v|1|3|p|95|e|89|r|1|y|v|1|0|p|71|e|65|r|1|y|v|1|0|p|47|e|41|r|1|y|v|1|1|p|23|e|17|r|1|y|v|1|5|p|0|||||||||||e|43|r|1|y|v|2|11|p|24|e|18|r|1|y|v|2|50|p|0||||||
+  - _name: New TableRollResult1
+    tableKey: _Random Quest
+    _data:
+      _value: r|1|n|
+  - _name: New TableRollResult
+    tableKey: _Random Trinket
+    _data:
+      _value: r|1|n|
+  SkillChecks:
+  - Name: Talk to a horse
+    Check:
+      _abilityScore:
+        isSet: 0
+        manualValue: 0
+      SkillToCheck: 2
+      DC: 15
+  - Name: New AdventureNodeSkillCheck
+    Check:
+      _abilityScore:
+        isSet: 0
+        manualValue: 0
+      SkillToCheck: 12
+      DC: 15
+  NpcCharacters: []
+  _key: Pieceful Location

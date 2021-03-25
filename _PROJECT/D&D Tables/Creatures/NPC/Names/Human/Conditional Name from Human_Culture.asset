@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6df92609a13ee6a419472276a0ef2a1d, type: 3}
+  m_Name: Conditional Name from Human_Culture
+  m_EditorClassIdentifier: 
+  _elements:
+  - Condition: 0
+    Table: {fileID: 11400000, guid: 33432b6d841cf7b458e19ccdd1196e15, type: 2}
+  - Condition: 1
+    Table: {fileID: 11400000, guid: 1fe1e2f7efdef704f9aece43aba62ca2, type: 2}
+  - Condition: 2
+    Table: {fileID: 11400000, guid: dc357548dd11fcb4daed429df9f3d58f, type: 2}
+  - Condition: 3
+    Table: {fileID: 11400000, guid: 145429101024f084c9278e4cef53ff93, type: 2}
+  - Condition: 4
+    Table: {fileID: 11400000, guid: 46b63c360a370c14d94b2bae654438f4, type: 2}
+  - Condition: 5
+    Table: {fileID: 11400000, guid: e972490103c58fd45bd9d974542d9b22, type: 2}
+  - Condition: 6
+    Table: {fileID: 11400000, guid: 638d0903e992158479776a48e055187c, type: 2}
+  - Condition: 7
+    Table: {fileID: 11400000, guid: da56187d4cb4d2f40ac604b06f519080, type: 2}
+  - Condition: 8
+    Table: {fileID: 11400000, guid: 1d7a0856910912d46854288ae8ee9d4c, type: 2}
+  - Condition: 9
+    Table: {fileID: 11400000, guid: 1717722c2aaeab741b6707c70c05a98a, type: 2}
+  - Condition: 10
+    Table: {fileID: 11400000, guid: 03b866e19660e3544bf4b2d02e98eb71, type: 2}
+  - Condition: 11
+    Table: {fileID: 11400000, guid: f7e45802d2ab977428bd50613a6f5179, type: 2}
+  - Condition: 12
+    Table: {fileID: 11400000, guid: 6a898dd65108f584bac37286b19c6075, type: 2}
+  - Condition: 13
+    Table: {fileID: 11400000, guid: 7e9f188dcab858b49a1326fa43450f38, type: 2}
+  - Condition: 14
+    Table: {fileID: 11400000, guid: 9e6d75e8872a2244698bd5b454a130c4, type: 2}
+  - Condition: 15
+    Table: {fileID: 11400000, guid: de300824373c9814cbb937decb43aa80, type: 2}
+  - Condition: 16
+    Table: {fileID: 11400000, guid: d02d20346dec903468f09a80514dc6fe, type: 2}
+  _defaultOne: 0

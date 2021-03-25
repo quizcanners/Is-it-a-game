@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fb278cf6044a1429951f713848850a, type: 3}
+  m_Name: Random World Shaking Event Extinction or Depletion
+  m_EditorClassIdentifier: 
+  _sheetParcer:
+    editUrl: 
+    url: https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-D6OnF7sC3su-f0qipjZ7y-j96hevGXuRud3HfCb3o_kbYkh8IOvl1SRNt5xrJDuvT6itY8cDhxg5/pub?
+    pages:
+    - pageName: Unnamed
+      pageIndex: 28794130
+    _selectedPage: 0
+  _dicesToRoll: 08000000
+  elements:
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: A kind of animal (insect, bird, fish, livestock)
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Habitable land
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: Magic or magic-users (all magic, or specific kinds or schools of magic)
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: A mineral resource (gems, metals, ores)
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: A type of monster (unicorn, manticore, dragon)
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: A people (family line, clan, culture, race)
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: A kind of plant (crop, tree, herb, forest)
+    _includeName: 1
+  - Chances: 1
+    subTables: []
+    Description:
+      Value: 
+    Name: A waterway (river, lake, ocean)
+    _includeName: 1
