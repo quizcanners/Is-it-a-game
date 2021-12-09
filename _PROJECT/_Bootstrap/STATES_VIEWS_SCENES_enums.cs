@@ -20,6 +20,7 @@ namespace QuizCanners.IsItGame
         SpaceEffect = 9,
         BackToMainMenuButton = 10,
         SceneLoading = 11,
+        IdleGameView = 12,
     }
 
     public enum IigEnum_Scene

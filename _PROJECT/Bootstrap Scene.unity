@@ -1310,66 +1310,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e7f2ee817183064fab143fe11ed6c70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1414227540
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1414227542}
-  - component: {fileID: 1414227541}
-  m_Layer: 0
-  m_Name: Test
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1414227541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1414227540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1600cd136fb7b274390c67bdb2a0db06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  example:
-    playerA:
-      Ships: []
-    playerB:
-      Ships:
-      - _name: New Ship
-      - _name: fsdfsdfds
-      - _name: kjljkljkljk
-      - _name: New Ship3
-      - _name: sfdsfdsf
-      - _name: New Ship5
-      - _name: New Ship6
-      - _name: New Ship7
-    round: 0
-    context:
-      _currentlyEntered: 1
---- !u!4 &1414227542
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1414227540}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4070357, y: 10.054085, z: 15.048305}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &1456873489 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 624440662617232890, guid: f90fba188d8aa2d469e00801ebb2b466, type: 3}
@@ -1984,13 +1924,12 @@ MonoBehaviour:
   _roundedCournersPixels: a0000000
   feedPositionData: 0
   _positionDataType: 0
-  faeOutUvPosition:
+  fadeOutUvPosition:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1
     height: 1
-  _inspectedModule: -1
   _enteredContent:
     _currentlyEntered: -1
   _modulesStd:
@@ -2247,13 +2186,12 @@ MonoBehaviour:
   _roundedCournersPixels: 80000000
   feedPositionData: 0
   _positionDataType: 0
-  faeOutUvPosition:
+  fadeOutUvPosition:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1
     height: 1
-  _inspectedModule: 0
   _enteredContent:
     _currentlyEntered: -1
   _modulesStd:

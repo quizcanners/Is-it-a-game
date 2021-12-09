@@ -65,14 +65,16 @@ MonoBehaviour:
         - _diagonalHalf: 0
           _nonDIagonal: 12
       _nameDecided: 1
-      _manualName: 1
+      _nameFallback:
+        IsSet: 0
+        manualValue: 
       Level:
         _value: 10
       _raceEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       _classEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       subRace: 1
       gender: 0
@@ -112,14 +114,16 @@ MonoBehaviour:
         keys: 
         values: []
       _nameDecided: 1
-      _manualName: 1
+      _nameFallback:
+        IsSet: 0
+        manualValue: 
       Level:
         _value: 10
       _raceEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       _classEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       subRace: 0
       gender: 0
@@ -159,14 +163,16 @@ MonoBehaviour:
         keys: 
         values: []
       _nameDecided: 1
-      _manualName: 1
+      _nameFallback:
+        IsSet: 0
+        manualValue: 
       Level:
         _value: 10
       _raceEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       _classEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       subRace: 0
       gender: 0
@@ -206,14 +212,16 @@ MonoBehaviour:
         keys: 
         values: []
       _nameDecided: 1
-      _manualName: 0
+      _nameFallback:
+        IsSet: 0
+        manualValue: 
       Level:
         _value: 10
       _raceEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       _classEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       subRace: 0
       gender: 0
@@ -253,14 +261,16 @@ MonoBehaviour:
         keys: 
         values: []
       _nameDecided: 1
-      _manualName: 1
+      _nameFallback:
+        IsSet: 0
+        manualValue: 
       Level:
         _value: 10
       _raceEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       _classEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       subRace: 0
       gender: 0
@@ -300,14 +310,16 @@ MonoBehaviour:
         keys: 
         values: []
       _nameDecided: 1
-      _manualName: 1
+      _nameFallback:
+        IsSet: 0
+        manualValue: 
       Level:
         _value: 10
       _raceEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       _classEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       subRace: 0
       gender: 0
@@ -347,14 +359,16 @@ MonoBehaviour:
         keys: 
         values: []
       _nameDecided: 1
-      _manualName: 1
+      _nameFallback:
+        IsSet: 0
+        manualValue: 
       Level:
         _value: 10
       _raceEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       _classEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       subRace: 0
       gender: 0
@@ -394,14 +408,16 @@ MonoBehaviour:
         keys: 
         values: []
       _nameDecided: 0
-      _manualName: 0
+      _nameFallback:
+        IsSet: 0
+        manualValue: 
       Level:
         _value: 1
       _raceEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       _classEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       subRace: 0
       gender: 1
@@ -441,14 +457,16 @@ MonoBehaviour:
         keys: 
         values: []
       _nameDecided: 1
-      _manualName: 1
+      _nameFallback:
+        IsSet: 0
+        manualValue: 
       Level:
         _value: 1
       _raceEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       _classEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       subRace: 1
       gender: 0
@@ -488,14 +506,16 @@ MonoBehaviour:
         keys: 
         values: []
       _nameDecided: 0
-      _manualName: 0
+      _nameFallback:
+        IsSet: 0
+        manualValue: 
       Level:
         _value: 1
       _raceEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       _classEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       subRace: 0
       gender: 0
@@ -535,14 +555,16 @@ MonoBehaviour:
         keys: 
         values: []
       _nameDecided: 0
-      _manualName: 0
+      _nameFallback:
+        IsSet: 0
+        manualValue: 
       Level:
         _value: 1
       _raceEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       _classEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       subRace: 0
       gender: 1
@@ -582,14 +604,16 @@ MonoBehaviour:
         keys: 
         values: []
       _nameDecided: 0
-      _manualName: 0
+      _nameFallback:
+        IsSet: 0
+        manualValue: 
       Level:
         _value: 1
       _raceEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       _classEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       subRace: 0
       gender: 0
@@ -629,14 +653,16 @@ MonoBehaviour:
         keys: 
         values: []
       _nameDecided: 0
-      _manualName: 0
+      _nameFallback:
+        IsSet: 0
+        manualValue: 
       Level:
         _value: 1
       _raceEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       _classEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       subRace: 0
       gender: 0
@@ -676,14 +702,16 @@ MonoBehaviour:
         keys: 
         values: []
       _nameDecided: 0
-      _manualName: 0
+      _nameFallback:
+        IsSet: 0
+        manualValue: 
       Level:
         _value: 1
       _raceEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       _classEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       subRace: 0
       gender: 0
@@ -723,14 +751,16 @@ MonoBehaviour:
         keys: 
         values: []
       _nameDecided: 0
-      _manualName: 0
+      _nameFallback:
+        IsSet: 0
+        manualValue: 
       Level:
         _value: 1
       _raceEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       _classEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       subRace: 0
       gender: 0
@@ -770,14 +800,16 @@ MonoBehaviour:
         keys: 
         values: []
       _nameDecided: 0
-      _manualName: 0
+      _nameFallback:
+        IsSet: 0
+        manualValue: 
       Level:
         _value: 1
       _raceEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       _classEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       subRace: 0
       gender: 0
@@ -817,14 +849,16 @@ MonoBehaviour:
         keys: 
         values: []
       _nameDecided: 0
-      _manualName: 0
+      _nameFallback:
+        IsSet: 0
+        manualValue: 
       Level:
         _value: 1
       _raceEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       _classEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       subRace: 0
       gender: 0
@@ -864,14 +898,16 @@ MonoBehaviour:
         keys: 
         values: []
       _nameDecided: 0
-      _manualName: 0
+      _nameFallback:
+        IsSet: 0
+        manualValue: 
       Level:
         _value: 1
       _raceEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       _classEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       subRace: 0
       gender: 0
@@ -891,7 +927,7 @@ MonoBehaviour:
         _values: 
     - Seed:
         _initialized: 1
-        _value: 862462592
+        _value: 974503296
       _name: Characters
       Allignment:
         Alligned: 0
@@ -911,14 +947,16 @@ MonoBehaviour:
         keys: 
         values: []
       _nameDecided: 0
-      _manualName: 0
+      _nameFallback:
+        IsSet: 0
+        manualValue: 
       Level:
         _value: 1
       _raceEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       _classEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       subRace: 0
       gender: 0
@@ -958,14 +996,16 @@ MonoBehaviour:
         keys: 
         values: []
       _nameDecided: 0
-      _manualName: 0
+      _nameFallback:
+        IsSet: 0
+        manualValue: 
       Level:
         _value: 1
       _raceEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       _classEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       subRace: 0
       gender: 0
@@ -1005,14 +1045,16 @@ MonoBehaviour:
         keys: 
         values: []
       _nameDecided: 0
-      _manualName: 0
+      _nameFallback:
+        IsSet: 0
+        manualValue: 
       Level:
         _value: 1
       _raceEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       _classEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       subRace: 0
       gender: 0
@@ -1052,14 +1094,16 @@ MonoBehaviour:
         keys: 
         values: []
       _nameDecided: 0
-      _manualName: 0
+      _nameFallback:
+        IsSet: 0
+        manualValue: 
       Level:
         _value: 1
       _raceEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       _classEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       subRace: 0
       gender: 0
@@ -1099,14 +1143,16 @@ MonoBehaviour:
         keys: 
         values: []
       _nameDecided: 0
-      _manualName: 0
+      _nameFallback:
+        IsSet: 0
+        manualValue: 
       Level:
         _value: 1
       _raceEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       _classEnumFallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       subRace: 0
       gender: 0
@@ -1186,11 +1232,11 @@ MonoBehaviour:
         - _diagonalHalf: 0
           _nonDIagonal: 6
       _hitDices_Fallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 15
       Weapons: []
       _naturalArmor:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
     - Seed:
         _initialized: 0
@@ -1230,13 +1276,13 @@ MonoBehaviour:
         - _diagonalHalf: 0
           _nonDIagonal: 6
       _hitDices_Fallback:
-        isSet: 1
+        IsSet: 0
         manualValue: 9
       Weapons:
       - Id: Dagger
       - Id: Light hammer
       _naturalArmor:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
     - Seed:
         _initialized: 0
@@ -1268,11 +1314,11 @@ MonoBehaviour:
         - _diagonalHalf: 0
           _nonDIagonal: 6
       _hitDices_Fallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       Weapons: []
       _naturalArmor:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
     - Seed:
         _initialized: 0
@@ -1304,11 +1350,11 @@ MonoBehaviour:
         - _diagonalHalf: 0
           _nonDIagonal: 6
       _hitDices_Fallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       Weapons: []
       _naturalArmor:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
     - Seed:
         _initialized: 0
@@ -1340,11 +1386,11 @@ MonoBehaviour:
         - _diagonalHalf: 0
           _nonDIagonal: 6
       _hitDices_Fallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       Weapons: []
       _naturalArmor:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
     - Seed:
         _initialized: 0
@@ -1382,12 +1428,12 @@ MonoBehaviour:
         - _diagonalHalf: 0
           _nonDIagonal: 6
       _hitDices_Fallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       Weapons:
       - Id: Light hammer
       _naturalArmor:
-        isSet: 1
+        IsSet: 0
         manualValue: 15
     - Seed:
         _initialized: 0
@@ -1419,11 +1465,11 @@ MonoBehaviour:
         - _diagonalHalf: 0
           _nonDIagonal: 6
       _hitDices_Fallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       Weapons: []
       _naturalArmor:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
     - Seed:
         _initialized: 0
@@ -1455,11 +1501,11 @@ MonoBehaviour:
         - _diagonalHalf: 0
           _nonDIagonal: 6
       _hitDices_Fallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       Weapons: []
       _naturalArmor:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
     - Seed:
         _initialized: 0
@@ -1491,11 +1537,11 @@ MonoBehaviour:
         - _diagonalHalf: 0
           _nonDIagonal: 6
       _hitDices_Fallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       Weapons: []
       _naturalArmor:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
     - Seed:
         _initialized: 0
@@ -1527,11 +1573,11 @@ MonoBehaviour:
         - _diagonalHalf: 0
           _nonDIagonal: 6
       _hitDices_Fallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       Weapons: []
       _naturalArmor:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
     - Seed:
         _initialized: 0
@@ -1563,11 +1609,11 @@ MonoBehaviour:
         - _diagonalHalf: 0
           _nonDIagonal: 6
       _hitDices_Fallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       Weapons: []
       _naturalArmor:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
     - Seed:
         _initialized: 0
@@ -1599,11 +1645,11 @@ MonoBehaviour:
         - _diagonalHalf: 0
           _nonDIagonal: 6
       _hitDices_Fallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       Weapons: []
       _naturalArmor:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
     - Seed:
         _initialized: 0
@@ -1635,11 +1681,11 @@ MonoBehaviour:
         - _diagonalHalf: 0
           _nonDIagonal: 6
       _hitDices_Fallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       Weapons: []
       _naturalArmor:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
     - Seed:
         _initialized: 0
@@ -1671,11 +1717,11 @@ MonoBehaviour:
         - _diagonalHalf: 0
           _nonDIagonal: 6
       _hitDices_Fallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       Weapons: []
       _naturalArmor:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
     - Seed:
         _initialized: 0
@@ -1707,11 +1753,11 @@ MonoBehaviour:
         - _diagonalHalf: 0
           _nonDIagonal: 6
       _hitDices_Fallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       Weapons: []
       _naturalArmor:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
     - Seed:
         _initialized: 0
@@ -1743,11 +1789,11 @@ MonoBehaviour:
         - _diagonalHalf: 0
           _nonDIagonal: 6
       _hitDices_Fallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       Weapons: []
       _naturalArmor:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
     - Seed:
         _initialized: 0
@@ -1779,11 +1825,11 @@ MonoBehaviour:
         - _diagonalHalf: 0
           _nonDIagonal: 6
       _hitDices_Fallback:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
       Weapons: []
       _naturalArmor:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
     - Seed:
         _initialized: 0
@@ -1821,12 +1867,12 @@ MonoBehaviour:
         - _diagonalHalf: 0
           _nonDIagonal: 6
       _hitDices_Fallback:
-        isSet: 1
+        IsSet: 0
         manualValue: 2
       Weapons:
       - Id: Greatclub
       _naturalArmor:
-        isSet: 1
+        IsSet: 0
         manualValue: 13
     - Seed:
         _initialized: 0
@@ -1868,11 +1914,11 @@ MonoBehaviour:
         - _diagonalHalf: 0
           _nonDIagonal: 8
       _hitDices_Fallback:
-        isSet: 1
+        IsSet: 0
         manualValue: 18
       Weapons: []
       _naturalArmor:
-        isSet: 0
+        IsSet: 0
         manualValue: 0
   RollTables:
     keys:
@@ -2091,11 +2137,11 @@ MonoBehaviour:
     _inspectedFallback:
       _currentlyEntered: -1
   _characterListMeta:
-    inspectedElement: 1
+    inspectedElement: 18
     listSectionStartIndex: 0
   _monsterListMeta:
     inspectedElement: -1
     listSectionStartIndex: 0
   _rollTablesListMeta:
-    inspectedElement: -1
+    inspectedElement: 0
     listSectionStartIndex: 0

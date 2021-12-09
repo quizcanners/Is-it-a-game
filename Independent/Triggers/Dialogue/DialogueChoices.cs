@@ -41,9 +41,9 @@ namespace QuizCanners.IsItGame.Triggers.Dialogue
             .Add("txts", texts)
             .Add_IfNotEmpty("opt", choices)
             .Add_IfNotEmpty("fin", finalResults)
-            .Add("is", _inspectedItems)
-            .Add_IfNotNegative("bc", _inspectedChoice)
-            .Add_IfNotNegative("ir", _inspectedResult);
+            .Add("it", _inspectedItems)
+            .Add("bcm", _inspectedChoice)
+            .Add("irm", _inspectedResult);
 
         public void DecodeTag(string tg, CfgData data) {
             switch (tg)  {
@@ -52,9 +52,9 @@ namespace QuizCanners.IsItGame.Triggers.Dialogue
                 case "txts": texts.Decode(data); break;
                 case "opt": data.ToList(out choices); break;
                 case "fin": data.ToList(out finalResults); break;
-                case "is": _inspectedItems.Decode(data); break;
-                case "bc": _inspectedChoice = data.ToInt(); break;
-                case "ir": _inspectedResult = data.ToInt(); break;
+                case "it": _inspectedItems.Decode(data); break;
+                case "bcm": _inspectedChoice.Decode(data); break;
+                case "irm": _inspectedResult.Decode(data); break;
             }
         }
         #endregion
@@ -67,17 +67,10 @@ namespace QuizCanners.IsItGame.Triggers.Dialogue
             foreach (var o in choices)
                 o.RenameReference(oldName, newName);
         }
-        
-        private int _inspectedChoice = -1;
-        private int _inspectedResult = -1;
+
+        private readonly pegi.CollectionInspectorMeta _inspectedChoice = new("Choices");
+        private readonly pegi.CollectionInspectorMeta _inspectedResult = new("Results");
         public static bool renameLinkedReferences = true; 
-
-        public void ResetInspector() {
-            _inspectedChoice = -1;
-            _inspectedResult = -1;
-           // base.ResetInspector();
-        }
-
 
         public string ReferenceName {
             get { return referenceName; }
@@ -151,11 +144,11 @@ namespace QuizCanners.IsItGame.Triggers.Dialogue
 
                 "Texts".PegiLabel().enter_Inspect(texts).nl();
 
-                "Choices".PegiLabel().enter_List(choices, ref _inspectedChoice).nl(); // _ifNotEntered();
+                _inspectedChoice.enter_List(choices).nl(); // _ifNotEntered();
 
                 int cnt = finalResults.Count;
 
-                if ("Final Results".PegiLabel().enter_List(finalResults, ref _inspectedResult))
+                if (_inspectedResult.enter_List(finalResults))
                 {
                     // if (finalResults.Count>cnt)
                     // finalResults[finalResults.Count-1].SetLastUsedTrigger();

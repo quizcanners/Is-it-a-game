@@ -210,7 +210,7 @@ namespace QuizCanners.IsItGame.Triggers.Dialogue
         #region Inspector
 
         public static Dialogue inspected;
-        private pegi.EnterExitContext _context = new(); // _inspectdStuff = -1; 
+        private readonly pegi.EnterExitContext _context = new(); // _inspectdStuff = -1; 
 
         public void Inspect()
         {

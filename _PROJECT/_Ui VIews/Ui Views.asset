@@ -97,10 +97,10 @@ MonoBehaviour:
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-  - Name: 12
+  - Name: IdleGameView
     DirectReference: {fileID: 0}
     Reference:
-      m_AssetGUID: 
+      m_AssetGUID: 8a9b078670f841c409d4b148858ad978
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0

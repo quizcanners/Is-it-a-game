@@ -3,6 +3,11 @@
 		[NoScaleOffset] _MainTex("Albedo (RGB)", 2D) = "white" {}
 		_Color("Color", Color) = (1,1,1,1)
 		_Hardness("Hardness", Range(0.25,8)) = 0.4
+
+		[KeywordEnum(Horisontal, Vertical)]	_DIR("Direction", Float) = 0
+		
+
+
 	}
 
 	Category{
@@ -30,6 +35,9 @@
 				#pragma multi_compile_fwdbase
 				#pragma multi_compile_instancing
 				#pragma target 3.0
+
+				#pragma shader_feature_local _DIR_HORISONTAL _DIR_VERTICAL  
+
 
 				sampler2D _MainTex;
 				float4 _Color;
@@ -59,10 +67,15 @@
 
 			float4 frag(v2f i) : COLOR
 			{
+				#if _DIR_HORISONTAL
+					float2 uv = i.texcoord.xy;
+				#elif _DIR_VERTICAL
+					float2 uv = i.texcoord.yx;
+				#endif
 
-				float2 width = fwidth(i.texcoord);
+				float2 width = fwidth(uv);
 
-				float2 off = abs(i.texcoord.xy - 0.5);
+				float2 off = abs(uv.xy - 0.5);
 
 				float brightness = width.y  * _Hardness / (off.y + 0.00001);
 
@@ -72,12 +85,12 @@
 
 				float2 screenUV = i.screenPos.xy / i.screenPos.w;    
 
-				float2 sampleTex = float2(pow(0.5 - off.y, 6) + step(i.texcoord.y, 0.5) * 0.25, i.texcoord.x);// +screenUV * 0.5;// *(1 / (0.1 + length(width) * 100));
+				float2 sampleTex = float2(pow(0.5 - off.y, 6) + step(uv.y, 0.5) * 0.25, uv.x);// +screenUV * 0.5;// *(1 / (0.1 + length(width) * 100));
 
 				float4 tex =
-					tex2D(_MainTex, sampleTex + float2( i.texcoord.x, 0) + float2(_Time.x, - _Time.x * 5))
+					tex2D(_MainTex, sampleTex + float2(uv.x, 0) + float2(_Time.x, - _Time.x * 5))
 					* 
-					tex2D(_MainTex, sampleTex - float2( i.texcoord.x, 0) - float2(_Time.x, -_Time.x * 5))
+					tex2D(_MainTex, sampleTex - float2(uv.x, 0) - float2(_Time.x, -_Time.x * 5))
 					;
 
 				//return tex;

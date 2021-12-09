@@ -18,22 +18,23 @@ namespace QuizCanners.SpecialEffects
                 if (_compatibleShaders == null)
                 {
                     _compatibleShaders = new List<Shader>()
-                        .TryAdd(Shader.Find("Quiz cAnners/UI/Rounded/Lit Button"))
-                        .TryAdd(Shader.Find("Quiz cAnners/UI/Rounded/Box"))
-                        .TryAdd(Shader.Find("Quiz cAnners/UI/Rounded/Unlinked/Box Unlinked"))
-                        .TryAdd(Shader.Find("Quiz cAnners/UI/Rounded/Pixel Perfect"))
-                        .TryAdd(Shader.Find("Quiz cAnners/UI/Rounded/Outline"))
-                        .TryAdd(Shader.Find("Quiz cAnners/UI/Rounded/Unlinked/Outline Unlinked"))
-                        .TryAdd(Shader.Find("Quiz cAnners/UI/Rounded/Button With Shadow"))
-                        .TryAdd(Shader.Find("Quiz cAnners/UI/Rounded/Shadow"))
-                        .TryAdd(Shader.Find("Quiz cAnners/UI/Rounded/Glow"))
-                        .TryAdd(Shader.Find("Quiz cAnners/UI/Rounded/Gradient"))
-                        .TryAdd(Shader.Find("Quiz cAnners/UI/Rounded/Unlinked/Gradient Unlinked"))
-                        .TryAdd(Shader.Find("Quiz cAnners/UI/Rounded/Preserve Aspect"))
-                        .TryAdd(Shader.Find("Quiz cAnners/UI/Rounded/SubtractiveGraphic"))
-                        .TryAdd(Shader.Find("Quiz cAnners/UI/Rounded/Image"))
-                        .TryAdd(Shader.Find("Quiz cAnners/UI/Primitives/Pixel Line"))
-                        .TryAdd(Shader.Find("Quiz cAnners/UI/Rounded/Pixel Perfect Screen Space"));
+                        .TryAdd(Shader.Find("Quiz cAnners/UI/Procedural/Lit Button"))
+                        .TryAdd(Shader.Find("Quiz cAnners/UI/Procedural/Box"))
+                        .TryAdd(Shader.Find("Quiz cAnners/UI/Procedural/Unlinked/Box Unlinked"))
+                        .TryAdd(Shader.Find("Quiz cAnners/UI/Procedural/Pixel Perfect"))
+                        .TryAdd(Shader.Find("Quiz cAnners/UI/Procedural/Outline"))
+                        .TryAdd(Shader.Find("Quiz cAnners/UI/Procedural/Unlinked/Outline Unlinked"))
+                        .TryAdd(Shader.Find("Quiz cAnners/UI/Procedural/Button With Shadow"))
+                        .TryAdd(Shader.Find("Quiz cAnners/UI/Procedural/Shadow"))
+                        .TryAdd(Shader.Find("Quiz cAnners/UI/Procedural/Glow"))
+                        .TryAdd(Shader.Find("Quiz cAnners/UI/Procedural/Gradient"))
+                        .TryAdd(Shader.Find("Quiz cAnners/UI/Procedural/Unlinked/Gradient Unlinked"))
+                        .TryAdd(Shader.Find("Quiz cAnners/UI/Procedural/Preserve Aspect"))
+                        .TryAdd(Shader.Find("Quiz cAnners/UI/Procedural/SubtractiveGraphic"))
+                        .TryAdd(Shader.Find("Quiz cAnners/UI/Procedural/Image"))
+                        .TryAdd(Shader.Find("Quiz cAnners/UI/Procedural/Pixel Line"))
+                        .TryAdd(Shader.Find("Quiz cAnners/UI/Procedural/Pixel Perfect Screen Space"))
+                        .TryAdd(Shader.Find("Quiz cAnners/UI/Procedural/Box Screen Blur"));
                 }
 
                 return _compatibleShaders;
@@ -42,7 +43,6 @@ namespace QuizCanners.SpecialEffects
 
         private static List<Material> _compatibleMaterials = new List<Material>();
 
-        [SerializeField] private int _inspectedModule;
         public static RoundedGraphic inspected;
 
         private const string info =
@@ -358,7 +358,7 @@ namespace QuizCanners.SpecialEffects
                                         break;
                                     case PositionDataType.FadeOutPosition:
 
-                                        "Fade out at".PegiLabel().edit(ref faeOutUvPosition).nl();
+                                        "Fade out at".PegiLabel().edit(ref fadeOutUvPosition).nl();
 
                                         break;
                                 }

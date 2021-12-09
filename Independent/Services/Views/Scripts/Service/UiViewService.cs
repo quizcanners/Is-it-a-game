@@ -21,10 +21,12 @@ namespace QuizCanners.IsItGame.UI
         [SerializeField] private RectTransform _root;
         [SerializeField] private RectTransform _raycastBlockObject;
         [SerializeField] private List<CachedView> _cachedViews = new();
-        [Serializable] public struct CachedView : IPEGI_ListInspect 
+        [Serializable] public struct CachedView : IPEGI_ListInspect, IGotReadOnlyName
         {
             public IigEnum_UiView ViewEnum;
             public GameObject Instance;
+
+            public string GetReadOnlyName() => ViewEnum.ToString();
 
             public void InspectInList(ref int edited, int index)
             {
@@ -91,6 +93,11 @@ namespace QuizCanners.IsItGame.UI
                 if (_viewsStack.Contains(view))
                     _viewsStack.Remove(view);
             }
+        }
+
+        public void HideCurrent(UiTransitionType transition = UiTransitionType.CrossFade) 
+        {
+            Hide(_currentView, transition);
         }
 
         public void ShowError(string text) 

@@ -1,9 +1,14 @@
-﻿Shader "Quiz cAnners/UI/Effects/ScreenSpaceFill Masked" {
+﻿Shader "Quiz cAnners/UI/Effects/ScreenSpaceFill Masked" 
+{
 	Properties
 	{
 		[PerRendererData]
 		_MainTex("Mask Texture", 2D) = "white" {}
 		_FillTex("Fill Texture", 2D) = "white" {}
+
+		[KeywordEnum(None, Regular, TopOnly)] _GYRO_MODE("Gyroscope (When On)", Float) = 0
+		_OffsetAmount("Offset Amount", float) = 1
+
 		_ColorOverlay("Color Overlay", Color) = (1,1,1,0)
 
 		_StencilComp("Stencil Comparison", Float) = 8
@@ -13,7 +18,6 @@
 		_StencilReadMask("Stencil Read Mask", Float) = 255
 		_ColorMask("Color Mask", Float) = 15
 		[Toggle(UNITY_UI_ALPHACLIP)] _UseUIAlphaClip("Use Alpha Clip", Float) = 0
-		[Toggle(BLUR_ON_ALPHA)] _BlurAlp("Blur On Transparency", Float) = 0
 		[Toggle(USE_MASK_COLOR)] _UseMskCol("Use Mask's Color", Float) = 0
 	}
 
@@ -56,8 +60,10 @@
 
 			#pragma multi_compile_local _ UNITY_UI_CLIP_RECT
 			#pragma multi_compile_local _ UNITY_UI_ALPHACLIP
-			#pragma shader_feature_local __ BLUR_ON_ALPHA
 			#pragma shader_feature_local __ USE_MASK_COLOR
+			#pragma multi_compile __ qc_USE_PARALLAX
+			#pragma shader_feature_local _GYRO_MODE_NONE _GYRO_MODE_REGULAR _GYRO_MODE_TOPONLY 
+
 
 			struct v2f
 			{
@@ -74,10 +80,12 @@
 			uniform sampler2D _FillTex;
 			uniform float4 _ClipRect;
 			uniform float4 _FillTex_ST;
-
+			uniform float _OffsetAmount;
 			//uniform float4 _MainTex_TexelSize;
 			uniform float4 _FillTex_TexelSize;
 			uniform float4 _ColorOverlay;
+			uniform float4 qc_ParallaxOffset;
+
 
 			v2f vert(appdata_full v)
 			{
@@ -117,20 +125,24 @@
 
 				o.screenPos.xy /= o.screenPos.w;
 
-				float2 fragCoord = (o.screenPos.xy - 0.5 ) * o.stretch.xy*_FillTex_ST.x + 0.5;
+				float parallaxStrength = 1;
+
+				#if _GYRO_MODE_TOPONLY
+					parallaxStrength = smoothstep(0, 0.5, o.screenPos.y);
+					parallaxStrength *= parallaxStrength;
+				#endif
+
+				parallaxStrength *= _OffsetAmount * 0.1;
+
+				float2 fragCoord = (o.screenPos.xy - 0.5 ) * o.stretch.xy 
+				#if qc_USE_PARALLAX && !_GYRO_MODE_NONE
+					* (1 - 0.05 * abs(parallaxStrength))
+					+ qc_ParallaxOffset.xy * parallaxStrength
+				#endif
+					+ 0.5;
 
 
-
-
-				float4 color = tex2Dlod(_FillTex, float4(
-					fragCoord + _FillTex_ST.zw
-					,0,
-					#if BLUR_ON_ALPHA
-					(1-pow(mask.a,2)) * 16
-					#else
-					0
-					#endif
-					));
+				float4 color = tex2Dlod(_FillTex, float4(fragCoord + _FillTex_ST.zw,0, 0));
 
 				color.rgb *= o.color.rgb;
 				#if USE_MASK_COLOR

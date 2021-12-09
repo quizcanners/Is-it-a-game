@@ -74,11 +74,11 @@ namespace QuizCanners.SpecialEffects
         {
             set
             {
-                var min = faeOutUvPosition.min;
+                var min = fadeOutUvPosition.min;
                 if (Mathf.Approximately(min.x, value) == false)
                 {
                     min.x = value;
-                    faeOutUvPosition.min = min;
+                    fadeOutUvPosition.min = min;
                     SetVerticesDirty();
                 }
             }
@@ -88,11 +88,11 @@ namespace QuizCanners.SpecialEffects
         {
             set
             {
-                var max = faeOutUvPosition.max;
+                var max = fadeOutUvPosition.max;
                 if (Mathf.Approximately(max.x, value) == false)
                 {
                     max.x = value;
-                    faeOutUvPosition.max = max;
+                    fadeOutUvPosition.max = max;
                     SetVerticesDirty();
                 }
             }
@@ -102,11 +102,11 @@ namespace QuizCanners.SpecialEffects
         {
             set
             {
-                Vector2 min = faeOutUvPosition.min;
+                Vector2 min = fadeOutUvPosition.min;
                 if (Mathf.Approximately(min.y, value) == false)
                 {
                     min.y = value;
-                    faeOutUvPosition.min = min;
+                    fadeOutUvPosition.min = min;
                     SetVerticesDirty();
                 }
             }
@@ -116,17 +116,17 @@ namespace QuizCanners.SpecialEffects
         {
             set
             {
-                Vector2 max = faeOutUvPosition.max;
+                Vector2 max = fadeOutUvPosition.max;
                 if (Mathf.Approximately(max.y, value) == false)
                 {
                     max.y = value;
-                    faeOutUvPosition.max = max;
+                    fadeOutUvPosition.max = max;
                     SetVerticesDirty();
                 }
             }
         }
 
-        [SerializeField] private Rect faeOutUvPosition = new Rect(0, 0, 1, 1);
+        [SerializeField] private Rect fadeOutUvPosition = new Rect(0, 0, 1, 1);
 
         private Rect SpriteRect
         {
@@ -234,9 +234,9 @@ namespace QuizCanners.SpecialEffects
 
                     case PositionDataType.FadeOutPosition:
 
-                        pos = faeOutUvPosition.min;
+                        pos = fadeOutUvPosition.min;
 
-                        vertex.uv3 = faeOutUvPosition.max;
+                        vertex.uv3 = fadeOutUvPosition.max;
 
                         break;
                 }

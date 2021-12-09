@@ -16,7 +16,12 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: b193987d30a9ed94991410b8cbeed859
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 8a9b078670f841c409d4b148858ad978
+    m_Address: Assets/_Is-it-a-game/_PROJECT/_Ui VIews/Screens/Idle Game Screen/Idle
+      Game Screen.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 15b6bd71e2d240c4eb290b0cb368ecec, type: 2}
   m_SchemaSet:
