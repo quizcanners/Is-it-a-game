@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Views
+  m_EditorClassIdentifier: 
+  m_GroupName: Views
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 474a6ad740d7b934694de3d44fbbe6f4
+  m_SerializeEntries:
+  - m_GUID: 8760d0c411d00834e84ca97db260350e
+    m_Address: Assets/Prototype-Core/_DEVELOP/_Ui VIews/RayTracing UI/Ray Tracing
+      Ui.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 489643111dff8614aa70cca232aa3960
+    m_Address: Assets/Prototype-Core/_DEVELOP/_Ui VIews/Player Name View/Player Name
+      Edit.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ef3a0235f51bb2f4f984e96ecf45e891
+    m_Address: Assets/Prototype-Core/_DEVELOP/_Ui VIews/Select User View/Select User
+      View.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9f715ea771742994f9be0ad9c50f5586
+    m_Address: Assets/_Is-it-a-game/_PROJECT/_Ui VIews/Settings Screen/Settings Screen.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1bd9d528018b4514a8fb3c0b7cf9bef8
+    m_Address: Assets/_Is-it-a-game/_PROJECT/_Ui VIews/Screens/Back To Main Menu
+      UI/Back To Menu Button.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 70493c2cefbd9324da56155523ddf10a
+    m_Address: Assets/_Is-it-a-game/_PROJECT/Space With Stars/SDF Stars With Mist/Stars
+      With Mist View.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 15b6bd71e2d240c4eb290b0cb368ecec, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 24818d0b422d41d4fbf317f7324664e7, type: 2}
+    - {fileID: 11400000, guid: 0858d881817f8b04ab0d8c57e9fa35d7, type: 2}

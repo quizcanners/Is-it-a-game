@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55b550641258e3949a75f8327a8d2ede, type: 3}
+  m_Name: JsonOnDemandTestScriptableObject
+  m_EditorClassIdentifier: Assembly-CSharp:QuizCanners.IsItGame:JsonOnDemandTestScriptableObject
+  _tutorialStepPrototypeJsons:
+  - type: TutorialStepC
+    json: '{"_text":"uiiyughjhgj","_enum":3,"_conditionJson":[{"type":"ConditionB","json":"{}"},{"type":"ConditionB","json":"{}"},{"type":"ConditionA","json":"{\"_isTrue\":true}"},{"type":"ConditionB","json":"{}"},{"type":"ConditionB","json":"{}"},{"type":"ConditionA","json":"{\"_isTrue\":false}"},{"type":"ConditionA","json":"{\"_isTrue\":true}"}],"_textB":"sdfdsf","_textC":"yiyui"}'
+  - type: TutorialStepB
+    json: '{"_text":"","_enum":0,"_conditionJson":[],"_textB":""}'
+  - type: TutorialStepC
+    json: '{"_text":"","_enum":0,"_conditionJson":[],"_textB":"","_textC":""}'
+  - type: TutorialStepB
+    json: '{"_text":"","_enum":0,"_conditionJson":[],"_textB":""}'
+  - type: TutorialStepC
+    json: '{"_text":"ytryrt","_enum":0,"_conditionJson":[{"type":"ConditionA","json":"{\"_isTrue\":false}"},{"type":"ConditionA","json":"{\"_isTrue\":true}"},{"type":"ConditionA","json":"{\"_isTrue\":false}"}],"_textB":"rtyrtytr","_textC":"trytry"}'
+  - type: TutorialStepA
+    json: '{"_text":"","_enum":0,"_conditionJson":[],"_textA":""}'
+  - type: TutorialStepB
+    json: '{"_text":"werretretret","_enum":0,"_conditionJson":[{"type":"ConditionA","json":"{\"_isTrue\":false}"},{"type":"ConditionC","json":""},{"type":"ConditionB","json":""},{"type":"ConditionC","json":""}],"_textB":""}'
+  - type: TutorialStepC
+    json: '{"_text":"","_enum":2,"_conditionJson":[{"type":"","json":""},{"type":"","json":""},{"type":"","json":""},{"type":"","json":""}],"_textB":"","_textC":""}'
+  - type: TutorialStepA
+    json: '{"_text":"","_enum":0,"_conditionJson":[{"type":"ConditionA","json":""},{"type":"ConditionB","json":""},{"type":"ConditionC","json":""},{"type":"ConditionC","json":""},{"type":"ConditionB","json":""},{"type":"ConditionB","json":""},{"type":"","json":""}],"_textA":""}'
+  - type: TutorialStepB
+    json: '{"_text":"","_enum":0,"_conditionJson":[{"type":"ConditionB","json":""},{"type":"ConditionC","json":""},{"type":"ConditionA","json":""}],"_textB":""}'

@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385f3e91bfa9ad9478dad08b500509c1, type: 3}
+  m_Name: SO_PersistentGameStateData
+  m_EditorClassIdentifier: 
+  _cfg:
+    _value: 
+  Application:
+    AvailableUsers:
+    - Some Dick
+    - quizcanners
+  User:
+    Campaign:
+      PlayableCharacters:
+        keys:
+        - qq
+        - qqw
+        values:
+        - Name: qq
+          MainHero:
+            _hpInitialized: 0
+            _currentHp: 0
+            _creatureHealthState: 0
+            Initiative: 0
+            _exhaustion:
+              _level: 0
+            Conditions:
+              _values: 
+            _surpriseState: 0
+            inspectedStuff:
+              _currentlyEntered: -1
+            Weapons: []
+            CharacterId:
+              Id: 
+        - Name: qqw
+          MainHero:
+            _hpInitialized: 0
+            _currentHp: 0
+            _creatureHealthState: 0
+            Initiative: 0
+            _exhaustion:
+              _level: 0
+            Conditions:
+              _values: 
+            _surpriseState: 0
+            inspectedStuff:
+              _currentlyEntered: -1
+            Weapons: []
+            CharacterId:
+              Id: 
+      PulseCommander:
+        Arena:
+          startingPoint:
+            Id: -1
+          points: []
+          links: []
+          units: []
+          conext:
+            _currentlyEntered: -1
+          _linksMeta:
+            inspectedElement_Internal: -1
+            listSectionStartIndex: 0
+          _pointMeta:
+            inspectedElement_Internal: -1
+            listSectionStartIndex: 0
+          _unitsMeta:
+            inspectedElement_Internal: -1
+            listSectionStartIndex: 0
+      LastSavedOnExitNode:
+        _book:
+          Id: Whitehawk.nodeConfig
+        NodeIndex: 26
+        _treeVersion: 0
+      _triggerValuesJson: '{"Version":-1,"groups":{"keys":["whitehawk"],"values":[{"booleans":{"_dictionary":{"keys":["stuff"],"values":[{"value":8}]}},"ints":{"_dictionary":{"keys":["fggvfg"],"values":[{"value":5}]}}}]}}'
+    _userName: quizcanners
