@@ -1,7 +1,9 @@
 using PainterTool;
 using PainterTool.Examples;
 using QuizCanners.Inspect;
+using QuizCanners.RayTracing;
 using QuizCanners.Utils;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -36,6 +38,10 @@ namespace QuizCanners.IsItGame
             if (Physics.Raycast(new Ray(transform.position, target - transform.position), out hit))
             {
                 var receivers = hit.transform.GetComponentsInParent<C_PaintingReceiver>();
+
+                Singleton.Try<Singleton_SmokeEffectController>(s => s.TrySpawnIfVisible(hit.point, out _));
+
+                Singleton.Try<Singleton_ImpactLightsController>(s => s.TrySpawnIfVisible(hit.point, out _));
 
                 if (receivers.Length == 0)
                     return;
@@ -106,7 +112,7 @@ namespace QuizCanners.IsItGame
 
         private void Update()
         {
-            if (Input.GetMouseButtonDown(0) && TryHit(out var hit))
+            if (Input.GetMouseButton(0) && TryHit(out var hit))
                 Paint(hit.point);
         }
 
