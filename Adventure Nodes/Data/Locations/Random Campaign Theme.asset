@@ -9,39 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e6e9b888bd1ee94f831adc3c948942d, type: 3}
+  m_Script: {fileID: 11500000, guid: 087c27d2b79071d4d96242709830db61, type: 3}
   m_Name: Random Campaign Theme
   m_EditorClassIdentifier: 
   RandomRollResults:
-  - _name: Event
-    tableKey: _Random Villian
+  - tableKey: Random Monster
     _data:
-      _value: r|1|y|v|1|0|p|738|e|41|r|1|y|v|1|1|p|23|e|17|r|1|y|v|1|3|p|0|||||e|41|r|1|y|v|1|8|p|23|e|17|r|1|y|v|1|4|p|0|||||e|17|r|1|y|v|1|2|p|0|||e|614|r|1|y|v|1|0|p|595|e|18|r|1|y|v|2|17|p|0|||e|17|r|1|y|v|1|2|p|0|||e|18|r|1|y|v|2|79|p|0|||e|18|r|1|y|v|2|13|p|0|||e|65|r|1|y|v|2|12|p|46|e|17|r|1|y|v|1|5|p|0|||e|17|r|1|y|v|1|3|p|0|||||e|17|r|1|y|v|1|5|p|0|||e|17|r|1|y|v|1|6|p|0|||e|65|r|1|y|v|2|10|p|46|e|17|r|1|y|v|1|6|p|0|||e|17|r|1|y|v|1|8|p|0|||||e|17|r|1|y|v|1|4|p|0|||e|17|r|1|y|v|1|1|p|0|||e|17|r|1|y|v|1|9|p|0|||e|18|r|1|y|v|2|15|p|0|||e|17|r|1|y|v|1|4|p|0|||e|140|r|1|y|v|1|3|p|121|e|114|r|1|y|v|1|0|p|96|e|18|r|1|y|v|2|10|p|0|||e|66|r|1|y|v|1|6|p|48|e|42|r|1|y|v|1|1|p|24|e|18|r|1|y|v|2|35|p|0|||||||||||e|43|r|1|y|v|2|18|p|24|e|18|r|1|y|v|2|74|p|0||||||||
-  - _name: Vilain
-    tableKey: _Random Villian
-    _data:
-      _value: r|1|y|v|1|0|p|663|e|41|r|1|y|v|1|5|p|23|e|17|r|1|y|v|1|1|p|0|||||e|17|r|1|y|v|1|3|p|0|||e|17|r|1|y|v|1|6|p|0|||e|563|r|1|y|v|1|0|p|544|e|17|r|1|y|v|1|2|p|0|||e|17|r|1|y|v|1|2|p|0|||e|18|r|1|y|v|2|62|p|0|||e|18|r|1|y|v|2|20|p|0|||e|64|r|1|y|v|1|2|p|46|e|17|r|1|y|v|1|1|p|0|||e|17|r|1|y|v|1|2|p|0|||||e|17|r|1|y|v|1|6|p|0|||e|17|r|1|y|v|1|3|p|0|||e|17|r|1|y|v|1|4|p|0|||e|17|r|1|y|v|1|5|p|0|||e|18|r|1|y|v|2|12|p|0|||e|18|r|1|y|v|2|12|p|0|||e|17|r|1|y|v|1|9|p|0|||e|17|r|1|y|v|1|6|p|0|||e|139|r|1|y|v|1|3|p|120|e|113|r|1|y|v|1|0|p|95|e|17|r|1|y|v|1|6|p|0|||e|66|r|1|y|v|1|5|p|48|e|42|r|1|y|v|1|0|p|24|e|18|r|1|y|v|2|90|p|0|||||||||||e|42|r|1|y|v|1|8|p|24|e|18|r|1|y|v|2|13|p|0||||||||
-  SkillChecks:
-  - _data:
-      _value: c|149|v|136|0|60|ind|52|gi|14|dicks.triggers|ti|24|New Trigger dictionary
-        1|||1|64|ind|56|gi|18|whitehawk.triggers|ti|24|New Trigger dictionary 3||||t|1|1||
-    Name: Talk to a horse
-    Check:
-      _abilityScore:
-        IsSet: 0
-        manualValue: 0
-      SkillToCheck: 6
-      DC: 15
-  - _data:
-      _value: c|6|t|1|1||
-    Name: New AdventureNodeSkillCheck
-    Check:
-      _abilityScore:
-        IsSet: 0
-        manualValue: 0
-      SkillToCheck: 4
-      DC: 15
-  NpcCharacters:
-  - npcId:
-      Id: That Biggest Asshole
-  _key: Campaign Theme
+      _value: r|1|n|
+  SkillChecks: []
+  _key: Compaign

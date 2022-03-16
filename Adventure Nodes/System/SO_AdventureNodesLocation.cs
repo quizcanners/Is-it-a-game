@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace QuizCanners.IsItGame.Develop
 {
-    [CreateAssetMenu(fileName = FILE_NAME, menuName = "Quiz Canners/" + Singleton_GameController.PROJECT_NAME + "/" + FILE_NAME)]
+    [CreateAssetMenu(fileName = FILE_NAME, menuName = Utils.QcUnity.SO_CREATE_MENU + Singleton_GameController.PROJECT_NAME + "/" + FILE_NAME)]
     public class SO_AdventureNodesLocation : ScriptableObject, IPEGI, IGotName
     {
         public const string FILE_NAME = "Adventure Location";

@@ -1,13 +1,11 @@
-using static QuizCanners.IsItGame.Game.Enums;
-
 namespace QuizCanners.IsItGame.StateMachine
 {
     partial class GameState
     {
-        public class MainMenu : Base, IDataFallback<IigEnum_Music>, IDataFallback<View>
+        public class MainMenu : Base, IDataFallback<Game.Enums.Music>, IDataFallback<Game.Enums.View>
         {
-            public IigEnum_Music Get() => IigEnum_Music.MainMenu;
-            View IDataFallback<View>.Get() => View.MainMenu;
+            public Game.Enums.Music Get() => Game.Enums.Music.MainMenu;
+            Game.Enums.View IDataFallback<Game.Enums.View>.Get() => Game.Enums.View.MainMenu;
         }
     }
 }

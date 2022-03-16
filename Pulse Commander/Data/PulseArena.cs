@@ -7,29 +7,29 @@ using UnityEngine;
 namespace QuizCanners.IsItGame.Pulse
 {
     [Serializable]
-    internal partial class PulseArena : IPEGI, IGotReadOnlyName, IPEGI_Handles
+    public partial class PulsePath : IPEGI, IPEGI_Handles, IGotName
     {
         [SerializeField] internal Point.Id startingPoint = new();
-        [SerializeField] internal List<Point> points = new();
+        [SerializeField] internal Point.SerializableDictionary points = new();
         [SerializeField] internal List<Link> links = new();
-        [SerializeField] internal List<Unit> units = new();
+        [SerializeField] internal List<Unit> testUnits = new();
+
+        [SerializeField] private string _name = "Pulse Arena";
 
         internal void Update(float deltaTime) 
         {
-            foreach (var p in points)
-                p.Update(deltaTime);
-
-            foreach (var u in units)
-                u.Update(deltaTime);
+            foreach (var u in testUnits)
+                u.Update(deltaTime, Dungeons_and_Dragons.GridDistance.FromCells(6));
         }
 
         #region Inspector
-        public string GetReadOnlyName() => "Pulse Arena";
 
         [SerializeField] private pegi.EnterExitContext conext = new();
         [SerializeField] private pegi.CollectionInspectorMeta _linksMeta = new("Links");
         [SerializeField] private pegi.CollectionInspectorMeta _pointMeta = new("Points");
-        [SerializeField] private pegi.CollectionInspectorMeta _unitsMeta = new("Units");
+        [SerializeField] private pegi.CollectionInspectorMeta _unitsMeta = new("Test Units");
+
+        public string NameForInspector { get => _name; set => _name = value; }
 
         public void Inspect()
         {
@@ -39,23 +39,25 @@ namespace QuizCanners.IsItGame.Pulse
                 {
                     "Starting point".PegiLabel(90).Write();
                     startingPoint.InspectSelectPart().Nl();
+
+                    "Skip Time 1s".PegiLabel().Click().Nl().OnChanged(() => Update(1));
                 }
 
-                _pointMeta.Enter_List(points).Nl();
+                _pointMeta.Enter_Dictionary(points).Nl();
                 _linksMeta.Enter_List(links).Nl();
-                _unitsMeta.Enter_List(units).Nl();
+                _unitsMeta.Enter_List(testUnits).Nl();
             }
         }
 
         public void OnSceneDraw()
         {
             foreach (var p in points)
-                p.OnSceneDraw();
+                p.Value.OnSceneDraw();
 
             foreach (var l in links)
                 l.OnSceneDraw();
 
-            foreach (var u in units)
+            foreach (var u in testUnits)
                 u.OnSceneDraw();
         }
         #endregion

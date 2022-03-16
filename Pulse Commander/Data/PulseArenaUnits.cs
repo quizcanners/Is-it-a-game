@@ -6,49 +6,84 @@ using UnityEngine;
 
 namespace QuizCanners.IsItGame.Pulse
 {
-    internal partial class PulseArena
+    public partial class PulsePath
     {
         [Serializable]
-        internal class Unit : IGotName, IPEGI_ListInspect, IPEGI, IPEGI_Handles, IGotReadOnlyName
+        public class Unit : IPEGI_ListInspect, IPEGI, IPEGI_Handles
         {
             [SerializeField] private Point.Id _myPoint = new();
             [SerializeField] private Link.Id _link = new();
+            [SerializeField] private Vector2 _linkOffsetFraction;
             [SerializeField] private float progress;
-            [SerializeField] private CharacterSheet character = new();
 
-            private static PulseArena GetArena() => Singleton.Get<Singleton_PulseCommander>().Data.Arena;
+            private bool _initialized = false;
 
-            internal void Update(float deltaTime) 
+            public Vector3 GetPosition()
             {
+                if (!_initialized)
+                    Update(deltaTime: 0, GridDistance.FromCells(6));
+
+                return (TryGetPath(out Link link)) ? link.GetPosition(progress, start: _myPoint, offsetFraction: _linkOffsetFraction) : Vector3.zero;
+            }
+            private static PulsePath GetArena() => Singleton.Get<Singleton_PulsePath>().Data;
+            private bool TryGetPath(out Link link) 
+            {
+                link = null;
                 var start = _myPoint.GetEntity();
 
-                if (start == null) 
+                if (start == null)
                 {
-                    _myPoint.SetEntity(GetArena().startingPoint); 
-                    return;
+                    _myPoint.SetEntity(GetArena().startingPoint);
+
+                    start = _myPoint.GetEntity();
+
+                    if (start == null)
+                        return false;
+
+                    _linkOffsetFraction = UnityEngine.Random.insideUnitCircle;
                 }
 
-                var dst = _link.GetEntity();
+                link = _link.GetEntity();
 
-                if (dst == null) 
+                if (link == null)
                 {
                     _link.SetEntity(start.direction);
-                    return;
+
+                    link = _link.GetEntity();
                 }
+
+                return link != null;
+            }
+            internal void Update(float deltaTime, GridDistance speedPerTurn) 
+            {
+                _initialized = true;
+
+                if (!TryGetPath(out var path))
+                    return;
 
                 if (progress < 1)
                 {
-                    FeetDistance dis = dst.Length;
-                    GridDistance speedPerTurn = character[SpeedType.Walking];
-
+                    FeetDistance dis = path.Length;
+                
                     float moved = (speedPerTurn.TotalFeet.ToMeters / DnDTime.SECONDS_PER_TURN) * deltaTime;
                     float portion = moved / dis.ToMeters;
                     progress = Mathf.Clamp01(progress + portion);
+                } else 
+                {
+                    var newPoint = path.End;
+
+                    var newPath = newPoint.direction.GetEntity();
+
+                    if (newPath != null)
+                    {
+                        _myPoint = new Point.Id(newPoint);
+                        progress = 0;
+                        _link = new Link.Id();
+                    }
                 }
             }
 
             #region Inspector
-            public string NameForInspector { get => character.NameForInspector; set => character.NameForInspector = value; }
 
             [SerializeField] private pegi.EnterExitContext context = new();
 
@@ -77,17 +112,15 @@ namespace QuizCanners.IsItGame.Pulse
                         var lnk = _link.GetEntity();
                         if (lnk != null)
                         {
-                            "Progress".PegiLabel(width: 60).Edit01(ref progress).Nl();
+                            "Progress".PegiLabel(width: 60).Edit_01(ref progress).Nl();
                         }
                     }
-
-                    pegi.Enter_Inspect(character).Nl();
                 }
             }
 
             public void InspectInList(ref int edited, int index)
             {
-                this.inspect_Name();
+                "Progress".PegiLabel(width: 60).Edit_01(ref progress).Nl();
 
                 if (Icon.Enter.Click())
                     edited = index;
@@ -101,13 +134,7 @@ namespace QuizCanners.IsItGame.Pulse
                     var p1 = link.End;
                     if (p0 != null && p1 != null) 
                     {
-                        var point = link.GetPoint(progress);
-                            /*QcMath.BezierPoint(progress, 
-                            p0.position,
-                            p0.position + link.curve.StartVector,
-                            p1.position + link.curve.EndVector,
-                            p1.position
-                            );*/
+                        var point = GetPosition();
 
                         if (pegi.Handle.Button(point, Vector3.up, size: 0.2f, shape: pegi.SceneDraw.HandleCap.Cylinder))
                             _selectedInEditor = this;
@@ -120,8 +147,8 @@ namespace QuizCanners.IsItGame.Pulse
                 }
             }
 
-            public string GetReadOnlyName() => character.GetNameForInspector();
             #endregion
+
         }
     }
 }

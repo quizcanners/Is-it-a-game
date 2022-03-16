@@ -7,26 +7,22 @@ using UnityEngine;
 
 namespace QuizCanners.IsItGame.Pulse
 {
-    internal partial class PulseArena
+    public partial class PulsePath
     {
         [Serializable]
         internal class Point : IGotName, IPEGI_ListInspect, IPEGI, IPEGI_Handles
         {
-            [SerializeField] private string _name = "";
-            [SerializeField] internal Vector3 position;
+            [SerializeField] public float Radius = 1;
             [SerializeField] public bool Explored;
+           
+            [SerializeField] internal Vector3 position;
             [SerializeField] internal Link.Id direction = new();
             [SerializeField] internal TableRollResult rollResult = new();
-            [SerializeField] public float radius = 1;
 
-            [SerializeField] private List<LocationInstancer> locations = new List<LocationInstancer>();
+            [SerializeField] private string _name = "";
+            [SerializeField] private List<LocationInstancer> locations = new();
 
-            internal void Update(float deltaTime)
-            {
-
-            }
-
-            private static PulseArena GetArena() => Singleton.Get<Singleton_PulseCommander>().Data.Arena;
+            private static PulsePath GetArena() => Singleton.Get<Singleton_PulsePath>().Data;
 
             public List<Link> GetLinks() 
             {
@@ -49,8 +45,14 @@ namespace QuizCanners.IsItGame.Pulse
 
             public void OnSceneDraw()
             {
-                if (pegi.Handle.FreeMove(position, out var newPos))
-                    position = newPos;
+                if (Singleton_PulsePath.DrawCurves)
+                {
+                    if (pegi.Handle.FreeMove(position, out var newPos))
+                        position = newPos;
+                } else 
+                {
+                    pegi.Handle.Position(position, out var newPos).OnChanged(()=> position = newPos);
+                }
 
                 pegi.Handle.Label(_name.IsNullOrEmpty() ? rollResult.GetNameForInspector() : _name, position, offset: Vector3.up * 2);
 
@@ -72,7 +74,7 @@ namespace QuizCanners.IsItGame.Pulse
                     {
                         "Explored".PegiLabel(60).ToggleIcon(ref Explored).Nl();
                         "Position".PegiLabel(60).Edit(ref position).Nl();
-                        "Radius".PegiLabel(60).Edit(ref radius).Nl();
+                        "Radius".PegiLabel(60).Edit(ref Radius).Nl();
 
                         var lnk = direction.GetEntity();
                         if ("Direction".PegiLabel(60).Select(ref lnk, GetLinks()).Nl())
@@ -88,18 +90,13 @@ namespace QuizCanners.IsItGame.Pulse
             {
                 this.inspect_Name();
 
+                var lnk = direction.GetEntity();
+                "->".PegiLabel(30).Select(ref lnk, GetLinks()).OnChanged(()=> direction.SetEntity(lnk));
+
                 if (Icon.Enter.Click())
                     edited = index;
             }
             #endregion
-
-            [Serializable]
-            public class Id : SmartIntIdGeneric<Point> 
-            { 
-                internal Id() { }
-                public Id (Point point) { SetEntity(point); }
-                protected override List<Point> GetEnities() => GetArena().points; 
-            }
 
             #region Locations Base
 
@@ -130,7 +127,7 @@ namespace QuizCanners.IsItGame.Pulse
 
                 public void InspectInList(ref int edited, int index)
                 {
-                    "Guild Type".PegiLabel(90).EditEnum(ref type);
+                    "Guild Type".PegiLabel(90).Edit_Enum(ref type);
 
                     if (Icon.Enter.Click())
                         edited = index;
@@ -149,7 +146,18 @@ namespace QuizCanners.IsItGame.Pulse
 
             #endregion
 
+            [Serializable]
+            public class Id : SmartStringIdGeneric<Point>
+            {
+                internal Id() { }
+                public Id(Point point) { SetEntity(point); }
+                public Id(Id point) { Id = point.Id; }
 
+                protected override Dictionary<string, Point> GetEnities() => GetArena().points;
+            }
+
+            [Serializable]
+            public class SerializableDictionary : SerializableDictionary<string, Point> { }
         }
     }
 }

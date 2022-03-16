@@ -454,6 +454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _button: {fileID: 5158676871107995578}
   _soundToPlay: 1
+  scaleAnimation: {fileID: 0}
 --- !u!114 &5524966933197113372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -477,7 +478,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 236709562044158209, guid: 053bfbdcdd5d06b4db6fd97a12ade96e, type: 3}
       propertyPath: m_Name
-      value: B Button With Animation
+      value: B Open Inventory
       objectReference: {fileID: 0}
     - target: {fileID: 1400031256719872498, guid: 053bfbdcdd5d06b4db6fd97a12ade96e, type: 3}
       propertyPath: m_Pivot.x
@@ -570,18 +571,34 @@ PrefabInstance:
     - target: {fileID: 1911387476662672631, guid: 053bfbdcdd5d06b4db6fd97a12ade96e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 8132785002756029072}
+      objectReference: {fileID: 91577192964502085}
+    - target: {fileID: 1911387476662672631, guid: 053bfbdcdd5d06b4db6fd97a12ade96e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 91577192964502085}
     - target: {fileID: 1911387476662672631, guid: 053bfbdcdd5d06b4db6fd97a12ade96e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1911387476662672631, guid: 053bfbdcdd5d06b4db6fd97a12ade96e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1911387476662672631, guid: 053bfbdcdd5d06b4db6fd97a12ade96e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeView
+      value: ChangeState
+      objectReference: {fileID: 0}
+    - target: {fileID: 1911387476662672631, guid: 053bfbdcdd5d06b4db6fd97a12ade96e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ChangeState
       objectReference: {fileID: 0}
     - target: {fileID: 1911387476662672631, guid: 053bfbdcdd5d06b4db6fd97a12ade96e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: QuizCanners.IsItGame.UI.ViewChangingButton, Assembly-CSharp
+      value: QuizCanners.IsItGame.UI.UI_StateChangingButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1911387476662672631, guid: 053bfbdcdd5d06b4db6fd97a12ade96e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: QuizCanners.IsItGame.UI.UI_StateChangingButton, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2386991086543193125, guid: 053bfbdcdd5d06b4db6fd97a12ade96e, type: 3}
       propertyPath: m_text
@@ -599,7 +616,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 236709562044158209, guid: 053bfbdcdd5d06b4db6fd97a12ade96e, type: 3}
   m_PrefabInstance: {fileID: 5828581568936945771}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8132785002756029072
+--- !u!114 &91577192964502085
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -608,11 +625,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 6029121544917399914}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e883b9e85d86444aa93b79db81a1a44, type: 3}
+  m_Script: {fileID: 11500000, guid: c0e4578a960b6834283b86e94efd3287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  role: 0
-  _targetView: 13
-  _transition: 0
-  _clearStack: 0
-  updateBackground: 1
+  _exit: 0
+  _targetState: 6

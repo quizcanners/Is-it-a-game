@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Effect RayBaked SDF Shape
   m_Shader: {fileID: 4800000, guid: a3b0f6ba7234b194283c6ea2d2bdea2a, type: 3}
-  m_ShaderKeywords: EFFECT_NONE SHAPE_RHOMBUS SURFC_MATT
+  m_ShaderKeywords: EFFECT_NONE SHAPE_ROUNDCONE SURFC_MATT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -30,7 +30,7 @@ Material:
     m_Ints: []
     m_Floats:
     - EFFECT: 0
-    - SHAPE: 15
+    - SHAPE: 17
     - SURFC: 0
     - _SHAPE: 17
     - _Size: 1

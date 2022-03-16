@@ -104,7 +104,7 @@ MonoBehaviour:
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-  - Name: Inventory
+  - Name: PauseMenu
     DirectReference: {fileID: 5798426520465659103, guid: ec9883ae494a932409c6e1ca0321c3e0, type: 3}
     Reference:
       m_AssetGUID: 

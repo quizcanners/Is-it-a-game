@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace QuizCanners.IsItGame.Pulse
 {
-    internal partial class PulseArena
+    public partial class PulsePath
     {
         [Serializable]
         internal class Link : IPEGI_ListInspect, IPEGI_Handles, IGotReadOnlyName, IPEGI
@@ -15,34 +15,57 @@ namespace QuizCanners.IsItGame.Pulse
             [SerializeField] private Point.Id _start = new();
             [SerializeField] private Point.Id _end = new();
             [SerializeField] internal BezierCurve curve = new();
-            [SerializeField] internal int width = 1;
 
-            public int Capacity => width * width;
+            private bool _paintCurve = false;
+
+            public float Width 
+            { 
+                get 
+                {
+                    var s = Start;
+                    var e = End;
+
+                    if (s!= null && e != null) 
+                    {
+                        return Mathf.Min(s.Radius, e.Radius) * 2;
+                    }
+
+                    return 2;
+                } 
+            }
 
             public Point Start => _start.GetEntity();
             public Point End => _end.GetEntity();
 
-            public Vector3 GetPoint(float progress)
+            public Vector3 GetPosition(float progress, Point.Id start, Vector2 offsetFraction = default)
             {
-                var s = Start;
-                var e = End;
+                var s =  Start;
+                var e =  End;
 
                 if (s == null || e == null)
                     return Vector3.zero;
 
-                return curve.GetPoint(progress, s.position, e.position);
+                bool fromStart = _start.SameAs(start);
+
+                if (!fromStart)
+                    progress = 1 - progress;
+
+                var pos = curve.GetPoint(progress, s.position, e.position);
+
+                if (offsetFraction.magnitude > 0)
+                {
+                    float theWidth = Mathf.Lerp(s.Radius, e.Radius, progress);
+                    pos += offsetFraction.ToVector3XZ() * theWidth;
+                }
+
+                return pos;
             }
 
             public bool Contains(Point point) =>
                 (_start.TryGetEntity(out var entA) && entA == point) ||
                 (_end.TryGetEntity(out var entB) && entB == point);
 
-            internal void Update(float deltaTime)
-            {
-
-            }
-
-            private static PulseArena GetArena() => Singleton.Get<Singleton_PulseCommander>().Data.Arena;
+            private static PulsePath GetArena() => Singleton.Get<Singleton_PulsePath>().Data;
 
             private readonly Gate.Vector3Value _positionDirty = new();
             private FeetDistance feetDistance = new();
@@ -72,6 +95,16 @@ namespace QuizCanners.IsItGame.Pulse
             public void InspectInList(ref int edited, int index)
             {
                 _start.InspectSelectPart();
+
+                Icon.Swap.Click().OnChanged(()=> 
+                { 
+                    var tmp = _end; 
+                    _end = _start;
+                    _start = tmp;
+
+                    curve.SwapVectors();
+                });
+
                 _end.InspectSelectPart();
 
                 if (Icon.Enter.Click())
@@ -82,13 +115,14 @@ namespace QuizCanners.IsItGame.Pulse
             {
                 if (Start != null && End != null)
                 {
-                    if (Singleton_PulseCommander.DrawCurves)
-                        pegi.Handle.Bazier(curve, Start.position, End.position, Color.white, width: width);
+                    if (Singleton_PulsePath.DrawCurves)
+                        pegi.Handle.Bazier(curve, Start.position, End.position, Color.white, width: Width);
                     else
-                        pegi.Handle.Line(Start.position, End.position, Color.white, thickness: width);
+                        pegi.Handle.Line(Start.position, End.position, Color.white, thickness: Width);
 
 
-                    curve.OnSceneDraw();
+                    if (_paintCurve)
+                        curve.OnSceneDraw();
 
                 } 
             }
@@ -97,8 +131,7 @@ namespace QuizCanners.IsItGame.Pulse
 
             public void Inspect()
             {
-                "Width".PegiLabel(60).Edit(ref width, 1, 10).Nl();
-
+                "Paint Curve".PegiLabel().ToggleIcon(ref _paintCurve).Nl();
             }
 
             #endregion

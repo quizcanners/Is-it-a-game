@@ -186,3 +186,72 @@ MonoBehaviour:
     - {fileID: 8300000, guid: f43078f4f6956dc4ebbc87c033ddf755, type: 3}
     - {fileID: 8300000, guid: a7230842e3e94fb4d951b5f982a83bdd, type: 3}
     - {fileID: 8300000, guid: b21d33f681600e445afcc3a2dc467fc0, type: 3}
+  - nameForInspector: Shot
+    list:
+    - {fileID: 8300000, guid: 2410842c2b9e4fd4aac93c9439b9eaba, type: 3}
+    - {fileID: 8300000, guid: d488279841bbf9a43a011d7436a739c6, type: 3}
+    - {fileID: 8300000, guid: 89e2cbc95c5ca174a88c1c1876bb423c, type: 3}
+    - {fileID: 8300000, guid: f9df09996a2345b4fbb8c06a7f5ecc20, type: 3}
+    - {fileID: 8300000, guid: f030efb0f3e823e47b193cd7ba9fa55e, type: 3}
+    - {fileID: 8300000, guid: 12dc692a716482c4c8204736f1973f51, type: 3}
+  - nameForInspector: DefaultSurfaceImpact
+    list:
+    - {fileID: 8300000, guid: 661a9b0aadbcd544dab2223932fb0741, type: 3}
+    - {fileID: 8300000, guid: 4439b74c4292de8468e6b7b4275c2045, type: 3}
+    - {fileID: 8300000, guid: d1454390ab9f5264a827dc96d8ea2d58, type: 3}
+    - {fileID: 8300000, guid: 1ca2105e566ed9c42baf3f633f064239, type: 3}
+    - {fileID: 8300000, guid: de620a2839e491f46a097250840fe096, type: 3}
+    - {fileID: 8300000, guid: 19e765ffada7b7a4ea11b5362d139c83, type: 3}
+    - {fileID: 8300000, guid: bdcc8480b03d62848892c25ca2ab0616, type: 3}
+    - {fileID: 8300000, guid: cb2c6d9228827f44fbf47fd332373d69, type: 3}
+  - nameForInspector: BodyImpact
+    list:
+    - {fileID: 8300000, guid: 0337bf785e4f689429b52f908392a3c9, type: 3}
+    - {fileID: 8300000, guid: b22cc78362f8264489fad9ce8f60fc27, type: 3}
+  - nameForInspector: BodyExplosion
+    list:
+    - {fileID: 8300000, guid: b2a9df1350356d3459a60e3048d372ae, type: 3}
+    - {fileID: 8300000, guid: 3774cb2754898a141aefee7508076dd8, type: 3}
+    - {fileID: 8300000, guid: 4c26d4d6b09557648944eaa61a6ac567, type: 3}
+    - {fileID: 8300000, guid: bce6e35da00325c4f80485f0195275fa, type: 3}
+    - {fileID: 8300000, guid: 78f493fa9149f104489620701b42654d, type: 3}
+    - {fileID: 8300000, guid: d734058f3ae8b4544a614156f576937f, type: 3}
+    - {fileID: 8300000, guid: fc21231d3d5fad94daef4b3a80b2f853, type: 3}
+    - {fileID: 8300000, guid: 66d30ab0466bc754e87bde2de0e98da2, type: 3}
+    - {fileID: 8300000, guid: 6380a29b092e63e4e93d9cd5383085d7, type: 3}
+    - {fileID: 8300000, guid: 3226227666ba5804c8e33c80b36b5c24, type: 3}
+  - nameForInspector: BlotDrop
+    list: []
+  - nameForInspector: ArmorImpact
+    list: []
+  - nameForInspector: BulletFlyBy
+    list:
+    - {fileID: 8300000, guid: 62a426dd2be13ee42b8b809852b4f5ff, type: 3}
+    - {fileID: 8300000, guid: 11c4594167aa42643b077c86939bec2f, type: 3}
+    - {fileID: 8300000, guid: 6425bc3d8659b3b4aa9cbd59f782c9e2, type: 3}
+    - {fileID: 8300000, guid: 523147591f2b45142b97f7346fa642f1, type: 3}
+    - {fileID: 8300000, guid: 8566b31066f5dea4291091669973548b, type: 3}
+    - {fileID: 8300000, guid: 737c9d6afbe0da64bac0f59f72c4ce2f, type: 3}
+    - {fileID: 8300000, guid: cfd21b4a06e576c4c9b20b8d4a6af0fc, type: 3}
+    - {fileID: 8300000, guid: 11a79fe637457bb46b36fc1f59622f4a, type: 3}
+    - {fileID: 8300000, guid: 68c2194db8edef64cadefdc95b064893, type: 3}
+    - {fileID: 8300000, guid: 3e1e075e1d7cd5e4b82d86351c50f418, type: 3}
+  - nameForInspector: Explosion
+    list:
+    - {fileID: 8300000, guid: dacb3e4754990aa4a9be9da677d6cd74, type: 3}
+    - {fileID: 8300000, guid: fc28a8228250e8e47b3eaf02e8107c10, type: 3}
+    - {fileID: 8300000, guid: f1d0dc9b5c9cd4445a02d7371147f57a, type: 3}
+    - {fileID: 8300000, guid: e573b2269b83f314cbb27ffd69e8d0c2, type: 3}
+    - {fileID: 8300000, guid: 4a45fb720709c224ea3b804f06f1f1c1, type: 3}
+  - nameForInspector: Explosion_Gory
+    list:
+    - {fileID: 8300000, guid: edf40e67dd1f53248a60a2b2ec611ce2, type: 3}
+    - {fileID: 8300000, guid: 7ab89624275b1624faaf22283aa50d0a, type: 3}
+    - {fileID: 8300000, guid: 8bf5b7e17bc586041b420a533d94bf6d, type: 3}
+    - {fileID: 8300000, guid: e91ccff42ebf1a241ae7668852a71e70, type: 3}
+    - {fileID: 8300000, guid: 01b3549655fd11a43bfed4385990ed9e, type: 3}
+    - {fileID: 8300000, guid: e0af300ebc4d6344ca15a6d4ee47fbf2, type: 3}
+  - nameForInspector: Explosion_Near
+    list:
+    - {fileID: 8300000, guid: 23fbf55de36d91540a6a104fc3609e51, type: 3}
+    - {fileID: 8300000, guid: 7392184d3a4ff7445809d2518e26d795, type: 3}

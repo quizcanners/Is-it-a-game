@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8796463409506290925}
   - component: {fileID: 1116124827094750909}
   - component: {fileID: 220438508206255183}
-  - component: {fileID: 2686265724182932890}
   - component: {fileID: 7850639351128594976}
+  - component: {fileID: 2675358932540536487}
   m_Layer: 0
   m_Name: Volumetric SDF Mesh Baked TF
   m_TagString: Untagged
@@ -85,19 +85,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2686265724182932890
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6731237034832206182}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7850639351128594976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,5 +98,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PrefabKey: Volumetric SDF Mesh Baked TF
+  Config:
+    _matType: 4
+    Shape: 1
+    Color: {r: 1, g: 0.8724341, b: 0, a: 1}
+    Roughtness: 0.5
+  primitiveSize: {x: 0.5, y: 0.5, z: 0.5}
+  primitiveOffset: {x: 0, y: 0, z: 0}
+  _disablePrimitive: 0
+  _colliderAndPrimitive: {fileID: 2675358932540536487}
   meshFilter: {fileID: 1116124827094750909}
   color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!135 &2675358932540536487
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6731237034832206182}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}

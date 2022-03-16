@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 220898996376837239}
   - component: {fileID: 1445764478932340822}
   - component: {fileID: 3955822006507466280}
+  - component: {fileID: 4863811780612143434}
   m_Layer: 0
   m_Name: Prop_Crate_Wood_05 Prim
   m_TagString: Untagged
@@ -55,6 +56,7 @@ MonoBehaviour:
   primitiveSize: {x: 1, y: 1, z: 1}
   primitiveOffset: {x: 0, y: 0, z: 0}
   _disablePrimitive: 0
+  _colliderAndPrimitive: {fileID: 4863811780612143434}
 --- !u!33 &1445764478932340822
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -105,3 +107,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4863811780612143434
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923161615780968445}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0.00000047683716, y: 0.54856586, z: 0}

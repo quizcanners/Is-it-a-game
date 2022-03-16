@@ -226,7 +226,7 @@ namespace QuizCanners {
 
               
 
-            "Stamina".PegiLabel(40).Edit01(ref _staminaLine).Nl();
+            "Stamina".PegiLabel(40).Edit_01(ref _staminaLine).Nl();
 
             int points = (int)StaminaPoints;
 

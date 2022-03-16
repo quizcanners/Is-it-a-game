@@ -2154,19 +2154,19 @@ MonoBehaviour:
       _fallbackLevel:
         _value: 1
       _chracterId:
-        Id: Vox Abrams
+        Id: Musharraf
       _useCharacter: 1
     - _fallbackName: Bob
       _fallbackLevel:
         _value: 1
       _chracterId:
-        Id: Morgrim
+        Id: Talib
       _useCharacter: 1
     - _fallbackName: Bob
       _fallbackLevel:
         _value: 1
       _chracterId:
-        Id: Nakfein
+        Id: Zaina
       _useCharacter: 1
     - _fallbackName: Bob
       _fallbackLevel:
@@ -2191,12 +2191,12 @@ MonoBehaviour:
     enemies:
     - _hpInitialized: 0
       _currentHp: 29
-      _creatureHealthState: 0
       Initiative: 19
       _exhaustion:
         _level: 0
       Conditions:
         _values: 
+      _creatureHealthState: 0
       _surpriseState: 0
       inspectedStuff:
         _currentlyEntered: -1
@@ -2204,12 +2204,12 @@ MonoBehaviour:
         Id: Satyr
     - _hpInitialized: 0
       _currentHp: 0
-      _creatureHealthState: 0
       Initiative: 12
       _exhaustion:
         _level: 0
       Conditions:
         _values: 
+      _creatureHealthState: 0
       _surpriseState: 0
       inspectedStuff:
         _currentlyEntered: -1
@@ -2217,12 +2217,12 @@ MonoBehaviour:
         Id: Gnoll Pack Lord
     - _hpInitialized: 0
       _currentHp: 51
-      _creatureHealthState: 0
       Initiative: 5
       _exhaustion:
         _level: 0
       Conditions:
         _values: 
+      _creatureHealthState: 0
       _surpriseState: 0
       inspectedStuff:
         _currentlyEntered: -1
@@ -2230,12 +2230,12 @@ MonoBehaviour:
         Id: Displacer Beast
     - _hpInitialized: 0
       _currentHp: 0
-      _creatureHealthState: 0
       Initiative: 13
       _exhaustion:
         _level: 0
       Conditions:
         _values: 
+      _creatureHealthState: 0
       _surpriseState: 0
       inspectedStuff:
         _currentlyEntered: -1
@@ -2244,12 +2244,12 @@ MonoBehaviour:
     characters:
     - _hpInitialized: 0
       _currentHp: 42
-      _creatureHealthState: 0
       Initiative: 15
       _exhaustion:
         _level: 0
       Conditions:
         _values: 
+      _creatureHealthState: 0
       _surpriseState: 0
       inspectedStuff:
         _currentlyEntered: -1
@@ -2260,12 +2260,12 @@ MonoBehaviour:
         Id: Vox Abrams
     - _hpInitialized: 0
       _currentHp: 66
-      _creatureHealthState: 0
       Initiative: 14
       _exhaustion:
         _level: 0
       Conditions:
         _values: 
+      _creatureHealthState: 0
       _surpriseState: 0
       inspectedStuff:
         _currentlyEntered: -1
@@ -2275,12 +2275,12 @@ MonoBehaviour:
         Id: Lorely
     - _hpInitialized: 0
       _currentHp: 75
-      _creatureHealthState: 0
       Initiative: 14
       _exhaustion:
         _level: 0
       Conditions:
         _values: 
+      _creatureHealthState: 0
       _surpriseState: 0
       inspectedStuff:
         _currentlyEntered: -1
@@ -2293,45 +2293,49 @@ MonoBehaviour:
     - AttackData:
         Name: For Calculator
         AttackBonus: 1
+        IsRanged: 0
         range:
           ft: 5
-        DamageDice: 06000000
-        DamageType: 7
-        IsRange: 0
-        DamageBonus: 1
+        Damage:
+          DamageDice: 
+          DamageType: 7
+          DamageBonus: 1
       CritOn19: 1
       Advantage: 1
     - AttackData:
         Name: For Calculator
         AttackBonus: 1
+        IsRanged: 0
         range:
           ft: 5
-        DamageDice: 0c000000
-        DamageType: 7
-        IsRange: 0
-        DamageBonus: 1
+        Damage:
+          DamageDice: 
+          DamageType: 7
+          DamageBonus: 1
       CritOn19: 1
       Advantage: 0
     - AttackData:
         Name: For Calculator
         AttackBonus: 1
+        IsRanged: 0
         range:
           ft: 5
-        DamageDice: 06000000
-        DamageType: 7
-        IsRange: 0
-        DamageBonus: 1
+        Damage:
+          DamageDice: 
+          DamageType: 7
+          DamageBonus: 1
       CritOn19: 0
       Advantage: 1
     - AttackData:
         Name: For Calculator
         AttackBonus: 1
+        IsRanged: 0
         range:
           ft: 5
-        DamageDice: 14000000
-        DamageType: 7
-        IsRange: 0
-        DamageBonus: 1
+        Damage:
+          DamageDice: 
+          DamageType: 7
+          DamageBonus: 1
       CritOn19: 0
       Advantage: 0
   DiceCalculator:
@@ -2361,14 +2365,14 @@ MonoBehaviour:
     _units: 81
     _dc: 15
     _bonus: 0
-    _effectApplyCount: 74
-    _influence: 1
-    _kindOfRoll: 2
+    _effectApplyCount: 37
+    _influence: 2
+    _kindOfRoll: 0
     _onPass:
     - _dice: 6
       _count: 8
       _toAdd: 2
-    _damage: 170000001a0000001f0000001c00000017000000190000001f00000013000000190000002b0000002000000019000000200000001b0000001f0000001d0000002c0000001d000000200000001900000022000000180000001d00000017000000240000001e0000001a00000020000000200000001b0000001600000019000000200000002400000022000000240000001a000000250000002200000020000000210000001b0000001a000000220000001f0000001f000000170000001000000028000000210000001c0000001e00000020000000240000000f000000160000001e000000180000000f0000001e0000002500000022000000290000001e0000001c0000001e0000001a0000002200000019000000230000002200000012000000210000001e00000020000000230000001000000020000000190000002000000008000000
+    _damage: 000000001a0000002100000000000000000000000000000000000000000000000000000000000000000000001d0000001e0000001f0000001600000000000000000000001e00000000000000000000001d0000001e000000000000001900000000000000180000001600000000000000250000002b0000001f000000240000001e00000000000000000000000000000023000000000000001f000000000000001c0000001e000000000000000000000000000000000000000000000000000000000000001f000000220000000000000023000000000000000000000000000000260000000000000000000000000000000000000021000000000000002600000000000000190000001e0000000000000000000000200000001500000020000000000000001e00000020000000000000001700000000000000000000001b00000020000000
     _halfOnFailed: 1
   Fallbacks:
     _name: {fileID: 11400000, guid: a903f3b945c41b2469c5e4892d850751, type: 2}

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2495798778122487746}
   - component: {fileID: 2495798778122487745}
   - component: {fileID: 2495798778122487744}
+  - component: {fileID: 3415113763573112407}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -26,9 +27,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2495798778122487758}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.12, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 15, y: 15, z: 15}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -40,7 +42,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2495798778122487758}
-  m_Mesh: {fileID: 4300000, guid: b6f5e074486ef26469a7627f2555e591, type: 2}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &2495798778122487745
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -61,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c4693eb4d973bb94ab7de5530d71e67f, type: 2}
+  - {fileID: 2100000, guid: 4a96f5051793f7043b4dfb7f2e225b9f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97,3 +99,29 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &3415113763573112407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2495798778122487758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abdd85593106b7e45adb64f2192da2c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  originalMesh: {fileID: 0}
+  meshFilter: {fileID: 2495798778122487746}
+  meshRenderer: {fileID: 2495798778122487745}
+  skinnedMeshRenderer: {fileID: 0}
+  materialIndex: 0
+  preferedDamageTextureSize: 2048
+  originalTexture: {fileID: 0}
+  useTexcoord2: 0
+  fromRtManager: 0
+  meshUvOffset: {x: 0, y: 0}
+  _damagedMaterialVariant: {fileID: 2100000, guid: a43701d738b06074ab3a725b27227b16, type: 2}
+  textureField: _MainTex_ATL_UvTwo
+  _showOptional: 0

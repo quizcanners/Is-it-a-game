@@ -35,13 +35,10 @@ namespace QuizCanners.IsItGame.Develop
         }
 
         private pegi.EnterExitContext context = new pegi.EnterExitContext();
-        private int _inspectedPlayableCharacter = -1;
         public void Inspect()
         {
             using (context.StartContext())
             {
-                "Playable Characters".PegiLabel().Enter_Dictionary(PlayableCharacters, ref _inspectedPlayableCharacter).Nl();
-
                 "Trigger Values".PegiLabel().IsEntered().Nl().If_Entered(()=>
                     Singleton.Try<Singleton_TriggerValues>(s => s.Values.Nested_Inspect()));
             }

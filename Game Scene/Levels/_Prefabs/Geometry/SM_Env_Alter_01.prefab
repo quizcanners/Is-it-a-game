@@ -117,11 +117,12 @@ MonoBehaviour:
   meshRenderer: {fileID: 6762220799448375654}
   skinnedMeshRenderer: {fileID: 0}
   materialIndex: 0
+  preferedDamageTextureSize: 512
   originalTexture: {fileID: 0}
   useTexcoord2: 1
   fromRtManager: 0
   meshUvOffset: {x: 0, y: 0}
-  originalMaterial: {fileID: 0}
+  _damagedMaterialVariant: {fileID: 2100000, guid: 05e8c4d2a7c0f5e40bf304bb203fa2e1, type: 2}
   textureField: _MainTex_ATL_UvTwo
   _showOptional: 0
 --- !u!64 &4363058023593965420

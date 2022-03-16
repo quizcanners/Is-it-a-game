@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3119618916691277365}
   - component: {fileID: 3119618916690648069}
   - component: {fileID: 3147681393553675727}
-  - component: {fileID: 1418900759392492431}
+  - component: {fileID: 2955838239876333469}
   m_Layer: 0
   m_Name: Ambient Light
   m_TagString: Untagged
@@ -100,7 +100,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!114 &1418900759392492431
+--- !u!114 &2955838239876333469
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,17 +109,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 3119618916688249721}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4648e5c9c2bf0b4981cf75c0cf6d629, type: 3}
+  m_Script: {fileID: 11500000, guid: cb718ca9b9fbd6541ba7b00b9aa3d7d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Type: 7
+  PrefabKey: 
   Config:
-    MatType: 0
-    Shape: 2
-    Color: {r: 1, g: 0.83413935, b: 0, a: 1}
+    _matType: 0
+    Shape: 1
+    Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     Roughtness: 0.5
-  primitiveSize: {x: 150, y: 150, z: 150}
-  primitiveOffset: {x: -0.18, y: 2.21, z: 0.12}
+  primitiveSize: {x: 1, y: 1, z: 1}
+  primitiveOffset: {x: 0, y: 0, z: 0}
+  _disablePrimitive: 0
+  _colliderAndPrimitive: {fileID: 0}
 --- !u!1001 &983532294539202673
 PrefabInstance:
   m_ObjectHideFlags: 0

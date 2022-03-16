@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 3774238783495716034}
   - component: {fileID: 5596771988597474671}
   - component: {fileID: 5743806165642217950}
-  - component: {fileID: 74740377908933608}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -120,28 +119,4 @@ MonoBehaviour:
   primitiveSize: {x: 1, y: 1, z: 1}
   primitiveOffset: {x: 0, y: 0, z: 0}
   _disablePrimitive: 0
---- !u!114 &74740377908933608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1121376267221425031}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abdd85593106b7e45adb64f2192da2c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  originalMesh: {fileID: 0}
-  meshFilter: {fileID: 3686117314495469738}
-  meshRenderer: {fileID: 3774238783495716034}
-  skinnedMeshRenderer: {fileID: 0}
-  materialIndex: 0
-  textureField: _DamageMask_UvTwo
-  originalTexture: {fileID: 0}
-  useTexcoord2: 1
-  fromRtManager: 0
-  meshUvOffset: {x: 0, y: 0}
-  originalMaterial: {fileID: 0}
-  _showOptional: 0
+  _colliderAndPrimitive: {fileID: 5596771988597474671}

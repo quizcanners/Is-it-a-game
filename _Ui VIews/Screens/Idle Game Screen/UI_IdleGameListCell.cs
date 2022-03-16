@@ -10,7 +10,7 @@ namespace QuizCanners.IsItGame.UI
 
         private void Update()
         {
-            _tiltMgmt.UpdateTilt(rect, Camera.main, mouseEffectRadius: 0.5f, speed: 20);
+            _tiltMgmt.UpdateTilt(rect, Camera.current, mouseEffectRadius: 0.5f, speed: 100, maxTilt: 30);
         }
     }
 }
