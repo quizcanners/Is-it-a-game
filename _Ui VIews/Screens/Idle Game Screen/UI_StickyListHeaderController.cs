@@ -15,16 +15,16 @@ namespace QuizCanners.IsItGame.UI
 
         [SerializeField] private List<Graphic> _graphicsToFade;
         [SerializeField] private List<Graphic> _graphicsToShowWhenOffset;
+
+        private readonly Gate.Float _positionChange = new();
+
         private float PosY 
         {
             get => _header.anchoredPosition.y;
-            set
-            {
-                _header.anchoredPosition = _header.anchoredPosition.Y(value);
-            }
+            set => _header.anchoredPosition = _header.anchoredPosition.Y(value);
         }
 
-        private readonly Gate.Float _positionChange = new();
+        private float ContentHeight => _myContent.rect.height;
 
         private void LateUpdate()
         {
@@ -36,21 +36,21 @@ namespace QuizCanners.IsItGame.UI
 
                 var screenPosition = up + offset;
 
-                var height = _header.rect.height;
+                var headerHeight = _header.rect.height;
 
-                float maxOffset = _myContent.rect.height - height;
+                float maxOffset = ContentHeight - headerHeight;
 
                 PosY = -Mathf.Clamp(screenPosition, 0, maxOffset);
 
                 if (_graphicsToFade.Count > 0)
                 {
-                    float alpha = Mathf.Clamp01((maxOffset - screenPosition ) / height);
+                    float alpha = Mathf.Clamp01((maxOffset - screenPosition ) / headerHeight);
                     _graphicsToFade.TrySetAlpha(alpha);
                 }
 
                 if (_graphicsToShowWhenOffset.Count > 0) 
                 {
-                    float showAlpha = (-PosY) / height;
+                    float showAlpha = (-PosY) / headerHeight;
                     _graphicsToShowWhenOffset.TrySetAlpha(showAlpha);
                 }
             }

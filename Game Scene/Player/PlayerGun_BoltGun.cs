@@ -1,11 +1,13 @@
 using Dungeons_and_Dragons;
 using PainterTool;
 using QuizCanners.Inspect;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace QuizCanners.IsItGame.Develop
 {
+    [Serializable]
     public class PlayerGun_BoltGun : IPEGI, INeedAttention
     {
         public PlaytimePainter_BrushConfigScriptableObject brushConfig;
@@ -17,7 +19,6 @@ namespace QuizCanners.IsItGame.Develop
                  DamageType = DamageType.Piercing
              });
 
-
         public void Shoot(Vector3 from, Vector3 target)
         {
 
@@ -26,8 +27,6 @@ namespace QuizCanners.IsItGame.Develop
 
 
         }
-
-
 
         #region Inspector
 

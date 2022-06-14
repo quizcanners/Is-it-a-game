@@ -129,6 +129,7 @@ namespace QuizCanners.IsItGame
                 if (smokeDensity < 0.01f && Visibility < 0.01f) 
                 {
                     Pool_SmokeEffects.ReturnToPool(this);
+                    _animating = false;
                 }
             }
         }
@@ -156,7 +157,7 @@ namespace QuizCanners.IsItGame
                 _animating = !_animating;
             "Density".PegiLabel(60).Edit(ref smokeDensity).Nl();
 
-            pegi.Click(()=> PlayAnimateFromDot(0.5f));
+            "Animate".PegiLabel().Click(()=> PlayAnimateFromDot(0.5f));
 
             "Big Cloud".PegiLabel().Click().Nl().OnChanged(()=> PlayFromBigCloud(10));
 

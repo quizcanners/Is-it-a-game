@@ -25,7 +25,7 @@ MonoBehaviour:
     _pushForce: 200
     _explosionRadius: 4
     context:
-      _currentlyEntered: 1
+      _currentlyEntered: -1
   MachineGun:
     brushConfig: {fileID: 11400000, guid: 1923bf77c4f694e4e9cdfed090985213, type: 2}
     WeaponAttack:
@@ -41,9 +41,19 @@ MonoBehaviour:
     MaxDistance: 2000
     context:
       _currentlyEntered: -1
-  SMG:
-    brushConfig: {fileID: 0}
+  BoltGun:
+    brushConfig: {fileID: 11400000, guid: 1923bf77c4f694e4e9cdfed090985213, type: 2}
+    WeaponAttack:
+      Name: Gun
+      AttackBonus: 3
+      IsRanged: 1
+      range:
+        ft: 5
+      Damage:
+        DamageDice: 0a000000
+        DamageType: 7
+        DamageBonus: 2
     context:
       _currentlyEntered: -1
   context:
-    _currentlyEntered: 0
+    _currentlyEntered: -1
