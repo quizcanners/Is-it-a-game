@@ -149,7 +149,7 @@ namespace QuizCanners {
             }
             else
             {
-                LerpUtils.IsLerpingBySpeed(ref _previousStaminaLine, _staminaLine, 0.1f);
+                LerpUtils.IsLerpingBySpeed(ref _previousStaminaLine, _staminaLine, 0.1f, unscaledTime: false);
             }
 
             _previousStaminaLineInShader.GlobalValue = _previousStaminaLine;

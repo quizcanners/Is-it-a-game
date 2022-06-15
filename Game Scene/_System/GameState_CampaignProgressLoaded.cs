@@ -6,9 +6,15 @@ namespace QuizCanners.IsItGame.StateMachine
 {
     partial class GameState
     {
-        public class CampaignProgressLoaded : Base, IDataFallback<Game.Enums.Music>, IDataFallback<Game.Enums.View>, IDataFallback<UiObscureScreen>
+        public class CampaignProgressLoaded : Base, 
+            IDataFallback<Game.Enums.Music>, 
+            IDataFallback<Game.Enums.View>, 
+            IDataFallback<UiObscureScreen>,
+            IDataFallback<Game.Enums.PhisicalSimulation>
         {
             public Game.Enums.Music Get() => Game.Enums.Music.Combat;
+
+            Game.Enums.PhisicalSimulation IDataFallback<Game.Enums.PhisicalSimulation>.Get() => Game.Enums.PhisicalSimulation.Active;
 
             UiObscureScreen IDataFallback<UiObscureScreen>.Get() => UiObscureScreen.Off;
 

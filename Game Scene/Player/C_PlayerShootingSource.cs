@@ -91,7 +91,7 @@ namespace QuizCanners.IsItGame.Develop
                 break;
             }
 
-            _machineGunState.WeaponKick = LerpUtils.LerpBySpeed(_machineGunState.WeaponKick, 0, 2f);
+            _machineGunState.WeaponKick = LerpUtils.LerpBySpeed(_machineGunState.WeaponKick, 0, 2f, unscaledTime: false);
         }
 
         #region Inspector

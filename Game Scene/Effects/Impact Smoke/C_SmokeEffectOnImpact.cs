@@ -120,9 +120,13 @@ namespace QuizCanners.IsItGame
                 float deSize = 1f / Size;
                 float targetVisibility = Mathf.Clamp(smokeDensity / Size , 0, max: deSize);
                 bool isFading = targetVisibility < Visibility;
-                Visibility = LerpUtils.LerpBySpeed(Visibility, Mathf.Clamp01(targetVisibility), (1 + Mathf.Abs(targetVisibility - Visibility)) 
-                    / (isFading ? (1 + smokeDensity) : Size));
-                Color = LerpUtils.LerpBySpeed(Color, Color.white, 1);
+                Visibility = LerpUtils.LerpBySpeed(
+                    from: Visibility, 
+                    to: Mathf.Clamp01(targetVisibility), 
+                    speed: (1 + Mathf.Abs(targetVisibility - Visibility)) / (isFading ? (1 + smokeDensity) : Size),
+                    unscaledTime: false);
+
+                Color = LerpUtils.LerpBySpeed(Color, Color.white, 1, unscaledTime: false);
                 float fadeSpeed = Size * Size * Visibility * 0.1f * (1 + Pool_SmokeEffects.InstancesCount);
                 smokeDensity = Mathf.Max(0, smokeDensity - fadeSpeed * Time.deltaTime);
 

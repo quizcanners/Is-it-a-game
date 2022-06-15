@@ -25,7 +25,8 @@ namespace QuizCanners.IsItGame.Develop
             {
                 LerpUtils.IsLerpingBySpeed(ref impulse.ImpulseExpansion01,
                     to: impulse.IsExpanding ? 1 : 0,
-                    speed: impulse.IsExpanding ? 5 : 1);
+                    speed: impulse.IsExpanding ? 5 : 1,
+                    unscaledTime: false);
 
                 source.Temperature = impulse.ImpulseExpansion01 * impulse.MaxHeat;
                 if (impulse.ImpulseExpansion01 == 1)

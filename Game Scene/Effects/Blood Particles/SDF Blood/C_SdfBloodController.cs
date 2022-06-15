@@ -61,7 +61,7 @@ namespace QuizCanners.IsItGame
         {
             if (_playing) 
             {
-                if (LerpUtils.IsLerpingBySpeed(ref _progress, 1, 0.75f) || transform.position.y > - 4) 
+                if (LerpUtils.IsLerpingBySpeed(ref _progress, 1, 0.75f, unscaledTime: false) || transform.position.y > - 4) 
                 {
                     transform.position += PushDirection * Time.deltaTime;
 

@@ -33,7 +33,7 @@ namespace QuizCanners.IsItGame
         {
             float speed = Mathf.Lerp(3f, 1f , Singleton.TryGetValue<Pool_ImpactLightsController, float>(s => s.VacancyPortion, 1));
 
-            SizePortion = LerpUtils.LerpBySpeed(SizePortion, _scalingUp ? 1 : 0.01f, speed * (_scalingUp ? 50 : 2f));
+            SizePortion = LerpUtils.LerpBySpeed(SizePortion, _scalingUp ? 1 : 0.01f, speed * (_scalingUp ? 50 : 2f), unscaledTime: false);
 
             if (SizePortion >= 1)
                 _scalingUp = false;

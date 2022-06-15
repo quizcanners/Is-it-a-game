@@ -45,7 +45,7 @@ namespace QuizCanners.IsItGame
                     Pool_TrailEffectController.ReturnToPool(this);
                 }
 
-                transform.position = LerpUtils.LerpBySpeed(transform.position, _target, speed);
+                transform.position = LerpUtils.LerpBySpeed(transform.position, _target, speed, unscaledTime: false);
             }
 
             if (_childElement) 

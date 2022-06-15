@@ -88,11 +88,11 @@ namespace QuizCanners.IsItGame.Develop
                     }
                 }
 
-                speed01 = LerpUtils.LerpBySpeed(speed01, movementInput ? 1 : 0, movementInput ? acceleration : slowDownSpeed);
+                speed01 = LerpUtils.LerpBySpeed(speed01, movementInput ? 1 : 0, movementInput ? acceleration : slowDownSpeed, unscaledTime: false);
 
                 if (!movementInput)
                 {
-                    direction = LerpUtils.LerpBySpeed(direction, Vector2.zero, 1);
+                    direction = LerpUtils.LerpBySpeed(direction, Vector2.zero, 1, unscaledTime: false);
                 }
 
                 if (direction.magnitude > 1)

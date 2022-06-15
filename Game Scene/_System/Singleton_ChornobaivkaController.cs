@@ -34,27 +34,6 @@ namespace QuizCanners.IsItGame.Develop
             return Physics.Raycast(ray, out softHit, maxDistance: dist, (1 << SoftLayerToPierce));
         }
 
-
-
-        private Gate.Integer _stateVersion = new Gate.Integer();
-
-        private void Update()
-        {
-            if (_stateVersion.TryChange(GameState.Machine.Version)) 
-            {
-                switch (GameState.Machine.Get(defaultValue: Game.Enums.PhisicalSimulation.Active)) 
-                {
-                    case Game.Enums.PhisicalSimulation.Active:
-                        Time.timeScale = 1;
-                        break;
-                    case Game.Enums.PhisicalSimulation.Paused:
-                        Time.timeScale = 0;
-                        break;
-                }
-            };
-        }
-
-
         public override void Inspect()
         {
             base.Inspect();

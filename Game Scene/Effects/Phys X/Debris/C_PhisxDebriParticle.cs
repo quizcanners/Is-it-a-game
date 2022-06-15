@@ -73,7 +73,7 @@ namespace QuizCanners.IsItGame
             set 
             {
                 transform.localScale = Vector3.one * value;
-                _rigidbody.mass = value;
+               
             }
         }
 
@@ -94,6 +94,7 @@ namespace QuizCanners.IsItGame
             lifeTime = 0;
             _rigidbody.AddForce((pushVector.normalized + Random.insideUnitSphere * pushRandomness).normalized * pushForce, ForceMode.VelocityChange);
             _rigidbody.AddTorque(Random.insideUnitSphere * torqueForce, ForceMode.VelocityChange);
+            _rigidbody.mass = Size;
         }
 
         public void Explosion(Vector3 origin, float force, float radius) 
@@ -123,7 +124,7 @@ namespace QuizCanners.IsItGame
                 {
                     float timeTillFade = totalLifetime - lifeTime;
                   
-                    Size = LerpUtils.LerpBySpeed(s, 0, s/(timeTillFade+0.01f));
+                    Size = LerpUtils.LerpBySpeed(s, 0, s/(timeTillFade+0.01f), unscaledTime: false);
                 }
             }
         }

@@ -40,7 +40,7 @@ namespace QuizCanners.IsItGame.SpaceEffect
         #region Animation
         private SpaceAndStarsConfiguration Target => SpaceAndStarsConfiguration.Selected;
 
-        private readonly LerpData _lerpData = new LerpData();
+        private readonly LerpData _lerpData = new LerpData(unscaledTime: true);
 
         protected override void AfterEnable()
         {
