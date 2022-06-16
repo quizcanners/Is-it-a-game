@@ -2,14 +2,16 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Screen Space Fill Masked - Forest Road Blured
-  m_Shader: {fileID: 4800000, guid: 2aeb2b4f533436448b555a88860a63a4, type: 3}
-  m_ShaderKeywords: _GYRO_MODE_TOPONLY
+  m_Name: Screen Space Fill
+  m_Shader: {fileID: 4800000, guid: e8ce8ff302756174e9af61e7f0c92b68, type: 3}
+  m_ValidKeywords:
+  - _GYRO_MODE_TOPONLY
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -20,7 +22,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _FillTex:
-        m_Texture: {fileID: 2800000, guid: 2baa60ed30105e342aa612651d9fd39e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 103998f78e011d84e8543a9f81df77ed, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FillTexture:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
