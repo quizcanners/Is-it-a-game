@@ -148,7 +148,7 @@ namespace QuizCanners.IsItGame.Develop
             {
                 rb.isKinematic = LimbsState == LimbsControllerState.Animation;
                 rb.detectCollisions = collider;
-                rb.useGravity = !isGiblets;
+                rb.useGravity = true;// !isGiblets;
             }
 
             foreach (var det in detachments)

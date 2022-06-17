@@ -63,11 +63,13 @@ namespace QuizCanners.IsItGame
             {
                 if (LerpUtils.IsLerpingBySpeed(ref _progress, 1, 0.75f, unscaledTime: false) || transform.position.y > - 4) 
                 {
-                    transform.position += PushDirection * Time.deltaTime;
+                    float above = QcMath.SmoothStep(-2f, -0.3f, transform.position.y);
+
+                    transform.position += above * PushDirection * Time.deltaTime;
 
                     if (_progress > 0.5f) 
                     {
-                        transform.position += Vector3.down * (float)(20* Time.deltaTime * (_progress-0.5));
+                        transform.position += Vector3.down * (0.2f + above) * (float)(20* Time.deltaTime * (_progress-0.5));
                     }  
 
                     Progress = _progress;

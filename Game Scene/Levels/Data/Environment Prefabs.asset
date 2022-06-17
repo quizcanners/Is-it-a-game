@@ -29,8 +29,9 @@ MonoBehaviour:
   - {fileID: 1817701997065616986, guid: 2d464d89ebce47b4e929e8cf96a3ebb5, type: 3}
   - {fileID: 8345230428885593057, guid: bee83c16f1bbff64189dec21c6f23c78, type: 3}
   - {fileID: 5843226449179004938, guid: 4139e3fa8524b6740abf2db6152308bd, type: 3}
+  - {fileID: 7113466435981824913, guid: 6a96447112d92f0448ac351d531f9bc4, type: 3}
   context:
-    _currentlyEntered: 0
+    _currentlyEntered: -1
   _prefabs:
     inspectedElement_Internal: -1
     listSectionStartIndex: 0
