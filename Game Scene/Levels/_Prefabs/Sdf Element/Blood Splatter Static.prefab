@@ -63,11 +63,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PrefabKey: Blood Splatter
-  Config:
-    _matType: 0
-    Shape: 1
-    Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    Roughtness: 0.5
+  _renderer: {fileID: 6717975315045434011}
+  Shape: 1
   primitiveSize: {x: 0.5, y: 0.5, z: 0.5}
   primitiveOffset: {x: 0, y: 0, z: 0}
   _disablePrimitive: 0

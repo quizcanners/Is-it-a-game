@@ -30,6 +30,7 @@ MonoBehaviour:
   - {fileID: 8345230428885593057, guid: bee83c16f1bbff64189dec21c6f23c78, type: 3}
   - {fileID: 5843226449179004938, guid: 4139e3fa8524b6740abf2db6152308bd, type: 3}
   - {fileID: 7113466435981824913, guid: 6a96447112d92f0448ac351d531f9bc4, type: 3}
+  - {fileID: 9124377334510168032, guid: 7965d021ec5f0464185c8a7ba6f9b65c, type: 3}
   context:
     _currentlyEntered: -1
   _prefabs:

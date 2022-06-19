@@ -111,11 +111,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PrefabKey: Cube
-  Config:
-    _matType: 0
-    Shape: 0
-    Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    Roughtness: 0.5
+  _renderer: {fileID: 3774238783495716034}
+  Shape: 0
   primitiveSize: {x: 1, y: 1, z: 1}
   primitiveOffset: {x: 0, y: 0, z: 0}
   _disablePrimitive: 0

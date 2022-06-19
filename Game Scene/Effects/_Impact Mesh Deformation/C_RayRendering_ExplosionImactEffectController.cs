@@ -132,6 +132,7 @@ namespace QuizCanners.IsItGame
             }
         }
 
+        #region Inspector
         public void Inspect()
         {
             var changes = pegi.ChangeTrackStart();
@@ -156,7 +157,6 @@ namespace QuizCanners.IsItGame
             _updatePropertyBlockRequest.Feed(changes);
         }
 
-        #region Inspector
         public void OnSceneDraw()
         {
             var pos = _ImpactPosition.latestValue;

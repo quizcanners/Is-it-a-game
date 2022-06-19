@@ -98,11 +98,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PrefabKey: Volumetric SDF Mesh Baked TF
-  Config:
-    _matType: 4
-    Shape: 1
-    Color: {r: 1, g: 0.8724341, b: 0, a: 1}
-    Roughtness: 0.5
+  _renderer: {fileID: 220438508206255183}
+  Shape: 1
   primitiveSize: {x: 0.5, y: 0.5, z: 0.5}
   primitiveOffset: {x: 0, y: 0, z: 0}
   _disablePrimitive: 0

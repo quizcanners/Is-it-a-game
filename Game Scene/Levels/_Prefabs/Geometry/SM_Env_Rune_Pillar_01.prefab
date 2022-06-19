@@ -112,5 +112,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PrefabKey: SM_Env_Rune_Pillar_01
+  _renderer: {fileID: 1476958842452890140}
+  Shape: 0
+  primitiveSize: {x: 1, y: 1, z: 1}
+  primitiveOffset: {x: 0, y: 0, z: 0}
+  _disablePrimitive: 0
+  _colliderAndPrimitive: {fileID: 0}
   meshFilter: {fileID: 8044008216712959565}
   color: {r: 1, g: 1, b: 1, a: 1}
