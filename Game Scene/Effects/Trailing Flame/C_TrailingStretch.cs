@@ -42,6 +42,7 @@ namespace QuizCanners.IsItGame
             {
                 if (Vector3.Distance(transform.position, _target) < 0.1f)
                 {
+                    _animating = false;
                     Pool_TrailEffectController.ReturnToPool(this);
                 }
 

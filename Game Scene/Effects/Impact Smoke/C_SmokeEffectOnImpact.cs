@@ -1,5 +1,6 @@
 using QuizCanners.Inspect;
 using QuizCanners.Lerp;
+using QuizCanners.RayTracing;
 using QuizCanners.Utils;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ namespace QuizCanners.IsItGame
     public class C_SmokeEffectOnImpact : MonoBehaviour, IPEGI
     {
         [SerializeField] private MeshRenderer meshRenderer;
+        [SerializeField] private C_RayRendering_DynamicPrimitive _primitive;
 
         private readonly LinkedLerp.ShaderFloat _visibility = new("_Visibility", 1);
         private readonly LinkedLerp.ShaderColor _color = new("_Color", Color.white, maxSpeed: 10);
@@ -88,6 +90,7 @@ namespace QuizCanners.IsItGame
             smokeDensity = 0;
             PlayAnimateFromDot();
             CheckBlock();
+            _primitive.transform.localScale = Vector3.zero;
             meshRenderer.SetPropertyBlock(block);
         }
 
@@ -129,6 +132,8 @@ namespace QuizCanners.IsItGame
                 Color = LerpUtils.LerpBySpeed(Color, Color.white, 1, unscaledTime: false);
                 float fadeSpeed = Size * Size * Visibility * 0.1f * (1 + Pool_SmokeEffects.InstancesCount);
                 smokeDensity = Mathf.Max(0, smokeDensity - fadeSpeed * Time.deltaTime);
+
+                _primitive.transform.localScale = Size * Visibility * Visibility * new Vector3(2,0.5f,0);
 
                 if (smokeDensity < 0.01f && Visibility < 0.01f) 
                 {
