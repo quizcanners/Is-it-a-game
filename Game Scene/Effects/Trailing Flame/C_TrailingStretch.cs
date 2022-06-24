@@ -1,5 +1,6 @@
 using QuizCanners.Inspect;
 using QuizCanners.Lerp;
+using QuizCanners.Utils;
 using System;
 using UnityEngine;
 
@@ -11,6 +12,9 @@ namespace QuizCanners.IsItGame
         [SerializeField] private float speed = 150;
         [SerializeField] private TrailRenderer trail;
 
+        [Header("Optional")]
+        [SerializeField] private C_SDFTrace _trace;
+
         [NonSerialized] private bool _animating;
         [NonSerialized] private Vector3 _target;
 
@@ -19,6 +23,10 @@ namespace QuizCanners.IsItGame
 
         public void FlyTo(Vector3 position) 
         {
+            if (_trace)
+                _trace.RestartOnParent(transform);
+            
+
             _animating = true;
             _target = position;
             Reboot();
@@ -29,6 +37,12 @@ namespace QuizCanners.IsItGame
             _previousPosition = transform.position;
             _directionVector = Vector3.zero;
             trail.Clear();
+        }
+
+        protected void OnDestroy()
+        {
+            if (_trace)
+                _trace.gameObject.DestroyWhatever();
         }
 
         protected virtual void OnEnable() 
@@ -43,6 +57,10 @@ namespace QuizCanners.IsItGame
                 if (Vector3.Distance(transform.position, _target) < 0.1f)
                 {
                     _animating = false;
+                    
+                    if (_trace)
+                        _trace.transform.parent = transform.parent;
+
                     Pool_TrailEffectController.ReturnToPool(this);
                 }
 
@@ -60,14 +78,16 @@ namespace QuizCanners.IsItGame
             }
         }
 
-
+        #region Inspector
         public void Inspect()
         {
             "A child element will be stretched & rotated based on movement. Subchildren of that object should form the tail. For example, a cube should be moved to locatl position (0,0,-0.5). So that only one of it's sides will scale".PegiLabel().WriteHint();
             "Trail Child".PegiLabel(80).Edit(ref _childElement).Nl();
             "Trail Renderer".PegiLabel(80).Edit_IfNull(ref trail, gameObject).Nl();
-        }
 
+            "Trace (Optional)".PegiLabel().Edit(ref _trace).Nl();
+        }
+        #endregion
     }
 
     [PEGI_Inspector_Override(typeof(C_TrailingStretch))] internal class TrailingStretchDrawer : PEGI_Inspector_Override { }
