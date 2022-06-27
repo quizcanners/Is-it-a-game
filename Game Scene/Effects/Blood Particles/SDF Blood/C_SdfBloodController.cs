@@ -22,7 +22,9 @@ namespace QuizCanners.IsItGame
 
         private float _progress;
         private bool _playing;
-      
+
+        const float MAX_SIZE = 6.5f;
+
 
         private float Progress 
         {
@@ -41,7 +43,7 @@ namespace QuizCanners.IsItGame
 
                 _Down.SetOn(block, Mathf.Pow(Mathf.Abs(0.25f - sqRProgress) * 2, 2));
 
-                transform.localScale = Vector3.one * Mathf.Lerp(0.25f, 6.5f, _progress);
+                transform.localScale = Vector3.one * Mathf.Lerp(0.25f, MAX_SIZE, _progress);
 
                 _renderer.SetPropertyBlock(block);
             }

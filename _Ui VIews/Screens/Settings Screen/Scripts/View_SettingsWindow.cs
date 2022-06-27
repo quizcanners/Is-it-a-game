@@ -9,12 +9,12 @@ namespace QuizCanners.IsItGame.Develop
         {
             pegi.Nl();
 
-            var s = Singleton.Try<Singleton_Sounds>(s =>
+            var s = Singleton.Try<Singleton_WorldSounds>(s =>
             {
                 var snd = s.WantSound;
                 if ("Sound".PegiLabel().ToggleIcon(ref snd).Nl())
-                    Singleton.Get<Singleton_Sounds>().WantSound = s;
-            }, onFailed: ()=> "No {0}".F(nameof(Singleton_Sounds)).PegiLabel().WriteHint() , logOnServiceMissing: false);
+                    Singleton.Get<Singleton_WorldSounds>().WantSound = s;
+            }, onFailed: ()=> "No {0}".F(nameof(Singleton_WorldSounds)).PegiLabel().WriteHint() , logOnServiceMissing: false);
         }
     }
 

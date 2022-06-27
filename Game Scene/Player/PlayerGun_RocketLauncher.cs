@@ -78,7 +78,7 @@ namespace QuizCanners.IsItGame.Develop
                                 m.Giblets(pushDirection.normalized, pushForce01: GetPushForce());
                         }
 
-                        if (m.LimbsState == C_MonsterEnemy.LimbsControllerState.Ragdoll)
+                        if (!m.Kinematic)
                         {
                             m.Push(force: _pushForce * 20, origin: hit.point - Vector3.up*2, radius: _explosionRadius);
                         }

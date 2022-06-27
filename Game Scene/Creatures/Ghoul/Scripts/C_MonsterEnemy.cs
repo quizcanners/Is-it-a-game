@@ -19,13 +19,14 @@ namespace QuizCanners.IsItGame.Develop
         [SerializeField] protected List<C_MonsterImpactHandler> impactHandlers;
         [SerializeField] protected List<GameObject> bones;
         [SerializeField] protected List<Rigidbody> rigidbodies;
+        [SerializeField] protected List<C_RayRendering_DynamicPrimitive> dynamicPrimitives;
         [SerializeField] protected List<C_MonsterDetachableChunk> detachments;
         [SerializeField] protected Transform weaponRoot;
 
         [NonSerialized] public int postDeathDamage;
 
         private CharacterState _state;
-        private PulsePath.Unit _unit;
+        [NonSerialized] private PulsePath.Unit _unit;
         private LimbsControllerState _limbsState;
         private bool _fallbackAlive;
         private bool _animationInvalidated;
@@ -33,6 +34,8 @@ namespace QuizCanners.IsItGame.Develop
         private readonly LogicWrappers.Timer _disruptMovementSeconds = new();
         private readonly LogicWrappers.TimeFixedSegmenter _turnTimer = new(segmentLength: DnDTime.SECONDS_PER_TURN);
         private readonly LogicWrappers.Timer _postDeathTimer = new();
+
+        private bool IsTestDummy => _unit == null;
 
         public bool IsAlive
         {
@@ -73,11 +76,40 @@ namespace QuizCanners.IsItGame.Develop
 
                 switch (value) 
                 {
-                    case LimbsControllerState.Ragdoll: _animationInvalidated = true; break;
+                    case LimbsControllerState.Disintegrating:
+                    case LimbsControllerState.Giblets:
+                    case LimbsControllerState.Ragdoll:
+                        _animationInvalidated = true;
+                        IsAlive = false;
+                        break;
                     case LimbsControllerState.Animation: _animationInvalidated = false; break;
                 }
 
                 UpdateState_Internal();
+            }
+        }
+
+        public bool Kinematic 
+        {
+            get => LimbsState == LimbsControllerState.Animation; //LimbsState != LimbsControllerState.Ragdoll && LimbsState != LimbsControllerState.Disintegrating;
+        }
+
+        public bool IsCollider 
+        {
+            get 
+            {
+                if (IsAlive)
+                    return true;
+
+                switch (LimbsState) 
+                {
+                    case LimbsControllerState.Giblets: return false;
+                    case LimbsControllerState.Disintegrating: return true;
+                    case LimbsControllerState.Animation: return true;
+                    case LimbsControllerState.Ragdoll: return true;
+                    default:
+                        return true;
+                }
             }
         }
 
@@ -138,17 +170,22 @@ namespace QuizCanners.IsItGame.Develop
             var isGiblets = LimbsState == LimbsControllerState.Giblets;
 
             weaponRoot.gameObject.SetActive(!isGiblets);
-            bool collider = IsAlive || LimbsState != LimbsControllerState.Giblets;
+            bool collider = IsCollider;
             SetColliders(collider);
-            bones.SetActive_List(!isGiblets && ShowDamage);
+            bones.SetActive_List(!isGiblets && ShowDamage && LimbsState != LimbsControllerState.Disintegrating);
 
-            skeleton.animator.enabled = !_animationInvalidated; 
+            skeleton.animator.enabled = !_animationInvalidated;
+
+            foreach (var d in dynamicPrimitives)
+                d.enabled = false;// isGiblets;
+
+            var kinematic = Kinematic;
 
             foreach (var rb in rigidbodies)
             {
-                rb.isKinematic = LimbsState == LimbsControllerState.Animation;
+                rb.isKinematic = kinematic;
                 rb.detectCollisions = collider;
-                rb.useGravity = true;// !isGiblets;
+                rb.useGravity = !isGiblets;
             }
 
             foreach (var det in detachments)
@@ -203,12 +240,32 @@ namespace QuizCanners.IsItGame.Develop
         {
             _postDeathTimer.Restart(2);
             LimbsState = LimbsControllerState.Ragdoll;
+           
+        }
+
+        public void Disintegrate() 
+        {
+            if (!IsTestDummy && (!Camera.main.IsInCameraViewArea(GetActivePosition()) || !ImpactController))
+            {
+                Pool_MonstersController.ReturnToPool(this);
+                return;
+            }
+
+            _postDeathTimer.Restart(2);
+
+            ShowDamage = true;
             IsAlive = false;
+            LimbsState = LimbsControllerState.Disintegrating;
+            bones.SetActive_List(false);
+
+            Vector3 origin = GetActivePosition();
+
+            ImpactController.Play(origin , 1, disintegrate: true);
         }
 
         public void Giblets(Vector3 pushVector = default, float pushForce01 = 0)
         {
-            if (!Camera.main.IsInCameraViewArea(GetActivePosition()) || !ImpactController)
+            if (!IsTestDummy && (!Camera.main.IsInCameraViewArea(GetActivePosition()) || !ImpactController))
             {
                 Pool_MonstersController.ReturnToPool(this);
                 return;
@@ -243,7 +300,6 @@ namespace QuizCanners.IsItGame.Develop
 
             Singleton.Try<Pool_BloodParticlesController>(s =>
             {
-
                 int count = (int)(1 + 30 * s.VacancyPortion);
 
                 for (int i = 0; i < count; i++)
@@ -261,6 +317,7 @@ namespace QuizCanners.IsItGame.Develop
                         return;
                 }
             });
+
         }
 
         public bool TryTakeHit(Attack attack, RollInfluence influence, LimbsControllerState onKillReaction = LimbsControllerState.Giblets) 
@@ -285,7 +342,8 @@ namespace QuizCanners.IsItGame.Develop
                             switch (onKillReaction) 
                             {
                                 case LimbsControllerState.Ragdoll:
-                                case LimbsControllerState.Animation: 
+                                case LimbsControllerState.Animation:
+                                case LimbsControllerState.Disintegrating:
                                     LimbsState = onKillReaction; break;
                                 default: 
                                     Giblets(); break;
@@ -322,69 +380,78 @@ namespace QuizCanners.IsItGame.Develop
 
         public void Update()
         {
-            if (_unit != null)
+          
+
+            if (IsTestDummy)
+                return;
+
+            skeleton.Down = _state.HealthState != CreatureStateBase.CreatureHealthState.Alive && !ImpactController.IsPlaying;
+
+            if (_turnTimer.GetSegmentsAndUpdate() > 0) 
             {
-                if (_turnTimer.GetSegmentsAndUpdate() > 0) 
-                {
-                    _state.OnStartTurn();
-                    _state.OnEndTurn();
-                }
+                _state.OnStartTurn();
+                _state.OnEndTurn();
+            }
 
-                skeleton.Down = _state.HealthState != CreatureStateBase.CreatureHealthState.Alive && !ImpactController.IsPlaying;
+            switch (_state.HealthState)
+            {
+                case CreatureStateBase.CreatureHealthState.Alive:
 
-                switch (_state.HealthState)
-                {
-                    case CreatureStateBase.CreatureHealthState.Alive:
+                    if (!_disruptMovementSeconds.IsFinished)
+                        break;
 
-                        if (!_disruptMovementSeconds.IsFinished)
+                    var ent = _state.CharacterId.GetEntity();
+                    if (ent == null)
+                        return;
+
+                    _unit.Update(Time.deltaTime, _state.CharacterId.GetEntity()[SpeedType.Walking]);
+                    transform.position = _unit.GetPosition();
+                    skeleton.OnMove(transform.position);
+
+                    if (skeleton.Direction.magnitude > 0.01f)
+                        transform.LookAt(transform.position + skeleton.Direction, Vector3.up);
+                    break;
+                case CreatureStateBase.CreatureHealthState.Dead:
+
+                    switch (LimbsState) 
+                    {
+                        case LimbsControllerState.Giblets:
+
+                            foreach (var rb in rigidbodies) 
+                            {
+                                rb.velocity *= (1 - Time.deltaTime);
+                            }
+
+                            if (!ImpactController || !ImpactController.IsPlaying)
+                                Pool_MonstersController.ReturnToPool(this);
                             break;
 
-                        var ent = _state.CharacterId.GetEntity();
-                        if (ent == null)
-                            return;
+                        case LimbsControllerState.Disintegrating:
+                            if (!ImpactController || !ImpactController.IsPlaying)
+                                Pool_MonstersController.ReturnToPool(this);
+                            break;
 
-                        _unit.Update(Time.deltaTime, _state.CharacterId.GetEntity()[SpeedType.Walking]);
-                        transform.position = _unit.GetPosition();
-                        skeleton.OnMove(transform.position);
+                        case LimbsControllerState.Ragdoll:
+                        case LimbsControllerState.Animation:
+                            if (_postDeathTimer.IsFinished)
+                            {
+                                var mgmt = Singleton.Get<Pool_MonstersController>();
 
-                        if (skeleton.Direction.magnitude > 0.01f)
-                            transform.LookAt(transform.position + skeleton.Direction, Vector3.up);
-                        break;
-                    case CreatureStateBase.CreatureHealthState.Dead:
+                                if (mgmt.VacancyPortion > 0.5f && Camera.main.IsInCameraViewArea(GetActivePosition()))
+                                    _postDeathTimer.Restart(3f);
+                                else
+                                    Disintegrate();//Giblets();
+                            }
+                            break;
+                        default:
+                            if (!ImpactController || !ImpactController.IsPlaying)
+                                Pool_MonstersController.ReturnToPool(this);
+                            break;
+                    }
 
-                        switch (LimbsState) 
-                        {
-                            case LimbsControllerState.Giblets:
-
-                                foreach (var rb in rigidbodies) 
-                                {
-                                    rb.velocity *= (1 - Time.deltaTime);
-                                }
-
-                                if (!ImpactController || !ImpactController.IsPlaying)
-                                    Pool_MonstersController.ReturnToPool(this);
-                                break;
-                            case LimbsControllerState.Ragdoll:
-                            case LimbsControllerState.Animation:
-                                if (_postDeathTimer.IsFinished)
-                                {
-                                    var mgmt = Singleton.Get<Pool_MonstersController>();
-
-                                    if (mgmt.VacancyPortion > 0.5f && Camera.main.IsInCameraViewArea(GetActivePosition()))
-                                        _postDeathTimer.Restart(3f);
-                                    else
-                                        Giblets();
-                                }
-                                break;
-                            default:
-                                if (!ImpactController || !ImpactController.IsPlaying)
-                                    Pool_MonstersController.ReturnToPool(this);
-                                break;
-                        }
-
-                        break;
-                }
+                    break;
             }
+            
         }
 
         #region Inspector
@@ -435,47 +502,43 @@ namespace QuizCanners.IsItGame.Develop
                 _state.Enter_Inspect().Nl();
                 "Skeleton".PegiLabel().Enter_Inspect(skeleton).Nl();
                 "Character And Position".PegiLabel().Enter_Inspect(_unit).Nl();
-                "Colliders".PegiLabel().Enter_List_UObj(colliders).Nl();
+         
+                InspectChildList("Colliders", colliders);
                 if (context.IsCurrentEntered)
-                {
-                    "Refresh Colliders".PegiLabel().Click().Nl()
-                        .OnChanged(() => colliders = new List<Collider>(GetComponentsInChildren<Collider>()));
-                
-                    if ("Add Impact Controller".PegiLabel().Click()) 
-                    {
-                        foreach(var c in colliders) 
-                        {
+                    if ("Add Impact Controller".PegiLabel().Click())
+                        foreach (var c in colliders)
                             if (c & !c.GetComponent<C_MonsterImpactHandler>())
                                 c.gameObject.AddComponent<C_MonsterImpactHandler>();
-                        }
-                    }
-                }
+                        
 
-                "Imact Controllers".PegiLabel().Enter_List_UObj(impactHandlers).Nl();
-                if (context.IsCurrentEntered) 
-                {
-                    "Refresh Impact Controllers".PegiLabel().Click().Nl()
-                       .OnChanged(() => impactHandlers = new List<C_MonsterImpactHandler>(GetComponentsInChildren<C_MonsterImpactHandler>()));
-                }
-
+                InspectChildList("Imact Controllers", impactHandlers);
 
                 "Bones".PegiLabel().Enter_List_UObj(bones).Nl();
 
-                "Rigidbodies".PegiLabel().Enter_List_UObj(rigidbodies).Nl();
+                InspectChildList("Rigidbodies", rigidbodies);
                 if (context.IsCurrentEntered)
                 {
                     if (rigidbodies.Count > 0)
                         "{0} Will be the center point".F(rigidbodies[0].name).PegiLabel().WriteHint().Nl();
-
-                    "Refresh Rigidbodies".PegiLabel().Click().Nl()
-                       .OnChanged(() => rigidbodies = new List<Rigidbody>(GetComponentsInChildren<Rigidbody>()));
                 }
 
-                "Detachables".PegiLabel().Enter_List_UObj(detachments).Nl();
 
-                if (context.IsCurrentEntered)
-                    "Refresh Detachments".PegiLabel().Click().Nl()
-                       .OnChanged(() => detachments = new List<C_MonsterDetachableChunk>(GetComponentsInChildren<C_MonsterDetachableChunk>()));
+                InspectChildList("Detachables", detachments);
+
+                InspectChildList("Dynamic Primitives", dynamicPrimitives);
+
+                void InspectChildList<T>(string label, List<T> list) where T: UnityEngine.Object
+                {
+                    label.PegiLabel().Enter_List_UObj(list).Nl();
+
+                    if (context.IsCurrentEntered)
+                        "Refresh {0}".F(label).PegiLabel().Click().Nl()
+                           .OnChanged(() =>
+                           {
+                               list.Clear();
+                               list.AddRange(GetComponentsInChildren<T>());
+                           });
+                }
 
             }
         }
@@ -506,7 +569,7 @@ namespace QuizCanners.IsItGame.Develop
             LimbsState = LimbsControllerState.Animation;
         }
 
-        public enum LimbsControllerState { Undefined, Animation, Giblets, Ragdoll }
+        public enum LimbsControllerState { Undefined, Animation, Giblets, Ragdoll, Disintegrating }
     }
 
     [PEGI_Inspector_Override(typeof(C_MonsterEnemy))] internal class C_MonsterEnemyDrawer : PEGI_Inspector_Override { }

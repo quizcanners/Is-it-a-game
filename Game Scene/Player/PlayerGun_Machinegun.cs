@@ -196,7 +196,7 @@ namespace QuizCanners.IsItGame.Develop
                                     monster.postDeathDamage += 1;
 
                                     if (monster.postDeathDamage > 3)
-                                        monster.Giblets();
+                                        monster.Disintegrate();
                                 }
                                 break;
 

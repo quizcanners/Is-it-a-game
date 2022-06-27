@@ -99,10 +99,12 @@ namespace QuizCanners.IsItGame
             {
                 var d = Deformation;
 
-                if (LerpUtils.IsLerpingBySpeed(ref d, _scalingDown ? 0 : _targetDeformation, (_scalingDown ? 4f: 0.75f), unscaledTime: false)) 
+                float UpscaleSpeed = 1.5f;
+
+                if (LerpUtils.IsLerpingBySpeed(ref d, _scalingDown ? 0 : _targetDeformation, (_scalingDown ? 4f: UpscaleSpeed), unscaledTime: false)) 
                 {
                     Deformation =  d ;
-                    Disintegration = _disintegrate ? d : 0;  //Mathf.SmoothStep(0, _targetDeformation, d);
+                    Disintegration = _disintegrate ? d*d : 0;  //Mathf.SmoothStep(0, _targetDeformation, d);
                 } else 
                 {
                     if (_disintegrate)
@@ -152,6 +154,14 @@ namespace QuizCanners.IsItGame
                 _ImpactPosition.InspectInList_Nested().Nl();
                 _ImpactDeformation.InspectInList_Nested().Nl();
                 _ImpactDisintegration.InspectInList_Nested().Nl();
+
+                var both = Deformation;
+                if ("Together".PegiLabel(60).Edit(ref both, 0, 1).Nl()) 
+                {
+                    Deformation = both;
+                    Disintegration = both * both;
+                }
+
             }
 
             _updatePropertyBlockRequest.Feed(changes);
