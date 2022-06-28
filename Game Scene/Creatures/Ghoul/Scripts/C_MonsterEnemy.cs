@@ -165,39 +165,6 @@ namespace QuizCanners.IsItGame.Develop
             }
         }
 
-        private void UpdateState_Internal()
-        {
-            var isGiblets = LimbsState == LimbsControllerState.Giblets;
-
-            weaponRoot.gameObject.SetActive(!isGiblets);
-            bool collider = IsCollider;
-            SetColliders(collider);
-            bones.SetActive_List(!isGiblets && ShowDamage && LimbsState != LimbsControllerState.Disintegrating);
-
-            skeleton.animator.enabled = !_animationInvalidated;
-
-            foreach (var d in dynamicPrimitives)
-                d.enabled = false;// isGiblets;
-
-            var kinematic = Kinematic;
-
-            foreach (var rb in rigidbodies)
-            {
-                rb.isKinematic = kinematic;
-                rb.detectCollisions = collider;
-                rb.useGravity = !isGiblets;
-            }
-
-            foreach (var det in detachments)
-                det.Detached = LimbsState != LimbsControllerState.Animation;
-
-            var alive = IsAlive;
-            foreach (var ic in impactHandlers) 
-            {
-                ic.enabled = !alive;
-            }
-        }
-
         public Vector3 GetActivePosition ()
         {
             if (!rigidbodies.IsNullOrEmpty())
@@ -261,6 +228,37 @@ namespace QuizCanners.IsItGame.Develop
             Vector3 origin = GetActivePosition();
 
             ImpactController.Play(origin , 1, disintegrate: true);
+
+            foreach (var rb in rigidbodies)
+            {
+               // rb.angularVelocity = Quaternion.identity.eulerAngles;
+                rb.velocity = rb.velocity.Y(0) * 0.15f;
+            }
+
+            Singleton.Try<Pool_BloodParticlesController>(s =>
+            {
+                float vacancy = s.VacancyPortion;
+
+                int count = (int)(1 + 40 * vacancy);
+
+                for (int i = 0; i < count; i++)
+                {
+                    if (s.TrySpawn(origin, out var b))
+                    {
+                        Vector3 direction = (0.5f + UnityEngine.Random.value * 0.5f) * UnityEngine.Random.insideUnitSphere;
+
+                        direction = direction.Y(Mathf.Abs(direction.y));
+
+                        b.Restart(
+                            position: origin + direction * 0.5f,
+                            direction: direction * 3,
+                            scale: 0.5f + (1 - vacancy) * 2);
+                    }
+                    else
+                        return;
+                }
+            });
+
         }
 
         public void Giblets(Vector3 pushVector = default, float pushForce01 = 0)
@@ -294,7 +292,7 @@ namespace QuizCanners.IsItGame.Develop
 
             foreach (var rb in rigidbodies)
             {
-                rb.angularVelocity = Quaternion.identity.eulerAngles;
+               // rb.angularVelocity = Quaternion.identity.eulerAngles;
                 rb.velocity = rb.velocity.Y(0) * 0.15f;
             }
 
@@ -453,6 +451,40 @@ namespace QuizCanners.IsItGame.Develop
             }
             
         }
+
+        private void UpdateState_Internal()
+        {
+            var isGiblets = LimbsState == LimbsControllerState.Giblets;
+
+            weaponRoot.gameObject.SetActive(!isGiblets);
+            bool collider = IsCollider;
+            SetColliders(collider);
+            bones.SetActive_List(!isGiblets && ShowDamage && LimbsState != LimbsControllerState.Disintegrating);
+
+            skeleton.animator.enabled = !_animationInvalidated;
+
+            foreach (var d in dynamicPrimitives)
+                d.enabled = false;// isGiblets;
+
+            var kinematic = Kinematic;
+
+            foreach (var rb in rigidbodies)
+            {
+                rb.isKinematic = kinematic;
+                rb.detectCollisions = collider;
+                rb.useGravity = !isGiblets;
+            }
+
+            foreach (var det in detachments)
+                det.Detached = LimbsState != LimbsControllerState.Animation;
+
+            var alive = IsAlive;
+            foreach (var ic in impactHandlers)
+            {
+                ic.enabled = !alive;
+            }
+        }
+
 
         #region Inspector
 

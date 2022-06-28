@@ -45,7 +45,7 @@ namespace QuizCanners.IsItGame.Develop
                             if (dist < _explosionRadius * 0.3f)
                             {
                                 killedMonsters++;
-                                m.Giblets(pushDirection.normalized, pushForce01: GetPushForce());
+                                m.Disintegrate(); // pushDirection.normalized, pushForce01: GetPushForce());
                                 splatterMonsters = true;
                             }
                             else
@@ -74,11 +74,11 @@ namespace QuizCanners.IsItGame.Develop
                         }
                         else if (dist < _explosionRadius * 0.6f)
                         {
-                            if (m.LimbsState != C_MonsterEnemy.LimbsControllerState.Giblets)
+                            if (m.LimbsState != C_MonsterEnemy.LimbsControllerState.Giblets && m.LimbsState != C_MonsterEnemy.LimbsControllerState.Disintegrating)
                                 m.Giblets(pushDirection.normalized, pushForce01: GetPushForce());
                         }
 
-                        if (!m.Kinematic)
+                        if (m.LimbsState == C_MonsterEnemy.LimbsControllerState.Ragdoll)
                         {
                             m.Push(force: _pushForce * 20, origin: hit.point - Vector3.up*2, radius: _explosionRadius);
                         }

@@ -28,7 +28,7 @@ namespace QuizCanners.IsItGame.Develop
                     if (!monster)
                         monster = GetComponentInParent<C_MonsterEnemy>();
 
-                    if (monster && !monster.Kinematic) 
+                    if (monster && monster.LimbsState == C_MonsterEnemy.LimbsControllerState.Ragdoll) 
                     {
                         monster.Giblets(collision.relativeVelocity.normalized, pushForce01: 0.6f);
                     }
