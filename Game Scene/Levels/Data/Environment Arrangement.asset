@@ -39,17 +39,79 @@ MonoBehaviour:
         Floor|i|126|n|23|Reflective Floor(Clone)|pos|30|x|6|-17.59|y|4|4.07|z|5|10.74||scaling|18|x|1|1|y|1|8|z|1|5||rot|13|x|8|2.561182||dis|1|n||||lnks|0||
   - name: Bigger Stuff
     data:
-      _value: inst|3640|e|126|key|4|Cube|i|108|n|4|Cube|pos|30|x|6|-25.78|y|4|6.53|z|5|-25.1||scaling|20|x|2|20|y|1|5|z|2|20||rot|13|y|8|329.7858||dis|1|n|||e|162|key|21|Pillar_Square_05
+      _value: inst|13203|e|126|key|4|Cube|i|108|n|4|Cube|pos|30|x|6|-25.78|y|4|6.53|z|5|-25.1||scaling|20|x|2|20|y|1|5|z|2|20||rot|13|y|8|329.7858||dis|1|n|||e|162|key|21|Pillar_Square_05
         Prim|i|126|n|21|Pillar_Square_05 Prim|pos|31|x|6|-47.76|y|5|-0.11|z|5|-5.87||scaling|33|x|6|2.9976|y|6|2.9976|z|6|2.9976||rot|0||dis|1|n|||e|192|key|16|Reflective
         Floor|i|161|n|16|Reflective Floor|pos|27|x|5|-77.2|y|4|23.6|z|3|-21||scaling|37|x|8|72.05322|y|8|46.67642|z|6|23.817||rot|39|x|8|353.6567|y|8|253.4766|z|8|357.5555||dis|1|n|||e|146|key|21|Pillar_Square_05
         Prim|i|110|n|21|Pillar_Square_05 Prim|pos|30|x|5|3.146|y|5|0.151|z|5|0.555||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|191|key|28|Volumetric
         SDF Mesh Baked TF|i|148|n|19|Testing Name Change|pos|28|x|2|-3|y|5|-2.21|z|6|-66.51||scaling|21|x|2|10|y|2|10|z|2|10||rot|38|x|7|295.731|y|8|89.46307|z|8|96.60295||dis|1|n|||e|198|key|20|Volumetric
         SDF Shape|i|163|n|20|Volumetric SDF Shape|pos|31|x|6|-0.063|y|5|1.094|z|5|0.766||scaling|39|x|8|1.686957|y|8|1.686957|z|8|1.686957||rot|39|x|8|356.9677|y|8|205.4996|z|8|4.899983||||e|160|key|4|Cube|i|142|n|4|Cube|pos|28|x|4|19.7|y|4|12.6|z|5|-27.1||scaling|30|x|2|20|y|7|13.1275|z|6|42.452||rot|39|x|8|291.5159|y|8|258.7381|z|8|10.11415||dis|1|n|||e|126|key|6|Portal|i|106|n|6|Portal|pos|30|x|5|16.17|y|4|2.44|z|6|-17.02||scaling|24|x|7|25.3135|y|1|5|z|1|1||rot|13|y|8|308.1978||||e|191|key|15|SM_Env_Alter_01|i|161|n|15|SM_Env_Alter_01|pos|34|x|6|-67.58|y|5|-0.16|z|8|5.178863||scaling|39|x|8|5.438314|y|8|5.438314|z|8|5.438314||rot|39|x|8|357.1245|y|8|74.73218|z|8|359.8873||||e|157|key|28|Volumetric
         SDF Mesh Baked TF|i|114|n|28|Volumetric SDF Mesh Baked TF|pos|27|x|6|-47.78|y|1|6|z|5|-5.98||scaling|18|x|1|5|y|1|5|z|1|5||rot|0||dis|1|n|||e|204|key|16|Reflective
-        Floor|i|173|n|23|Reflective Floor(Clone)|pos|30|x|6|-45.05|y|4|9.55|z|5|28.63||scaling|39|x|8|15.05751|y|8|15.11696|z|8|22.20212||rot|39|x|8|85.59807|y|8|11.42222|z|8|7.016999||dis|1|n|||e|159|key|23|Prop_Crate_Wood_05
+        Floor|i|173|n|23|Reflective Floor(Clone)|pos|30|x|6|-45.05|y|4|9.55|z|5|28.63||scaling|39|x|8|15.05751|y|8|15.11696|z|8|22.20212||rot|39|x|8|85.59807|y|8|11.42221|z|8|7.016984||dis|1|n|||e|159|key|23|Prop_Crate_Wood_05
         Prim|i|121|n|30|Prop_Crate_Wood_05 Prim(Clone)|pos|29|x|5|-1.88|y|4|-0.4|z|5|11.14||scaling|21|x|2|10|y|2|10|z|2|10||rot|0||dis|1|n|||e|204|key|16|Reflective
         Floor|i|173|n|23|Reflective Floor(Clone)|pos|30|x|5|-4.67|y|4|6.73|z|6|-37.53||scaling|39|x|8|16.23055|y|8|6.799754|z|8|26.65214||rot|39|x|8|0.163411|y|8|93.71879|z|8|273.0589||dis|1|n|||e|142|key|14|Blood
         Splatter|i|113|n|21|Blood Splatter(Clone)|pos|30|x|6|-53.77|y|4|1.41|z|5|-4.69||scaling|21|x|2|10|y|2|10|z|2|10||rot|0||dis|1|n|||e|110|key|5|Grass|i|92|n|22|SM_Env_Grass_02(Clone)|pos|19|x|5|-6.08|z|4|0.73||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|115|key|5|Grass|i|97|n|26|SM_Env_Grass_02(Clone)
         (1)|pos|20|x|6|-10.77|z|4|0.87||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|129|key|5|Grass|i|110|n|26|SM_Env_Grass_02(Clone)
         (2)|pos|19|x|5|-13.4|z|4|2.39||scaling|18|x|1|1|y|1|1|z|1|1||rot|13|y|8|72.62486||||e|154|key|3|Cog|i|137|n|26|SM_Prop_Tech_Cog_04(Clone)|pos|31|x|6|-16.86|y|4|6.46|z|6|-20.07||scaling|33|x|6|3.5279|y|6|3.5279|z|6|3.5279||rot|13|y|8|239.7829||||e|127|key|5|Light|i|108|n|25|SM_Prop_Lantern_01(Clone)|pos|32|x|6|-5.519|y|5|0.193|z|6|-1.636||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|127|key|5|Light|i|108|n|25|SM_Prop_Lantern_01(Clone)|pos|32|x|7|-61.193|y|5|0.172|z|5|3.377||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|128|key|5|Light|i|109|n|25|SM_Prop_Lantern_01(Clone)|pos|33|x|7|-62.983|y|5|0.171|z|6|11.006||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|115|key|5|Water|i|97|n|12|Water(Clone)|pos|31|x|5|-30.7|y|5|-3.19|z|6|-16.95||scaling|21|x|2|20|y|2|20|z|2|20||rot|0||||e|116|key|5|Water|i|98|n|16|Water(Clone)
-        (1)|pos|28|x|4|5.19|y|4|-4.8|z|5|-0.49||scaling|21|x|2|20|y|2|20|z|2|20||rot|0|||||lnks|0||
+        (1)|pos|28|x|4|5.19|y|4|-4.8|z|5|-0.49||scaling|21|x|2|20|y|2|20|z|2|20||rot|0||||e|141|key|16|Batchable
+        Sphere|i|110|n|23|Batchable Sphere(Clone)|pos|28|x|5|-23.3|y|3|0.7|z|5|43.33||scaling|18|x|1|3|y|1|3|z|1|3||rot|0||dis|1|n|||e|143|key|16|Batchable
+        Sphere|i|112|n|23|Batchable Sphere(Clone)|pos|30|x|6|-18.98|y|4|1.04|z|5|43.79||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|145|key|16|Batchable
+        Sphere|i|114|n|23|Batchable Sphere(Clone)|pos|32|x|7|-17.473|y|4|0.86|z|6|44.305||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|141|key|16|Batchable
+        Sphere|i|110|n|23|Batchable Sphere(Clone)|pos|28|x|5|-12.7|y|4|1.05|z|4|44.1||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|145|key|16|Batchable
+        Sphere|i|114|n|27|Batchable Sphere(Clone) (1)|pos|28|x|5|-20.4|y|4|1.05|z|4|44.1||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|144|key|16|Batchable
+        Sphere|i|113|n|27|Batchable Sphere(Clone) (6)|pos|27|x|5|-20.4|y|3|2.6|z|4|44.1||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|145|key|16|Batchable
+        Sphere|i|114|n|27|Batchable Sphere(Clone) (5)|pos|28|x|6|-16.68|y|3|2.6|z|4|44.1||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|27|Batchable Sphere(Clone) (4)|pos|31|x|7|-17.473|y|3|2.6|z|6|44.305||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|146|key|16|Batchable
+        Sphere|i|115|n|27|Batchable Sphere(Clone) (3)|pos|29|x|6|-18.98|y|3|2.6|z|5|43.79||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|27|Batchable Sphere(Clone) (2)|pos|31|x|6|-17.73|y|4|9.15|z|6|-33.14||scaling|18|x|1|3|y|1|3|z|1|3||rot|0||dis|1|n|||e|144|key|16|Batchable
+        Sphere|i|113|n|28|Batchable Sphere(Clone) (12)|pos|26|x|6|-23.83|y|3|2.6|z|2|50||scaling|18|x|1|3|y|1|3|z|1|3||rot|0||dis|1|n|||e|147|key|16|Batchable
+        Sphere|i|116|n|28|Batchable Sphere(Clone) (13)|pos|29|x|6|-19.51|y|3|2.6|z|5|50.46||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|149|key|16|Batchable
+        Sphere|i|118|n|28|Batchable Sphere(Clone) (14)|pos|31|x|7|-18.003|y|3|2.6|z|6|50.975||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|147|key|16|Batchable
+        Sphere|i|116|n|28|Batchable Sphere(Clone) (15)|pos|29|x|6|-17.21|y|3|2.6|z|5|50.77||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|147|key|16|Batchable
+        Sphere|i|116|n|28|Batchable Sphere(Clone) (16)|pos|29|x|6|-20.93|y|3|2.6|z|5|50.77||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (11)|pos|30|x|6|-20.93|y|4|1.05|z|5|50.77||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (10)|pos|30|x|6|-17.21|y|4|1.05|z|5|50.77||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|149|key|16|Batchable
+        Sphere|i|118|n|27|Batchable Sphere(Clone) (9)|pos|32|x|7|-18.003|y|4|0.86|z|6|50.975||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|147|key|16|Batchable
+        Sphere|i|116|n|27|Batchable Sphere(Clone) (8)|pos|30|x|6|-19.51|y|4|1.04|z|5|50.46||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|143|key|16|Batchable
+        Sphere|i|112|n|27|Batchable Sphere(Clone) (7)|pos|26|x|6|-23.83|y|3|0.7|z|2|50||scaling|18|x|1|3|y|1|3|z|1|3||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (27)|pos|30|x|6|-19.98|y|4|2.17|z|5|52.04||scaling|18|x|1|3|y|1|3|z|1|3||rot|0||dis|1|n|||e|147|key|16|Batchable
+        Sphere|i|116|n|28|Batchable Sphere(Clone) (28)|pos|29|x|6|-15.66|y|4|2.51|z|4|52.5||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|150|key|16|Batchable
+        Sphere|i|119|n|28|Batchable Sphere(Clone) (29)|pos|32|x|7|-14.153|y|4|2.33|z|6|53.015||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (30)|pos|30|x|6|-13.36|y|4|2.52|z|5|52.81||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (31)|pos|30|x|6|-17.08|y|4|2.52|z|5|52.81||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (36)|pos|30|x|6|-17.08|y|4|4.07|z|5|52.81||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (35)|pos|30|x|6|-10.16|y|4|2.64|z|5|50.43||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|150|key|16|Batchable
+        Sphere|i|119|n|28|Batchable Sphere(Clone) (34)|pos|32|x|7|-14.153|y|4|4.07|z|6|53.015||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|147|key|16|Batchable
+        Sphere|i|116|n|28|Batchable Sphere(Clone) (33)|pos|29|x|6|-15.66|y|4|4.07|z|4|52.5||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (32)|pos|30|x|6|-19.98|y|4|4.07|z|5|52.04||scaling|18|x|1|3|y|1|3|z|1|3||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (22)|pos|30|x|6|-19.45|y|4|4.07|z|5|45.37||scaling|18|x|1|3|y|1|3|z|1|3||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (23)|pos|30|x|6|-15.13|y|4|4.07|z|5|45.83||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|150|key|16|Batchable
+        Sphere|i|119|n|28|Batchable Sphere(Clone) (24)|pos|32|x|7|-13.623|y|4|4.07|z|6|46.345||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (25)|pos|30|x|6|-11.39|y|4|4.07|z|5|54.71||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (26)|pos|30|x|6|-16.55|y|4|4.07|z|5|46.14||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (21)|pos|30|x|6|-16.55|y|4|2.52|z|5|46.14||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (20)|pos|30|x|6|-12.83|y|4|2.52|z|5|46.14||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|150|key|16|Batchable
+        Sphere|i|119|n|28|Batchable Sphere(Clone) (19)|pos|32|x|7|-13.623|y|4|2.33|z|6|46.345||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (18)|pos|30|x|6|-15.13|y|4|2.51|z|5|45.83||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (17)|pos|30|x|6|-19.45|y|4|2.17|z|5|45.37||scaling|18|x|1|3|y|1|3|z|1|3||rot|0||dis|1|n|||e|145|key|16|Batchable
+        Sphere|i|114|n|28|Batchable Sphere(Clone) (40)|pos|27|x|4|-7.7|y|4|2.17|z|4|60.3||scaling|18|x|1|3|y|1|3|z|1|3||rot|0||dis|1|n|||e|146|key|16|Batchable
+        Sphere|i|115|n|28|Batchable Sphere(Clone) (39)|pos|28|x|5|-15.6|y|4|2.51|z|4|60.3||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|144|key|16|Batchable
+        Sphere|i|113|n|28|Batchable Sphere(Clone) (38)|pos|26|x|3|-21|y|4|2.33|z|4|60.3||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|146|key|16|Batchable
+        Sphere|i|115|n|28|Batchable Sphere(Clone) (37)|pos|28|x|5|-24.1|y|4|2.52|z|4|60.3||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|147|key|16|Batchable
+        Sphere|i|116|n|28|Batchable Sphere(Clone) (41)|pos|29|x|6|-12.83|y|4|2.52|z|4|50.3||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (58)|pos|30|x|6|-28.74|y|4|2.52|z|5|58.64||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (54)|pos|30|x|6|-40.01|y|4|2.52|z|5|68.64||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (55)|pos|30|x|6|-36.91|y|4|2.33|z|5|68.64||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (56)|pos|30|x|6|-31.51|y|4|2.51|z|5|68.64||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (57)|pos|30|x|6|-23.61|y|4|2.17|z|5|68.64||scaling|18|x|1|3|y|1|3|z|1|3||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (53)|pos|30|x|6|-35.36|y|4|2.17|z|5|53.71||scaling|18|x|1|3|y|1|3|z|1|3||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (52)|pos|30|x|6|-31.04|y|4|2.51|z|5|54.17||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|150|key|16|Batchable
+        Sphere|i|119|n|28|Batchable Sphere(Clone) (51)|pos|32|x|7|-29.533|y|4|2.33|z|6|54.685||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (50)|pos|30|x|6|-28.74|y|4|2.52|z|5|54.48||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (49)|pos|30|x|6|-32.46|y|4|2.52|z|5|54.48||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (48)|pos|30|x|6|-32.46|y|4|4.07|z|5|54.48||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (47)|pos|30|x|6|-28.74|y|4|4.07|z|5|54.48||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|150|key|16|Batchable
+        Sphere|i|119|n|28|Batchable Sphere(Clone) (46)|pos|32|x|7|-29.533|y|4|4.07|z|6|54.685||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (45)|pos|30|x|6|-31.04|y|4|4.07|z|5|54.17||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (44)|pos|30|x|6|-35.36|y|4|4.07|z|5|53.71||scaling|18|x|1|3|y|1|3|z|1|3||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (43)|pos|30|x|6|-35.89|y|4|4.07|z|5|60.38||scaling|18|x|1|3|y|1|3|z|1|3||rot|0||dis|1|n|||e|148|key|16|Batchable
+        Sphere|i|117|n|28|Batchable Sphere(Clone) (42)|pos|30|x|6|-31.57|y|4|4.07|z|5|60.84||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n||||lnks|0||
