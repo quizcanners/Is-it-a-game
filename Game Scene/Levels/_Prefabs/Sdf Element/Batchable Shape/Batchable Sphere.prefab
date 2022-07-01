@@ -99,11 +99,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabKey: Batchable Sphere
   _renderer: {fileID: 4822578918458363885}
-  Shape: 1
-  primitiveSize: {x: 1, y: 1, z: 1}
+  Shape: 0
+  primitiveSize: {x: 0.5, y: 0.5, z: 0.5}
   primitiveOffset: {x: 0, y: 0, z: 0}
-  _disablePrimitive: 0
-  _colliderAndPrimitive: {fileID: 0}
+  _disablePrimitive: 1
+  _colliderAndPrimitive: {fileID: 3120516889006009066}
   meshFilter: {fileID: 2263017688195508210}
 --- !u!135 &3120516889006009066
 SphereCollider:
@@ -114,7 +114,7 @@ SphereCollider:
   m_GameObject: {fileID: 797520874942604832}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
