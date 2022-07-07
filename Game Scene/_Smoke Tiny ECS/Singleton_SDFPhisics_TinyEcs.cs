@@ -55,6 +55,9 @@ namespace QuizCanners.IsItGame.Develop
         {
             pegi.Nl();
             "Started: {0} Skipped: {1}".F(_started, _skipped).PegiLabel().Nl();
+
+            pegi.Click(SpawnSmoke).Nl();
+
         }
     }
 

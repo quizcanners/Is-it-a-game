@@ -23,7 +23,6 @@ namespace QuizCanners.IsItGame.Develop
 
         public float MaxDistance = 2000;
 
-   
         public void Shoot(Vector3 from, Vector3 target, State state)
         {
             Game.Enums.SoundEffects.Shot.PlayOneShotAt(from, clipVolume: 3);
@@ -220,6 +219,9 @@ namespace QuizCanners.IsItGame.Develop
                     return;
 
                 Game.Enums.SoundEffects.DefaultSurfaceImpact.PlayOneShotAt(hit.point);
+
+                Singleton.Try<Pool_ECS_HeatSmoke>(s => s.TrySpawn(worldPosition: hit.point));
+
                 Singleton.Try<Pool_SmokeEffects>(s => s.TrySpawn(hit.point, out _));
                 Singleton.Try<Pool_ImpactLightsController>(s => s.TrySpawn(hit.point, onInstanciate: l => l.SetSize(10f)));
                 Singleton.Try<Pool_PhisXDebrisParticles>(s =>

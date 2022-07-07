@@ -15,17 +15,18 @@ MonoBehaviour:
   configurations:
   - name: Fists
     data:
-      _value: inst|2399|e|126|key|4|Cube|i|108|n|4|Cube|pos|30|x|6|-25.78|y|4|6.53|z|5|-25.1||scaling|20|x|2|20|y|1|5|z|2|20||rot|13|y|8|329.7858||dis|1|n|||e|145|key|21|Pillar_Square_05
-        Prim|i|109|n|21|Pillar_Square_05 Prim|pos|29|x|6|-21.84|y|4|0.16|z|4|2.97||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|176|key|16|Reflective
-        Floor|i|145|n|16|Reflective Floor|pos|30|x|5|-3.33|y|4|5.43|z|6|-18.55||scaling|18|x|1|6|y|1|6|z|1|6||rot|39|x|8|82.45605|y|8|170.7867|z|8|282.4847||dis|1|n|||e|146|key|21|Pillar_Square_05
-        Prim|i|110|n|21|Pillar_Square_05 Prim|pos|30|x|5|3.146|y|5|0.151|z|5|0.555||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||dis|1|n|||e|225|key|28|Volumetric
-        SDF Mesh Baked TF|i|182|n|19|Testing Name Change|pos|29|x|5|-73.4|y|4|-1.2|z|5|-47.2||scaling|21|x|2|10|y|2|10|z|2|10||rot|38|x|7|295.731|y|8|89.46307|z|8|96.60295||dis|1|n|mCol|24|r|1|1|g|1|1|b|1|1|a|1|1||||e|198|key|20|Volumetric
-        SDF Shape|i|163|n|20|Volumetric SDF Shape|pos|31|x|6|-0.063|y|5|1.094|z|5|0.766||scaling|39|x|8|1.686957|y|8|1.686957|z|8|1.686957||rot|39|x|8|356.9677|y|8|205.4996|z|8|4.899983||||e|152|key|4|Cube|i|134|n|4|Cube|pos|30|x|5|10.43|y|4|2.83|z|6|-10.25||scaling|20|x|2|20|y|1|5|z|2|20||rot|39|x|8|329.9656|y|8|323.1531|z|8|342.0489||dis|1|n|||e|124|key|6|Portal|i|104|n|6|Portal|pos|28|x|3|3.9|y|4|2.44|z|6|-43.71||scaling|24|x|7|25.3135|y|1|5|z|1|1||rot|13|y|8|331.9044||||e|128|key|15|SM_Env_Alter_01|i|99|n|15|SM_Env_Alter_01|pos|19|x|5|-0.09|z|4|1.38||scaling|18|x|1|1|y|1|1|z|1|1||rot|13|y|8|209.1096||||e|194|key|28|Volumetric
-        SDF Mesh Baked TF|i|151|n|28|Volumetric SDF Mesh Baked TF|pos|28|x|4|-9.4|y|4|-4.6|z|5|-28.6||scaling|21|x|2|20|y|2|20|z|2|20||rot|0||dis|1|n|mCol|24|r|1|1|g|1|1|b|1|1|a|1|1||||e|203|key|16|Reflective
-        Floor|i|172|n|23|Reflective Floor(Clone)|pos|30|x|6|-27.15|y|4|4.68|z|5|-0.75||scaling|38|x|8|6.804779|y|8|3.661998|z|7|16.6196||rot|39|x|8|52.68047|y|8|283.2165|z|8|279.2593||dis|1|n|||e|146|key|23|Prop_Crate_Wood_05
-        Prim|i|108|n|30|Prop_Crate_Wood_05 Prim(Clone)|pos|19|x|5|-9.32|z|4|1.51||scaling|18|x|1|2|y|1|2|z|1|2||rot|0||dis|1|n|||e|198|key|16|Reflective
-        Floor|i|167|n|23|Reflective Floor(Clone)|pos|31|x|6|-15.98|y|4|3.05|z|6|-21.87||scaling|32|x|8|7.980677|y|1|1|z|8|15.89294||rot|39|x|8|0.163411|y|8|93.71879|z|8|273.0589||dis|1|n|||e|140|key|14|Blood
-        Splatter|i|111|n|21|Blood Splatter(Clone)|pos|28|x|6|-25.57|y|3|0.4|z|4|3.17||scaling|21|x|2|10|y|2|10|z|2|10||rot|0||dis|1|n||||lnks|0||
+      _value: inst|2464|e|144|key|4|Cube|i|126|n|4|Cube|pos|30|x|6|-25.78|y|4|7.92|z|5|-25.1||scaling|20|x|2|20|y|1|5|z|2|20||rot|39|x|8|352.6555|y|8|328.5736|z|8|356.0659||||e|137|key|21|Pillar_Square_05
+        Prim|i|101|n|21|Pillar_Square_05 Prim|pos|29|x|6|-21.84|y|4|0.16|z|4|2.97||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|168|key|16|Reflective
+        Floor|i|137|n|16|Reflective Floor|pos|30|x|5|-3.33|y|4|5.43|z|6|-18.55||scaling|18|x|1|6|y|1|6|z|1|6||rot|39|x|8|82.45608|y|8|170.7867|z|8|282.4847||||e|138|key|21|Pillar_Square_05
+        Prim|i|102|n|21|Pillar_Square_05 Prim|pos|30|x|5|3.146|y|5|0.151|z|5|0.555||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|184|key|28|Volumetric
+        SDF Mesh Baked TF|i|141|n|19|Testing Name Change|pos|29|x|5|-73.4|y|4|-1.2|z|5|-47.2||scaling|21|x|2|10|y|2|10|z|2|10||rot|38|x|7|295.731|y|8|89.46307|z|8|96.60295||||e|198|key|20|Volumetric
+        SDF Shape|i|163|n|20|Volumetric SDF Shape|pos|31|x|6|-0.063|y|5|1.094|z|5|0.766||scaling|39|x|8|1.686957|y|8|1.686957|z|8|1.686957||rot|39|x|8|356.9677|y|8|205.4996|z|8|4.899983||||e|144|key|4|Cube|i|126|n|4|Cube|pos|30|x|5|10.43|y|4|2.83|z|6|-10.25||scaling|20|x|2|20|y|1|5|z|2|20||rot|39|x|8|329.9656|y|8|323.1531|z|8|342.0489||||e|124|key|6|Portal|i|104|n|6|Portal|pos|28|x|3|3.9|y|4|2.44|z|6|-43.71||scaling|24|x|7|25.3135|y|1|5|z|1|1||rot|13|y|8|331.9044||||e|128|key|15|SM_Env_Alter_01|i|99|n|15|SM_Env_Alter_01|pos|19|x|5|-0.09|z|4|1.38||scaling|18|x|1|1|y|1|1|z|1|1||rot|13|y|8|209.1096||||e|157|key|28|Volumetric
+        SDF Mesh Baked TF|i|114|n|28|Volumetric SDF Mesh Baked TF|pos|32|x|6|-18.49|y|5|-7.15|z|6|-24.99||scaling|21|x|2|20|y|2|20|z|2|20||rot|0||||e|195|key|16|Reflective
+        Floor|i|164|n|23|Reflective Floor(Clone)|pos|30|x|6|-27.15|y|4|4.68|z|5|-0.75||scaling|38|x|8|6.804779|y|8|3.661998|z|7|16.6196||rot|39|x|8|52.68047|y|8|283.2165|z|8|279.2593||||e|168|key|23|Prop_Crate_Wood_05
+        Prim|i|130|n|30|Prop_Crate_Wood_05 Prim(Clone)|pos|32|x|6|-18.56|y|5|-0.69|z|6|-16.97||scaling|35|x|6|3.2552|y|8|4.565744|z|6|3.2552||rot|0||||e|189|key|16|Reflective
+        Floor|i|158|n|23|Reflective Floor(Clone)|pos|31|x|6|-15.98|y|4|4.29|z|6|-24.12||scaling|31|x|7|15.2743|y|1|1|z|8|24.30424||rot|39|x|8|358.2983|y|8|93.31115|z|8|302.7423||||e|132|key|14|Blood
+        Splatter|i|103|n|21|Blood Splatter(Clone)|pos|28|x|6|-25.57|y|3|0.4|z|4|3.17||scaling|21|x|2|10|y|2|10|z|2|10||rot|0||||e|153|key|16|Batchable
+        Sphere|i|122|n|23|Batchable Sphere(Clone)|pos|30|x|6|-13.67|y|4|4.91|z|5|-25.2||scaling|36|x|7|19.4148|y|7|19.4148|z|7|19.4148||rot|0|||||lnks|0||
   - name: second
     data:
       _value: inst|2011|e|125|key|4|Cube|i|107|n|4|Cube|pos|29|x|6|-45.77|y|4|6.53|z|4|11.9||scaling|20|x|2|20|y|1|5|z|2|20||rot|13|y|8|329.7858||dis|1|n|||e|145|key|21|Pillar_Square_05
