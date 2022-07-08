@@ -237,7 +237,7 @@ namespace QuizCanners.IsItGame.Develop
                         if (s.TrySpawnIfVisible(hit.point, out var debri))
                         {
                             var big = UnityEngine.Random.value;
-                            debri.Size = Mathf.Pow(0.1f + 0.3f * big, 2);
+                            debri.Reset(size: Mathf.Pow(0.1f + 0.3f * big, 2));
                             var dir = Vector3.Lerp(reflected, hit.normal, 0.5f + big * 0.5f);
                             debri.Push(pushVector: dir, pushForce: 0.5f, pushRandomness: debri.Size * 15, torqueForce: 140);
                         }

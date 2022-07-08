@@ -11,14 +11,27 @@ namespace QuizCanners.IsItGame.Develop
 
         public QcDebug.TimeProfiler.DictionaryOfParallelTimers Timer => QcDebug.TimeProfiler.Instance["SDF Phys"];
 
+        private float dissolveSpeed = 0;
 
         public void UpdateSystems(float deltaTime) 
         {
             var world = this.GetWorld();
 
+            int count = 0;
+
+            float heatDissolve = Mathf.Clamp01(1 - deltaTime * 10);
+
             Measure("Pos Smoke", () =>
                world.RunSystem((ref PositionData m, ref SmokeData s)
-                   => { }));
+                   => 
+               {
+                   count++;
+                   m.Position += Vector3.up * ( 0.5f ) * deltaTime;
+                   s.Dissolve += deltaTime * (dissolveSpeed);
+                   s.Temperature *= heatDissolve;
+               }));
+
+            dissolveSpeed = count / 500f;
 
             Measure("Heat Imp Ent", () =>
             world.RunSystem((ref HeatSource source, ref HeatImpulse impulse, IEntity entity) =>

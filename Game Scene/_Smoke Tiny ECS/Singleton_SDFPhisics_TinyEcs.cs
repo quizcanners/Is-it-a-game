@@ -3,19 +3,20 @@ using QuizCanners.TinyECS;
 using QuizCanners.Utils;
 using System.Threading.Tasks;
 using UnityEngine;
-using static QuizCanners.IsItGame.Develop.ParticlePhisics;
 
 namespace QuizCanners.IsItGame.Develop
 {
     public class Singleton_SDFPhisics_TinyEcs : Singleton.BehaniourBase, IPEGI
     {
-        private ParticlePhisics _link = new ParticlePhisics();
+        private ParticlePhisics _worldLink = new ParticlePhisics();
 
         private Task currentTask;
 
      
         private int _started;
         private int _skipped;
+
+        public World<ParticlePhisics> World => _worldLink.GetWorld();
 
         public void Update()
         {
@@ -26,38 +27,19 @@ namespace QuizCanners.IsItGame.Develop
             }
 
             _started++;
-            currentTask = Task.Run(()=> _link.UpdateSystems(deltaTime: Time.deltaTime));
-        }
 
+            // currentTask = Task.Run(()=> 
 
-        void SpawnSmoke() 
-        {
-            Singleton.Try<Pool_ECS_HeatSmoke>(s =>
-            {
-                if (s.TrySpawn())
-                {
-                    var posv3 = Random.insideUnitSphere * 10f;
-                    posv3.y = Mathf.Abs(posv3.y);
-
-
-
-                    var cloud = _link.GetWorld().CreateEntity("Smoke");
-                    cloud.AddComponent<SmokeData>();
-                    cloud.AddComponent((ref PositionData pos) =>
-                    {
-                        pos.Position = posv3;
-                    });
-                }
-            });
+            _worldLink.UpdateSystems(deltaTime: Time.deltaTime);
+            
+            //);
         }
 
         public override void Inspect()
         {
             pegi.Nl();
             "Started: {0} Skipped: {1}".F(_started, _skipped).PegiLabel().Nl();
-
-            pegi.Click(SpawnSmoke).Nl();
-
+            _worldLink.Nested_Inspect();
         }
     }
 

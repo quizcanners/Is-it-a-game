@@ -4,7 +4,7 @@ using QuizCanners.Utils;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace QuizCanners.IsItGame
+namespace QuizCanners.IsItGame.Develop
 {
     [DisallowMultipleComponent]
     public class C_PhisxDebriParticle : MonoBehaviour, IPEGI
@@ -14,9 +14,11 @@ namespace QuizCanners.IsItGame
         [SerializeField] private MeshCollider _meshCollider;
         [SerializeField] private Rigidbody _rigidbody;
 
+        [SerializeField] private GameObject _shadow;
+
         private bool _isPlaying;
         private float lifeTime;
-
+        private LogicWrappers.DeltaPositionSegments _smokeSpawning = new LogicWrappers.DeltaPositionSegments();
 
         void OnCollisionEnter(Collision collision)
         {
@@ -36,13 +38,13 @@ namespace QuizCanners.IsItGame
                 force += angle;
             }
 
-            const float THOLD = 5;
-
             if (Camera.main.IsInCameraViewArea(transform.position) == false) 
             {
                 RemoveToPool();
                 return;
             }
+
+            const float THOLD = 3;
 
             if (force > THOLD)
             {
@@ -52,18 +54,22 @@ namespace QuizCanners.IsItGame
                 {
                     var count = 1 + Size / 0.3f;
 
-                    for (int i=0; i< count; i++)
-                    Singleton.Try<Pool_PhisXDebrisParticles>(s =>
-                    {
-                        s.TrySpawn(transform.position, el =>
+                    for (int i = 0; i < count; i++)
+                        Singleton.Try<Pool_PhisXDebrisParticles>(s =>
                         {
-                            el.Size = 0.1f + 0.1f * Random.value; 
-                            el.Push(-_rigidbody.velocity.normalized, 1, 1, 50);
+                            s.TrySpawn(transform.position, el =>
+                            {
+                                el.Reset(size: 0.1f + 0.1f * Random.value);
+                                el.Push(-_rigidbody.velocity.normalized, 1, 1, 50);
+                            });
                         });
-                    });
-                } 
+                }
 
                 RemoveToPool();
+            }
+            else if (force > THOLD * 0.25f)
+            {
+                Singleton.Try<Pool_ECS_HeatSmoke>(s => s.TrySpawn(worldPosition: transform.position));
             }
         }
 
@@ -83,6 +89,13 @@ namespace QuizCanners.IsItGame
             _rigidbody = GetComponent<Rigidbody>();
         }
 
+        public void Reset(float size) 
+        {
+            _smokeSpawning.Reset(transform.position);
+            Size = size;
+            _shadow.SetActive(Size > 0.5f);
+        }
+
         public void Push (Vector3 pushVector, float pushForce, float pushRandomness, float torqueForce) 
         {
             _meshFilter.sharedMesh = meshes.GetRandom();
@@ -95,6 +108,8 @@ namespace QuizCanners.IsItGame
             _rigidbody.AddForce((pushVector.normalized + Random.insideUnitSphere * pushRandomness).normalized * pushForce, ForceMode.VelocityChange);
             _rigidbody.AddTorque(Random.insideUnitSphere * torqueForce, ForceMode.VelocityChange);
             _rigidbody.mass = Size;
+
+           
         }
 
         public void Explosion(Vector3 origin, float force, float radius) 
@@ -113,6 +128,24 @@ namespace QuizCanners.IsItGame
                 lifeTime += Time.deltaTime;
 
                 var s = Size;
+
+                if (s > 0.2f && _smokeSpawning.TryGetSegments(transform.position, delta: 0.5f, out Vector3[] smokePoints))
+                {
+                    if (Camera.main.IsInCameraViewArea(transform.position))
+                    {
+                        Singleton.Try<Pool_ECS_HeatSmoke>(s =>
+                        {
+                            for (int i = 0; i < smokePoints.Length; i++)
+                            {
+                                if (!s.TrySpawnIfVisible(worldPosition: smokePoints[i] + Random.insideUnitSphere * 0.25f, out var inst)) 
+                                    break;
+
+                                
+                            }
+                        });
+                    }
+                }
+
 
                 float totalLifetime = 20f * s;
                 float startFade = 10f * s;

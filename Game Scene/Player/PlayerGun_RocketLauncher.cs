@@ -114,7 +114,7 @@ namespace QuizCanners.IsItGame.Develop
             Singleton.Try<Pool_SmokeEffects>(s =>
             {
                 if (s.TrySpawnIfVisible(origin, out var smoke))
-                    smoke.PlayAnimateFromDot(5);
+                    smoke.PlayAnimateFromDot(0.5f);
             });
             Singleton.Try<Pool_PhisXDebrisParticles>(s =>
             {
@@ -130,7 +130,7 @@ namespace QuizCanners.IsItGame.Develop
                     {
                         var big = UnityEngine.Random.value;
 
-                        debri.Size = 0.02f + 0.5f * big * big;
+                        debri.Reset(size: 0.02f + 0.5f * big * big);
 
                         var direction = Vector3.Lerp(reflected, hit.normal, 0.5f + big * 0.5f);
 

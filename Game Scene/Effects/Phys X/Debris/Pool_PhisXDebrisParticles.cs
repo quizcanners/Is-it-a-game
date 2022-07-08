@@ -2,14 +2,11 @@ using QuizCanners.Inspect;
 using QuizCanners.Utils;
 using UnityEngine;
 
-namespace QuizCanners.IsItGame
+namespace QuizCanners.IsItGame.Develop
 {
     [DisallowMultipleComponent]
     public class Pool_PhisXDebrisParticles : PoolSingletonBase<C_PhisxDebriParticle>
     {
-
-       
-
         public void PushFromExplosion(Vector3 origin, float force, float radius) 
         {
             foreach (var el in instances) 

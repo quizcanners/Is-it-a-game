@@ -164,6 +164,7 @@ MonoBehaviour:
   _meshFilter: {fileID: 3246429896054504577}
   _meshCollider: {fileID: 3496272210336165116}
   _rigidbody: {fileID: 3730309326659169242}
+  _shadow: {fileID: 334699671064469993}
 --- !u!33 &3246429896054504577
 MeshFilter:
   m_ObjectHideFlags: 0
