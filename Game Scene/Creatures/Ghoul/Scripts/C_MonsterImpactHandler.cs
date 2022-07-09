@@ -62,17 +62,15 @@ namespace QuizCanners.IsItGame.Develop
                         }
 
                     });
-
-
                 }
                 else if (magn > 5)
                 {
                     sound = Game.Enums.SoundEffects.ArmorImpact;
 
-                    Singleton.Try<Pool_SmokeEffects>(s => s.TrySpawnIfVisible(transform.position, onInstanciate: inst =>
+                    if (Pool.TrySpawnIfVisible<C_SmokeEffectOnImpact>(transform.position, out var inst))
                     {
                         inst.PlayAnimateFromDot(density: magn * 0.01f);
-                    }));
+                    };
 
                 }
                 else

@@ -14,13 +14,16 @@ namespace QuizCanners.IsItGame.Develop
             {
                 var w = s.World;
 
-                World<ParticlePhisics>.Entity cloud = w.CreateEntity("Smoke");
+                IEntity cloud = w.CreateEntity("Smoke")
 
-                cloud.AddComponent((ref ParticlePhisics.SmokeData smoke) => 
+                .AddComponent((ref ParticlePhisics.SmokeData smoke) => 
                 {
-                    smoke.Temperature = 10;
-                });
-                cloud.AddComponent((ref ParticlePhisics.PositionData pos) =>
+                    //smoke.Temperature = 10;
+                })
+
+                .AddComponent<ParticlePhisics.AffectedByWind>()
+
+                .AddComponent((ref ParticlePhisics.PositionData pos) =>
                 {
                     pos.Position = inst.transform.position;
                 });

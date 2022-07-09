@@ -10,45 +10,51 @@ namespace QuizCanners.IsItGame.Develop
     public class C_ECS_HeatSmoke : MonoBehaviour, IPEGI
     {
         [SerializeField] private MeshRenderer _meshRenderer;
-        private World<ParticlePhisics>.Entity _entity;
+        private IEntity _entity;
 
-        private ShaderProperty.FloatValue _heat = new("_Heat", 0.01f, 5f);
-        private ShaderProperty.FloatValue _dissolve = new("_Dissolve", 0f, 1f);
-        private ShaderProperty.FloatValue _seed = new("_Seed", 0f, 1f);
+        private readonly ShaderProperty.FloatValue _heat = new("_Heat", 0.01f, 5f);
+        private readonly ShaderProperty.FloatValue _dissolve = new("_Dissolve", 0f, 1f);
+        private readonly ShaderProperty.FloatValue _seed = new("_Seed", 0f, 1f);
+       
+        private readonly LogicWrappers.Request _dirty = new();
+
         MaterialPropertyBlock _block;
-
-        LogicWrappers.Request dirty = new LogicWrappers.Request();
-
         float _visibility = 0;
 
-        public void Restart(World<ParticlePhisics>.Entity entity)
+        public void Restart(IEntity entity)
         {
             _seed.SetOn(_block, Random.value);
              _entity = entity;
             _visibility = 0;
-            dirty.CreateRequest();
+            _dirty.CreateRequest();
             LateUpdate();
         }
 
+        public void AddHeat(float value)
+        {
+            var dta = _entity.GetComponent<ParticlePhisics.SmokeData>();
+            dta.Temperature += value;
+            _entity.SetComponent(dta);
+        }
 
-        public float Heat 
+        private float Heat 
         {
             get => _heat.latestValue;
             set 
             {
                 _heat.SetOn(_block, value);
-                dirty.CreateRequest();
+                _dirty.CreateRequest();
             } 
         }
 
-        public float Dissolve
+        private float Dissolve
         {
             get => _dissolve.latestValue;
             set
             {
                 _dissolve.SetOn(_block, Mathf.Max(1 - _visibility, value));
                 transform.localScale = Vector3.one *  ((0.5f + _seed.latestValue) + value * 3);
-                dirty.CreateRequest();
+                _dirty.CreateRequest();
             }
         }
 
@@ -75,7 +81,7 @@ namespace QuizCanners.IsItGame.Develop
                 transform.position = _entity.GetComponent<ParticlePhisics.PositionData>().Position;
             }
 
-            if (dirty.TryUseRequest()) 
+            if (_dirty.TryUseRequest()) 
             {
                 _meshRenderer.SetPropertyBlock(_block);
             }
@@ -100,7 +106,7 @@ namespace QuizCanners.IsItGame.Develop
             if (Icon.Delete.Click())
                 _entity = new World<ParticlePhisics>.Entity();
 
-            pegi.Nested_Inspect(ref _entity).Nl();
+            pegi.Nested_Inspect_Value(ref _entity).Nl();
 
             var d = Dissolve;
             if ("Dissolve".PegiLabel(80).Edit_01(ref d).Nl())

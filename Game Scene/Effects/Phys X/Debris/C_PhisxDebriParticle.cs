@@ -137,15 +137,14 @@ namespace QuizCanners.IsItGame.Develop
                         {
                             for (int i = 0; i < smokePoints.Length; i++)
                             {
-                                if (!s.TrySpawnIfVisible(worldPosition: smokePoints[i] + Random.insideUnitSphere * 0.25f, out var inst)) 
+                                if (!s.TrySpawn(worldPosition: smokePoints[i] + Random.insideUnitSphere * 0.25f, out C_ECS_HeatSmoke inst)) 
                                     break;
 
-                                
+                                inst.AddHeat(10);
                             }
                         });
                     }
                 }
-
 
                 float totalLifetime = 20f * s;
                 float startFade = 10f * s;

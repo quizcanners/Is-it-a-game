@@ -16,6 +16,18 @@ namespace QuizCanners.IsItGame.Develop
             }
         }
 
+        public struct UpwardImpulse : IComponentData, IPEGI_ListInspect
+        {
+            public Vector3 Position;
+            public float EnergyLeft;
+
+            public void InspectInList(ref int edited, int index)
+            {
+                "Pos".PegiLabel(40).Edit(ref Position);
+                "Energy".PegiLabel(40).Edit(ref EnergyLeft);
+            }
+        }
+
         public struct SmokeData : IComponentData, IPEGI_ListInspect
         {
             public float Temperature;
@@ -26,6 +38,11 @@ namespace QuizCanners.IsItGame.Develop
                 "Temperatire".PegiLabel(90).Edit(ref Temperature);
                 "Dissolve".PegiLabel(50).Edit(ref Dissolve);
             }
+        }
+
+        public struct AffectedByWind : IComponentData 
+        {
+
         }
 
         public struct HeatSource : IComponentData , IPEGI_ListInspect

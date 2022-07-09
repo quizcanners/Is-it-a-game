@@ -26,12 +26,53 @@ namespace QuizCanners.IsItGame.Develop
                    => 
                {
                    count++;
-                   m.Position += Vector3.up * ( 0.5f ) * deltaTime;
+                   m.Position +=  0.5f  * deltaTime * Vector3.up;
                    s.Dissolve += deltaTime * (dissolveSpeed);
                    s.Temperature *= heatDissolve;
                }));
 
             dissolveSpeed = count / 500f;
+
+
+            Measure("Upward Push", ()=> 
+            {
+                world.WithAll<UpwardImpulse>().Run( (ref UpwardImpulse impulse, IEntity e) =>
+                {
+                    var outPut = deltaTime * impulse.EnergyLeft;
+
+                    var pos = impulse.Position;
+
+                    world.RunSystem<PositionData, AffectedByWind>((ref PositionData position) =>
+                    {
+                        var vector = position.Position - pos;
+                        float distance = vector.magnitude;
+
+                        float hor = vector.XZ().magnitude;
+
+                        float isAbove = vector.y / hor;
+
+                        float swirl = vector.y - hor;
+
+                        isAbove = Mathf.Clamp01(isAbove);
+
+                        vector.Normalize();
+
+                        Vector3 pushVector = Vector3.Lerp((-vector).Y(0) * 2f, vector * 0.25f, isAbove); // Below the mushroom suck in
+
+                        vector = (pushVector  + Vector3.up * isAbove * isAbove * 4);
+                        
+
+
+                        vector *= outPut / (1 + distance);
+                        position.Position += vector ;
+                    });
+
+                    impulse.EnergyLeft -= Time.deltaTime * 30;
+                    if (impulse.EnergyLeft <= 0)
+                        e.Destroy();
+                });
+            });
+
 
             Measure("Heat Imp Ent", () =>
             world.RunSystem((ref HeatSource source, ref HeatImpulse impulse, IEntity entity) =>

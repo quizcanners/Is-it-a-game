@@ -111,11 +111,12 @@ namespace QuizCanners.IsItGame.Develop
                 if (s.TrySpawnIfVisible(origin, out var light))
                     light.SetSize(128);
             });
-            Singleton.Try<Pool_SmokeEffects>(s =>
-            {
-                if (s.TrySpawnIfVisible(origin, out var smoke))
-                    smoke.PlayAnimateFromDot(0.5f);
-            });
+
+            if (Pool.TrySpawnIfVisible<C_SmokeEffectOnImpact>(origin, out var smoke))
+                smoke.PlayAnimateFromDot(0.5f);
+
+            
+
             Singleton.Try<Pool_PhisXDebrisParticles>(s =>
             {
                 s.PushFromExplosion(hit.point, force: _pushForce, radius: 25);
@@ -162,6 +163,25 @@ namespace QuizCanners.IsItGame.Develop
                     else break;
                 }
             });
+
+            Singleton.Try<Singleton_SDFPhisics_TinyEcs>(s =>
+            {
+                s.World.CreateEntity().AddComponent((ref ParticlePhisics.UpwardImpulse e) => 
+                { 
+                    e.EnergyLeft = 10; 
+                    e.Position = hit.point; 
+                });
+            });
+
+            Singleton.Try<Pool_ECS_HeatSmoke>(p =>
+            {
+                for (int i = 0; i < 20; i++)
+                {
+                    if (!p.TrySpawn(hit.point + UnityEngine.Random.insideUnitCircle.ToVector3XZ() * 3.5f))
+                        break;
+                }
+            });
+
 
             PainDamage(hit, brushConfig);
         }

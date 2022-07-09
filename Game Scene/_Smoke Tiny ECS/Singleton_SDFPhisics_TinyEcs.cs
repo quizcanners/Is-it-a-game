@@ -8,9 +8,9 @@ namespace QuizCanners.IsItGame.Develop
 {
     public class Singleton_SDFPhisics_TinyEcs : Singleton.BehaniourBase, IPEGI
     {
-        private ParticlePhisics _worldLink = new ParticlePhisics();
+        private readonly ParticlePhisics _worldLink = new ParticlePhisics();
 
-        private Task currentTask;
+        private readonly Task currentTask;
 
      
         private int _started;
