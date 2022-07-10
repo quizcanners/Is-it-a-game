@@ -99,9 +99,9 @@ namespace QuizCanners.IsItGame
             {
                 var d = Deformation;
 
-                float UpscaleSpeed = 1.5f;
+                float UpscaleSpeed = 1f;
 
-                if (LerpUtils.IsLerpingBySpeed(ref d, _scalingDown ? 0 : _targetDeformation, (_scalingDown ? 4f: UpscaleSpeed), unscaledTime: false)) 
+                if (LerpUtils.IsLerpingBySpeed(ref d, _scalingDown ? 0 : _targetDeformation, (_scalingDown ? 1f: UpscaleSpeed), unscaledTime: false)) 
                 {
                     Deformation =  d ;
                     Disintegration = _disintegrate ? d*d : 0;  //Mathf.SmoothStep(0, _targetDeformation, d);
