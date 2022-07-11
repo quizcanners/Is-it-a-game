@@ -52,8 +52,8 @@ namespace QuizCanners.IsItGame.Develop
             get => _dissolve.latestValue;
             set
             {
-                _dissolve.SetOn(_block, Mathf.Max(1 - _visibility, value));
-                transform.localScale = Vector3.one *  ((0.5f + _seed.latestValue) + value * 3);
+                _dissolve.SetOn(_block, Mathf.Max(1 - Mathf.Pow(_visibility,3f), value));
+                transform.localScale = Vector3.one *  ((0.5f + _seed.latestValue) + value * 5);
                 _dirty.CreateRequest();
             }
         }

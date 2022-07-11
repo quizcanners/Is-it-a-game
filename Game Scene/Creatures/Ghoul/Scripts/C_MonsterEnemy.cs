@@ -308,7 +308,7 @@ namespace QuizCanners.IsItGame.Develop
                         Vector3 direction = Vector3.Lerp(randomDirection, pushVector.normalized * 0.5f, pushForce01*0.5f);
                         b.Restart(
                             position: origin + randomDirection * 0.5f, 
-                            direction: direction * (1 + pushForce01) * 4, 
+                            direction: (1 + pushForce01) * 4 * direction, 
                             scale: 1.5f);
                     }
                     else

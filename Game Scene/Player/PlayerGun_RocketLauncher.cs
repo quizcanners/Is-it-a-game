@@ -103,7 +103,7 @@ namespace QuizCanners.IsItGame.Develop
                     onFailed: () => Game.Enums.SoundEffects.Explosion.PlayOneShotAt(hit.point, clipVolume: volume));
 
 
-            if (Camera.main.IsInCameraViewArea(hit.point) == false)
+            if (!Camera.main.IsInCameraViewArea(hit.point))
                 return;
 
             Singleton.Try<Pool_ImpactLightsController>(s =>
@@ -113,7 +113,7 @@ namespace QuizCanners.IsItGame.Develop
             });
 
             if (Pool.TrySpawnIfVisible<C_SmokeEffectOnImpact>(origin, out var smoke))
-                smoke.PlayAnimateFromDot(0.5f);
+                smoke.PlayAnimateFromDot(2f);
 
             
 
