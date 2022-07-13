@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.9996454, g: 0.9996781, b: 0.999614, a: 1}
+  m_IndirectSpecularColor: {r: 0.9996346, g: 0.9996378, b: 0.99962807, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -399,7 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5125d6c241d0434abf48e725d91eca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MyCamera: {fileID: 0}
+  MyCamera: {fileID: 278625435}
   copyShader: {fileID: 4800000, guid: 2ba85a9e0e168014aa34fefc385b7ac0, type: 3}
   copyDownscale: {fileID: 4800000, guid: 5aeab732ccaa8144a86314ce96d4b794, type: 3}
   blurShader: {fileID: 4800000, guid: 15ac92f756ff6604dbc8cfd1f8abdff9, type: 3}
@@ -1911,7 +1911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PersistentProgressData: {fileID: 11400000, guid: 0fb214bdf54c4264989de936878fc8ac, type: 2}
   context:
-    _currentlyEntered: -1
+    _currentlyEntered: 3
 --- !u!4 &1733169656
 Transform:
   m_ObjectHideFlags: 0
@@ -2241,6 +2241,9 @@ MonoBehaviour:
   _InspectorUnderalay:
   - {fileID: 3481806404083958355}
   - {fileID: 8950193177192348575}
+  _button: {fileID: 4536348075441481589}
+  _mode: 0
+  _drawInspectorOnGui: 0
 --- !u!114 &1642321996244928637
 MonoBehaviour:
   m_ObjectHideFlags: 0
