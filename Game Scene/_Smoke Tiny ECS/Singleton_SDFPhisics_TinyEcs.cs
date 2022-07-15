@@ -1,45 +1,30 @@
 using QuizCanners.Inspect;
 using QuizCanners.TinyECS;
 using QuizCanners.Utils;
-using System.Threading.Tasks;
 using UnityEngine;
 
 namespace QuizCanners.IsItGame.Develop
 {
     public class Singleton_SDFPhisics_TinyEcs : Singleton.BehaniourBase, IPEGI
     {
+        [SerializeField] private SO_ECSParticlesConfig _config;
+
         private readonly ParticlePhisics _worldLink = new ParticlePhisics();
-
-        private readonly Task currentTask;
-
-     
-        private int _started;
-        private int _skipped;
 
         public World<ParticlePhisics> World => _worldLink.GetWorld();
 
         public void Update()
         {
-            if (currentTask != null && !currentTask.IsCompleted) 
-            {
-                _skipped++;
-                return;
-            }
-
-            _started++;
-
-            // currentTask = Task.Run(()=> 
-
-            _worldLink.UpdateSystems(deltaTime: Time.deltaTime);
-            
-            //);
+            if (_config)
+                _worldLink.UpdateSystems(deltaTime: Time.deltaTime, _config);
         }
 
         public override void Inspect()
         {
             pegi.Nl();
-            "Started: {0} Skipped: {1}".F(_started, _skipped).PegiLabel().Nl();
             _worldLink.Nested_Inspect();
+
+            "Settings".PegiLabel().Edit_Inspect(ref _config).Nl();
         }
     }
 

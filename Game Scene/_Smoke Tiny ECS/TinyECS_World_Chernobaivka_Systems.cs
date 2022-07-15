@@ -13,7 +13,7 @@ namespace QuizCanners.IsItGame.Develop
 
         private float dissolveSpeed = 0;
 
-        public void UpdateSystems(float deltaTime) 
+        public void UpdateSystems(float deltaTime, SO_ECSParticlesConfig config) 
         {
             var world = this.GetWorld();
 
@@ -21,12 +21,15 @@ namespace QuizCanners.IsItGame.Develop
 
             float heatDissolve = Mathf.Clamp01(1 - deltaTime * 10);
 
+            Vector3 displace = deltaTime * (0.5f * Vector3.up);
+            Vector3 wind = deltaTime * config.Wind; 
+
             Measure("Pos Smoke", () =>
                world.RunSystem((ref PositionData m, ref SmokeData s)
                    => 
                {
                    count++;
-                   m.Position +=  0.5f  * deltaTime * Vector3.up;
+                   m.Position += displace + wind * QcMath.SmoothStep(0.5f, 5, m.Position.y + s.Dissolve);
                    s.Dissolve += deltaTime * (dissolveSpeed);
                    s.Temperature *= heatDissolve;
                }));
@@ -59,7 +62,7 @@ namespace QuizCanners.IsItGame.Develop
 
                         Vector3 pushVector = Vector3.Lerp((-vector).Y(0) * 2f, vector * 0.25f, isAbove); // Below the mushroom suck in
 
-                        vector = (pushVector  + Vector3.up * isAbove * isAbove * 4);
+                        vector = (pushVector  + Vector3.up * isAbove * isAbove * 8);
                         
 
 

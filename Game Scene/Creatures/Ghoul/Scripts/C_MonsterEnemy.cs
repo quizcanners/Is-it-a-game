@@ -288,7 +288,7 @@ namespace QuizCanners.IsItGame.Develop
 
             });
 
-            ImpactController.Play(origin - (1 + pushForce01) * pushVector, 1, disintegrate: true);
+            ImpactController.Play(origin, 1, disintegrate: true);
 
             foreach (var rb in rigidbodies)
             {

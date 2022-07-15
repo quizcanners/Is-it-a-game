@@ -83,7 +83,7 @@ namespace QuizCanners.IsItGame.Develop
 
               // Debug.Log("Collision: {0}".F(collision.relativeVelocity.magnitude));
 
-                sound.PlayOneShotAt(transform.position, clipVolume: magn * 10);
+                sound.PlayOneShotAt(transform.position, clipVolume: 0.33f );
             }
         }
     }
