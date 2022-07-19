@@ -1,6 +1,5 @@
 using QuizCanners.Inspect;
 using QuizCanners.IsItGame.Pulse;
-using QuizCanners.Lerp;
 using QuizCanners.Utils;
 using UnityEngine;
 
