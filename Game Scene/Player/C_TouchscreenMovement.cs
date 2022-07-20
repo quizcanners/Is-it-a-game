@@ -64,19 +64,29 @@ namespace QuizCanners.IsItGame.Develop
     
 
         private PulsePath.Point.Id point;
+        private Gate.Frame frame = new Gate.Frame();
 
         private void Update()
         {
-            GetRawDirection(out float forward, out float right);
-            var direction = RotatedDirection(forward: forward, right: right);
-
-            transform.position += direction * (Input.GetKey(KeyCode.LeftShift) ? 10 : 5) * Time.deltaTime;
-
-            Singleton.Try<Singleton_PulsePath>(s =>
-            {
-
-            });
+            CheckPosition();
         }
+
+        void CheckPosition() 
+        {
+            if (frame.TryEnter()) 
+            {
+                GetRawDirection(out float forward, out float right);
+                var direction = RotatedDirection(forward: forward, right: right);
+
+                transform.position += direction * (Input.GetKey(KeyCode.LeftShift) ? 10 : 5) * Time.deltaTime;
+
+                Singleton.Try<Singleton_PulsePath>(s =>
+                {
+
+                });
+            }
+        }
+             
 
         #region Inspector
         public void Inspect()
@@ -105,7 +115,11 @@ namespace QuizCanners.IsItGame.Develop
         #endregion
 
 
-        Vector3 IGodModeCameraController.GetTargetPosition() => transform.position;
+        Vector3 IGodModeCameraController.GetTargetPosition()
+        {
+            CheckPosition();
+            return transform.position;
+        }
         Vector3 IGodModeCameraController.GetCameraOffsetPosition() => cameraOffset;
     }
 

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe41425d05c46c945b2d07e72dcc2c17, type: 3}
   m_Name: ECS Settings
   m_EditorClassIdentifier: 
-  Wind: {x: 3, y: 2, z: 4}
+  Wind: {x: -3, y: 2, z: 4}
