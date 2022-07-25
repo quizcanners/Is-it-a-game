@@ -288,7 +288,7 @@ namespace QuizCanners.IsItGame.Develop
 
             });
 
-            ImpactController.Play(origin, 1, disintegrate: true);
+            ImpactController.Play(origin - pushVector.normalized * 0.5f, 1, disintegrate: true);
 
             foreach (var rb in rigidbodies)
             {
@@ -537,10 +537,17 @@ namespace QuizCanners.IsItGame.Develop
          
                 InspectChildList("Colliders", colliders);
                 if (context.IsCurrentEntered)
+                {
+                    if ("All On".PegiLabel().Click().Nl())
+                        SetColliders(true);
+                    if ("All Off".PegiLabel().Click().Nl())
+                        SetColliders(false);
+
                     if ("Add Impact Controller".PegiLabel().Click())
                         foreach (var c in colliders)
                             if (c & !c.GetComponent<C_MonsterImpactHandler>())
                                 c.gameObject.AddComponent<C_MonsterImpactHandler>();
+                }
                         
 
                 InspectChildList("Imact Controllers", impactHandlers);

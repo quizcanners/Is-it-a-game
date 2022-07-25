@@ -16,6 +16,8 @@ namespace QuizCanners.IsItGame
         [NonSerialized] private ShaderProperty.FloatValue _ImpactDeformation = new(name: "_ImpactDeformation", 0,1);
         [NonSerialized] private ShaderProperty.FloatValue _ImpactDisintegration = new(name: "_ImpactDisintegration", 0, 1);
 
+        [NonSerialized] private Transform impactTracker;
+
         //_ImpactDisintegration
 
         private LogicWrappers.Request _updatePropertyBlockRequest = new();
@@ -24,7 +26,6 @@ namespace QuizCanners.IsItGame
         private bool _scalingDown;
         private float _targetDeformation = 0;
         private bool _disintegrate;
-        private bool _impactPositionSet;
 
         public bool IsPlaying
         {
@@ -32,21 +33,37 @@ namespace QuizCanners.IsItGame
             private set;
         }
 
+        
 
-        public void Play(Vector3 pos, float impactSize, bool disintegrate) 
+        public void Play(Vector3 pos, float impactSize, bool disintegrate, Transform origin = null) 
         {
             IsPlaying = true;
             _scalingDown = false;
             _targetDeformation = Mathf.Max(impactSize, _targetDeformation);
-            Deformation = 0;
-            Disintegration = 0;
-            bool useHitPosition = disintegrate && _impactPositionSet && (ImpactPosition - pos).magnitude < 2;
+            if (disintegrate)
+            {
+                Deformation = 0;
+                Disintegration = 0;
+            }
+            //bool useHitPosition = disintegrate && _impactPositionSet && (ImpactPosition - pos).magnitude < 2;
              
-            if (!useHitPosition)
-                ImpactPosition = pos;
+           // if (!useHitPosition)
+            ImpactPosition = pos;
 
             _disintegrate |= disintegrate;
-            _impactPositionSet = true;
+
+            if (origin) 
+            {
+                if (!impactTracker)
+                {
+                    impactTracker = new GameObject("Impact Tracker").transform;
+                }
+
+                impactTracker.parent = origin.transform;
+                impactTracker.position = pos;
+            }
+
+            ManagedUpdate();
         }
 
         public void ResetEffect()
@@ -56,10 +73,15 @@ namespace QuizCanners.IsItGame
             Deformation = 0;
             Disintegration = 0;
             _targetDeformation = 0;
-            _impactPositionSet = false;
         }
 
         void OnEnable() => ResetEffect();
+
+        void OnDisable() 
+        {
+            if (impactTracker)
+                impactTracker.gameObject.DestroyWhatever();
+        }
 
         public float Deformation 
         {
@@ -95,17 +117,31 @@ namespace QuizCanners.IsItGame
 
         void LateUpdate() 
         {
-            if (IsPlaying) 
+            ManagedUpdate();
+        }
+
+
+
+        void ManagedUpdate() 
+        {
+          
+            if (IsPlaying)
             {
                 var d = Deformation;
 
-                float UpscaleSpeed = 1f;
-
-                if (LerpUtils.IsLerpingBySpeed(ref d, _scalingDown ? 0 : _targetDeformation, (_scalingDown ? 1f: UpscaleSpeed), unscaledTime: false)) 
+                if (impactTracker)
                 {
-                    Deformation =  d ;
-                    Disintegration = _disintegrate ? d*d : 0;  //Mathf.SmoothStep(0, _targetDeformation, d);
-                } else 
+                    ImpactPosition = impactTracker.transform.position;
+                }
+
+                float UpscaleSpeed = _disintegrate ? 1f : 10f;
+
+                if (LerpUtils.IsLerpingBySpeed(ref d, _scalingDown ? 0 : _targetDeformation, (_scalingDown ? 1f : UpscaleSpeed), unscaledTime: false))
+                {
+                    Deformation = d;
+                    Disintegration = _disintegrate ? d * d : 0;  //Mathf.SmoothStep(0, _targetDeformation, d);
+                }
+                else
                 {
                     if (_disintegrate)
                         IsPlaying = false;
@@ -121,7 +157,7 @@ namespace QuizCanners.IsItGame
                 }
             }
 
-            if (_updatePropertyBlockRequest.TryUseRequest()) 
+            if (_updatePropertyBlockRequest.TryUseRequest())
             {
                 if (block == null)
                     block = new MaterialPropertyBlock();
@@ -132,6 +168,7 @@ namespace QuizCanners.IsItGame
 
                 _renderer.SetPropertyBlock(block);
             }
+            
         }
 
         #region Inspector
@@ -139,14 +176,21 @@ namespace QuizCanners.IsItGame
         {
             var changes = pegi.ChangeTrackStart();
 
+            if (impactTracker)
+            {
+                "Impac Tracker".PegiLabel().Edit(ref impactTracker).Nl();
+            }
+
             if (IsPlaying)
             {
                 var p = IsPlaying;
-                "Playing".PegiLabel().ToggleIcon(ref p).Nl().OnChanged(()=> IsPlaying = p);
+                "Playing".PegiLabel().ToggleIcon(ref p).Nl().OnChanged(() => IsPlaying = p);
             }
             else
+            {
                 "Play Explosion".PegiLabel().Click().Nl().OnChanged(() => Play(transform.position + Vector3.up, Mathf.Max(0.3f, _ImpactDeformation.latestValue), disintegrate: true));
-
+                "Play Impact".PegiLabel().Click().Nl().OnChanged(() => Play(ImpactPosition, 1, disintegrate: false));
+            }
 
             "Renderer".PegiLabel(70).Edit_IfNull(ref _renderer, gameObject).Nl();
             if (_renderer)

@@ -156,12 +156,21 @@ namespace QuizCanners.IsItGame.Develop
 
             if (monster)
             {
+
+                if (visibleByCamera && monster.ShowDamage &&
+                  (monster.LimbsState == C_MonsterEnemy.LimbsControllerState.Animation || monster.LimbsState == C_MonsterEnemy.LimbsControllerState.Ragdoll))
+                {
+                    monster.ImpactController.Play(hit.point, 1, disintegrate: false, origin: hit.transform);
+                }
+
+
                 if (!monster.IsAlive && monster.LimbsState == C_MonsterEnemy.LimbsControllerState.Animation)
                 {
                     monster.DropRigid();
                     pierced = true;
                 }
 
+              
                 if (monster.TryTakeHit(WeaponAttack, RollInfluence.Advantage, C_MonsterEnemy.LimbsControllerState.Animation))
                 {
                     if (visibleByCamera)
@@ -172,7 +181,6 @@ namespace QuizCanners.IsItGame.Develop
                         if (visibleByCamera)
                         {
                             monster.ShowDamage = true;
-                            monster.ImpactController.Play(hit.point, 0.15f, disintegrate: false);
                         }
 
                         Game.Enums.SoundEffects.BodyImpact.PlayOneShotAt(monster.transform.position, clipVolume: 2);

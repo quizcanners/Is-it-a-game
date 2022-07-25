@@ -10,6 +10,7 @@ namespace QuizCanners.IsItGame.Develop
         [Header("Settings")]
         [SerializeField] protected Vector3 cameraOffset = new(5, 10, 5);
         private Vector2 direction;
+        [SerializeField] private bool _targetControllingCameraState;
 
         protected bool ControllingCamera 
         {
@@ -25,17 +26,18 @@ namespace QuizCanners.IsItGame.Develop
 
         protected void OnEnable()
         {
-            ControllingCamera = true;
+            ControllingCamera = _targetControllingCameraState;
         }
 
         protected void OnDisable()
         {
+            _targetControllingCameraState = ControllingCamera;
             ControllingCamera = false;
         }
 
         protected virtual void Start()
         {
-            ControllingCamera = true;
+
         }
 
         Vector3 RotatedDirection(float forward, float right) 
