@@ -228,7 +228,7 @@ namespace QuizCanners.IsItGame.Develop
 
                 Game.Enums.SoundEffects.DefaultSurfaceImpact.PlayOneShotAt(hit.point);
 
-                Singleton.Try<Pool_ECS_HeatSmoke>(s => s.TrySpawn(worldPosition: hit.point));
+              //  Singleton.Try<Pool_ECS_HeatSmoke>(s => s.TrySpawn(worldPosition: hit.point));
 
                 Singleton.Try<Pool_SmokeEffects>(s => s.TrySpawn(hit.point, out _));
                 Singleton.Try<Pool_ImpactLightsController>(s => s.TrySpawn(hit.point, onInstanciate: l => l.SetSize(10f)));

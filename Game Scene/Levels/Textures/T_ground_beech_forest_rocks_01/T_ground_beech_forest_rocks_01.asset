@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca66460fbaf1c3246ab7776fe658be92, type: 3}
+  m_Name: T_ground_beech_forest_rocks_01
+  m_EditorClassIdentifier: 
+  diffuse: {fileID: 2800000, guid: a5834c0ff764b0e4a9df15774c59b6af, type: 3}
+  heightMap: {fileID: 2800000, guid: 66ac166853363174984128ba518a1d32, type: 3}
+  normalMap: {fileID: 2800000, guid: 35c67879cd7202246993b5fad84a9872, type: 3}
+  gloss: {fileID: 2800000, guid: 73d5bf5a1cd7f5245b8accbceb790f0c, type: 3}
+  reflectivity: {fileID: 0}
+  ambient: {fileID: 2800000, guid: dba4275fa9dd418459753c331e4ba8a5, type: 3}
+  lastProduct: {fileID: 2800000, guid: 3fd5c718ac866de439c7e0ecb8a3df55, type: 3}
+  width: 2048
+  height: 2048
+  isColor: 0
+  selectedProfile: 0
