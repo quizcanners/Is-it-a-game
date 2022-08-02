@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Player Config
   m_EditorClassIdentifier: 
   RocketLauncher:
+    gun: {fileID: 0}
     brushConfig: {fileID: 11400000, guid: 1605ad670cc200c4da0306cb4c779bac, type: 2}
     fleshImpactBrushConfig: {fileID: 11400000, guid: 3f75f2398d51e374e8b5ed9c231c47ec, type: 2}
     savingThrow:

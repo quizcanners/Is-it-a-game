@@ -35,6 +35,14 @@ namespace QuizCanners.IsItGame
                 if (Input.GetMouseButton(0) && _shotsGap.TryUpdateIfTimePassed(0.1f))
                 {
                     Ray shootVector = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+                    if (Physics.Raycast(shootVector, out var hit) && hit.transform)
+                    {
+                        var cmp = hit.transform.gameObject.GetComponentInParent<C_RayFireRespawn>();
+                        if (cmp)
+                            cmp.OnDamage();
+                    }
+
                     gun.Shoot(shootVector.origin, shootVector.direction);
                 }
             }

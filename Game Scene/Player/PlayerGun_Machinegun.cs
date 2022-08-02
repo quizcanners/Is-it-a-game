@@ -3,6 +3,7 @@ using PainterTool;
 using PainterTool.Examples;
 using QuizCanners.Inspect;
 using QuizCanners.Utils;
+using RayFire;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,7 @@ namespace QuizCanners.IsItGame.Develop
     public class PlayerGun_Machinegun :  IPEGI, INeedAttention
     {
         public PlaytimePainter_BrushConfigScriptableObject brushConfig;
+      
         public Attack WeaponAttack = new(name: "Gun", isRange: true, attackBonus: 3,
              new Damage()
              {
@@ -56,7 +58,7 @@ namespace QuizCanners.IsItGame.Develop
 
                 state.WeaponKick = Mathf.Clamp01(state.WeaponKick + 0.3f);
 
-                ProcessHit(firstHit, direction, out bool pierced);
+                ProcessHit(firstHit, direction, out bool pierced, state);
 
                 int maxLine = 10;
 
@@ -71,19 +73,19 @@ namespace QuizCanners.IsItGame.Develop
 
                     if (mgmt.CastHardSurface(outRay, out latestHit)) 
                     {
-                        ProcessHit(latestHit, direction, out pierced);
+                        ProcessHit(latestHit, direction, out pierced, state);
                     }
                 }
 
                 if (mgmt.CastPierce(ray, firstHit, out var softHit)) 
                 {
-                    ProcessHit(softHit, direction, out pierced);
+                    ProcessHit(softHit, direction, out pierced, state);
                 }
 
             }
         }
 
-        private void ProcessHit(RaycastHit hit, Vector3 direction, out bool pierced) 
+        private void ProcessHit(RaycastHit hit, Vector3 direction, out bool pierced, State state) 
         {
             bool visibleByCamera = Camera.main.IsInCameraViewArea(hit.point);
 
@@ -223,15 +225,35 @@ namespace QuizCanners.IsItGame.Develop
             else
             {
 
+                Game.Enums.SoundEffects.DefaultSurfaceImpact.PlayOneShotAt(hit.point);
+
+
                 if (!visibleByCamera)
                     return;
 
-                Game.Enums.SoundEffects.DefaultSurfaceImpact.PlayOneShotAt(hit.point);
+                Singleton.Try<Pool_ImpactLightsController>(s => s.TrySpawn(hit.point, onInstanciate: l => l.SetSize(10f)));
+
+                if (state.Gun)
+                {
+                    var cmp = hit.transform.gameObject.GetComponentInParent<C_RayFireRespawn>();
+                    if (cmp)
+                    {
+                        cmp.OnDamage();
+
+                        state.Gun.Shoot(hit.point - direction, direction);
+
+                        return;
+                    }
+                }
+
+
+              
 
               //  Singleton.Try<Pool_ECS_HeatSmoke>(s => s.TrySpawn(worldPosition: hit.point));
 
-                Singleton.Try<Pool_SmokeEffects>(s => s.TrySpawn(hit.point, out _));
-                Singleton.Try<Pool_ImpactLightsController>(s => s.TrySpawn(hit.point, onInstanciate: l => l.SetSize(10f)));
+              //  Singleton.Try<Pool_SmokeEffects>(s => s.TrySpawn(hit.point, out _));
+               
+                /*
                 Singleton.Try<Pool_PhisXDebrisParticles>(s =>
                 {
                     s.PushFromExplosion(hit.point, force: 20, 2);
@@ -251,7 +273,8 @@ namespace QuizCanners.IsItGame.Develop
                         }
                         else break;
                     }
-                });
+                });*/
+
                 Singleton.Try<Pool_PhisXEmissiveParticles>(s =>
                 {
                     s.PushFromExplosion(hit.point, force: 1, 2);
@@ -313,11 +336,19 @@ namespace QuizCanners.IsItGame.Develop
             }
         }
 
-        public class State 
+        [Serializable]
+        public class State : IPEGI
         {
+            [SerializeField] public RayfireGun Gun;
             [NonSerialized] public float WeaponKick = 0;
+            
 
             public readonly LogicWrappers.TimeFixedSegmenter DelayBetweenShots = new(0.1f, returnOnFirstRequest: 1);
+
+            public void Inspect()
+            {
+                "Gun Child".PegiLabel(60).Edit(ref Gun).Nl();
+            }
         }
 
         #region Inspector

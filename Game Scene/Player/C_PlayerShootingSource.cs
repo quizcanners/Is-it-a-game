@@ -16,7 +16,10 @@ namespace QuizCanners.IsItGame.Develop
         [SerializeField] private Weapon _weapon;
         private enum Weapon { Machinegun, RocketLauncher, BoltGun }
 
-        private readonly PlayerGun_Machinegun.State _machineGunState = new PlayerGun_Machinegun.State();
+        [SerializeField] private PlayerGun_Machinegun.State _machineGunState = new();
+        [SerializeField] private PlayerGun_RocketLauncher.State _rocketState = new();
+
+
 
         private readonly LogicWrappers.TimeFixedSegmenter _delayBetweenRockets = new( 1.1f, returnOnFirstRequest: 1);
 
@@ -75,6 +78,9 @@ namespace QuizCanners.IsItGame.Develop
                     break;
 
                 case Weapon.RocketLauncher:
+
+                    _config.RocketLauncher.UpdateExplosions();
+
                 if (isShooting)
                 {
                     var segm = _delayBetweenRockets.GetSegmentsWithouUpdate();
@@ -84,7 +90,7 @@ namespace QuizCanners.IsItGame.Develop
                         if (TryHit(out var hit))
                         {
                             _delayBetweenRockets.GetSegmentsAndUpdate();
-                            _config.RocketLauncher.Explosion(hit, hit.point - transform.position);
+                            _config.RocketLauncher.Explosion(hit, hit.point - transform.position, _rocketState);
                         }
                     }
                 }
@@ -116,10 +122,17 @@ namespace QuizCanners.IsItGame.Develop
                
                 if (!context.IsAnyEntered)
                 {
-                    
-                  
-
                     "Wepon".PegiLabel(50).Edit_Enum(ref _weapon).Nl();
+
+                    switch (_weapon) 
+                    {
+                        case Weapon.Machinegun:
+                            _machineGunState.Nested_Inspect();
+                            break;
+                        case Weapon.RocketLauncher:
+                            _rocketState.Nested_Inspect();
+                            break;
+                    }
 
                     if (!Camera.main)
                     {
