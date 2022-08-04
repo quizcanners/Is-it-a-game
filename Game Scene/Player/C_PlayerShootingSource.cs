@@ -9,6 +9,7 @@ using UnityEngine;
 
 namespace QuizCanners.IsItGame.Develop
 {
+    [SelectionBase]
     public class C_PlayerShootingSource : MonoBehaviour, IPEGI, INeedAttention
     {
         [SerializeField] private SO_PlayerConfig _config;

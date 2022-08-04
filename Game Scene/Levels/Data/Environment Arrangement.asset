@@ -15,16 +15,16 @@ MonoBehaviour:
   configurations:
   - name: Fists
     data:
-      _value: inst|2464|e|144|key|4|Cube|i|126|n|4|Cube|pos|30|x|6|-25.78|y|4|7.92|z|5|-25.1||scaling|20|x|2|20|y|1|5|z|2|20||rot|39|x|8|352.6555|y|8|328.5736|z|8|356.0659||||e|137|key|21|Pillar_Square_05
+      _value: inst|2514|e|144|key|4|Cube|i|126|n|4|Cube|pos|30|x|6|-25.78|y|4|7.92|z|5|-25.1||scaling|20|x|2|20|y|1|5|z|2|20||rot|39|x|8|352.6555|y|8|328.5736|z|8|356.0659||||e|137|key|21|Pillar_Square_05
         Prim|i|101|n|21|Pillar_Square_05 Prim|pos|29|x|6|-21.84|y|4|0.16|z|4|2.97||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|168|key|16|Reflective
-        Floor|i|137|n|16|Reflective Floor|pos|30|x|5|-3.33|y|4|5.43|z|6|-18.55||scaling|18|x|1|6|y|1|6|z|1|6||rot|39|x|8|82.45608|y|8|170.7867|z|8|282.4847||||e|138|key|21|Pillar_Square_05
+        Floor|i|137|n|16|Reflective Floor|pos|30|x|5|-3.33|y|4|5.43|z|6|-18.55||scaling|18|x|1|6|y|1|6|z|1|6||rot|39|x|8|82.45605|y|8|170.7867|z|8|282.4847||||e|138|key|21|Pillar_Square_05
         Prim|i|102|n|21|Pillar_Square_05 Prim|pos|30|x|5|3.146|y|5|0.151|z|5|0.555||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|184|key|28|Volumetric
         SDF Mesh Baked TF|i|141|n|19|Testing Name Change|pos|29|x|5|-73.4|y|4|-1.2|z|5|-47.2||scaling|21|x|2|10|y|2|10|z|2|10||rot|38|x|7|295.731|y|8|89.46307|z|8|96.60295||||e|198|key|20|Volumetric
         SDF Shape|i|163|n|20|Volumetric SDF Shape|pos|31|x|6|-0.063|y|5|1.094|z|5|0.766||scaling|39|x|8|1.686957|y|8|1.686957|z|8|1.686957||rot|39|x|8|356.9677|y|8|205.4996|z|8|4.899983||||e|144|key|4|Cube|i|126|n|4|Cube|pos|30|x|5|10.43|y|4|2.83|z|6|-10.25||scaling|20|x|2|20|y|1|5|z|2|20||rot|39|x|8|329.9656|y|8|323.1531|z|8|342.0489||||e|124|key|6|Portal|i|104|n|6|Portal|pos|28|x|3|3.9|y|4|2.44|z|6|-43.71||scaling|24|x|7|25.3135|y|1|5|z|1|1||rot|13|y|8|331.9044||||e|128|key|15|SM_Env_Alter_01|i|99|n|15|SM_Env_Alter_01|pos|19|x|5|-0.09|z|4|1.38||scaling|18|x|1|1|y|1|1|z|1|1||rot|13|y|8|209.1096||||e|157|key|28|Volumetric
         SDF Mesh Baked TF|i|114|n|28|Volumetric SDF Mesh Baked TF|pos|32|x|6|-18.49|y|5|-7.15|z|6|-24.99||scaling|21|x|2|20|y|2|20|z|2|20||rot|0||||e|195|key|16|Reflective
-        Floor|i|164|n|23|Reflective Floor(Clone)|pos|30|x|6|-27.15|y|4|4.68|z|5|-0.75||scaling|38|x|8|6.804779|y|8|3.661998|z|7|16.6196||rot|39|x|8|52.68047|y|8|283.2165|z|8|279.2593||||e|168|key|23|Prop_Crate_Wood_05
-        Prim|i|130|n|30|Prop_Crate_Wood_05 Prim(Clone)|pos|32|x|6|-18.56|y|5|-0.69|z|6|-16.97||scaling|35|x|6|3.2552|y|8|4.565744|z|6|3.2552||rot|0||||e|189|key|16|Reflective
-        Floor|i|158|n|23|Reflective Floor(Clone)|pos|31|x|6|-15.98|y|4|4.29|z|6|-24.12||scaling|31|x|7|15.2743|y|1|1|z|8|24.30424||rot|39|x|8|358.2983|y|8|93.31115|z|8|302.7423||||e|132|key|14|Blood
+        Floor|i|164|n|23|Reflective Floor(Clone)|pos|30|x|6|-27.15|y|4|4.68|z|5|-0.75||scaling|38|x|8|6.804779|y|8|3.661998|z|7|16.6196||rot|39|x|8|52.68047|y|8|283.2165|z|8|279.2593||||e|218|key|23|Prop_Crate_Wood_05
+        Prim|i|180|n|30|Prop_Crate_Wood_05 Prim(Clone)|pos|42|x|9|-16.40575|y|9|-0.437886|z|9|-19.83482||scaling|35|x|6|3.2552|y|8|4.565744|z|6|3.2552||rot|39|x|8|14.65458|y|8|20.18697|z|8|21.63072||||e|189|key|16|Reflective
+        Floor|i|158|n|23|Reflective Floor(Clone)|pos|31|x|6|-15.98|y|4|4.29|z|6|-24.12||scaling|31|x|7|15.2743|y|1|1|z|8|24.30424||rot|39|x|8|358.2983|y|8|93.31116|z|8|302.7423||||e|132|key|14|Blood
         Splatter|i|103|n|21|Blood Splatter(Clone)|pos|28|x|6|-25.57|y|3|0.4|z|4|3.17||scaling|21|x|2|10|y|2|10|z|2|10||rot|0||||e|153|key|16|Batchable
         Sphere|i|122|n|23|Batchable Sphere(Clone)|pos|30|x|6|-13.67|y|4|4.91|z|5|-25.2||scaling|36|x|7|19.4148|y|7|19.4148|z|7|19.4148||rot|0|||||lnks|0||
   - name: second
@@ -40,32 +40,43 @@ MonoBehaviour:
         Floor|i|118|n|23|Reflective Floor(Clone)|pos|30|x|6|-17.59|y|4|4.07|z|5|10.74||scaling|18|x|1|1|y|1|8|z|1|5||rot|13|x|8|2.561182|||||lnks|0||
   - name: Bigger Stuff
     data:
-      _value: inst|5970|e|119|key|4|Cube|i|101|n|4|Cube|pos|31|x|6|-25.62|y|4|6.46|z|6|-24.79||scaling|20|x|2|20|y|1|5|z|2|20||rot|13|y|8|329.7858||||e|154|key|21|Pillar_Square_05
-        Prim|i|118|n|21|Pillar_Square_05 Prim|pos|31|x|6|-47.76|y|5|-0.11|z|5|-5.87||scaling|33|x|6|2.9976|y|6|2.9976|z|6|2.9976||rot|0||||e|184|key|16|Reflective
+      _value: inst|7870|e|119|key|4|Cube|i|101|n|4|Cube|pos|31|x|6|-25.62|y|4|6.46|z|6|-24.79||scaling|20|x|2|20|y|1|5|z|2|20||rot|13|y|8|329.7858||||e|154|key|21|Pillar_Square_05
+        Prim|i|118|n|21|Pillar_Square_05 Prim|pos|31|x|6|-54.42|y|5|-0.11|z|5|-6.21||scaling|33|x|6|2.9976|y|6|2.9976|z|6|2.9976||rot|0||||e|184|key|16|Reflective
         Floor|i|153|n|16|Reflective Floor|pos|27|x|5|-77.2|y|4|23.6|z|3|-21||scaling|37|x|8|72.05322|y|8|46.67642|z|6|23.817||rot|39|x|8|353.6567|y|8|253.4766|z|8|357.5555||||e|138|key|21|Pillar_Square_05
         Prim|i|102|n|21|Pillar_Square_05 Prim|pos|30|x|5|3.146|y|5|0.151|z|5|0.555||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|198|key|20|Volumetric
-        SDF Shape|i|163|n|20|Volumetric SDF Shape|pos|31|x|6|-0.063|y|5|1.094|z|5|0.766||scaling|39|x|8|1.686957|y|8|1.686957|z|8|1.686957||rot|39|x|8|356.9677|y|8|205.4996|z|8|4.899983||||e|154|key|4|Cube|i|136|n|4|Cube|pos|30|x|4|19.7|y|5|13.21|z|6|-24.19||scaling|30|x|2|20|y|7|13.1275|z|6|42.452||rot|39|x|8|291.5159|y|8|258.7381|z|8|10.11415||||e|191|key|15|SM_Env_Alter_01|i|161|n|15|SM_Env_Alter_01|pos|34|x|6|-67.58|y|5|-0.16|z|8|5.178863||scaling|39|x|8|5.438314|y|8|5.438314|z|8|5.438314||rot|39|x|8|357.1245|y|8|74.73218|z|8|359.8873||||e|152|key|28|Volumetric
-        SDF Mesh Baked TF|i|109|n|28|Volumetric SDF Mesh Baked TF|pos|30|x|6|-49.23|y|4|9.46|z|5|-5.94||scaling|18|x|1|5|y|1|5|z|1|5||rot|0||||e|196|key|16|Reflective
-        Floor|i|165|n|23|Reflective Floor(Clone)|pos|30|x|6|-45.05|y|4|9.55|z|5|28.63||scaling|39|x|8|15.05751|y|8|15.11696|z|8|22.20212||rot|39|x|8|85.59807|y|8|11.42221|z|8|7.016984||||e|147|key|23|Prop_Crate_Wood_05
-        Prim|i|109|n|30|Prop_Crate_Wood_05 Prim(Clone)|pos|25|x|5|16.81|y|4|-0.4|z|1|2||scaling|21|x|2|10|y|2|10|z|2|10||rot|0||||e|196|key|16|Reflective
+        SDF Shape|i|163|n|20|Volumetric SDF Shape|pos|31|x|6|-0.063|y|5|1.094|z|5|0.766||scaling|39|x|8|1.686957|y|8|1.686957|z|8|1.686957||rot|39|x|8|356.9677|y|8|205.4996|z|8|4.899983||||e|155|key|4|Cube|i|137|n|4|Cube|pos|30|x|5|-5.12|y|5|10.05|z|5|18.75||scaling|31|x|2|20|y|8|3.072444|z|6|42.452||rot|39|x|8|0.587078|y|8|265.8924|z|8|359.5768||||e|191|key|15|SM_Env_Alter_01|i|161|n|15|SM_Env_Alter_01|pos|34|x|6|-67.58|y|5|-0.16|z|8|5.178863||scaling|39|x|8|5.438314|y|8|5.438314|z|8|5.438314||rot|39|x|8|357.1245|y|8|74.73218|z|8|359.8873||||e|196|key|16|Reflective
+        Floor|i|165|n|23|Reflective Floor(Clone)|pos|30|x|6|-45.05|y|4|9.55|z|5|28.63||scaling|39|x|8|15.05751|y|8|15.11696|z|8|22.20212||rot|39|x|8|85.59807|y|8|11.42221|z|8|7.016984||||e|161|key|23|Prop_Crate_Wood_05
+        Prim|i|123|n|30|Prop_Crate_Wood_05 Prim(Clone)|pos|29|x|4|23.9|y|5|-0.19|z|5|-32.4||scaling|31|x|6|13.045|y|8|18.49168|z|2|10||rot|0||||e|196|key|16|Reflective
         Floor|i|165|n|23|Reflective Floor(Clone)|pos|30|x|5|-4.67|y|4|6.73|z|6|-37.53||scaling|39|x|8|16.23055|y|8|6.799754|z|8|26.65214||rot|39|x|8|0.163411|y|8|93.71879|z|8|273.0589||||e|134|key|14|Blood
-        Splatter|i|105|n|21|Blood Splatter(Clone)|pos|30|x|6|-52.61|y|4|3.17|z|5|-5.95||scaling|21|x|2|10|y|2|10|z|2|10||rot|0||||e|110|key|5|Grass|i|92|n|22|SM_Env_Grass_02(Clone)|pos|19|x|5|-6.08|z|4|0.73||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|115|key|5|Grass|i|97|n|26|SM_Env_Grass_02(Clone)
+        Splatter|i|105|n|21|Blood Splatter(Clone)|pos|30|x|6|-26.55|y|4|3.17|z|5|25.45||scaling|21|x|2|10|y|2|10|z|2|10||rot|0||||e|110|key|5|Grass|i|92|n|22|SM_Env_Grass_02(Clone)|pos|19|x|5|-6.08|z|4|0.73||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|115|key|5|Grass|i|97|n|26|SM_Env_Grass_02(Clone)
         (1)|pos|20|x|6|-10.77|z|4|0.87||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|129|key|5|Grass|i|110|n|26|SM_Env_Grass_02(Clone)
-        (2)|pos|19|x|5|-13.4|z|4|2.39||scaling|18|x|1|1|y|1|1|z|1|1||rot|13|y|8|72.62486||||e|154|key|3|Cog|i|137|n|26|SM_Prop_Tech_Cog_04(Clone)|pos|31|x|6|-16.86|y|4|6.46|z|6|-20.07||scaling|33|x|6|3.5279|y|6|3.5279|z|6|3.5279||rot|13|y|8|239.7829||||e|122|key|5|Light|i|103|n|25|SM_Prop_Lantern_01(Clone)|pos|27|x|4|3.47|y|4|0.18|z|4|25.7||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|127|key|5|Light|i|108|n|25|SM_Prop_Lantern_01(Clone)|pos|32|x|7|-61.193|y|5|0.172|z|5|3.377||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|128|key|5|Light|i|109|n|25|SM_Prop_Lantern_01(Clone)|pos|33|x|7|-62.983|y|5|0.171|z|6|11.006||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|115|key|5|Water|i|97|n|12|Water(Clone)|pos|31|x|6|-31.47|y|4|0.39|z|6|-20.87||scaling|21|x|2|20|y|2|20|z|2|20||rot|0||||e|117|key|5|Water|i|99|n|16|Water(Clone)
-        (1)|pos|29|x|4|14.1|y|4|8.92|z|6|-35.34||scaling|21|x|2|20|y|2|20|z|2|20||rot|0||||e|150|key|16|Batchable
-        Sphere|i|119|n|28|Batchable Sphere(Clone) (57)|pos|28|x|4|9.14|y|4|3.79|z|5|25.77||scaling|30|x|5|10.94|y|5|10.94|z|5|10.94||rot|0||||e|151|key|16|Batchable
-        Sphere|i|120|n|28|Batchable Sphere(Clone) (44)|pos|29|x|6|-48.49|y|3|3.9|z|5|-4.35||scaling|30|x|5|10.94|y|5|10.94|z|5|10.94||rot|0||||e|189|key|11|Stair
+        (2)|pos|19|x|5|-13.4|z|4|2.39||scaling|18|x|1|1|y|1|1|z|1|1||rot|13|y|8|72.62486||||e|152|key|3|Cog|i|135|n|26|SM_Prop_Tech_Cog_04(Clone)|pos|29|x|6|-16.92|y|3|8.4|z|5|-19.9||scaling|33|x|6|3.5279|y|6|3.5279|z|6|3.5279||rot|13|y|8|239.7829||||e|122|key|5|Light|i|103|n|25|SM_Prop_Lantern_01(Clone)|pos|27|x|4|3.47|y|4|0.18|z|4|25.7||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|127|key|5|Light|i|108|n|25|SM_Prop_Lantern_01(Clone)|pos|32|x|7|-61.193|y|5|0.172|z|5|3.377||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|128|key|5|Light|i|109|n|25|SM_Prop_Lantern_01(Clone)|pos|33|x|7|-62.983|y|5|0.171|z|6|11.006||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|115|key|5|Water|i|97|n|12|Water(Clone)|pos|31|x|6|-31.47|y|4|0.39|z|6|-20.87||scaling|21|x|2|20|y|2|20|z|2|20||rot|0||||e|117|key|5|Water|i|99|n|16|Water(Clone)
+        (1)|pos|29|x|4|14.1|y|4|8.92|z|6|-35.34||scaling|21|x|2|20|y|2|20|z|2|20||rot|0||||e|152|key|16|Batchable
+        Sphere|i|121|n|28|Batchable Sphere(Clone) (57)|pos|30|x|6|-27.38|y|4|6.26|z|5|20.97||scaling|30|x|5|10.94|y|5|10.94|z|5|10.94||rot|0||||e|189|key|11|Stair
         Plank|i|163|n|37|prefab_beech_forest_stair_01_1(Clone)|pos|32|x|6|-33.32|y|5|-0.03|z|6|-12.25||scaling|21|x|2|10|y|2|10|z|2|10||rot|39|x|8|322.2885|y|8|14.64031|z|8|1.030746||||e|214|key|16|Forest
         Stone 1 5|i|183|n|42|prefab_beech_forest_stones_01_5 (1)(Clone)|pos|29|x|5|-7.54|y|5|-0.93|z|4|34.8||scaling|39|x|8|31.96242|y|8|31.96242|z|8|31.96242||rot|39|x|8|327.9197|y|8|106.4923|z|8|331.9209||||e|168|key|12|Obsidian
         Box|i|141|n|19|Obsidian Box(Clone)|pos|28|x|4|1.52|y|4|7.87|z|5|39.53||scaling|21|x|2|20|y|2|20|z|2|20||rot|39|x|8|21.93069|y|8|4.083931|z|8|355.9964||||e|201|key|11|Stair
-        Plank|i|175|n|37|prefab_beech_forest_stair_01_1(Clone)|pos|31|x|6|-56.23|y|4|5.92|z|6|-23.75||scaling|36|x|7|7.23376|y|7|7.23376|z|7|7.23376||rot|37|x|6|3.7158|y|8|351.2993|z|8|320.4503||||e|161|key|17|Ray
-        Fire Entrance|i|129|n|28|Ray FIreplace Etrance(Clone)|pos|36|x|9|-38.60645|y|4|0.05|z|8|8.220441||scaling|18|x|1|1|y|1|1|z|1|1||rot|13|y|8|293.0409||||e|159|key|17|Ray
-        Fire Entrance|i|127|n|32|Ray FIreplace Etrance(Clone) (1)|pos|30|x|6|-38.32|y|4|0.05|z|5|12.15||scaling|18|x|1|1|y|1|1|z|1|1||rot|13|y|8|245.3999||||e|145|key|16|Mine
+        Plank|i|175|n|37|prefab_beech_forest_stair_01_1(Clone)|pos|31|x|6|-56.23|y|4|5.92|z|6|-23.75||scaling|36|x|7|7.23376|y|7|7.23376|z|7|7.23376||rot|37|x|6|3.7158|y|8|351.2993|z|8|320.4503||||e|155|key|17|Ray
+        Fire Entrance|i|123|n|28|Ray FIreplace Etrance(Clone)|pos|30|x|6|-13.31|y|4|0.05|z|5|13.53||scaling|18|x|1|1|y|1|1|z|1|1||rot|13|y|8|293.0409||||e|165|key|17|Ray
+        Fire Entrance|i|133|n|32|Ray FIreplace Etrance(Clone) (1)|pos|36|x|9|-6.139584|y|4|0.05|z|8|10.05627||scaling|18|x|1|1|y|1|1|z|1|1||rot|13|y|8|352.8494||||e|145|key|16|Mine
         Cart Bridge|i|114|n|33|SM_Env_Minetrack_Bridge_01(Clone)|pos|30|x|6|-30.79|y|4|5.18|z|5|11.92||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|149|key|16|Mine
-        Cart Bridge|i|118|n|37|SM_Env_Minetrack_Bridge_01(Clone) (1)|pos|30|x|6|-45.43|y|4|5.15|z|5|10.88||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|148|key|16|Mine
-        Cart Bridge|i|117|n|37|SM_Env_Minetrack_Bridge_01(Clone) (2)|pos|29|x|6|-47.96|y|4|5.11|z|4|6.54||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|148|key|16|Mine
-        Cart Bridge|i|117|n|37|SM_Env_Minetrack_Bridge_01(Clone) (3)|pos|29|x|6|-47.96|y|4|5.11|z|4|1.51||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|166|key|17|Ray
-        Fire Entrance|i|134|n|32|Ray FIreplace Etrance(Clone) (2)|pos|37|x|9|-33.09128|y|4|0.05|z|9|-2.645082||scaling|18|x|1|1|y|1|1|z|1|1||rot|13|y|8|207.1194||||e|165|key|17|Ray
-        Fire Entrance|i|133|n|32|Ray FIreplace Etrance(Clone) (3)|pos|36|x|9|-39.21233|y|4|0.05|z|8|1.845385||scaling|18|x|1|1|y|1|1|z|1|1||rot|13|y|8|222.1901||||e|159|key|17|Ray
-        Fire Entrance|i|127|n|32|Ray FIreplace Etrance(Clone) (4)|pos|30|x|6|-28.42|y|4|0.05|z|5|-4.32||scaling|18|x|1|1|y|1|1|z|1|1||rot|13|y|8|195.2862||||e|158|key|17|Ray
-        Fire Entrance|i|126|n|32|Ray FIreplace Etrance(Clone) (5)|pos|29|x|6|-35.36|y|4|0.05|z|4|3.68||scaling|18|x|1|1|y|1|1|z|1|1||rot|13|y|8|263.9763|||||lnks|0||
+        Cart Bridge|i|118|n|37|SM_Env_Minetrack_Bridge_01(Clone) (1)|pos|30|x|6|-45.43|y|4|5.15|z|5|10.88||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|149|key|16|Mine
+        Cart Bridge|i|118|n|37|SM_Env_Minetrack_Bridge_01(Clone) (2)|pos|30|x|6|-20.21|y|5|5.009|z|4|9.35||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|148|key|16|Mine
+        Cart Bridge|i|117|n|37|SM_Env_Minetrack_Bridge_01(Clone) (3)|pos|29|x|6|-47.96|y|4|5.11|z|4|1.51||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|165|key|17|Ray
+        Fire Entrance|i|133|n|32|Ray FIreplace Etrance(Clone) (2)|pos|36|x|9|-26.27882|y|4|0.05|z|8|10.07487||scaling|18|x|1|1|y|1|1|z|1|1||rot|13|y|8|157.3664||||e|158|key|17|Ray
+        Fire Entrance|i|126|n|32|Ray FIreplace Etrance(Clone) (3)|pos|29|x|5|-29.4|y|4|0.05|z|5|15.65||scaling|18|x|1|1|y|1|1|z|1|1||rot|13|y|8|222.1901||||e|165|key|17|Ray
+        Fire Entrance|i|133|n|32|Ray FIreplace Etrance(Clone) (4)|pos|36|x|9|-20.99457|y|4|0.05|z|8|15.85172||scaling|18|x|1|2|y|1|2|z|1|2||rot|13|y|8|165.5027||||e|159|key|17|Ray
+        Fire Entrance|i|127|n|32|Ray FIreplace Etrance(Clone) (5)|pos|30|x|6|-16.52|y|4|0.05|z|5|10.61||scaling|18|x|1|1|y|1|1|z|1|1||rot|13|y|8|263.9763||||e|177|key|28|Volumetric
+        SDF Mesh Baked TF|i|134|n|32|Volumetric SDF Mesh Baked TF (1)|pos|30|x|6|-21.71|y|4|5.23|z|5|20.56||scaling|39|x|8|5.039606|y|8|5.039606|z|8|5.039606||rot|0||||e|128|key|15|stump_01_1_LOD1|i|99|n|22|stump_01_1_LOD1(Clone)|pos|20|x|6|-47.83|z|4|9.06||scaling|24|x|3|0.1|y|3|0.1|z|3|0.1||rot|0||||e|144|key|21|Beech
+        Forest Stump 02|i|108|n|28|Beech Forest Stump 02(Clone)|pos|29|x|6|-41.33|y|4|0.07|z|4|7.42||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|145|key|21|Beech
+        Forest Stump 02|i|109|n|28|Beech Forest Stump 02(Clone)|pos|30|x|5|-54.1|y|4|0.36|z|6|-14.95||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|148|key|21|Beech
+        Forest Stump 02|i|112|n|32|Beech Forest Stump 02(Clone) (1)|pos|29|x|6|-23.42|y|4|0.36|z|4|7.08||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|148|key|21|Beech
+        Forest Stump 02|i|112|n|32|Beech Forest Stump 02(Clone) (2)|pos|29|x|6|-44.63|y|4|0.36|z|4|4.57||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|162|key|21|Beech
+        Forest Stump 02|i|126|n|32|Beech Forest Stump 02(Clone) (3)|pos|29|x|5|-44.9|y|4|0.31|z|5|-6.24||scaling|18|x|1|1|y|1|1|z|1|1||rot|13|y|8|73.44807||||e|163|key|21|Beech
+        Forest Stump 02|i|127|n|32|Beech Forest Stump 02(Clone) (4)|pos|30|x|6|-44.16|y|4|0.36|z|5|15.15||scaling|18|x|1|2|y|1|2|z|1|2||rot|13|y|8|174.4967||||e|129|key|9|Glass
+        Jar|i|106|n|21|SM_Item_Jar_02(Clone)|pos|34|x|9|-64.67599|y|5|7.114|z|5|3.785||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|130|key|9|Glass
+        Jar|i|107|n|25|SM_Item_Jar_02(Clone) (1)|pos|31|x|6|-64.98|y|5|7.114|z|5|4.241||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|128|key|9|Glass
+        Jar|i|105|n|25|SM_Item_Jar_02(Clone) (2)|pos|29|x|6|-65.42|y|5|7.114|z|3|4.8||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|149|key|9|Glass
+        Jar|i|126|n|25|SM_Item_Jar_02(Clone) (3)|pos|35|x|7|-66.953|y|5|7.309|z|8|8.247999||scaling|33|x|6|5.0924|y|6|5.0924|z|6|5.0924||rot|0||||e|136|key|9|Glass
+        Jar|i|113|n|25|SM_Item_Jar_02(Clone) (4)|pos|37|x|9|-64.38499|y|5|7.114|z|8|3.321999||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|217|key|16|Forest
+        Stone 1 5|i|186|n|42|prefab_beech_forest_stones_01_5 (1)(Clone)|pos|33|x|6|-64.59|y|7|-7.6081|z|5|17.66||scaling|39|x|8|37.00699|y|8|37.00699|z|8|37.00699||rot|38|x|8|2.743412|y|8|89.83944|z|7|0.60526|||||lnks|0||

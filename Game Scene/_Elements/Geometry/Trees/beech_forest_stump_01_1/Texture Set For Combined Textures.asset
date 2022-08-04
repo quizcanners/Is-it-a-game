@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca66460fbaf1c3246ab7776fe658be92, type: 3}
+  m_Name: Texture Set For Combined Textures
+  m_EditorClassIdentifier: 
+  diffuse: {fileID: 0}
+  heightMap: {fileID: 0}
+  normalMap: {fileID: 2800000, guid: 39f3a9e544d22644d926bffd09c8bb27, type: 3}
+  gloss: {fileID: 0}
+  reflectivity: {fileID: 0}
+  ambient: {fileID: 2800000, guid: 4b1e5f1b638c7bf4ea4a92f645417737, type: 3}
+  lastProduct: {fileID: 2800000, guid: 80764654e1c135b4cbd2f43bd3171f5f, type: 3}
+  width: 2048
+  height: 2048
+  isColor: 0
+  selectedProfile: 0

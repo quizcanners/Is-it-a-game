@@ -5,6 +5,7 @@ using UnityEngine;
 namespace QuizCanners.IsItGame
 {
     [DisallowMultipleComponent]
+    [SelectionBase]
     public class C_PhisxEmissiveParticle : MonoBehaviour, IPEGI
     {
         [SerializeField] private MeshFilter _meshFilter;

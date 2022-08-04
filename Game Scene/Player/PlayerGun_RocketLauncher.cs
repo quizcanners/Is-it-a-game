@@ -121,7 +121,7 @@ namespace QuizCanners.IsItGame.Develop
             {
                 var cmp = hit.transform.gameObject.GetComponentInParent<C_RayFireRespawn>();
                 if (cmp)
-                    cmp.OnDamage();
+                    cmp.SetDamaged(true);
 
                 state.Gun.Shoot(origin - projectileVelocity, projectileVelocity);
             }
@@ -153,7 +153,7 @@ namespace QuizCanners.IsItGame.Develop
 
                         var direction = Vector3.Lerp(reflected, hit.normal, 0.5f + big * 0.5f);
 
-                        debri.Push(pushVector: direction, pushForce: 10.5f, pushRandomness: debri.Size * 15, torqueForce: 540);
+                        debri.Push(pushVector: direction, pushForce: 10.5f, pushRandomness: debri.Size * 15, torqueForce: 540, heat: big * 35);
                     }
                     else break;
                 }
@@ -177,7 +177,7 @@ namespace QuizCanners.IsItGame.Develop
 
                         var direction = Vector3.Lerp(reflected, hit.normal, 0.5f + big * 0.5f);
 
-                        debri.Push(pushVector: direction, pushForce: debri.Size * 7f, pushRandomness: 2f, torqueForce: 0);
+                        debri.Push(pushVector: direction, pushForce: debri.Size * 3f, pushRandomness: 2f, torqueForce: 0);
                     }
                     else break;
                 }
@@ -257,7 +257,7 @@ namespace QuizCanners.IsItGame.Develop
 
                         if (cmp)
                         {
-                            cmp.OnDamage();
+                            cmp.SetDamaged(true); 
                             latestState.Gun.Shoot(_origin, dir);
                         }
                     }
@@ -273,6 +273,7 @@ namespace QuizCanners.IsItGame.Develop
                     }
                 });
 
+                /*
                 Singleton.Try<Pool_PhisXEmissiveParticles>(s =>
                 {
 
@@ -292,7 +293,7 @@ namespace QuizCanners.IsItGame.Develop
                         }
                         else break;
                     }
-                });
+                });*/
 
 
             }

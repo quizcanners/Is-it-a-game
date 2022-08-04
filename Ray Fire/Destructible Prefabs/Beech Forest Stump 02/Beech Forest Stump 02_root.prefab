@@ -1,0 +1,5904 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &252644466267666649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2545763449591094676}
+  - component: {fileID: 5666070709624169}
+  - component: {fileID: 7119146356912281684}
+  - component: {fileID: 716399725694454409}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_24
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2545763449591094676
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252644466267666649}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.7537079, y: -0.23873217, z: 0.4437548}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &5666070709624169
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252644466267666649}
+  m_Mesh: {fileID: 5015879875483918257, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &7119146356912281684
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252644466267666649}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &716399725694454409
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252644466267666649}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5015879875483918257, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &377019743148089666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2109760858564052726}
+  - component: {fileID: 8779129401326152036}
+  - component: {fileID: 2114470405043249802}
+  - component: {fileID: 5538331331317675831}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2109760858564052726
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377019743148089666}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.18795776, y: 0.2327726, z: 0.3083068}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &8779129401326152036
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377019743148089666}
+  m_Mesh: {fileID: -6753672982532447696, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &2114470405043249802
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377019743148089666}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5538331331317675831
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377019743148089666}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6753672982532447696, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &477661205436147218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7295578425717423507}
+  - component: {fileID: 3328420076631486094}
+  - component: {fileID: 6307430125419306560}
+  - component: {fileID: 5970406321825025274}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_26
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7295578425717423507
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477661205436147218}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.3060665, y: 0.44488987, z: 0.37162825}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3328420076631486094
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477661205436147218}
+  m_Mesh: {fileID: 2455321239212088886, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &6307430125419306560
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477661205436147218}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5970406321825025274
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477661205436147218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2455321239212088886, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &694595691719414416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7076534378301268772}
+  - component: {fileID: 3986784259822146561}
+  - component: {fileID: 1699132543761607774}
+  - component: {fileID: 8373010456509366121}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_30
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7076534378301268772
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694595691719414416}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.42024994, y: 0.079810455, z: 0.29290462}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3986784259822146561
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694595691719414416}
+  m_Mesh: {fileID: -1474324786967104152, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &1699132543761607774
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694595691719414416}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8373010456509366121
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694595691719414416}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1474324786967104152, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &846473236543528099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4174463015547389323}
+  - component: {fileID: 2327500602093750681}
+  - component: {fileID: 446888211786055205}
+  - component: {fileID: 3797558555533874691}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4174463015547389323
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846473236543528099}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.12478638, y: 2.1872978, z: -0.13793048}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2327500602093750681
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846473236543528099}
+  m_Mesh: {fileID: 1156262423726058812, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &446888211786055205
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846473236543528099}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3797558555533874691
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846473236543528099}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1156262423726058812, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &992165600226347945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7008133035404770537}
+  - component: {fileID: 6566184161835715261}
+  - component: {fileID: 3364970036711566112}
+  - component: {fileID: 5925983840632773653}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_13
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7008133035404770537
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992165600226347945}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.3738613, y: 0.053756814, z: -0.38732886}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6566184161835715261
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992165600226347945}
+  m_Mesh: {fileID: -9123271792533976164, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &3364970036711566112
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992165600226347945}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5925983840632773653
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992165600226347945}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -9123271792533976164, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &1048923849776889715
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5171544266858367308}
+  - component: {fileID: 3210018511511666001}
+  - component: {fileID: 4800477711810682749}
+  - component: {fileID: 8527263935783269704}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5171544266858367308
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048923849776889715}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.27115822, y: 0.056403622, z: -0.37847185}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3210018511511666001
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048923849776889715}
+  m_Mesh: {fileID: 1938061551020317451, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &4800477711810682749
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048923849776889715}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8527263935783269704
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048923849776889715}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1938061551020317451, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &1076729344180295551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4527569576232579342}
+  - component: {fileID: 1962919720591752674}
+  - component: {fileID: 7745078238308055807}
+  - component: {fileID: 4897993548278867839}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_29
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4527569576232579342
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076729344180295551}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.15588379, y: 1.9001008, z: 0.17449012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1962919720591752674
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076729344180295551}
+  m_Mesh: {fileID: 8352411731205321059, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &7745078238308055807
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076729344180295551}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4897993548278867839
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076729344180295551}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8352411731205321059, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &1116923449210756255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1974375985605673174}
+  - component: {fileID: 308072102951464897}
+  - component: {fileID: 3300283751378179017}
+  - component: {fileID: 6914470766489212360}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_19
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1974375985605673174
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116923449210756255}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.08647728, y: 2.1048212, z: -0.15473709}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &308072102951464897
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116923449210756255}
+  m_Mesh: {fileID: 2768674668486456346, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &3300283751378179017
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116923449210756255}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6914470766489212360
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116923449210756255}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2768674668486456346, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &1132680218497985403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5253228293143594776}
+  - component: {fileID: 1124005438195978886}
+  - component: {fileID: 6083039515642983015}
+  - component: {fileID: 3685679182076003929}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5253228293143594776
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132680218497985403}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.35105705, y: 0.613194, z: -0.014627841}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1124005438195978886
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132680218497985403}
+  m_Mesh: {fileID: 3976563201998002325, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &6083039515642983015
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132680218497985403}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3685679182076003929
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132680218497985403}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3976563201998002325, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &1160582244757656555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 849314481507541617}
+  - component: {fileID: 3257089351350941508}
+  - component: {fileID: 6704367435966237395}
+  - component: {fileID: 8362619146810156345}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_41
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &849314481507541617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160582244757656555}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.56916237, y: -0.1680761, z: -0.52521324}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 40
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3257089351350941508
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160582244757656555}
+  m_Mesh: {fileID: -7263482992393753039, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &6704367435966237395
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160582244757656555}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8362619146810156345
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160582244757656555}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7263482992393753039, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &1313786023473597160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3223007599577255974}
+  - component: {fileID: 2869097009776183711}
+  - component: {fileID: 179962246058087484}
+  - component: {fileID: 7094815412598305001}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_31
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3223007599577255974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313786023473597160}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.15193176, y: 0.5715504, z: -0.0754117}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2869097009776183711
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313786023473597160}
+  m_Mesh: {fileID: 4103839871040838189, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &179962246058087484
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313786023473597160}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7094815412598305001
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313786023473597160}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4103839871040838189, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &1423153535601767373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5465033763646594112}
+  - component: {fileID: 6056416716946492349}
+  - component: {fileID: 535571446538055189}
+  - component: {fileID: 5909973295299866694}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_25
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5465033763646594112
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423153535601767373}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.023693085, y: 0.59650147, z: -0.070910834}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6056416716946492349
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423153535601767373}
+  m_Mesh: {fileID: -5251109241381196947, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &535571446538055189
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423153535601767373}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5909973295299866694
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423153535601767373}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5251109241381196947, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &1470108168099347607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2120756593096901641}
+  - component: {fileID: 4081152599326505901}
+  - component: {fileID: 7170614131601180794}
+  - component: {fileID: 7487843153409022060}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_37
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2120756593096901641
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470108168099347607}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4571991, y: -0.06685306, z: -0.2574519}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 36
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4081152599326505901
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470108168099347607}
+  m_Mesh: {fileID: -1971477572784586524, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &7170614131601180794
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470108168099347607}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7487843153409022060
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470108168099347607}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1971477572784586524, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &1661594824023002264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4692327041127581555}
+  - component: {fileID: 6224671101876346683}
+  - component: {fileID: 2027366021958721359}
+  - component: {fileID: 2583858098879756727}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_22
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4692327041127581555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661594824023002264}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.050294876, y: 1.390045, z: 0.17682713}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6224671101876346683
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661594824023002264}
+  m_Mesh: {fileID: 1812269398808400599, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &2027366021958721359
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661594824023002264}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2583858098879756727
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661594824023002264}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1812269398808400599, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &1775321471249248065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 404068604118554414}
+  - component: {fileID: 3230821494106867892}
+  - component: {fileID: 6485046479907641820}
+  - component: {fileID: 6869878109195966843}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &404068604118554414
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775321471249248065}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.21821022, y: 1.3281004, z: -0.092175186}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3230821494106867892
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775321471249248065}
+  m_Mesh: {fileID: -3809291463540719956, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &6485046479907641820
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775321471249248065}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6869878109195966843
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775321471249248065}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3809291463540719956, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &1842053377073380552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6548087032612185853}
+  - component: {fileID: 1906475180253328553}
+  - component: {fileID: 8445648526288224195}
+  - component: {fileID: 6953435309009215781}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6548087032612185853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842053377073380552}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.28339767, y: 2.100636, z: 0.10298982}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1906475180253328553
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842053377073380552}
+  m_Mesh: {fileID: -6928267271920082192, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &8445648526288224195
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842053377073380552}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6953435309009215781
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842053377073380552}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6928267271920082192, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &1863683290707062282
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7451551360552817851}
+  - component: {fileID: 1110441631480719262}
+  - component: {fileID: 7107496604735539170}
+  - component: {fileID: 2375877740521936168}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_35
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7451551360552817851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863683290707062282}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.64221764, y: -0.111465335, z: 0.65748787}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 34
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1110441631480719262
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863683290707062282}
+  m_Mesh: {fileID: 7688530601845635812, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &7107496604735539170
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863683290707062282}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2375877740521936168
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863683290707062282}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7688530601845635812, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &1901788425780650930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6788689315215172263}
+  - component: {fileID: 7866370037253016762}
+  - component: {fileID: 1352195342203476058}
+  - component: {fileID: 5838805222462995428}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_42
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6788689315215172263
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901788425780650930}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.2631054, y: 0.317662, z: -0.27156985}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 41
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &7866370037253016762
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901788425780650930}
+  m_Mesh: {fileID: 1482609191289954751, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &1352195342203476058
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901788425780650930}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5838805222462995428
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901788425780650930}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1482609191289954751, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &2181980538064751001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2283093428756418234}
+  - component: {fileID: 3167682407828499515}
+  - component: {fileID: 107481167820516550}
+  - component: {fileID: 5587149094558617542}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_18
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2283093428756418234
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2181980538064751001}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.75709534, y: -0.2577811, z: 0.39591718}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3167682407828499515
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2181980538064751001}
+  m_Mesh: {fileID: -1699118477401247468, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &107481167820516550
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2181980538064751001}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5587149094558617542
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2181980538064751001}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1699118477401247468, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &2758031173365190862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7019955935931676525}
+  - component: {fileID: 7618979812325053596}
+  - component: {fileID: 1076844107390605294}
+  - component: {fileID: 9190185999854408853}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_21
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7019955935931676525
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2758031173365190862}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.45352745, y: 0.17830504, z: 0.46929586}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &7618979812325053596
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2758031173365190862}
+  m_Mesh: {fileID: 3515415998491937951, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &1076844107390605294
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2758031173365190862}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &9190185999854408853
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2758031173365190862}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3515415998491937951, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &3277648349031078502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2269797102488581750}
+  - component: {fileID: 2297158527316454322}
+  - component: {fileID: 2119058096777102465}
+  - component: {fileID: 1234191556074435044}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2269797102488581750
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3277648349031078502}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1494236, y: 1.3133411, z: -0.17165226}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2297158527316454322
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3277648349031078502}
+  m_Mesh: {fileID: -3742268366016273344, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &2119058096777102465
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3277648349031078502}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1234191556074435044
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3277648349031078502}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3742268366016273344, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &3772895724302296254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6793080919670772503}
+  - component: {fileID: 4600686018062417375}
+  - component: {fileID: 2700705658886571951}
+  - component: {fileID: 2884545777116573656}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6793080919670772503
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3772895724302296254}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.58584785, y: -0.15627404, z: 0.39844525}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4600686018062417375
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3772895724302296254}
+  m_Mesh: {fileID: 6075205012547680103, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &2700705658886571951
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3772895724302296254}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2884545777116573656
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3772895724302296254}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6075205012547680103, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &4025378828454813748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9075697212052583392}
+  - component: {fileID: 2468808531152814331}
+  - component: {fileID: 4184141630279471285}
+  - component: {fileID: 4117177018016197162}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_15
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9075697212052583392
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4025378828454813748}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.3921795, y: 0.2500592, z: -0.119366415}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2468808531152814331
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4025378828454813748}
+  m_Mesh: {fileID: -1685058353775000780, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &4184141630279471285
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4025378828454813748}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4117177018016197162
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4025378828454813748}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1685058353775000780, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &4240441881052824186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2674315058227920836}
+  - component: {fileID: 2672609572797535989}
+  - component: {fileID: 6641755818433416420}
+  - component: {fileID: 1232027305863696319}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_16
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2674315058227920836
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4240441881052824186}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.4081955, y: 0.24422558, z: 0.3525703}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2672609572797535989
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4240441881052824186}
+  m_Mesh: {fileID: -8653377374560212581, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &6641755818433416420
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4240441881052824186}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1232027305863696319
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4240441881052824186}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8653377374560212581, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &4490329876284480697
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9033170980065799716}
+  - component: {fileID: 4504150323687985383}
+  - component: {fileID: 7316123860012373048}
+  - component: {fileID: 4584687220842801624}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_17
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9033170980065799716
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4490329876284480697}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.161129, y: 2.2654066, z: -0.048922878}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4504150323687985383
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4490329876284480697}
+  m_Mesh: {fileID: -1532916725847539780, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &7316123860012373048
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4490329876284480697}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4584687220842801624
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4490329876284480697}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1532916725847539780, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &4521113449600170965
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 108906568367835606}
+  - component: {fileID: 2770021277132551844}
+  - component: {fileID: 8438019845057409563}
+  - component: {fileID: 6176647150523211758}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &108906568367835606
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4521113449600170965}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.26714134, y: 1.751587, z: 0.03771035}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2770021277132551844
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4521113449600170965}
+  m_Mesh: {fileID: 7644826458151453245, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &8438019845057409563
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4521113449600170965}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6176647150523211758
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4521113449600170965}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7644826458151453245, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &4600412699406188125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4632771351391385306}
+  - component: {fileID: 2669043242850067866}
+  - component: {fileID: 4298191005299912890}
+  - component: {fileID: 4097813839436786212}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_27
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4632771351391385306
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4600412699406188125}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.63772774, y: -0.17591073, z: 0.47681355}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2669043242850067866
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4600412699406188125}
+  m_Mesh: {fileID: 4513180370076715992, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &4298191005299912890
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4600412699406188125}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4097813839436786212
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4600412699406188125}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4513180370076715992, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &4717105482539232337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2099920186959238778}
+  - component: {fileID: 3877815925783890182}
+  - component: {fileID: 5078875597953587073}
+  - component: {fileID: 2320419845374644569}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_33
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2099920186959238778
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4717105482539232337}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.115278244, y: 0.46632844, z: 0.2607368}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3877815925783890182
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4717105482539232337}
+  m_Mesh: {fileID: -4808153928979651684, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &5078875597953587073
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4717105482539232337}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2320419845374644569
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4717105482539232337}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4808153928979651684, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &4813508077204363821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5717355277456427349}
+  - component: {fileID: 1565457241495454649}
+  - component: {fileID: 2896542062928184730}
+  - component: {fileID: 5616333629023308356}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_40
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5717355277456427349
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4813508077204363821}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.11765671, y: 0.019541191, z: -0.27994084}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 39
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1565457241495454649
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4813508077204363821}
+  m_Mesh: {fileID: 6965784051249294723, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &2896542062928184730
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4813508077204363821}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5616333629023308356
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4813508077204363821}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6965784051249294723, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &5125901815271792869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6382350717042844315}
+  - component: {fileID: 2943990438376760130}
+  - component: {fileID: 6960831349542041865}
+  - component: {fileID: 2657723999700776452}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_14
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6382350717042844315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5125901815271792869}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.17990112, y: 1.0994468, z: 0.1731822}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2943990438376760130
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5125901815271792869}
+  m_Mesh: {fileID: -872803732570778989, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &6960831349542041865
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5125901815271792869}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2657723999700776452
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5125901815271792869}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -872803732570778989, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &5507026433210636085
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5718844581135073715}
+  - component: {fileID: 7161890961451109316}
+  - component: {fileID: 8174139003281769305}
+  - component: {fileID: 9129435231809984248}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5718844581135073715
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5507026433210636085}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.396183, y: -0.2331487, z: 0.5752784}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &7161890961451109316
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5507026433210636085}
+  m_Mesh: {fileID: -2406338810780180569, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &8174139003281769305
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5507026433210636085}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &9129435231809984248
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5507026433210636085}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2406338810780180569, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &5550702261073123379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2703666857681731107}
+  - component: {fileID: 4533643107618144908}
+  - component: {fileID: 6387550092996866918}
+  - component: {fileID: 7369020283123467719}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_34
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2703666857681731107
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5550702261073123379}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.007036209, y: 1.99994, z: -0.049510565}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4533643107618144908
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5550702261073123379}
+  m_Mesh: {fileID: -1621312064638833148, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &6387550092996866918
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5550702261073123379}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7369020283123467719
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5550702261073123379}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1621312064638833148, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &6106683051956745940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5274899688573848419}
+  - component: {fileID: 2129638201480088282}
+  - component: {fileID: 6567566968207310600}
+  - component: {fileID: 850306375196575568}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_38
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5274899688573848419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6106683051956745940}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.112054825, y: 0.5462691, z: -0.23199943}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 37
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2129638201480088282
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6106683051956745940}
+  m_Mesh: {fileID: 6443580567295136345, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &6567566968207310600
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6106683051956745940}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &850306375196575568
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6106683051956745940}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6443580567295136345, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &6152740736240065156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7986506204236290237}
+  - component: {fileID: 5853894461524372326}
+  - component: {fileID: 2014508085216750429}
+  - component: {fileID: 6358929018229986737}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7986506204236290237
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6152740736240065156}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.33488274, y: 0.67648745, z: 0.061673135}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &5853894461524372326
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6152740736240065156}
+  m_Mesh: {fileID: 7256780894548847028, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &2014508085216750429
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6152740736240065156}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6358929018229986737
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6152740736240065156}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7256780894548847028, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &6421117265993575862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9020814995675816784}
+  - component: {fileID: 270635161658438125}
+  - component: {fileID: 2113790246243126622}
+  - component: {fileID: 1569079850905898339}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_39
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9020814995675816784
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6421117265993575862}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.15344048, y: 0.5972266, z: -0.118531615}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 38
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &270635161658438125
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6421117265993575862}
+  m_Mesh: {fileID: 39761831150089955, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &2113790246243126622
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6421117265993575862}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1569079850905898339
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6421117265993575862}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 39761831150089955, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &7141673436281939991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2771158209074771017}
+  - component: {fileID: 9062320542885668411}
+  - component: {fileID: 8078060161860863964}
+  - component: {fileID: 1671467715461506007}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_20
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2771158209074771017
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7141673436281939991}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.62989616, y: -0.2710994, z: -0.5823884}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &9062320542885668411
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7141673436281939991}
+  m_Mesh: {fileID: 5863233732392299038, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &8078060161860863964
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7141673436281939991}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1671467715461506007
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7141673436281939991}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5863233732392299038, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &7386148884528956798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5035016415564827084}
+  - component: {fileID: 4042551748716311021}
+  - component: {fileID: 1368326685038993572}
+  - component: {fileID: 7660871081988649931}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_23
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5035016415564827084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7386148884528956798}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.2829342, y: -0.025981115, z: -0.3871045}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4042551748716311021
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7386148884528956798}
+  m_Mesh: {fileID: 6758038333108621564, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &1368326685038993572
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7386148884528956798}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7660871081988649931
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7386148884528956798}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6758038333108621564, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &7453380984273409340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3012745664941322216}
+  - component: {fileID: 5714501009107287492}
+  - component: {fileID: 5660880551644416328}
+  - component: {fileID: 496053556837498332}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_43
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3012745664941322216
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7453380984273409340}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.2493763, y: 0.978335, z: -0.19369392}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 42
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &5714501009107287492
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7453380984273409340}
+  m_Mesh: {fileID: -6594420690112935194, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &5660880551644416328
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7453380984273409340}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &496053556837498332
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7453380984273409340}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6594420690112935194, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &7559278959448096295
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7017304198816129454}
+  - component: {fileID: 349892443369294376}
+  - component: {fileID: 4488372313570027296}
+  - component: {fileID: 6767211391357664352}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7017304198816129454
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7559278959448096295}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.29906464, y: 1.1775949, z: 0.18125565}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &349892443369294376
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7559278959448096295}
+  m_Mesh: {fileID: -6444483712934095520, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &4488372313570027296
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7559278959448096295}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6767211391357664352
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7559278959448096295}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6444483712934095520, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &8400982901355471255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8376233657465739182}
+  - component: {fileID: 1941500634034152090}
+  - component: {fileID: 4617492774630660477}
+  - component: {fileID: 6283674597320898781}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_36
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8376233657465739182
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8400982901355471255}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.3032341, y: 1.6641837, z: 0.013170766}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1941500634034152090
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8400982901355471255}
+  m_Mesh: {fileID: -1214482281202027506, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &4617492774630660477
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8400982901355471255}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6283674597320898781
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8400982901355471255}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1214482281202027506, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &8782863233275647441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8127667872441193066}
+  - component: {fileID: 5460103518737661644}
+  - component: {fileID: 387485775736997766}
+  - component: {fileID: 7500539688701531979}
+  - component: {fileID: 8693295975630412804}
+  - component: {fileID: 2892773156082227163}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_root
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8127667872441193066
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8782863233275647441}
+  m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 108906568367835606}
+  - {fileID: 7986506204236290237}
+  - {fileID: 6793080919670772503}
+  - {fileID: 2109760858564052726}
+  - {fileID: 4174463015547389323}
+  - {fileID: 6548087032612185853}
+  - {fileID: 5253228293143594776}
+  - {fileID: 404068604118554414}
+  - {fileID: 5718844581135073715}
+  - {fileID: 7017304198816129454}
+  - {fileID: 2269797102488581750}
+  - {fileID: 5171544266858367308}
+  - {fileID: 7008133035404770537}
+  - {fileID: 6382350717042844315}
+  - {fileID: 9075697212052583392}
+  - {fileID: 2674315058227920836}
+  - {fileID: 9033170980065799716}
+  - {fileID: 2283093428756418234}
+  - {fileID: 1974375985605673174}
+  - {fileID: 2771158209074771017}
+  - {fileID: 7019955935931676525}
+  - {fileID: 4692327041127581555}
+  - {fileID: 5035016415564827084}
+  - {fileID: 2545763449591094676}
+  - {fileID: 5465033763646594112}
+  - {fileID: 7295578425717423507}
+  - {fileID: 4632771351391385306}
+  - {fileID: 5220528512979547997}
+  - {fileID: 4527569576232579342}
+  - {fileID: 7076534378301268772}
+  - {fileID: 3223007599577255974}
+  - {fileID: 7582555355856999}
+  - {fileID: 2099920186959238778}
+  - {fileID: 2703666857681731107}
+  - {fileID: 7451551360552817851}
+  - {fileID: 8376233657465739182}
+  - {fileID: 2120756593096901641}
+  - {fileID: 5274899688573848419}
+  - {fileID: 9020814995675816784}
+  - {fileID: 5717355277456427349}
+  - {fileID: 849314481507541617}
+  - {fileID: 6788689315215172263}
+  - {fileID: 3012745664941322216}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5460103518737661644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8782863233275647441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e52f37bca2404fac00b69fd8d21f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialization: 1
+  simulationType: 3
+  objectType: 5
+  demolitionType: 0
+  physics:
+    materialType: 9
+    material: {fileID: 0}
+    massBy: 0
+    mass: 1
+    colliderType: 0
+    planarCheck: 1
+    ignoreNear: 0
+    useGravity: 1
+    solverIterations: 6
+    dampening: 0.7
+    rigidBody: {fileID: 0}
+    meshCollider: {fileID: 0}
+    clusterColliders:
+    - {fileID: 6176647150523211758}
+    - {fileID: 6358929018229986737}
+    - {fileID: 2884545777116573656}
+    - {fileID: 5538331331317675831}
+    - {fileID: 3797558555533874691}
+    - {fileID: 6953435309009215781}
+    - {fileID: 3685679182076003929}
+    - {fileID: 6869878109195966843}
+    - {fileID: 9129435231809984248}
+    - {fileID: 6767211391357664352}
+    - {fileID: 1234191556074435044}
+    - {fileID: 8527263935783269704}
+    - {fileID: 5925983840632773653}
+    - {fileID: 2657723999700776452}
+    - {fileID: 4117177018016197162}
+    - {fileID: 1232027305863696319}
+    - {fileID: 4584687220842801624}
+    - {fileID: 5587149094558617542}
+    - {fileID: 6914470766489212360}
+    - {fileID: 1671467715461506007}
+    - {fileID: 9190185999854408853}
+    - {fileID: 2583858098879756727}
+    - {fileID: 7660871081988649931}
+    - {fileID: 716399725694454409}
+    - {fileID: 5909973295299866694}
+    - {fileID: 5970406321825025274}
+    - {fileID: 4097813839436786212}
+    - {fileID: 4915884960741763186}
+    - {fileID: 4897993548278867839}
+    - {fileID: 8373010456509366121}
+    - {fileID: 7094815412598305001}
+    - {fileID: 9076939423689644272}
+    - {fileID: 2320419845374644569}
+    - {fileID: 7369020283123467719}
+    - {fileID: 2375877740521936168}
+    - {fileID: 6283674597320898781}
+    - {fileID: 7487843153409022060}
+    - {fileID: 850306375196575568}
+    - {fileID: 1569079850905898339}
+    - {fileID: 5616333629023308356}
+    - {fileID: 8362619146810156345}
+    - {fileID: 5838805222462995428}
+    - {fileID: 496053556837498332}
+    ignoreList: 
+    rec: 0
+    exclude: 0
+    solidity: 1
+    destructible: 0
+    physicsDataCorState: 0
+  activation:
+    local: 0
+    byOffset: 0
+    byVelocity: 0
+    byDamage: 10
+    byActivator: 0
+    byImpact: 0
+    byConnectivity: 1
+    unyielding: 0
+    activatable: 0
+    l: 1
+    layer: 8
+    connect: {fileID: 0}
+  limitations:
+    byCollision: 1
+    solidity: 0.1
+    tag: Untagged
+    depth: 1
+    time: 0.2
+    size: 0.1
+    visible: 0
+    sliceByBlade: 0
+    bound:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
+  meshDemolition:
+    amount: 15
+    variation: 0
+    depthFade: 0.5
+    contactBias: 0
+    seed: 1
+    useShatter: 0
+    addChildren: 1
+    clusterize: 0
+    simType: 4
+    meshInput: 9
+    properties:
+      colliderType: 0
+      sizeFilter: 0
+      decompose: 0
+      removeCollinear: 0
+      l: 1
+      m: 0
+      layer: 0
+      t: 1
+      tag: 
+    runtimeCaching:
+      type: 0
+      frames: 3
+      fragments: 4
+      skipFirstDemolition: 0
+      inProgress: 0
+      wasUsed: 0
+      stop: 0
+    scrShatter: {fileID: 0}
+    cacheRotationStart: {x: 0, y: 0, z: 0, w: 1}
+  clusterDemolition:
+    connectivity: 1
+    minimumArea: 0
+    minimumSize: 0
+    percentage: 0
+    seed: 0
+    type: 0
+    ratio: 15
+    units: 1
+    shardArea: 100
+    shardDemolition: 0
+    minAmount: 3
+    maxAmount: 7
+    demolishable: 1
+    collapse:
+      type: 1
+      start: 0
+      end: 75
+      steps: 10
+      duration: 15
+    clsCount: 1
+    cluster:
+      id: 1
+      tm: {fileID: 8127667872441193066}
+      depth: 0
+      pos: {x: 0, y: 0, z: 0}
+      rot: {x: 0, y: 0, z: 0, w: 0}
+      scl: {x: 0, y: 0, z: 0}
+      bound:
+        m_Center: {x: 0, y: 0, z: 0}
+        m_Extent: {x: 0, y: 0, z: 0}
+      demolishable: 1
+      rigid: {fileID: 5460103518737661644}
+      shards:
+      - id: 0
+        sz: 2.1813376
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.26714134, y: 1.751587, z: 0.03771043}
+          m_Extent: {x: 0.12562607, y: 1.0646149, z: 0.20092727}
+        pos: {x: 0.26714134, y: 1.751587, z: 0.03771043}
+        sm: 0
+        dm: 0
+        nAm: 8
+        nIds: 0400000006000000090000000a0000000d0000001c0000001e00000021000000
+        nArea:
+        - 0.015
+        - 0.014
+        - 0.033
+        - 0.003
+        - 0.058
+        - 0.066
+        - 0.003
+        - 0.209
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 108906568367835606}
+        mf: {fileID: 2770021277132551844}
+        col: {fileID: 6176647150523211758}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 1
+        sz: 1.6295176
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: -0.33488274, y: 0.67648745, z: 0.061673164}
+          m_Extent: {x: 0.14201942, y: 0.77532256, z: 0.20624575}
+        pos: {x: -0.33488274, y: 0.67648745, z: 0.061673164}
+        sm: 0
+        dm: 0
+        nAm: 11
+        nIds: 0300000007000000140000001600000018000000190000001b0000001d000000230000002400000026000000
+        nArea:
+        - 0.012
+        - 0.02
+        - 0.006
+        - 0.003
+        - 0.016
+        - 0.043
+        - 0.084
+        - 0.011
+        - 0
+        - 0.002
+        - 0.04
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 7986506204236290237}
+        mf: {fileID: 5853894461524372326}
+        col: {fileID: 6358929018229986737}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 2
+        sz: 0.34249172
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.58584785, y: -0.15627405, z: 0.39844525}
+          m_Extent: {x: 0.10148402, y: 0.11645372, z: 0.0739234}
+        pos: {x: 0.58584785, y: -0.15627405, z: 0.39844525}
+        sm: 0
+        dm: 0
+        nAm: 4
+        nIds: 0f00000011000000170000001a000000
+        nArea:
+        - 0.01
+        - 0
+        - 0.003
+        - 0.01
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 6793080919670772503}
+        mf: {fileID: 4600686018062417375}
+        col: {fileID: 2884545777116573656}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 3
+        sz: 1.0154746
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: -0.18795776, y: 0.23277259, z: 0.3083068}
+          m_Extent: {x: 0.18543032, y: 0.40683767, z: 0.24061552}
+        pos: {x: -0.18795776, y: 0.23277259, z: 0.3083068}
+        sm: 0
+        dm: 0
+        nAm: 8
+        nIds: 01000000140000001500000018000000190000001b0000001d00000020000000
+        nArea:
+        - 0.012
+        - 0.034
+        - 0.001
+        - 0.002
+        - 0.023
+        - 0.003
+        - 0.008
+        - 0.072
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 2109760858564052726}
+        mf: {fileID: 8779129401326152036}
+        col: {fileID: 5538331331317675831}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 4
+        sz: 1.6315564
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.12478638, y: 2.1872978, z: -0.1379304}
+          m_Extent: {x: 0.18197833, y: 0.78781027, z: 0.108318515}
+        pos: {x: 0.12478638, y: 2.1872978, z: -0.1379304}
+        sm: 0
+        dm: 0
+        nAm: 4
+        nIds: 000000000a0000001200000021000000
+        nArea:
+        - 0.015
+        - 0.002
+        - 0.011
+        - 0.227
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 4174463015547389323}
+        mf: {fileID: 2327500602093750681}
+        col: {fileID: 3797558555533874691}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 5
+        sz: 0.7684271
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: -0.28339767, y: 2.100636, z: 0.10298991}
+          m_Extent: {x: 0.07069474, y: 0.37200475, z: 0.06507511}
+        pos: {x: -0.28339767, y: 2.100636, z: 0.10298991}
+        sm: 0
+        dm: 0
+        nAm: 3
+        nIds: 100000001b00000023000000
+        nArea:
+        - 0.044
+        - 0.009
+        - 0
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 6548087032612185853}
+        mf: {fileID: 1906475180253328553}
+        col: {fileID: 6953435309009215781}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 6
+        sz: 1.510391
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.35105705, y: 0.613194, z: -0.014627814}
+          m_Extent: {x: 0.104046114, y: 0.7338501, z: 0.14477092}
+        pos: {x: 0.35105705, y: 0.613194, z: -0.014627814}
+        sm: 0
+        dm: 0
+        nAm: 9
+        nIds: 00000000090000000a0000000d0000000e0000000f0000001e000000200000002a000000
+        nArea:
+        - 0.014
+        - 0.011
+        - 0
+        - 0.006
+        - 0.039
+        - 0.013
+        - 0.113
+        - 0.002
+        - 0.002
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 5253228293143594776}
+        mf: {fileID: 1124005438195978886}
+        col: {fileID: 3685679182076003929}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 7
+        sz: 1.2580599
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: -0.21821022, y: 1.3281004, z: -0.092175126}
+          m_Extent: {x: 0.091835976, y: 0.6151209, z: 0.09418658}
+        pos: {x: -0.21821022, y: 1.3281004, z: -0.092175126}
+        sm: 0
+        dm: 0
+        nAm: 6
+        nIds: 0100000010000000120000001b0000002100000023000000
+        nArea:
+        - 0.02
+        - 0.002
+        - 0
+        - 0.004
+        - 0.04
+        - 0.003
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 404068604118554414}
+        mf: {fileID: 3230821494106867892}
+        col: {fileID: 6869878109195966843}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 8
+        sz: 0.1344559
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.396183, y: -0.23314872, z: 0.5752784}
+          m_Extent: {x: 0.04704896, y: 0.038504843, z: 0.028694425}
+        pos: {x: 0.396183, y: -0.23314872, z: 0.5752784}
+        sm: 0
+        dm: 0
+        nAm: 1
+        nIds: 0f000000
+        nArea:
+        - 0.001
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 5718844581135073715}
+        mf: {fileID: 7161890961451109316}
+        col: {fileID: 9129435231809984248}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 9
+        sz: 1.5332491
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.29906464, y: 1.1775949, z: 0.1812557}
+          m_Extent: {x: 0.027499992, y: 0.76116467, z: 0.08709379}
+        pos: {x: 0.29906464, y: 1.1775949, z: 0.1812557}
+        sm: 0
+        dm: 0
+        nAm: 6
+        nIds: 00000000060000000d0000000f0000001c00000020000000
+        nArea:
+        - 0.033
+        - 0.011
+        - 0.025
+        - 0.004
+        - 0.013
+        - 0
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 7017304198816129454}
+        mf: {fileID: 349892443369294376}
+        col: {fileID: 6767211391357664352}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 10
+        sz: 0.9770214
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.1494236, y: 1.3133411, z: -0.1716522}
+          m_Extent: {x: 0.14367694, y: 0.46047997, z: 0.07718699}
+        pos: {x: 0.1494236, y: 1.3133411, z: -0.1716522}
+        sm: 0
+        dm: 0
+        nAm: 10
+        nIds: 00000000040000000600000012000000180000001e0000002100000025000000260000002a000000
+        nArea:
+        - 0.003
+        - 0.002
+        - 0
+        - 0.007
+        - 0.005
+        - 0.015
+        - 0.001
+        - 0.029
+        - 0
+        - 0.009
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 2269797102488581750}
+        mf: {fileID: 2297158527316454322}
+        col: {fileID: 1234191556074435044}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 11
+        sz: 0.5865589
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.27115822, y: 0.056403637, z: -0.37847185}
+          m_Extent: {x: 0.1395584, y: 0.2192421, z: 0.13590136}
+        pos: {x: 0.27115822, y: 0.056403637, z: -0.37847185}
+        sm: 0
+        dm: 0
+        nAm: 4
+        nIds: 0c0000001e0000002500000029000000
+        nArea:
+        - 0.032
+        - 0.001
+        - 0.02
+        - 0.017
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 5171544266858367308}
+        mf: {fileID: 3210018511511666001}
+        col: {fileID: 8527263935783269704}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 12
+        sz: 0.7656627
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.3738613, y: 0.053756833, z: -0.38732886}
+          m_Extent: {x: 0.12587711, y: 0.3202423, z: 0.16780844}
+        pos: {x: 0.3738613, y: 0.053756833, z: -0.38732886}
+        sm: 0
+        dm: 0
+        nAm: 6
+        nIds: 0b0000000e0000001e0000001f0000002800000029000000
+        nArea:
+        - 0.032
+        - 0.046
+        - 0.005
+        - 0.04
+        - 0.009
+        - 0.025
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 7008133035404770537}
+        mf: {fileID: 6566184161835715261}
+        col: {fileID: 5925983840632773653}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 13
+        sz: 1.2907913
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.17990112, y: 1.0994468, z: 0.17318225}
+          m_Extent: {x: 0.12668991, y: 0.6222709, z: 0.115170024}
+        pos: {x: 0.17990112, y: 1.0994468, z: 0.17318225}
+        sm: 0
+        dm: 0
+        nAm: 6
+        nIds: 0000000006000000090000000f0000001c00000020000000
+        nArea:
+        - 0.058
+        - 0.006
+        - 0.025
+        - 0.026
+        - 0.021
+        - 0.051
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 6382350717042844315}
+        mf: {fileID: 2943990438376760130}
+        col: {fileID: 2657723999700776452}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 14
+        sz: 1.0464177
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.3921795, y: 0.2500592, z: -0.11936641}
+          m_Extent: {x: 0.13099264, y: 0.47525102, z: 0.17528522}
+        pos: {x: 0.3921795, y: 0.2500592, z: -0.11936641}
+        sm: 0
+        dm: 0
+        nAm: 5
+        nIds: 060000000c0000001e0000001f00000029000000
+        nArea:
+        - 0.039
+        - 0.046
+        - 0.066
+        - 0.001
+        - 0.01
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 9075697212052583392}
+        mf: {fileID: 2468808531152814331}
+        col: {fileID: 4117177018016197162}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 15
+        sz: 1.1700691
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.4081955, y: 0.24422556, z: 0.3525703}
+          m_Extent: {x: 0.16604546, y: 0.50361717, z: 0.24711153}
+        pos: {x: 0.4081955, y: 0.24422556, z: 0.3525703}
+        sm: 0
+        dm: 0
+        nAm: 7
+        nIds: 020000000600000008000000090000000d0000001a00000020000000
+        nArea:
+        - 0.01
+        - 0.013
+        - 0.001
+        - 0.004
+        - 0.026
+        - 0.004
+        - 0.032
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 2674315058227920836}
+        mf: {fileID: 2672609572797535989}
+        col: {fileID: 1232027305863696319}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 16
+        sz: 1.5808091
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: -0.161129, y: 2.2654066, z: -0.048922777}
+          m_Extent: {x: 0.16774604, y: 0.75470793, z: 0.16436712}
+        pos: {x: -0.161129, y: 2.2654066, z: -0.048922777}
+        sm: 0
+        dm: 0
+        nAm: 7
+        nIds: 050000000700000012000000150000001b0000002100000023000000
+        nArea:
+        - 0.044
+        - 0.002
+        - 0.015
+        - 0.003
+        - 0.008
+        - 0.075
+        - 0
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 9033170980065799716}
+        mf: {fileID: 4504150323687985383}
+        col: {fileID: 4584687220842801624}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 17
+        sz: 0.24842376
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.75709534, y: -0.25778112, z: 0.39591718}
+          m_Extent: {x: 0.09084729, y: 0.07715674, z: 0.03495996}
+        pos: {x: 0.75709534, y: -0.25778112, z: 0.39591718}
+        sm: 0
+        dm: 0
+        nAm: 2
+        nIds: 0200000017000000
+        nArea:
+        - 0
+        - 0.007
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 2283093428756418234}
+        mf: {fileID: 3167682407828499515}
+        col: {fileID: 5587149094558617542}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 18
+        sz: 1.7408727
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: -0.08647728, y: 2.1048212, z: -0.154737}
+          m_Extent: {x: 0.13051693, y: 0.8563942, z: 0.084934436}
+        pos: {x: -0.08647728, y: 2.1048212, z: -0.154737}
+        sm: 0
+        dm: 0
+        nAm: 7
+        nIds: 04000000070000000a00000010000000180000002100000026000000
+        nArea:
+        - 0.011
+        - 0
+        - 0.007
+        - 0.015
+        - 0
+        - 0.039
+        - 0.011
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 1974375985605673174}
+        mf: {fileID: 308072102951464897}
+        col: {fileID: 6914470766489212360}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 19
+        sz: 0.20462194
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.62989616, y: -0.27109936, z: -0.5823884}
+          m_Extent: {x: 0.04854283, y: 0.036672052, z: 0.08225746}
+        pos: {x: 0.62989616, y: -0.27109936, z: -0.5823884}
+        sm: 0
+        dm: 0
+        nAm: 1
+        nIds: 28000000
+        nArea:
+        - 0.004
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 2771158209074771017}
+        mf: {fileID: 9062320542885668411}
+        col: {fileID: 1671467715461506007}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 20
+        sz: 0.8666699
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: -0.45352745, y: 0.17830503, z: 0.46929586}
+          m_Extent: {x: 0.1340476, y: 0.344677, z: 0.22584993}
+        pos: {x: -0.45352745, y: 0.17830503, z: 0.46929586}
+        sm: 0
+        dm: 0
+        nAm: 5
+        nIds: 0100000003000000190000001d00000022000000
+        nArea:
+        - 0.006
+        - 0.034
+        - 0.054
+        - 0.002
+        - 0.013
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 7019955935931676525}
+        mf: {fileID: 7618979812325053596}
+        col: {fileID: 9190185999854408853}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 21
+        sz: 1.7542412
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: -0.050294876, y: 1.390045, z: 0.17682719}
+          m_Extent: {x: 0.08645279, y: 0.8669703, z: 0.101138614}
+        pos: {x: -0.050294876, y: 1.390045, z: 0.17682719}
+        sm: 0
+        dm: 0
+        nAm: 7
+        nIds: 0300000010000000180000001b0000001c0000002000000021000000
+        nArea:
+        - 0.001
+        - 0.003
+        - 0.008
+        - 0.079
+        - 0.066
+        - 0.007
+        - 0.032
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 4692327041127581555}
+        mf: {fileID: 6224671101876346683}
+        col: {fileID: 2583858098879756727}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 22
+        sz: 0.7662087
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: -0.2829342, y: -0.025981098, z: -0.3871045}
+          m_Extent: {x: 0.11059423, y: 0.24390918, z: 0.27394557}
+        pos: {x: -0.2829342, y: -0.025981098, z: -0.3871045}
+        sm: 0
+        dm: 0
+        nAm: 4
+        nIds: 01000000240000002600000027000000
+        nArea:
+        - 0.003
+        - 0.013
+        - 0.023
+        - 0.009
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 5035016415564827084}
+        mf: {fileID: 4042551748716311021}
+        col: {fileID: 7660871081988649931}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 23
+        sz: 0.3096626
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.7537079, y: -0.23873219, z: 0.4437548}
+          m_Extent: {x: 0.11414752, y: 0.098171666, z: 0.036130313}
+        pos: {x: 0.7537079, y: -0.23873219, z: 0.4437548}
+        sm: 0
+        dm: 0
+        nAm: 3
+        nIds: 02000000110000001a000000
+        nArea:
+        - 0.003
+        - 0.007
+        - 0.007
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 2545763449591094676}
+        mf: {fileID: 5666070709624169}
+        col: {fileID: 716399725694454409}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 24
+        sz: 1.5258687
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: -0.023693085, y: 0.59650147, z: -0.07091081}
+          m_Extent: {x: 0.208852, y: 0.7072952, z: 0.19540513}
+        pos: {x: -0.023693085, y: 0.59650147, z: -0.07091081}
+        sm: 0
+        dm: 0
+        nAm: 12
+        nIds: 01000000030000000a00000012000000150000001b0000001c0000001e00000020000000250000002600000027000000
+        nArea:
+        - 0.016
+        - 0.002
+        - 0.005
+        - 0
+        - 0.008
+        - 0.016
+        - 0.004
+        - 0.059
+        - 0.01
+        - 0.149
+        - 0.023
+        - 0
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 5465033763646594112}
+        mf: {fileID: 6056416716946492349}
+        col: {fileID: 5909973295299866694}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 25
+        sz: 1.0694262
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: -0.3060665, y: 0.44488984, z: 0.37162828}
+          m_Extent: {x: 0.115843855, y: 0.4929629, z: 0.17171454}
+        pos: {x: -0.3060665, y: 0.44488984, z: 0.37162828}
+        sm: 0
+        dm: 0
+        nAm: 5
+        nIds: 0100000003000000140000001b0000001d000000
+        nArea:
+        - 0.043
+        - 0.023
+        - 0.054
+        - 0.063
+        - 0
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 7295578425717423507}
+        mf: {fileID: 3328420076631486094}
+        col: {fileID: 5970406321825025274}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 26
+        sz: 0.33110422
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.63772774, y: -0.17591074, z: 0.47681355}
+          m_Extent: {x: 0.11207048, y: 0.10941876, z: 0.053621296}
+        pos: {x: 0.63772774, y: -0.17591074, z: 0.47681355}
+        sm: 0
+        dm: 0
+        nAm: 3
+        nIds: 020000000f00000017000000
+        nArea:
+        - 0.01
+        - 0.004
+        - 0.007
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 4632771351391385306}
+        mf: {fileID: 2669043242850067866}
+        col: {fileID: 4097813839436786212}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 27
+        sz: 2.2238705
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: -0.21140862, y: 1.1212012, z: 0.14524269}
+          m_Extent: {x: 0.1865831, y: 1.0852597, z: 0.15426691}
+        pos: {x: -0.21140862, y: 1.1212012, z: 0.14524269}
+        sm: 0
+        dm: 0
+        nAm: 12
+        nIds: 010000000300000005000000070000001000000015000000180000001900000020000000210000002300000026000000
+        nArea:
+        - 0.084
+        - 0.003
+        - 0.009
+        - 0.004
+        - 0.008
+        - 0.079
+        - 0.016
+        - 0.063
+        - 0.028
+        - 0.064
+        - 0.001
+        - 0.044
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 5220528512979547997}
+        mf: {fileID: 6733656433055866026}
+        col: {fileID: 4915884960741763186}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 28
+        sz: 1.9475754
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.15588379, y: 1.9001008, z: 0.17449021}
+          m_Extent: {x: 0.17149974, y: 0.94877595, z: 0.13665499}
+        pos: {x: 0.15588379, y: 1.9001008, z: 0.17449021}
+        sm: 0
+        dm: 0
+        nAm: 7
+        nIds: 00000000090000000d00000015000000180000002000000021000000
+        nArea:
+        - 0.066
+        - 0.013
+        - 0.021
+        - 0.066
+        - 0.004
+        - 0.007
+        - 0.078
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 4527569576232579342}
+        mf: {fileID: 1962919720591752674}
+        col: {fileID: 4897993548278867839}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 29
+        sz: 0.4842126
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: -0.42024994, y: 0.07981044, z: 0.29290462}
+          m_Extent: {x: 0.060162548, y: 0.22127277, z: 0.0776807}
+        pos: {x: -0.42024994, y: 0.07981044, z: 0.29290462}
+        sm: 0
+        dm: 0
+        nAm: 4
+        nIds: 01000000030000001400000019000000
+        nArea:
+        - 0.011
+        - 0.008
+        - 0.002
+        - 0
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 7076534378301268772}
+        mf: {fileID: 3986784259822146561}
+        col: {fileID: 8373010456509366121}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 30
+        sz: 1.5784365
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.15193176, y: 0.5715504, z: -0.07541168}
+          m_Extent: {x: 0.18842816, y: 0.7436859, z: 0.18517967}
+        pos: {x: 0.15193176, y: 0.5715504, z: -0.07541168}
+        sm: 0
+        dm: 0
+        nAm: 12
+        nIds: 00000000060000000a0000000b0000000c0000000e00000018000000200000002100000025000000290000002a000000
+        nArea:
+        - 0.003
+        - 0.113
+        - 0.015
+        - 0.001
+        - 0.005
+        - 0.066
+        - 0.059
+        - 0.075
+        - 0.011
+        - 0.024
+        - 0.018
+        - 0.014
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 3223007599577255974}
+        mf: {fileID: 2869097009776183711}
+        col: {fileID: 7094815412598305001}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 31
+        sz: 0.3871165
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.5358257, y: -0.12854668, z: -0.38120103}
+          m_Extent: {x: 0.054521505, y: 0.14112175, z: 0.12073464}
+        pos: {x: 0.5358257, y: -0.12854668, z: -0.38120103}
+        sm: 0
+        dm: 0
+        nAm: 3
+        nIds: 0c0000000e00000028000000
+        nArea:
+        - 0.04
+        - 0.001
+        - 0.021
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 7582555355856999}
+        mf: {fileID: 7666572108086761260}
+        col: {fileID: 9076939423689644272}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 32
+        sz: 1.3393846
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.115278244, y: 0.46632844, z: 0.26073682}
+          m_Extent: {x: 0.20971893, y: 0.60726804, z: 0.18902712}
+        pos: {x: 0.115278244, y: 0.46632844, z: 0.26073682}
+        sm: 0
+        dm: 0
+        nAm: 10
+        nIds: 0300000006000000090000000d0000000f00000015000000180000001b0000001c0000001e000000
+        nArea:
+        - 0.072
+        - 0.002
+        - 0
+        - 0.051
+        - 0.032
+        - 0.007
+        - 0.01
+        - 0.028
+        - 0.007
+        - 0.075
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 2099920186959238778}
+        mf: {fileID: 3877815925783890182}
+        col: {fileID: 2320419845374644569}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 33
+        sz: 2.071633
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: -0.007036209, y: 1.99994, z: -0.04951048}
+          m_Extent: {x: 0.2240289, y: 0.99582154, z: 0.1762566}
+        pos: {x: -0.007036209, y: 1.99994, z: -0.04951048}
+        sm: 0
+        dm: 0
+        nAm: 11
+        nIds: 0000000004000000070000000a0000001000000012000000150000001b0000001c0000001e00000026000000
+        nArea:
+        - 0.209
+        - 0.227
+        - 0.04
+        - 0.001
+        - 0.075
+        - 0.039
+        - 0.032
+        - 0.064
+        - 0.078
+        - 0.011
+        - 0.032
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 2703666857681731107}
+        mf: {fileID: 4533643107618144908}
+        col: {fileID: 7369020283123467719}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 34
+        sz: 0.38146225
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: -0.64221764, y: -0.111465365, z: 0.65748787}
+          m_Extent: {x: 0.113036074, y: 0.13677597, z: 0.06995387}
+        pos: {x: -0.64221764, y: -0.111465365, z: 0.65748787}
+        sm: 0
+        dm: 0
+        nAm: 1
+        nIds: 14000000
+        nArea:
+        - 0.013
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 7451551360552817851}
+        mf: {fileID: 1110441631480719262}
+        col: {fileID: 2375877740521936168}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 35
+        sz: 0.57463
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: -0.3032341, y: 1.6641837, z: 0.013170838}
+          m_Extent: {x: 0.021360625, y: 0.2835695, z: 0.041011784}
+        pos: {x: -0.3032341, y: 1.6641837, z: 0.013170838}
+        sm: 0
+        dm: 0
+        nAm: 5
+        nIds: 010000000500000007000000100000001b000000
+        nArea:
+        - 0
+        - 0
+        - 0.003
+        - 0
+        - 0.001
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 8376233657465739182}
+        mf: {fileID: 1941500634034152090}
+        col: {fileID: 6283674597320898781}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 36
+        sz: 0.42760175
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: -0.4571991, y: -0.06685305, z: -0.2574519}
+          m_Extent: {x: 0.10570129, y: 0.13442111, z: 0.12833166}
+        pos: {x: -0.4571991, y: -0.06685305, z: -0.2574519}
+        sm: 0
+        dm: 0
+        nAm: 2
+        nIds: 0100000016000000
+        nArea:
+        - 0.002
+        - 0.013
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 2120756593096901641}
+        mf: {fileID: 4081152599326505901}
+        col: {fileID: 7487843153409022060}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 37
+        sz: 1.3728645
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.112054825, y: 0.5462691, z: -0.2319994}
+          m_Extent: {x: 0.14228922, y: 0.6603529, z: 0.121971644}
+        pos: {x: 0.112054825, y: 0.5462691, z: -0.2319994}
+        sm: 0
+        dm: 0
+        nAm: 6
+        nIds: 0a0000000b000000180000001e000000290000002a000000
+        nArea:
+        - 0.029
+        - 0.02
+        - 0.149
+        - 0.024
+        - 0
+        - 0.011
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 5274899688573848419}
+        mf: {fileID: 2129638201480088282}
+        col: {fileID: 850306375196575568}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 38
+        sz: 1.4980513
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: -0.15344048, y: 0.5972266, z: -0.118531585}
+          m_Extent: {x: 0.1806313, y: 0.707713, z: 0.16599399}
+        pos: {x: -0.15344048, y: 0.5972266, z: -0.118531585}
+        sm: 0
+        dm: 0
+        nAm: 8
+        nIds: 010000000a0000001200000016000000180000001b0000002100000027000000
+        nArea:
+        - 0.04
+        - 0
+        - 0.011
+        - 0.023
+        - 0.023
+        - 0.044
+        - 0.032
+        - 0.017
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 9020814995675816784}
+        mf: {fileID: 270635161658438125}
+        col: {fileID: 1569079850905898339}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 39
+        sz: 0.3171438
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: -0.11765671, y: 0.019541204, z: -0.27994084}
+          m_Extent: {x: 0.07353817, y: 0.13160092, z: 0.049177054}
+        pos: {x: -0.11765671, y: 0.019541204, z: -0.27994084}
+        sm: 0
+        dm: 0
+        nAm: 3
+        nIds: 160000001800000026000000
+        nArea:
+        - 0.009
+        - 0
+        - 0.017
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 5717355277456427349}
+        mf: {fileID: 1565457241495454649}
+        col: {fileID: 5616333629023308356}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 40
+        sz: 0.40333143
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.56916237, y: -0.16807607, z: -0.52521324}
+          m_Extent: {x: 0.10771925, y: 0.1298998, z: 0.11041587}
+        pos: {x: 0.56916237, y: -0.16807607, z: -0.52521324}
+        sm: 0
+        dm: 0
+        nAm: 3
+        nIds: 0c000000130000001f000000
+        nArea:
+        - 0.009
+        - 0.004
+        - 0.021
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 849314481507541617}
+        mf: {fileID: 3257089351350941508}
+        col: {fileID: 8362619146810156345}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 41
+        sz: 0.5792661
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.2631054, y: 0.317662, z: -0.27156985}
+          m_Extent: {x: 0.07194575, y: 0.26310408, z: 0.097402975}
+        pos: {x: 0.2631054, y: 0.317662, z: -0.27156985}
+        sm: 0
+        dm: 0
+        nAm: 5
+        nIds: 0b0000000c0000000e0000001e00000025000000
+        nArea:
+        - 0.017
+        - 0.025
+        - 0.01
+        - 0.018
+        - 0
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 6788689315215172263}
+        mf: {fileID: 7866370037253016762}
+        col: {fileID: 5838805222462995428}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      - id: 42
+        sz: 0.5837656
+        uny: 0
+        act: 0
+        bnd:
+          m_Center: {x: 0.2493763, y: 0.978335, z: -0.19369388}
+          m_Extent: {x: 0.049261075, y: 0.28275675, z: 0.05308051}
+        pos: {x: 0.2493763, y: 0.978335, z: -0.19369388}
+        sm: 0
+        dm: 0
+        nAm: 4
+        nIds: 060000000a0000001e00000025000000
+        nArea:
+        - 0.002
+        - 0.009
+        - 0.014
+        - 0.011
+        sIds: 
+        nSt: []
+        sSt: 0
+        tm: {fileID: 3012745664941322216}
+        mf: {fileID: 5714501009107287492}
+        col: {fileID: 496053556837498332}
+        rb: {fileID: 0}
+        rigid: {fileID: 0}
+      areaCollapse: 0
+      minimumArea: 0
+      maximumArea: 0.227
+      sizeCollapse: 0.1344559
+      minimumSize: 0.1344559
+      maximumSize: 2.2238705
+      randomCollapse: 0
+      randomSeed: 0
+      cachedHost: 0
+    minorClusters: []
+    cn: 0
+    nd: 0
+    am: 43
+  referenceDemolition:
+    reference: {fileID: 0}
+    randomList: []
+    action: 0
+    addRigid: 1
+    inheritScale: 1
+    inheritMaterials: 0
+  materials:
+    innerMaterial: {fileID: 0}
+    mappingScale: 0.1
+    outerMaterial: {fileID: 0}
+    needNewMat: 0
+  damage:
+    enable: 0
+    maxDamage: 100
+    currentDamage: 0
+    collect: 0
+    multiplier: 1
+    toShards: 1
+  fading:
+    onDemolition: 1
+    onActivation: 0
+    byOffset: 0
+    lifeType: 4
+    lifeTime: 2.8
+    lifeVariation: 3
+    fadeType: 3
+    fadeTime: 1.4
+    sizeFilter: 0
+    shardAmount: 5
+  reset:
+    transform: 1
+    damage: 1
+    connectivity: 0
+    action: 0
+    destroyDelay: 1
+    mesh: 4
+    fragments: 0
+  initialized: 0
+  corState: 0
+  meshes: []
+  pivots: []
+  rfMeshes: []
+  subIds: []
+  fragments: []
+  cacheRotation: {x: 0, y: 0, z: 0, w: 0}
+  transForm: {fileID: 8127667872441193066}
+  rootChild: {fileID: 0}
+  rootParent: {fileID: 0}
+  meshFilter: {fileID: 0}
+  meshRenderer: {fileID: 0}
+  skinnedMeshRend: {fileID: 0}
+  debrisList:
+  - {fileID: 7500539688701531979}
+  dustList:
+  - {fileID: 8693295975630412804}
+  restriction: {fileID: 0}
+  sound: {fileID: 0}
+--- !u!114 &387485775736997766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8782863233275647441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dae403a59cd85344ab1c214fcc3ccef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unyielding: 1
+  activatable: 1
+  simulationType: 1
+  centerPosition: {x: 0, y: 0, z: 0}
+  size: {x: 3.7024865, y: 1, z: 3.8956857}
+  rigidHost: {fileID: 5460103518737661644}
+  rigidList: []
+  shardList: []
+  showGizmo: 1
+  showCenter: 0
+--- !u!114 &7500539688701531979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8782863233275647441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33750d88507d69040b28ccc857c648d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onDemolition: 1
+  onActivation: 1
+  onImpact: 0
+  debrisReference: {fileID: 8782863233275647441}
+  debrisMaterial: {fileID: 2100000, guid: 86bf1b3ed4552864c88cf2ae92ebefc3, type: 2}
+  emissionMaterial: {fileID: 0}
+  emission:
+    burstType: 2
+    burstAmount: 17
+    distanceRate: 0.4
+    duration: 1.87
+    lifeMin: 1
+    lifeMax: 1.6
+    sizeMin: 0.21
+    sizeMax: 1.91
+  dynamic:
+    speedMin: 0.17
+    speedMax: 6.43
+    velocityMin: 2.09
+    velocityMax: 2.46
+    gravityMin: 1.05
+    gravityMax: 1.14
+    rotationSpeed: 0.741
+  noise:
+    enabled: 0
+    quality: 2
+    strengthMin: 0.3
+    strengthMax: 0.6
+    frequency: 0.3
+    scrollSpeed: 0.7
+    damping: 1
+  collision:
+    collidesWith:
+      serializedVersion: 2
+      m_Bits: 385
+    quality: 2
+    radiusScale: 0.1
+    dampenType: 0
+    dampenMin: 0.1
+    dampenMax: 0.4
+    bounceType: 0
+    bounceMin: 0.2
+    bounceMax: 0.4
+    propertiesSet: 0
+  limitations:
+    minParticles: 3
+    maxParticles: 14
+    percentage: 50
+    sizeThreshold: 0.63
+    demolitionDepth: 2
+  rendering:
+    castShadows: 1
+    receiveShadows: 1
+    lightProbes: 0
+  rigid: {fileID: 5460103518737661644}
+  pSystem: {fileID: 0}
+  hostTm: {fileID: 0}
+  initialized: 1
+  debrisMeshList:
+  - {fileID: 4300002, guid: 4228642c7a159304b85026a0dad44269, type: 3}
+  - {fileID: 4300006, guid: 4228642c7a159304b85026a0dad44269, type: 3}
+  - {fileID: 4300010, guid: 4228642c7a159304b85026a0dad44269, type: 3}
+  - {fileID: 4300008, guid: 4228642c7a159304b85026a0dad44269, type: 3}
+  - {fileID: 4300014, guid: 4228642c7a159304b85026a0dad44269, type: 3}
+  - {fileID: 4300012, guid: 4228642c7a159304b85026a0dad44269, type: 3}
+  refScale: {x: 1, y: 1.0000002, z: 1.0000002}
+  children: []
+  amountFinal: 0
+  oldChild: 0
+--- !u!114 &8693295975630412804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8782863233275647441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f5e79b13bbb1d74e8a4fe76b5c902d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onDemolition: 1
+  onActivation: 1
+  onImpact: 1
+  opacity: 0.521
+  dustMaterial: {fileID: 2100000, guid: e05209c27cf59e14c91928a59ffc2f66, type: 2}
+  dustMaterials: []
+  emissionMaterial: {fileID: 0}
+  emission:
+    burstType: 2
+    burstAmount: 10
+    distanceRate: 1
+    duration: 4.53
+    lifeMin: 4.2
+    lifeMax: 7
+    sizeMin: 0.85
+    sizeMax: 2.68
+  dynamic:
+    speedMin: 0.59
+    speedMax: 0.86
+    rotation: 0.221
+    gravityMin: 0.07
+    gravityMax: 0.9
+  noise:
+    enabled: 0
+    quality: 2
+    strengthMin: 0.3
+    strengthMax: 0.6
+    frequency: 0.3
+    scrollSpeed: 0.7
+    damping: 1
+  collision:
+    collidesWith:
+      serializedVersion: 2
+      m_Bits: 385
+    quality: 2
+    radiusScale: 1
+  limitations:
+    minParticles: 3
+    maxParticles: 13
+    percentage: 50
+    sizeThreshold: 0.5
+    demolitionDepth: 2
+  rendering:
+    castShadows: 1
+    receiveShadows: 1
+    lightProbes: 0
+  rigid: {fileID: 5460103518737661644}
+  pSystem: {fileID: 0}
+  hostTm: {fileID: 0}
+  initialized: 1
+  children: []
+  amountFinal: 5
+  oldChild: 0
+--- !u!114 &2892773156082227163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8782863233275647441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df62ddceed6065b4191ef1fce6400822, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseVolume: 1
+  sizeVolume: 0.2
+  initialization:
+    enable: 0
+    once: 0
+    multiplier: 1
+    clip: {fileID: 0}
+    clips: []
+    outputGroup: {fileID: 0}
+    played: 0
+  activation:
+    enable: 1
+    once: 0
+    multiplier: 1
+    clip: {fileID: 0}
+    clips:
+    - {fileID: 8300000, guid: 969a6eba408335a4598d0d04b4828a42, type: 3}
+    - {fileID: 8300000, guid: bcd78ba93588812429190a337742692d, type: 3}
+    - {fileID: 8300000, guid: ab8bc88e8f2a5c74ca39975fc1b92488, type: 3}
+    outputGroup: {fileID: 0}
+    played: 0
+  demolition:
+    enable: 1
+    once: 0
+    multiplier: 1
+    clip: {fileID: 0}
+    clips:
+    - {fileID: 8300000, guid: fb2549346bbaad64fbc354a73968f3b8, type: 3}
+    - {fileID: 8300000, guid: d3b1e895e42c5564987e0f394e318f84, type: 3}
+    - {fileID: 8300000, guid: b1438a49697b17c4fb9c58973c61b61e, type: 3}
+    outputGroup: {fileID: 0}
+    played: 0
+  minimumSize: 0
+  cameraDistance: 0
+  rigid: {fileID: 0}
+  rigidRoot: {fileID: 0}
+--- !u!1 &9071716070957984199
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7582555355856999}
+  - component: {fileID: 7666572108086761260}
+  - component: {fileID: 6639139979239391161}
+  - component: {fileID: 9076939423689644272}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_32
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7582555355856999
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9071716070957984199}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5358257, y: -0.1285467, z: -0.38120103}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &7666572108086761260
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9071716070957984199}
+  m_Mesh: {fileID: -7686823534617477094, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &6639139979239391161
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9071716070957984199}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &9076939423689644272
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9071716070957984199}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7686823534617477094, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!1 &9189655155260121607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5220528512979547997}
+  - component: {fileID: 6733656433055866026}
+  - component: {fileID: 2570036920022174337}
+  - component: {fileID: 4915884960741763186}
+  m_Layer: 0
+  m_Name: Beech Forest Stump 02_sh_28
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5220528512979547997
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9189655155260121607}
+  m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.21140862, y: 1.1212012, z: 0.14524265}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8127667872441193066}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6733656433055866026
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9189655155260121607}
+  m_Mesh: {fileID: 1708953924855229560, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}
+--- !u!23 &2570036920022174337
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9189655155260121607}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf926113b996cad47a9cc9585417c050, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4915884960741763186
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9189655155260121607}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1708953924855229560, guid: 363bb8e6a27f87c4bbfb5ac7947dcd99, type: 2}

@@ -15,8 +15,10 @@ namespace QuizCanners.IsItGame.Develop
         [SerializeField] private Rigidbody _rigidbody;
 
         [SerializeField] private GameObject _shadow;
+        [SerializeField] private GameObject _light;
 
         private bool _isPlaying;
+        private float _heatEmission;
         private float lifeTime;
         private LogicWrappers.DeltaPositionSegments _smokeSpawning = new LogicWrappers.DeltaPositionSegments();
 
@@ -67,10 +69,10 @@ namespace QuizCanners.IsItGame.Develop
 
                 RemoveToPool();
             }
-            else if (force > THOLD * 0.25f)
+           /* else if (force > THOLD * 0.25f)
             {
                 Singleton.Try<Pool_ECS_HeatSmoke>(s => s.TrySpawn(worldPosition: transform.position));
-            }
+            }*/
         }
 
         public float Size 
@@ -94,10 +96,13 @@ namespace QuizCanners.IsItGame.Develop
             _smokeSpawning.Reset(transform.position);
             Size = size;
             _shadow.SetActive(Size > 0.5f);
+            _light.SetActive(false);
         }
 
-        public void Push (Vector3 pushVector, float pushForce, float pushRandomness, float torqueForce) 
+        public void Push (Vector3 pushVector, float pushForce, float pushRandomness, float torqueForce, float heat = 0) 
         {
+            _heatEmission = heat;
+            _light.gameObject.SetActive(heat > 0);
             _meshFilter.sharedMesh = meshes.GetRandom();
             _meshCollider.sharedMesh = _meshFilter.sharedMesh;
 
@@ -129,7 +134,7 @@ namespace QuizCanners.IsItGame.Develop
 
                 var s = Size;
 
-                if (s > 0.2f && _smokeSpawning.TryGetSegments(transform.position, delta: 0.5f, out Vector3[] smokePoints))
+                if (s > 0.2f && _heatEmission > 0 &&  _smokeSpawning.TryGetSegments(transform.position, delta: 0.5f, out Vector3[] smokePoints))
                 {
                     if (Camera.main.IsInCameraViewArea(transform.position))
                     {
@@ -141,6 +146,14 @@ namespace QuizCanners.IsItGame.Develop
                                     break;
 
                                 inst.AddHeat(10);
+
+                                _heatEmission--;
+
+                                if (_heatEmission <= 0)
+                                {
+                                    _light.gameObject.SetActive(false);
+                                    break;
+                                }
                             }
                         });
                     }

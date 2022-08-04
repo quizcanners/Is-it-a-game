@@ -10,6 +10,7 @@ using UnityEngine;
 
 namespace QuizCanners.IsItGame.Develop
 {
+    [SelectionBase]
     public partial class C_MonsterEnemy : MonoBehaviour, IPEGI, IPEGI_Handles, INeedAttention, IGotReadOnlyName, IPEGI_ListInspect
     {
         public C_RayRendering_ExplosionImactEffectController ImpactController;

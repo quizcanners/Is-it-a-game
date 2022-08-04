@@ -238,7 +238,7 @@ namespace QuizCanners.IsItGame.Develop
                     var cmp = hit.transform.gameObject.GetComponentInParent<C_RayFireRespawn>();
                     if (cmp)
                     {
-                        cmp.OnDamage();
+                        cmp.SetDamaged(true);
 
                         state.Gun.Shoot(hit.point - direction, direction);
 
@@ -246,14 +246,10 @@ namespace QuizCanners.IsItGame.Develop
                     }
                 }
 
+                //Singleton.Try<Pool_ECS_HeatSmoke>(s => s.TrySpawn(worldPosition: hit.point));
 
-              
-
-              //  Singleton.Try<Pool_ECS_HeatSmoke>(s => s.TrySpawn(worldPosition: hit.point));
-
-              //  Singleton.Try<Pool_SmokeEffects>(s => s.TrySpawn(hit.point, out _));
+                Singleton.Try<Pool_SmokeEffects>(s => s.TrySpawn(hit.point, out _));
                
-                /*
                 Singleton.Try<Pool_PhisXDebrisParticles>(s =>
                 {
                     s.PushFromExplosion(hit.point, force: 20, 2);
@@ -273,7 +269,7 @@ namespace QuizCanners.IsItGame.Develop
                         }
                         else break;
                     }
-                });*/
+                });
 
                 Singleton.Try<Pool_PhisXEmissiveParticles>(s =>
                 {
