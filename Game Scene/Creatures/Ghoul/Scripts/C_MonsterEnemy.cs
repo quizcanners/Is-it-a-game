@@ -379,12 +379,10 @@ namespace QuizCanners.IsItGame.Develop
 
         public void Update()
         {
-          
-
             if (IsTestDummy)
                 return;
 
-            skeleton.Down = _state.HealthState != CreatureStateBase.CreatureHealthState.Alive && !ImpactController.IsPlaying;
+            skeleton.Down = _state.HealthState != CreatureStateBase.CreatureHealthState.Alive;// && !ImpactController.IsPlaying;
 
             if (_turnTimer.GetSegmentsAndUpdate() > 0) 
             {

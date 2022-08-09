@@ -125,7 +125,7 @@ namespace QuizCanners.IsItGame
 
             if (_undestroyed) 
             {
-                if (!_undestroyed.gameObject.GetComponent<MeshCollider>())
+                if (!_undestroyed.GetComponent<Collider>())
                 {
                     "Attach Mesh Collider to trigger ".PegiLabel().WriteWarning();
 

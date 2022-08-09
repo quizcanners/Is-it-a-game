@@ -22,6 +22,9 @@ namespace QuizCanners.IsItGame.Develop
         public bool CastHardSurface(Ray ray, out RaycastHit hit, float maxDistance = MAX_DISTANCE)
           => Physics.Raycast(ray, out hit, maxDistance: maxDistance, LayersToHit);
 
+        public bool CastPierce(Ray ray, out RaycastHit softHit, float maxDistance = MAX_DISTANCE)
+            => Physics.Raycast(ray, out softHit, maxDistance: maxDistance, (1 << SoftLayerToPierce));
+
         public bool CastPierce(Ray ray, RaycastHit hardHit, out RaycastHit softHit)
         {
             float dist = Vector3.Distance(hardHit.point, ray.origin) - 0.05f;
@@ -33,6 +36,9 @@ namespace QuizCanners.IsItGame.Develop
 
             return Physics.Raycast(ray, out softHit, maxDistance: dist, (1 << SoftLayerToPierce));
         }
+
+
+        
 
         public override void Inspect()
         {

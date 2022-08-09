@@ -2189,7 +2189,7 @@ MonoBehaviour:
     byConnectivity: 1
     unyielding: 0
     activatable: 0
-    l: 1
+    l: 0
     layer: 8
     connect: {fileID: 0}
   limitations:

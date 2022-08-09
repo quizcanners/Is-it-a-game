@@ -32,5 +32,5 @@ Material:
     - _SHAPE: 1
     - debugOn: 0
     m_Colors:
-    - _Color: {r: 0, g: 0, b: 0, a: 0.7490196}
+    - _Color: {r: 0, g: 0, b: 0, a: 0.8235294}
   m_BuildTextureStacks: []

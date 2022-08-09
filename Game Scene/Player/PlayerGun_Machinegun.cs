@@ -40,7 +40,9 @@ namespace QuizCanners.IsItGame.Develop
 
             var ray = new Ray(from + spread, target - from);
 
-            if (mgmt.CastHardSurface(ray, out RaycastHit firstHit))
+            RaycastHit firstHit;
+
+            if (mgmt.CastHardSurface(ray, out firstHit) || mgmt.CastPierce(ray, out firstHit))
             {
                 Vector3 direction = (firstHit.point - from).normalized;
 
@@ -58,7 +60,7 @@ namespace QuizCanners.IsItGame.Develop
 
                 state.WeaponKick = Mathf.Clamp01(state.WeaponKick + 0.3f);
 
-                ProcessHit(firstHit, direction, out bool pierced, state);
+                ProcessHit(firstHit, ray.origin, direction, out bool pierced, state);
 
                 int maxLine = 10;
 
@@ -73,19 +75,19 @@ namespace QuizCanners.IsItGame.Develop
 
                     if (mgmt.CastHardSurface(outRay, out latestHit)) 
                     {
-                        ProcessHit(latestHit, direction, out pierced, state);
+                        ProcessHit(latestHit, ray.origin, direction, out pierced, state);
                     }
                 }
 
                 if (mgmt.CastPierce(ray, firstHit, out var softHit)) 
                 {
-                    ProcessHit(softHit, direction, out pierced, state);
+                    ProcessHit(softHit, ray.origin, direction, out pierced, state);
                 }
 
             }
         }
 
-        private void ProcessHit(RaycastHit hit, Vector3 direction, out bool pierced, State state) 
+        private void ProcessHit(RaycastHit hit, Vector3 origin, Vector3 direction, out bool pierced, State state) 
         {
             bool visibleByCamera = Camera.main.IsInCameraViewArea(hit.point);
 
@@ -239,10 +241,11 @@ namespace QuizCanners.IsItGame.Develop
                     if (cmp)
                     {
                         cmp.SetDamaged(true);
-
-                        state.Gun.Shoot(hit.point - direction, direction);
-
+                        state.Gun.Shoot(origin, direction);
                         return;
+                    } else 
+                    {
+                        state.Gun.Shoot(origin, direction);
                     }
                 }
 
