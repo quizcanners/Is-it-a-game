@@ -32,12 +32,15 @@ namespace QuizCanners.IsItGame.Develop
         {
             public float Temperature;
             public float Dissolve;
+            public float Buoyancy;
 
             public void InspectInList(ref int edited, int index)
             {
                 "Temperatire".PegiLabel(90).Edit(ref Temperature);
-                "Dissolve".PegiLabel(50).Edit(ref Dissolve);
+                "Dissolve".PegiLabel(50).Edit_01(ref Dissolve);
+                "Thickness".PegiLabel(50).Edit(ref Buoyancy);
             }
+
         }
 
         public struct AffectedByWind : IComponentData 

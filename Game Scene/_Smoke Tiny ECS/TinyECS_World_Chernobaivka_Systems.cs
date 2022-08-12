@@ -29,7 +29,7 @@ namespace QuizCanners.IsItGame.Develop
                    => 
                {
                    count++;
-                   m.Position += displace + wind * QcMath.SmoothStep(0.5f, 5, m.Position.y + s.Dissolve);
+                   m.Position += displace + wind * s.Buoyancy * QcMath.SmoothStep(0.5f, 5, m.Position.y + s.Dissolve);
                    s.Dissolve += deltaTime * (dissolveSpeed);
                    s.Temperature *= heatDissolve;
                }));

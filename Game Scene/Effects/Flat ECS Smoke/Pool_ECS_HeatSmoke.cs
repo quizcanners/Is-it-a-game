@@ -1,6 +1,7 @@
 using QuizCanners.Inspect;
 using QuizCanners.TinyECS;
 using QuizCanners.Utils;
+using UnityEngine;
 
 namespace QuizCanners.IsItGame.Develop
 {
@@ -19,6 +20,7 @@ namespace QuizCanners.IsItGame.Develop
                 .AddComponent((ref ParticlePhisics.SmokeData smoke) => 
                 {
                     //smoke.Temperature = 10;
+                    smoke.Buoyancy = 0.5f + Random.value;// * 1.4f;
                 })
 
                 .AddComponent<ParticlePhisics.AffectedByWind>()

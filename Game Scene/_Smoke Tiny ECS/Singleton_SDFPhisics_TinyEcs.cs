@@ -9,7 +9,7 @@ namespace QuizCanners.IsItGame.Develop
     {
         [SerializeField] private SO_ECSParticlesConfig _config;
 
-        private readonly ParticlePhisics _worldLink = new ParticlePhisics();
+        private readonly ParticlePhisics _worldLink = new();
 
         public World<ParticlePhisics> World => _worldLink.GetWorld();
 

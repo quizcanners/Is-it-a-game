@@ -268,7 +268,7 @@ namespace QuizCanners.IsItGame.Develop
                 {
                     for (int i = 0; i < 5; i++)
                     {
-                        if (!p.TrySpawn(_origin + UnityEngine.Random.insideUnitCircle.ToVector3XZ() * (0.5f + iteration)))
+                        if (!p.TrySpawn(_origin + UnityEngine.Random.insideUnitCircle.ToVector3XZ() * (1f + iteration) * 0.4f))
                             break;
                     }
                 });
