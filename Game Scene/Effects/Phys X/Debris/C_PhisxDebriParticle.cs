@@ -145,7 +145,7 @@ namespace QuizCanners.IsItGame.Develop
                                 if (!s.TrySpawn(worldPosition: smokePoints[i] + Random.insideUnitSphere * 0.25f, out C_ECS_HeatSmoke inst)) 
                                     break;
 
-                                inst.AddHeat(10);
+                                inst.AddHeat(20);
 
                                 _heatEmission--;
 

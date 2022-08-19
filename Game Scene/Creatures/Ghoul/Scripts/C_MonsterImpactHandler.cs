@@ -69,7 +69,7 @@ namespace QuizCanners.IsItGame.Develop
 
                     if (Pool.TrySpawnIfVisible<C_SmokeEffectOnImpact>(transform.position, out var inst))
                     {
-                        inst.PlayAnimateFromDot(density: magn * 0.01f);
+                        inst.PlayAnimateFromDot(density: magn * 0.005f);
                     };
 
                 }

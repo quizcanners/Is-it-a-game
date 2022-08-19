@@ -76,7 +76,7 @@ namespace QuizCanners.IsItGame
             other.smokeDensity *= 0.2f;
         }
 
-        public void PlayAnimateFromDot(float density = 0.5f) 
+        public void PlayAnimateFromDot(float density = 0.02f) 
         {
             Size = 0.3f;
             Visibility = 1;
@@ -119,14 +119,14 @@ namespace QuizCanners.IsItGame
 
             if (_animating)
             {
-                Size += Time.deltaTime * (1 + Mathf.Pow(smokeDensity, 1.4f));
+                Size += Time.deltaTime  * (1 + Mathf.Pow(smokeDensity, 1.4f)) * 5;
                 float deSize = 1f / Size;
-                float targetVisibility = Mathf.Clamp(smokeDensity / Size , 0, max: deSize);
+                float targetVisibility = Mathf.Clamp(smokeDensity / (Size * Size) , 0, max: deSize);
                 bool isFading = targetVisibility < Visibility;
                 Visibility = LerpUtils.LerpBySpeed(
                     from: Visibility, 
                     to: Mathf.Clamp01(targetVisibility), 
-                    speed: (1 + Mathf.Abs(targetVisibility - Visibility)) / (isFading ? (1 + smokeDensity) : Size),
+                    speed: (1 + Size* Visibility + Mathf.Abs(targetVisibility - Visibility)) / (isFading ? (1 + smokeDensity) : Size),
                     unscaledTime: false);
 
                 Color = LerpUtils.LerpBySpeed(Color, Color.white, 1, unscaledTime: false);

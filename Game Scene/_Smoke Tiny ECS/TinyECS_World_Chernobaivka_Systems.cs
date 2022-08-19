@@ -93,7 +93,7 @@ namespace QuizCanners.IsItGame.Develop
                     entity.Destroy();
             }));
 
-            Measure("Sm Pos", () =>
+            /*Measure("Sm Pos", () =>
             world.RunSystem((SmokeData smoke, PositionData smokePos) =>
             {
                 float accumulatedTemperature = 0;
@@ -103,7 +103,7 @@ namespace QuizCanners.IsItGame.Develop
                     accumulatedTemperature += deltaTime * heat.Temperature;
                 });
             })
-            );
+            );*/
 
             void Measure(string name, Action action)
             {
