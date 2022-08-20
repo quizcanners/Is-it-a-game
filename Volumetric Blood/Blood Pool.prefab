@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8101849844706994782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8101849844706994752}
+  - component: {fileID: 8101849844706994783}
+  m_Layer: 0
+  m_Name: Blood Pool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8101849844706994752
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8101849844706994782}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.0164087, y: 3.629043, z: -15.176977}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8101849844706994783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8101849844706994782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8103dc2300c84b4f938f618708a07a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabs:
+  - {fileID: 143759517149739816, guid: a78e9ef18b366424b84e0c7410d2fe72, type: 3}
+  - {fileID: 5865290276592450836, guid: 42a28376f729c864a81abf66add7a418, type: 3}
+  - {fileID: 764304066602274964, guid: 4a322f29a9e1fa54f90223de8bcf3a28, type: 3}
+  - {fileID: 7935733108997359170, guid: e822d59151d3597428b0b63bf25355e7, type: 3}
+  - {fileID: 4288107571095694936, guid: c3f8938673a07704e93ac52eee18f410, type: 3}
+  - {fileID: 3823342610295537083, guid: bb596cd440832554089a7125852e836f, type: 3}
+  - {fileID: 2071072698125137955, guid: 6d3629f845b40e24fb51d381e84bbc77, type: 3}
+  - {fileID: 8975717317865013593, guid: 70ead61ff20b23b4e97b90d8e8997ecd, type: 3}
+  - {fileID: 3796651074023140354, guid: 7b88f11816abaa34c9e02cbaa8485321, type: 3}
+  - {fileID: 98639587465039432, guid: 5776aed3bb070e54cb09a11c8a6a5831, type: 3}
+  - {fileID: 1097854496899464171, guid: 52d94bfe44b09ff4b9e9788e9a86a778, type: 3}
+  - {fileID: 5720790853932048561, guid: 730678b8a5330c449ada55bde83402ce, type: 3}
+  - {fileID: 7933956967010227845, guid: c3ed06559a66b724b91c3124e75ddec9, type: 3}
+  - {fileID: 5914805143651470744, guid: 097a30048e9007141899f834041a5ac7, type: 3}
+  - {fileID: 3015817218112219414, guid: cb58ece77d11ef945aecd072f2e46a8d, type: 3}
+  - {fileID: 4531911481417455445, guid: db51fe09adf27d640b4e10018c2d76ba, type: 3}
+  - {fileID: 6733599243507489090, guid: f9e099178c81bee439a79eecec91dacb, type: 3}
+  _disablePooling: 0
+  SpawnDecalOnTarget: 1

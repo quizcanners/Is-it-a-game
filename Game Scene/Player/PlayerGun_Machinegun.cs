@@ -6,6 +6,7 @@ using QuizCanners.Utils;
 using RayFire;
 using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 namespace QuizCanners.IsItGame.Develop
@@ -178,7 +179,11 @@ namespace QuizCanners.IsItGame.Develop
                 if (monster.TryTakeHit(WeaponAttack, RollInfluence.Advantage, C_MonsterEnemy.LimbsControllerState.Animation))
                 {
                     if (visibleByCamera)
+                    {
                         SpawnBlood(hit, direction);
+
+                        Singleton.Try<Pool_VolumetricBlood>(s => s.TrySpawnFromHit(hit, direction, out BFX_BloodController controller));
+                    }
 
                     if (monster.ImpactController && monster.IsAlive)
                     {
@@ -307,7 +312,7 @@ namespace QuizCanners.IsItGame.Develop
             if (poolOfBlood)
             {
 
-                int bloodParticles = Mathf.RoundToInt(Mathf.Max(1, poolOfBlood.VacancyPortion * 5));
+                int bloodParticles = Mathf.RoundToInt(Mathf.Max(1, poolOfBlood.VacancyPortion *2));
 
                 Vector3 from = hit.point;// + direction * 0.2f;
 

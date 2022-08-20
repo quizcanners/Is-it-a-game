@@ -284,7 +284,7 @@ namespace QuizCanners.IsItGame.Develop
             {
                 var dir = pushVector * (1 + pushForce01);
 
-                if (s.TrySpawn(origin - dir*0.3f, out var gore))
+                if (s.TrySpawn(origin - dir * 0.3f, out var gore))
                     gore.PushDirection = dir;
 
             });
@@ -293,30 +293,36 @@ namespace QuizCanners.IsItGame.Develop
 
             foreach (var rb in rigidbodies)
             {
-               // rb.angularVelocity = Quaternion.identity.eulerAngles;
+                // rb.angularVelocity = Quaternion.identity.eulerAngles;
                 rb.velocity = rb.velocity.Y(0) * 0.15f;
             }
 
             Singleton.Try<Pool_BloodParticlesController>(s =>
             {
-                int count = (int)(1 + 30 * s.VacancyPortion);
+                int count = (int)(1 + 5 * s.VacancyPortion);
 
                 for (int i = 0; i < count; i++)
                 {
                     if (s.TrySpawn(origin, out var b))
                     {
                         Vector3 randomDirection = (0.5f + UnityEngine.Random.value * 0.5f) * UnityEngine.Random.insideUnitSphere;
-                        Vector3 direction = Vector3.Lerp(randomDirection, pushVector.normalized * 0.5f, pushForce01*0.5f);
+                        Vector3 direction = Vector3.Lerp(randomDirection, pushVector.normalized * 0.5f, pushForce01 * 0.5f);
                         b.Restart(
-                            position: origin + randomDirection * 0.5f, 
-                            direction: (1 + pushForce01) * 4 * direction, 
+                            position: origin + randomDirection * 0.5f,
+                            direction: (1 + pushForce01) * 4 * direction,
                             scale: 1.5f);
                     }
                     else
-                        return;
+                        break ;
                 }
             });
 
+            Singleton.Try<Pool_VolumetricBlood>(s =>
+            {
+                for (int i = 0; i < 3; i++)
+                    if (!s.TrySpawnRandom(origin, pushVector, out var inst, size: 2.5f))
+                        break;
+            });
         }
 
         public bool TryTakeHit(Attack attack, RollInfluence influence, LimbsControllerState onKillReaction = LimbsControllerState.Giblets) 

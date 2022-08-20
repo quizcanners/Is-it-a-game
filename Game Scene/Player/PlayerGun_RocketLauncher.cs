@@ -32,6 +32,9 @@ namespace QuizCanners.IsItGame.Develop
 
             if (enm)
             {
+
+                int maxPaints = 2;
+
                 foreach (C_MonsterEnemy m in enm)
                 {
                     var pos = m.GetActivePosition();
@@ -44,35 +47,49 @@ namespace QuizCanners.IsItGame.Develop
                     {
                         if (m.IsAlive)
                         {
-                           
+                            killedMonsters++;
+
                             if (dist < _explosionRadius * 0.3f)
                             {
-                                killedMonsters++;
                                 m.Disintegrate(); // pushDirection.normalized, pushForce01: GetPushForce());
+
+                                Singleton.Try<Pool_VolumetricBlood>(s => s.TrySpawnFromHit(hit, pushDirection, out BFX_BloodController controller, size: 4, impactDecal: false));
+
+                                Singleton.Try<Pool_VolumetricBlood>(s => s.TrySpawnFromHit(hit, -pushDirection, out BFX_BloodController controller, size: 3, impactDecal: false));
+
                                 splatterMonsters = true;
                             }
                             else
                             {
-                                Singleton.Try<Singleton_ChornobaivkaController>(s =>
+                               
+                                var randomLimb = m.GetRandomCollider();
+
+                                var fragmentOrigin = hit.point + hit.normal * 0.2f;
+
+                                var ray = QcUnity.RaySegment(fragmentOrigin, randomLimb.transform.position, out float distance);// new Ray(fragmentOrigin, direction: randomLimb.transform.position);
+
+
+                                if (maxPaints > 0)
                                 {
-                                    var randomLimb = m.GetRandomCollider();
+                                    maxPaints--;
 
-                                    var fragmentOrigin = hit.point + hit.normal * 0.2f;
-
-                                    var ray = QcUnity.RaySegment(fragmentOrigin, randomLimb.transform.position, out float distance);// new Ray(fragmentOrigin, direction: randomLimb.transform.position);
-
-                                    if (s.CastHardSurface(ray, out var limbHit, maxDistance: distance))
+                                    Singleton.Try<Singleton_ChornobaivkaController>(s =>
                                     {
-                                        C_MonsterEnemy hitMonster = limbHit.transform.GetComponentInParent<C_MonsterEnemy>();
-                                        if (hitMonster && hitMonster == m)
-                                        {
-                                            PainDamage(limbHit, fleshImpactBrushConfig);
 
-                                            killedMonsters++;
-                                            m.DropRigid();
+                                        if (s.CastHardSurface(ray, out var limbHit, maxDistance: distance))
+                                        {
+                                            C_MonsterEnemy hitMonster = limbHit.transform.GetComponentInParent<C_MonsterEnemy>();
+                                            if (hitMonster && hitMonster == m)
+                                            {
+                                                PainDamage(limbHit, fleshImpactBrushConfig);
+
+                                            }
                                         }
-                                    }
-                                });
+                                    });
+                                }
+
+                                m.DropRigid();
+                              
                             }
                         }
                         else if (dist < _explosionRadius * 0.6f)
