@@ -257,6 +257,8 @@ Shader "KriptoFX/BFX/BFX_Decal"
 
 					//return lerp(0.5, res, res.a * tintColor.a);
 
+					ApplyBottomFog(col.rgb, newPos, viewDir.y);
+
 					return col;
 				}
 

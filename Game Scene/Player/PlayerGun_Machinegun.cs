@@ -180,6 +180,8 @@ namespace QuizCanners.IsItGame.Develop
                 {
                     if (visibleByCamera)
                     {
+                        BFX_DelayedBloodSpawner.CreateOnHit(hit, direction);
+
                         SpawnBlood(hit, direction);
 
                         Singleton.Try<Pool_VolumetricBlood>(s => s.TrySpawnFromHit(hit, direction, out BFX_BloodController controller));

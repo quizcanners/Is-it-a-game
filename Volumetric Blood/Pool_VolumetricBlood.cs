@@ -2,7 +2,6 @@ using QuizCanners.Inspect;
 using QuizCanners.Utils;
 using System;
 using UnityEngine;
-using UnityEngine.Experimental.GlobalIllumination;
 
 namespace QuizCanners.IsItGame.Develop
 {
@@ -10,6 +9,8 @@ namespace QuizCanners.IsItGame.Develop
     {
         public bool SpawnDecalOnTarget;
         public GameObject TargetDecalPrefab;
+
+        
 
         public bool TrySpawnRandom(Vector3 position, Vector3 direction, out BFX_BloodController instance, float size = 2) 
         {
@@ -31,7 +32,7 @@ namespace QuizCanners.IsItGame.Develop
             tf.localScale = distanceScale * size * Vector3.one;
 
 
-            instance.AnimationSpeed = Mathf.Clamp(1f / size, min: 1f, max: 1.5f);
+            instance.AnimationSpeed = Mathf.Clamp(2f / size, min: 1f, max: 2.5f);
 
             return true;
         }

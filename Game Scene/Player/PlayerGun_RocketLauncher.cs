@@ -100,7 +100,7 @@ namespace QuizCanners.IsItGame.Develop
 
                         if (m.LimbsState == C_MonsterEnemy.LimbsControllerState.Ragdoll)
                         {
-                            m.Push(force: _pushForce * 20, origin: hit.point - Vector3.up*2, radius: _explosionRadius);
+                            m.Push(force: _pushForce * 40, origin: hit.point - Vector3.up*2, radius: _explosionRadius);
                         }
                     }
                 }

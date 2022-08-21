@@ -1,5 +1,7 @@
 using UnityEngine;
 using System;
+using QuizCanners.Utils;
+using static UnityEditor.AddressableAssets.Build.BuildPipelineTasks.GenerateLocationListsTask;
 
 namespace QuizCanners.IsItGame
 {
@@ -14,8 +16,11 @@ namespace QuizCanners.IsItGame
 
         [NonSerialized] public bool IsVisible;
 
-        private int cutoutPropertyID;
-        int forwardDirPropertyID;
+        ShaderProperty.FloatValue CUTOUT = new ShaderProperty.FloatValue("_Cutout");
+        ShaderProperty.VectorValue FORWARD = new ShaderProperty.VectorValue("_DecalForwardDir");
+
+        //private int cutoutPropertyID;
+        //int forwardDirPropertyID;
         float timeLapsed;
 
         private MaterialPropertyBlock props;
@@ -31,14 +36,14 @@ namespace QuizCanners.IsItGame
             if (props == null)
                 props = new MaterialPropertyBlock();
 
-            cutoutPropertyID = Shader.PropertyToID("_Cutout");
-            forwardDirPropertyID = Shader.PropertyToID("_DecalForwardDir");
+           // cutoutPropertyID = Shader.PropertyToID("_Cutout");
+            //forwardDirPropertyID = Shader.PropertyToID("_DecalForwardDir");
 
 
             // startTime = Time.time + TimeDelay;
             IsVisible = true;
 
-            rend.GetPropertyBlock(props);
+            //rend.GetPropertyBlock(props);
 
             //var eval = FloatCurve.Evaluate(0) * GraphIntensityMultiplier;
             //props.SetFloat(cutoutPropertyID, eval);
@@ -46,8 +51,8 @@ namespace QuizCanners.IsItGame
             timeLapsed = 0;
 
             UpdateValues();
-
-            props.SetVector(forwardDirPropertyID, transform.up);
+            FORWARD.SetOn(props, transform.up);
+           // props.SetVector(forwardDirPropertyID, transform.up);
             rend.SetPropertyBlock(props);
         }
 
@@ -55,7 +60,7 @@ namespace QuizCanners.IsItGame
         {
             if (rend && props!= null)
             {
-                rend.GetPropertyBlock(props);
+                //rend.GetPropertyBlock(props);
                 timeLapsed = 0;
                 UpdateValues();
                 rend.SetPropertyBlock(props);
@@ -66,7 +71,8 @@ namespace QuizCanners.IsItGame
         private void UpdateValues()
         {
             var eval = FloatCurve.Evaluate(timeLapsed / GraphTimeMultiplier) * GraphIntensityMultiplier;
-            props.SetFloat(cutoutPropertyID, eval);
+            CUTOUT.SetOn(props, eval);
+           //props.SetFloat(cutoutPropertyID, eval);
         }
 
         private void Update()
@@ -74,27 +80,31 @@ namespace QuizCanners.IsItGame
             if (!IsVisible || !rend || props == null)
                 return;
 
-            rend.GetPropertyBlock(props);
+            //rend.GetPropertyBlock(props);
 
-            var deltaTime = BloodSettings == null ? Time.deltaTime : Time.deltaTime * BloodSettings.AnimationSpeed;
-            if (BloodSettings && BloodSettings.FreezeDecalDisappearance && (timeLapsed / GraphTimeMultiplier) <= 0.3f)
+            var needFreeze = BloodSettings && BloodSettings.FreezeDecalDisappearance && (timeLapsed / GraphTimeMultiplier) <= 0.3f;
+
+            if (!needFreeze)
             {
-
+                float animationSpeed = 1 / (0.01f + Pool.VacancyFraction<BFX_BloodController>());
+                var deltaTime = BloodSettings ? Time.deltaTime * BloodSettings.AnimationSpeed : Time.deltaTime;
+                timeLapsed += deltaTime * animationSpeed;
             }
-            else timeLapsed += deltaTime;
 
             //  var eval = FloatCurve.Evaluate(timeLapsed / GraphTimeMultiplier) * GraphIntensityMultiplier;
             // props.SetFloat(cutoutPropertyID, eval);
             UpdateValues();
 
-            if (BloodSettings != null) props.SetFloat("_LightIntencity", Mathf.Clamp(BloodSettings.LightIntensityMultiplier, 0.01f, 1f));
+         //   if (BloodSettings != null) props.SetFloat("_LightIntencity", Mathf.Clamp(BloodSettings.LightIntensityMultiplier, 0.01f, 1f));
 
             if (timeLapsed >= GraphTimeMultiplier)
             {
                 IsVisible = false;
                 OnAnimationFinished?.Invoke();
             }
-            props.SetVector(forwardDirPropertyID, transform.up);
+
+            FORWARD.SetOn(props, transform.up);
+            //props.SetVector(forwardDirPropertyID, transform.up);
             rend.SetPropertyBlock(props);
         }
 

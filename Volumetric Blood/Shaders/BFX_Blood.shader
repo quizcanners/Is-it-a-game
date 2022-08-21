@@ -98,8 +98,8 @@
             float4 _SunPos;
 
             UNITY_INSTANCING_BUFFER_START(Props)
-                UNITY_DEFINE_INSTANCED_PROP(float, _UseCustomTime)
-                UNITY_DEFINE_INSTANCED_PROP(float, _TimeInFrames)
+                //UNITY_DEFINE_INSTANCED_PROP(float, _UseCustomTime)
+                UNITY_DEFINE_INSTANCED_PROP(float4, _TimeInFrames)
                 //UNITY_DEFINE_INSTANCED_PROP(float, _LightIntencity)
             UNITY_INSTANCING_BUFFER_END(Props)
 
@@ -113,18 +113,37 @@
                 UNITY_TRANSFER_INSTANCE_ID(v, o);
                 UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
 
-                float timeInFrames;
-                float currentSpeed = _speed / _numOfFrames;
-                timeInFrames = UNITY_ACCESS_INSTANCED_PROP(Props, _UseCustomTime) > 0.5 ? UNITY_ACCESS_INSTANCED_PROP(Props, _TimeInFrames) : 1;
+                float4 timeInFrames = UNITY_ACCESS_INSTANCED_PROP(Props, _TimeInFrames);// : 1;
 
-                float4 texturePos = tex2Dlod(_posTex, float4(v.uv.x, (timeInFrames + v.uv.y), 0, 0));
-                float3 textureN = tex2Dlod(_nTex, float4(v.uv.x, (timeInFrames + v.uv.y), 0, 0));
+                float ceiled = ceil(timeInFrames.y);
 
+                float frameUv = (ceiled + 1) / timeInFrames.w;
+                float4 dataUv = float4(v.uv.x, (frameUv + v.uv.y), 0, 0);
+                float4 texturePos = tex2Dlod(_posTex, dataUv);
+                float3 textureN = tex2Dlod(_nTex,dataUv);
+
+
+             
+
+                //NextFrame
+                //frameUv = (ceiled + 2) / timeInFrames.w;
+                //dataUv.y = frameUv + v.uv.y;
+                //float4 texturePos2 = tex2Dlod(_posTex, dataUv);
+                //float3 textureN2 = tex2Dlod(_nTex,dataUv);
+
+
+                //float toNext = 0.9; //  abs(ceiled - timeInFrames.y);
+
+               // texturePos =  lerp(texturePos, texturePos2, toNext);
+                //textureN =  lerp(textureN, textureN2, toNext);
 
                 #if !UNITY_COLORSPACE_GAMMA
                     texturePos.xyz = LinearToGammaSpace(texturePos.xyz);
                     textureN = LinearToGammaSpace(textureN);
                 #endif
+
+
+
 
                 float expand = _boundingMax - _boundingMin;
                 texturePos.xyz *= expand;
@@ -253,7 +272,7 @@
             float4 _HeightOffset;
 
             UNITY_INSTANCING_BUFFER_START(Props)
-                UNITY_DEFINE_INSTANCED_PROP(float, _TimeInFrames)
+                UNITY_DEFINE_INSTANCED_PROP(float4, _TimeInFrames)
             UNITY_INSTANCING_BUFFER_END(Props)
 
             struct appdata_bl
@@ -280,11 +299,13 @@
                 UNITY_TRANSFER_INSTANCE_ID(v, o);
                 UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
 
-                float timeInFrames;
-                float currentSpeed = 1.0f / (_numOfFrames / _speed);
-                timeInFrames = UNITY_ACCESS_INSTANCED_PROP(Props, _TimeInFrames);
+                float4 timeInFrames = UNITY_ACCESS_INSTANCED_PROP(Props, _TimeInFrames);
 
-                float4 texturePos = tex2Dlod(_posTex, float4(v.uv.x, (timeInFrames + v.uv.y), 0, 0));
+                float frameUv = timeInFrames.x / timeInFrames.w;
+                float4 dataUv = float4(v.uv.x, (frameUv + v.uv.y), 0, 0);
+
+                float4 texturePos = tex2Dlod(_posTex, dataUv);
+
 
 #if !UNITY_COLORSPACE_GAMMA
                 texturePos.xyz = LinearToGammaSpace(texturePos.xyz);

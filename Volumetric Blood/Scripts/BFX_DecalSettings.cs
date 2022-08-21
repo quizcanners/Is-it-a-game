@@ -8,8 +8,12 @@ namespace QuizCanners.IsItGame
 {
     public class BFX_DecalSettings : MonoBehaviour
     {
+
+
         public BFX_BloodController BloodSettings;
         public Transform parent;
+        [SerializeField] private Renderer _renderer;
+        
         public float TimeHeightMax = 3.1f;
         public float TimeHeightMin = -0.1f;
         [Space]
@@ -53,9 +57,15 @@ namespace QuizCanners.IsItGame
             if (shaderProperies.enabled && initializedPosition.x < float.PositiveInfinity) transform.position = initializedPosition;
         }
 
+        private void OnEnable()
+        {
+            if (!_renderer)
+                _renderer = GetComponent<Renderer>();
+        }
+
         void InitializePosition()
         {
-            GetComponent<Renderer>().enabled = false;
+            _renderer.enabled = false;
 
             var currentHeight = parent.position.y;
             var ground = BloodSettings.GroundHeight;
@@ -66,11 +76,11 @@ namespace QuizCanners.IsItGame
 
             if (currentHeight - ground >= scaledTimeHeightMax || currentHeight - ground <= scaledTimeHeightMin)
             {
-                GetComponent<MeshRenderer>().enabled = false;
+                _renderer.enabled = false;
             }
             else
             {
-                GetComponent<MeshRenderer>().enabled = true;
+                _renderer.enabled = true;
             }
 
             float diff = (tParent.position.y - ground) / scaledTimeHeightMax;
@@ -105,14 +115,14 @@ namespace QuizCanners.IsItGame
                 t.localScale = decalScale;
             }
 
-            if (BloodSettings.ClampDecalSideSurface) Shader.EnableKeyword("CLAMP_SIDE_SURFACE");
+           // if (BloodSettings.ClampDecalSideSurface) Shader.EnableKeyword("CLAMP_SIDE_SURFACE");
 
             isPositionInitialized = true;
         }
 
         private void OnDisable()
         {
-            if (BloodSettings.ClampDecalSideSurface) Shader.DisableKeyword("CLAMP_SIDE_SURFACE");
+           // if (BloodSettings.ClampDecalSideSurface) Shader.DisableKeyword("CLAMP_SIDE_SURFACE");
             isPositionInitialized = false;
             initializedPosition = Vector3.positiveInfinity;
         }

@@ -1,4 +1,5 @@
 ﻿using QuizCanners.Inspect;
+using QuizCanners.Utils;
 using UnityEngine;
 
 namespace QuizCanners.IsItGame 
@@ -13,6 +14,7 @@ namespace QuizCanners.IsItGame
 
         private bool _animating = true;
 
+        ShaderProperty.VectorValue TIME_IN_FRAME = new ShaderProperty.VectorValue("_TimeInFrames");
 
         public float Progress 
         {
@@ -36,8 +38,8 @@ namespace QuizCanners.IsItGame
             rend.enabled = true;
 
             rend.GetPropertyBlock(propertyBlock);
-            propertyBlock.SetFloat("_UseCustomTime", 1.0f);
-            propertyBlock.SetFloat("_TimeInFrames", 0.0f);
+            // propertyBlock.SetFloat("_UseCustomTime", 1.0f);
+            TIME_IN_FRAME.SetOn(propertyBlock, Vector4.zero); //propertyBlock.SetFloat("_TimeInFrames", 0.0f);
             rend.SetPropertyBlock(propertyBlock);
 
             currentTime = 0;
@@ -61,13 +63,23 @@ namespace QuizCanners.IsItGame
 
             var currentFrameTime = AnimationSpeed.Evaluate(currentTime / TimeLimit);
             currentFrameTime = currentFrameTime * FramesCount + OffsetFrames + 1.1f;
-            float timeInFrames = 
-                Mathf.Ceil(-currentFrameTime) / (FramesCount + 1) 
-                + (1.0f / (FramesCount + 1));
 
-            rend.GetPropertyBlock(propertyBlock);
-            //propertyBlock.SetFloat("_LightIntencity", Mathf.Clamp(BloodSettings.LightIntensityMultiplier, 0.01f, 1f));
-            propertyBlock.SetFloat("_TimeInFrames", timeInFrames);
+            currentFrameTime = -currentFrameTime;
+
+            var ceiled = Mathf.Ceil(currentFrameTime);
+
+            float TotalLength = FramesCount + 1;
+
+            float timeInFrames = (ceiled + 1f);// / TotalLength;
+
+           
+
+            TIME_IN_FRAME.SetOn(propertyBlock, new Vector4(
+                x: timeInFrames,
+                y: currentFrameTime,
+                z: 0, 
+                w: TotalLength));
+
             rend.SetPropertyBlock(propertyBlock);
         }
 

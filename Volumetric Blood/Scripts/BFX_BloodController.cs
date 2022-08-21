@@ -15,7 +15,7 @@ namespace QuizCanners.IsItGame
         public float LightIntensityMultiplier = 1;
         public bool FreezeDecalDisappearance = false;
         public _DecalRenderinMode DecalRenderinMode = _DecalRenderinMode.Floor_XZ;
-        public bool ClampDecalSideSurface = false;
+       // public bool ClampDecalSideSurface = false;
 
         public enum _DecalRenderinMode
         {
