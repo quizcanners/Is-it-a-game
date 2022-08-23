@@ -63,7 +63,7 @@ namespace QuizCanners.IsItGame
 
             if ((_painted && _afterPaintTimer.IsFinished) || _maxLifetime.IsFinished) 
             {
-                Pool_BloodParticlesController.ReturnToPool(this);
+                Pool.Return(this);
             }
         }
 

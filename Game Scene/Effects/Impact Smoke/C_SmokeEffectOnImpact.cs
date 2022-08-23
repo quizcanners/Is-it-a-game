@@ -130,14 +130,14 @@ namespace QuizCanners.IsItGame
                     unscaledTime: false);
 
                 Color = LerpUtils.LerpBySpeed(Color, Color.white, 1, unscaledTime: false);
-                float fadeSpeed = Size * Size * Visibility * 0.1f * (1 + Pool_SmokeEffects.InstancesCount);
+                float fadeSpeed = Size * Size * Visibility * 0.1f * (1 + Singleton.TryGetValue<Pool_SmokeEffects, float>(s=> s.InstancesCount, 10));
                 smokeDensity = Mathf.Max(0, smokeDensity - fadeSpeed * Time.deltaTime);
 
                 _primitive.transform.localScale = Size * Visibility * Visibility * new Vector3(2,0.5f,0);
 
                 if (smokeDensity < 0.01f && Visibility < 0.01f) 
                 {
-                    Pool_SmokeEffects.ReturnToPool(this);
+                    Pool.Return(this);
                     _animating = false;
                 }
             }

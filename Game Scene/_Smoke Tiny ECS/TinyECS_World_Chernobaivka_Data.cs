@@ -19,6 +19,7 @@ namespace QuizCanners.IsItGame.Develop
         public struct UpwardImpulse : IComponentData, IPEGI_ListInspect
         {
             public Vector3 Position;
+            public Vector3 Direction;
             public float EnergyLeft;
 
             public void InspectInList(ref int edited, int index)
@@ -28,24 +29,27 @@ namespace QuizCanners.IsItGame.Develop
             }
         }
 
-        public struct SmokeData : IComponentData, IPEGI_ListInspect
+        public struct HeatedSmokeData : IComponentData, IPEGI_ListInspect
         {
             public float Temperature;
             public float Dissolve;
-            public float Buoyancy;
-
+            
             public void InspectInList(ref int edited, int index)
             {
                 "Temperatire".PegiLabel(90).Edit(ref Temperature);
                 "Dissolve".PegiLabel(50).Edit_01(ref Dissolve);
-                "Thickness".PegiLabel(50).Edit(ref Buoyancy);
             }
 
         }
 
         public struct AffectedByWind : IComponentData 
         {
+            public float Buoyancy;
 
+            public void InspectInList(ref int edited, int index)
+            {
+                "Thickness".PegiLabel(50).Edit(ref Buoyancy);
+            }
         }
 
         public struct HeatSource : IComponentData , IPEGI_ListInspect

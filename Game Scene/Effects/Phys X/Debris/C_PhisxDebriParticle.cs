@@ -26,7 +26,8 @@ namespace QuizCanners.IsItGame.Develop
         {
             float force = 0;
 
-            foreach (var c in collision.contacts) {
+            foreach (var c in collision.contacts) 
+            {
 
                 float angle = Mathf.Max(0, Vector3.Dot(c.normal, collision.relativeVelocity));
 
@@ -48,12 +49,17 @@ namespace QuizCanners.IsItGame.Develop
 
             const float THOLD = 3;
 
-            if (force > THOLD)
+            if (Size > 0.3f)
             {
-                Singleton.Try<Pool_SmokeEffects>(s => s.TrySpawn(transform.position, inst => inst.Size = Size));
+                Singleton.Try<Pool_AnimatedSmokeOneShoot>(s => s.TrySpawn(transform.position, inst => { inst.transform.localScale = inst.transform.localScale * 10 * Size; }));
 
-                if (Size > 0.3f)
+                if (force > THOLD)
                 {
+                    //Singleton.Try<Pool_SmokeEffects>(s => s.TrySpawn(transform.position, inst => inst.Size = Size));
+
+                    //   Singleton.Try<Pool_AnimatedSmokeOneShoot>(s => s.TrySpawn(transform.position, inst => { inst.transform.localScale = inst.transform.localScale * 5 * Size; }));
+
+
                     var count = 1 + Size / 0.3f;
 
                     for (int i = 0; i < count; i++)
@@ -65,8 +71,14 @@ namespace QuizCanners.IsItGame.Develop
                                 el.Push(-_rigidbody.velocity.normalized, 1, 1, 50);
                             });
                         });
-                }
 
+
+                   
+                }
+            }
+
+            if (force > THOLD)
+            {
                 RemoveToPool();
             }
            /* else if (force > THOLD * 0.25f)
@@ -138,6 +150,9 @@ namespace QuizCanners.IsItGame.Develop
                 {
                     if (Camera.main.IsInCameraViewArea(transform.position))
                     {
+
+                      
+                        
                         Singleton.Try<Pool_ECS_HeatSmoke>(s =>
                         {
                             for (int i = 0; i < smokePoints.Length; i++)
@@ -179,7 +194,7 @@ namespace QuizCanners.IsItGame.Develop
             _isPlaying = false;
             _rigidbody.velocity = Vector3.zero;
             _rigidbody.angularVelocity = Vector3.zero;
-            Pool_PhisXDebrisParticles.ReturnToPool(this);
+            Pool.Return(this);
 
         }
 

@@ -258,7 +258,10 @@ namespace QuizCanners.IsItGame.Develop
 
                 //Singleton.Try<Pool_ECS_HeatSmoke>(s => s.TrySpawn(worldPosition: hit.point));
 
-                Singleton.Try<Pool_SmokeEffects>(s => s.TrySpawn(hit.point, out _));
+                Singleton.Try<Pool_AnimatedExplosionOneShoot>(s => { s.TrySpawn(hit.point); });
+             //Pool.TrySpawn<C_SpriteAnimationOneShot>(hit.point, out var spriteAnimation);
+
+             Singleton.Try<Pool_SmokeEffects>(s => s.TrySpawn(hit.point, out _));
                
                 Singleton.Try<Pool_PhisXDebrisParticles>(s =>
                 {

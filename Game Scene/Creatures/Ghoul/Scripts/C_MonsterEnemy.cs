@@ -215,7 +215,7 @@ namespace QuizCanners.IsItGame.Develop
         {
             if (!IsTestDummy && (!Camera.main.IsInCameraViewArea(GetActivePosition()) || !ImpactController))
             {
-                Pool_MonstersController.ReturnToPool(this);
+                Pool.Return(this);
                 return;
             }
 
@@ -266,7 +266,7 @@ namespace QuizCanners.IsItGame.Develop
         {
             if (!IsTestDummy && (!Camera.main.IsInCameraViewArea(GetActivePosition()) || !ImpactController))
             {
-                Pool_MonstersController.ReturnToPool(this);
+                Pool.Return(this);
                 return;
             }
 
@@ -426,12 +426,12 @@ namespace QuizCanners.IsItGame.Develop
                             }
 
                             if (!ImpactController || !ImpactController.IsPlaying)
-                                Pool_MonstersController.ReturnToPool(this);
+                                Pool.Return(this);
                             break;
 
                         case LimbsControllerState.Disintegrating:
                             if (!ImpactController || !ImpactController.IsPlaying)
-                                Pool_MonstersController.ReturnToPool(this);
+                                Pool.Return(this);
                             break;
 
                         case LimbsControllerState.Ragdoll:
@@ -448,7 +448,7 @@ namespace QuizCanners.IsItGame.Develop
                             break;
                         default:
                             if (!ImpactController || !ImpactController.IsPlaying)
-                                Pool_MonstersController.ReturnToPool(this);
+                                Pool.Return(this);
                             break;
                     }
 

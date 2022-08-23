@@ -77,7 +77,7 @@ namespace QuizCanners.IsItGame
                     Progress = _progress;
                 } else
                 {
-                    Pool_SdfGoreParticles.ReturnToPool(this);
+                    Pool.Return(this);
                     _playing = false;
                 }
             }

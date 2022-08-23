@@ -61,7 +61,7 @@ namespace QuizCanners.IsItGame
                     if (_trace)
                         _trace.transform.parent = transform.parent;
 
-                    Pool_TrailEffectController.ReturnToPool(this);
+                    Pool.Return(this);
                 }
 
                 transform.position = LerpUtils.LerpBySpeed(transform.position, _target, speed, unscaledTime: true);

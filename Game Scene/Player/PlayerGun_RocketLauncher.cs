@@ -25,7 +25,7 @@ namespace QuizCanners.IsItGame.Develop
         public void Explosion(RaycastHit hit, Vector3 projectileVelocity, State state)
         {
             Vector3 origin = hit.point;
-
+            _latestNormal = hit.normal;
             int killedMonsters = 0;
             bool splatterMonsters = false;
             var enm = Singleton.Get<Pool_MonstersController>();
@@ -205,7 +205,8 @@ namespace QuizCanners.IsItGame.Develop
                 s.World.CreateEntity().AddComponent((ref ParticlePhisics.UpwardImpulse e) => 
                 { 
                     e.EnergyLeft = 10; 
-                    e.Position = hit.point; 
+                    e.Position = hit.point;
+                    e.Direction = hit.normal;
                 });
             });
 
@@ -218,6 +219,8 @@ namespace QuizCanners.IsItGame.Develop
                 }
             });
 
+            if (Pool.TrySpawn<C_SpriteAnimation>(hit.point, out var spriteAnimation))
+                spriteAnimation.transform.localScale = spriteAnimation.transform.localScale * 5;
 
             PainDamage(hit, brushConfig);
         }
@@ -252,13 +255,14 @@ namespace QuizCanners.IsItGame.Develop
 
         private State latestState;
         private Vector3 _origin;
+        private Vector3 _latestNormal;
         private LogicWrappers.CountDown _explosionsLeft = new();
         private Gate.UnityTimeScaled _explosionDynamics = new();
         private int iteration;
 
         public void UpdateExplosions() 
         {
-            if (!_explosionsLeft.IsFinished && _explosionDynamics.TryUpdateIfTimePassed(0.02f)) 
+            if (!_explosionsLeft.IsFinished && _explosionDynamics.TryUpdateIfTimePassed(0.01f)) 
             {
                 iteration++;
                 _explosionsLeft.RemoveOne();
@@ -280,16 +284,37 @@ namespace QuizCanners.IsItGame.Develop
                     }
                 }
 
+                Singleton.Try<Pool_AnimatedExplosionOneShoot>(s =>
+                {
+                   // for (int i = 0; i < 5; i++)
+                   // {
+                        var rndPosition = UnityEngine.Random.insideUnitSphere;
+
+                    var dott = Vector3.Dot(rndPosition, _latestNormal);
+
+                        if (dott < 0)
+                            rndPosition = -rndPosition;
+
+                    dott = Mathf.Abs(dott);
+
+                    if (!s.TrySpawn(_origin + rndPosition * dott * (1f + iteration) * 0.5f, inst => inst.UpscaleBy((1+ dott) * 3)))
+                        _explosionsLeft.Clear();// break;
+                  //  }
+                  // s.TrySpawn(transform.position, inst => { inst.transform.localScale = inst.transform.localScale * 5 * Size; })
+
+                    });
+
 
                 Singleton.Try<Pool_ECS_HeatSmoke>(p =>
                 {
-                    for (int i = 0; i < 5; i++)
-                    {
-                        if (!p.TrySpawn(_origin + UnityEngine.Random.insideUnitCircle.ToVector3XZ() * (1f + iteration) * 0.4f))
-                            break;
-                    }
+                    // for (int i = 0; i < 5; i++)
+                    //{
+                    //if (!
+                    p.TrySpawn(_origin + UnityEngine.Random.insideUnitCircle.ToVector3XZ() * (1f + iteration) * 0.4f);
+                           //break;
+                    //}
                 });
-
+                
                 /*
                 Singleton.Try<Pool_PhisXEmissiveParticles>(s =>
                 {

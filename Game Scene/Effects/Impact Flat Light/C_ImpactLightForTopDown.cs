@@ -39,7 +39,7 @@ namespace QuizCanners.IsItGame
                 _scalingUp = false;
 
             if (SizePortion < 0.02f)
-                Pool_ImpactLightsController.ReturnToPool(this);
+                Pool.Return(this);
         }
 
         public void Inspect()

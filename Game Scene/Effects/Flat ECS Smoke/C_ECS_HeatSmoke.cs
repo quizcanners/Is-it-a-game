@@ -32,7 +32,7 @@ namespace QuizCanners.IsItGame.Develop
 
         public void AddHeat(float value)
         {
-            var dta = _entity.GetComponent<ParticlePhisics.SmokeData>();
+            var dta = _entity.GetComponent<ParticlePhisics.HeatedSmokeData>();
             dta.Temperature += value;
             _entity.SetComponent(dta);
         }
@@ -65,11 +65,11 @@ namespace QuizCanners.IsItGame.Develop
             if (_entity.IsAlive)
             {
 
-                var smoke = _entity.GetComponent<ParticlePhisics.SmokeData>();
+                var smoke = _entity.GetComponent<ParticlePhisics.HeatedSmokeData>();
 
                 if (smoke.Dissolve>=1)
                 {
-                    Pool_ECS_HeatSmoke.ReturnToPool(this);
+                    Pool.Return(this);
                     return;
                 }
 

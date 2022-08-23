@@ -1,6 +1,7 @@
 using QuizCanners.Inspect;
 using QuizCanners.TinyECS;
 using QuizCanners.Utils;
+using System.Security.Cryptography;
 using UnityEngine;
 
 namespace QuizCanners.IsItGame.Develop
@@ -17,13 +18,12 @@ namespace QuizCanners.IsItGame.Develop
 
                 IEntity cloud = w.CreateEntity("Smoke")
 
-                .AddComponent((ref ParticlePhisics.SmokeData smoke) => 
-                {
-                    //smoke.Temperature = 10;
-                    smoke.Buoyancy = 0.5f + Random.value;// * 1.4f;
-                })
+                .AddComponent<ParticlePhisics.HeatedSmokeData>()
 
-                .AddComponent<ParticlePhisics.AffectedByWind>()
+                .AddComponent((ref ParticlePhisics.AffectedByWind dta) => 
+                {
+                    dta.Buoyancy = 0.5f + Random.value;// * 1.4f;
+                })
 
                 .AddComponent((ref ParticlePhisics.PositionData pos) =>
                 {

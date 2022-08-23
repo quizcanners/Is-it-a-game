@@ -22,47 +22,57 @@ namespace QuizCanners.IsItGame.Develop
             float heatDissolve = Mathf.Clamp01(1 - deltaTime * 10);
 
             Vector3 displace = deltaTime * (0.5f * Vector3.up);
-            Vector3 wind = deltaTime * config.Wind; 
+          
 
-            Measure("Pos Smoke", () =>
-               world.RunSystem((ref PositionData m, ref SmokeData s)
-                   => 
+            Measure("Smoke ", () =>
+               world.WithAll<HeatedSmokeData>().Run((ref HeatedSmokeData smoke) => 
                {
                    count++;
-                   m.Position += displace + wind * s.Buoyancy * QcMath.SmoothStep(0.5f, 5, m.Position.y + s.Dissolve);
-                   s.Dissolve += deltaTime * (dissolveSpeed);
-                   s.Temperature *= heatDissolve;
+                   smoke.Dissolve += deltaTime * (dissolveSpeed);
+                   smoke.Temperature *= heatDissolve;
                }));
 
             dissolveSpeed = count / 500f;
 
+            Vector3 wind = deltaTime * config.Wind;
+            Measure("Wind Blow", () =>
+              world.RunSystem((ref PositionData m, AffectedByWind s)
+                  =>
+              {
+                  count++;
+                  m.Position += displace + wind * s.Buoyancy * QcMath.SmoothStep(0.5f, 5, m.Position.y);
+              }));
+
 
             Measure("Upward Push", ()=> 
             {
-                world.WithAll<UpwardImpulse>().Run( (ref UpwardImpulse impulse, IEntity e) =>
+                world.WithAll<UpwardImpulse>().Run((ref UpwardImpulse impulse, IEntity e) =>
                 {
                     var outPut = deltaTime * impulse.EnergyLeft;
 
                     var pos = impulse.Position;
+                    var dir = impulse.Direction;
 
                     world.RunSystem<PositionData, AffectedByWind>((ref PositionData position) =>
                     {
                         var vector = position.Position - pos;
                         float distance = vector.magnitude;
 
-                        float hor = vector.XZ().magnitude;
-
-                        float isAbove = vector.y / hor;
-
-                        float swirl = vector.y - hor;
-
-                        isAbove = Mathf.Clamp01(isAbove);
+                      //  float hor = vector.XZ().magnitude;
 
                         vector.Normalize();
 
-                        Vector3 pushVector = Vector3.Lerp((-vector).Y(0) * 2f, vector * 0.25f, isAbove); // Below the mushroom suck in
+                        float isAbove = QcMath.SmoothStep(0.5f, 1f, Vector3.Dot(dir, vector));// vector.y / hor;
 
-                        vector = (pushVector  + Vector3.up * isAbove * isAbove * 8);
+                       // float swirl = vector.y - hor;
+
+                      //  isAbove = Mathf.Clamp01(isAbove);
+
+                      
+
+                       // Vector3 pushVector = Vector3.Lerp((-vector).Y(0) * 2f, vector * 0.25f, isAbove); // Below the mushroom suck in
+
+                        vector = (vector + dir * isAbove * isAbove * 8);
                         
 
 

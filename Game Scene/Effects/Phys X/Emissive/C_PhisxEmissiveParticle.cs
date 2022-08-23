@@ -1,5 +1,6 @@
 using QuizCanners.Inspect;
 using QuizCanners.Lerp;
+using QuizCanners.Utils;
 using UnityEngine;
 
 namespace QuizCanners.IsItGame
@@ -78,7 +79,7 @@ namespace QuizCanners.IsItGame
                 if (lifeTime >= totalLifetime)
                 {
                     _isPlaying = false;
-                    Pool_PhisXEmissiveParticles.ReturnToPool(this);
+                    Pool.Return(this);
                 } else
                 {
                     float timeTillFade = totalLifetime - lifeTime;
