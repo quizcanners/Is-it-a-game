@@ -22,22 +22,11 @@ MonoBehaviour:
       Loop_01.wav
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 8300000, guid: fb783898dfbacac4aae61a8407e1849a, type: 3}
-    m_TargetAsset: {fileID: 8300000, guid: fb783898dfbacac4aae61a8407e1849a, type: 3}
-  - m_GUID: 32e41d7c132d9ab40b827472c2637228
-    m_Address: Assets/Prototype-Core/Services/Audio/Data/Music/The Journey Begins_Full
-      Loop (With Drums).wav
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 8300000, guid: 32e41d7c132d9ab40b827472c2637228, type: 3}
-    m_TargetAsset: {fileID: 8300000, guid: 32e41d7c132d9ab40b827472c2637228, type: 3}
   - m_GUID: 2c647aa2f80c08e40b1e3596a3b362f0
     m_Address: Assets/Prototype-Core/Services/Audio/Data/Music/To Mars And Back_Strings
       Solo Loop.wav
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 8300000, guid: 2c647aa2f80c08e40b1e3596a3b362f0, type: 3}
-    m_TargetAsset: {fileID: 8300000, guid: 2c647aa2f80c08e40b1e3596a3b362f0, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 15b6bd71e2d240c4eb290b0cb368ecec, type: 2}
   m_SchemaSet:

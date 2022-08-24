@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Combat
   m_EditorClassIdentifier: 
   Reference:
-    m_AssetGUID: 32e41d7c132d9ab40b827472c2637228
+    m_AssetGUID: 
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
