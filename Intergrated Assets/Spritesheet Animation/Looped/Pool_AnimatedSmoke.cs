@@ -22,7 +22,7 @@ namespace QuizCanners.IsItGame.Develop
 
                 .AddComponent((ref ParticlePhisics.AffectedByWind dta) => 
                 {
-                    dta.Buoyancy = (1f + Random.value)*0.2f;// * 1.4f;
+                    dta.Buoyancy = (1f + Random.value);// * 1.4f;
                 })
 
                 .AddComponent((ref ParticlePhisics.PositionData pos) =>

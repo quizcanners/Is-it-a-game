@@ -1,15 +1,18 @@
 using Dungeons_and_Dragons;
 using QuizCanners.Inspect;
 using QuizCanners.IsItGame.Pulse;
+using QuizCanners.Migration;
 using QuizCanners.Utils;
 using UnityEngine;
 
 namespace QuizCanners.IsItGame.Develop
 {
-    public class Pool_MonstersController : PoolSingletonBase<C_MonsterEnemy>
+    public class Pool_MonstersController : PoolSingletonBase<C_MonsterEnemy>, ITaggedCfg
     {
         private bool _autospawn;
         protected override int MAX_INSTANCES => 300;
+        public string TagForConfig => "Monster Spawner";
+
         protected override void OnInstanciated(C_MonsterEnemy inst)
         {
             var unit = Singleton.TryGetValue<Singleton_PulsePath, PulsePath.Unit>(s => s.CreateUnit());
@@ -50,6 +53,19 @@ namespace QuizCanners.IsItGame.Develop
             base.Inspect();
         }
 
+        #endregion
+
+
+        #region Encode & Decode
+        public CfgEncoder Encode() => new CfgEncoder().Add_Bool("sp", _autospawn);
+
+        public void DecodeTag(string key, CfgData data)
+        {
+            switch (key) 
+            {
+                case "sp": _autospawn = data.ToBool(); break;
+            }
+        }
         #endregion
     }
 

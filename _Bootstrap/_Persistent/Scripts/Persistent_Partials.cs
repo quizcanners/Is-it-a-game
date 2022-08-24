@@ -10,6 +10,13 @@ namespace QuizCanners.IsItGame
         public Persistent_ApplicationData Application = new Persistent_ApplicationData(); // All users
         public Persistent_PlayerData User = new Persistent_PlayerData();  // Specific user
 
+        public void DeleteUser(string name) 
+        {
+            Application.AvailableUsers.Remove(name);
+            User.Load(name);
+            User.Delete();
+        }
+
         #region Inspector
         private int _inspectedStuff = -1;
         public void Inspect()

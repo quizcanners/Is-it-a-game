@@ -16,16 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: b193987d30a9ed94991410b8cbeed859
-  m_SerializeEntries:
-  - m_GUID: 8a9b078670f841c409d4b148858ad978
-    m_Address: Idle Game Screen
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: ec9883ae494a932409c6e1ca0321c3e0
-    m_Address: Assets/_Is-it-a-game/_PROJECT/_Ui VIews/Screens/Inventory/Invetory
-      Screen.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 15b6bd71e2d240c4eb290b0cb368ecec, type: 2}
   m_SchemaSet:

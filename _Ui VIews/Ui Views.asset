@@ -13,99 +13,91 @@ MonoBehaviour:
   m_Name: Ui Views
   m_EditorClassIdentifier: 
   references:
-  - Name: None
-    DirectReference: {fileID: 0}
+  - DirectReference: {fileID: 0}
     Reference:
       m_AssetGUID: 
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-  - Name: LoadingView
-    DirectReference: {fileID: 0}
+  - DirectReference: {fileID: 1207371804905610024, guid: 93eeccc6546584e458b9c470b4e1fa56, type: 3}
     Reference:
       m_AssetGUID: 
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-  - Name: MainMenu
-    DirectReference: {fileID: 6507139420764352313, guid: bdb478bbedc7ebe4b942e4fdf0175678, type: 3}
+  - DirectReference: {fileID: 6507139420764352313, guid: bdb478bbedc7ebe4b942e4fdf0175678, type: 3}
     Reference:
       m_AssetGUID: 
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-  - Name: ErrorSorry
-    DirectReference: {fileID: 5798426520465659103, guid: b6ddb1ad35e9ed3489c3dcb6eeb3a45b, type: 3}
+  - DirectReference: {fileID: 5798426520465659103, guid: b6ddb1ad35e9ed3489c3dcb6eeb3a45b, type: 3}
     Reference:
       m_AssetGUID: 
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-  - Name: RayTracingView
-    DirectReference: {fileID: 0}
-    Reference:
-      m_AssetGUID: 8760d0c411d00834e84ca97db260350e
-      m_SubObjectName: 
-      m_SubObjectType: 
-      m_EditorAssetChanged: 0
-  - Name: PlayerNameEdit
-    DirectReference: {fileID: 0}
-    Reference:
-      m_AssetGUID: 489643111dff8614aa70cca232aa3960
-      m_SubObjectName: 
-      m_SubObjectType: 
-      m_EditorAssetChanged: 0
-  - Name: SelectUser
-    DirectReference: {fileID: 0}
-    Reference:
-      m_AssetGUID: ef3a0235f51bb2f4f984e96ecf45e891
-      m_SubObjectName: 
-      m_SubObjectType: 
-      m_EditorAssetChanged: 0
-  - Name: Settings
-    DirectReference: {fileID: 0}
-    Reference:
-      m_AssetGUID: 9f715ea771742994f9be0ad9c50f5586
-      m_SubObjectName: 
-      m_SubObjectType: 
-      m_EditorAssetChanged: 0
-  - Name: Gyroscope
-    DirectReference: {fileID: 5798426520465659103, guid: 91ea8e5714b206c46857f2d101ae387f, type: 3}
+  - DirectReference: {fileID: 5798426520465659103, guid: 1bd9d528018b4514a8fb3c0b7cf9bef8, type: 3}
     Reference:
       m_AssetGUID: 
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-  - Name: SpaceEffect
-    DirectReference: {fileID: 0}
-    Reference:
-      m_AssetGUID: 70493c2cefbd9324da56155523ddf10a
-      m_SubObjectName: 
-      m_SubObjectType: 
-      m_EditorAssetChanged: 0
-  - Name: BackToMainMenuButton
-    DirectReference: {fileID: 5798426520465659103, guid: 1bd9d528018b4514a8fb3c0b7cf9bef8, type: 3}
+  - DirectReference: {fileID: 5798426520465659103, guid: 489643111dff8614aa70cca232aa3960, type: 3}
     Reference:
       m_AssetGUID: 
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-  - Name: SceneLoading
-    DirectReference: {fileID: 1207371804905610024, guid: 93eeccc6546584e458b9c470b4e1fa56, type: 3}
+  - DirectReference: {fileID: 5798426520465659103, guid: ef3a0235f51bb2f4f984e96ecf45e891, type: 3}
     Reference:
       m_AssetGUID: 
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-  - Name: IdleGameView
-    DirectReference: {fileID: 0}
+  - DirectReference: {fileID: 5798426520465659103, guid: 9f715ea771742994f9be0ad9c50f5586, type: 3}
     Reference:
-      m_AssetGUID: 8a9b078670f841c409d4b148858ad978
+      m_AssetGUID: 
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-  - Name: PauseMenu
-    DirectReference: {fileID: 5798426520465659103, guid: ec9883ae494a932409c6e1ca0321c3e0, type: 3}
+  - DirectReference: {fileID: 5798426520465659103, guid: 91ea8e5714b206c46857f2d101ae387f, type: 3}
+    Reference:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - DirectReference: {fileID: 72802906974578929, guid: 8a2963464788fd543b7df5f922f9452b, type: 3}
+    Reference:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - DirectReference: {fileID: 5798426520465659103, guid: 1bd9d528018b4514a8fb3c0b7cf9bef8, type: 3}
+    Reference:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - DirectReference: {fileID: 1207371804905610024, guid: 93eeccc6546584e458b9c470b4e1fa56, type: 3}
+    Reference:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - DirectReference: {fileID: 5798426520465659103, guid: 8a9b078670f841c409d4b148858ad978, type: 3}
+    Reference:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - DirectReference: {fileID: 5798426520465659103, guid: ec9883ae494a932409c6e1ca0321c3e0, type: 3}
+    Reference:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - DirectReference: {fileID: 0}
     Reference:
       m_AssetGUID: 
       m_SubObjectName: 

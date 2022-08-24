@@ -7,6 +7,7 @@ using RayFire;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.UI.Image;
 
 namespace QuizCanners.IsItGame.Develop
 {
@@ -22,13 +23,11 @@ namespace QuizCanners.IsItGame.Develop
         [SerializeField] private float _pushForce = 200;
         [SerializeField] private float _explosionRadius = 8;
 
-        public void Explosion(RaycastHit hit, Vector3 projectileVelocity, State state)
+        private bool TryDestroyMonsters(Vector3 origin) 
         {
-            Vector3 origin = hit.point;
-            _latestNormal = hit.normal;
-            int killedMonsters = 0;
             bool splatterMonsters = false;
-            var enm = Singleton.Get<Pool_MonstersController>();
+
+           var enm = Singleton.Get<Pool_MonstersController>();
 
             if (enm)
             {
@@ -47,24 +46,24 @@ namespace QuizCanners.IsItGame.Develop
                     {
                         if (m.IsAlive)
                         {
-                            killedMonsters++;
+                            //  killedMonsters++;
 
                             if (dist < _explosionRadius * 0.3f)
                             {
                                 m.Disintegrate(); // pushDirection.normalized, pushForce01: GetPushForce());
 
-                                Singleton.Try<Pool_VolumetricBlood>(s => s.TrySpawnFromHit(hit, pushDirection, out BFX_BloodController controller, size: 4, impactDecal: false));
+                                Singleton.Try<Pool_VolumetricBlood>(s => s.TrySpawnRandom(origin, pushDirection, out BFX_BloodController controller, size: 4));
 
-                                Singleton.Try<Pool_VolumetricBlood>(s => s.TrySpawnFromHit(hit, -pushDirection, out BFX_BloodController controller, size: 3, impactDecal: false));
+                                Singleton.Try<Pool_VolumetricBlood>(s => s.TrySpawnRandom(origin, -pushDirection, out BFX_BloodController controller, size: 3));
 
                                 splatterMonsters = true;
                             }
                             else
                             {
-                               
+
                                 var randomLimb = m.GetRandomCollider();
 
-                                var fragmentOrigin = hit.point + hit.normal * 0.2f;
+                                var fragmentOrigin = origin + _latestNormal * 0.2f;
 
                                 var ray = QcUnity.RaySegment(fragmentOrigin, randomLimb.transform.position, out float distance);// new Ray(fragmentOrigin, direction: randomLimb.transform.position);
 
@@ -89,7 +88,7 @@ namespace QuizCanners.IsItGame.Develop
                                 }
 
                                 m.DropRigid();
-                              
+
                             }
                         }
                         else if (dist < _explosionRadius * 0.6f)
@@ -100,11 +99,21 @@ namespace QuizCanners.IsItGame.Develop
 
                         if (m.LimbsState == C_MonsterEnemy.LimbsControllerState.Ragdoll)
                         {
-                            m.Push(force: _pushForce * 40, origin: hit.point - Vector3.up*2, radius: _explosionRadius);
+                            m.Push(force: _pushForce * 40, origin: origin - Vector3.up * 2, radius: _explosionRadius);
                         }
                     }
                 }
             }
+
+            return splatterMonsters;
+        }
+
+        public void Explosion(RaycastHit hit, Vector3 projectileVelocity, State state)
+        {
+            Vector3 origin = hit.point;
+            _latestNormal = hit.normal;
+           // int killedMonsters = 0;
+            bool splatterMonsters = TryDestroyMonsters(origin);
 
             const float volume = 0.5f;
 
@@ -140,7 +149,10 @@ namespace QuizCanners.IsItGame.Develop
                 if (cmp)
                     cmp.SetDamaged(true);
 
-                state.Gun.Shoot(origin - projectileVelocity, projectileVelocity);
+                var nrm = projectileVelocity.normalized;
+
+                state.Gun.maxDistance = 10f;
+                state.Gun.Shoot(origin - nrm, nrm);
             }
 
             Singleton.Try<Pool_ImpactLightsController>(s =>
@@ -262,59 +274,71 @@ namespace QuizCanners.IsItGame.Develop
 
         public void UpdateExplosions() 
         {
-            if (!_explosionsLeft.IsFinished && _explosionDynamics.TryUpdateIfTimePassed(0.01f)) 
+            if (!_explosionsLeft.IsFinished && _explosionDynamics.TryUpdateIfTimePassed(0.02f)) 
             {
                 iteration++;
                 _explosionsLeft.RemoveOne();
 
+                var rndPosition = UnityEngine.Random.insideUnitSphere;
+
+                var dott = Vector3.Dot(rndPosition, _latestNormal);
+
+                if (dott < 0)
+                    rndPosition = -rndPosition;
+
+                dott = Mathf.Abs(dott);
+
+                var spawnOffset = rndPosition * dott * (1f + iteration) * 1.5f;
+                var spawnDirection = spawnOffset.normalized;
+
+                Singleton.Try<Singleton_ChornobaivkaController>(s => 
+                { 
+                    if (s.CastHardSurface(new Ray(_origin, spawnDirection), out var hit)) 
+                    {
+                        spawnOffset = spawnDirection * Mathf.Min(spawnOffset.magnitude, Vector3.Distance(hit.point, _origin));
+                    }
+                });
+
+                Singleton.Try<Pool_AnimatedSmoke>(s =>
+                {
+                    if (!s.TrySpawn(_origin + spawnOffset, inst => inst.UpscaleBy((1 + dott) * 3)))
+                        _explosionsLeft.Clear();
+                  
+                });
+
+                int segments = Mathf.RoundToInt(spawnOffset.magnitude);
+
+                for (int i = 0; i < segments - 1; i++)
+                {
+                    var segmentPos = _origin + spawnOffset * ((i + 1f) / segments);
+
+                  //  Pool.TrySpawn<C_SpriteAnimationOneShot>(segmentPos, el => el.UpscaleBy(3f));
+
+                    Pool.TrySpawn<C_ECS_HeatSmoke>(segmentPos, smoke =>
+                    {
+                        smoke.AddHeat(10);
+                    });
+                }
+
+                TryDestroyMonsters(_origin + spawnOffset);
+
                 if (latestState.Gun)
                 {
-                    var dir = UnityEngine.Random.insideUnitSphere;
-                    dir.y = Mathf.Abs(dir.y)*0.25f;
-
-                    if (Physics.Raycast(_origin, dir, out var hit, maxDistance: (iteration + 1) * 0.5f * _explosionRadius)) 
+                    if (Physics.Raycast(_origin, spawnDirection, out var hit, maxDistance: (iteration + 1) * 0.5f * _explosionRadius))
                     {
                         var cmp = hit.transform.gameObject.GetComponentInParent<C_RayFireRespawn>();
 
                         if (cmp)
                         {
-                            cmp.SetDamaged(true); 
-                            latestState.Gun.Shoot(_origin, dir);
+                            cmp.SetDamaged(true);
+                            latestState.Gun.maxDistance = spawnDirection.magnitude + 5f;
+                            latestState.Gun.Shoot(_origin, spawnDirection);
                         }
                     }
                 }
 
-                Singleton.Try<Pool_AnimatedExplosionOneShoot>(s =>
-                {
-                   // for (int i = 0; i < 5; i++)
-                   // {
-                        var rndPosition = UnityEngine.Random.insideUnitSphere;
-
-                    var dott = Vector3.Dot(rndPosition, _latestNormal);
-
-                        if (dott < 0)
-                            rndPosition = -rndPosition;
-
-                    dott = Mathf.Abs(dott);
-
-                    if (!s.TrySpawn(_origin + rndPosition * dott * (1f + iteration) * 0.5f, inst => inst.UpscaleBy((1+ dott) * 3)))
-                        _explosionsLeft.Clear();// break;
-                  //  }
-                  // s.TrySpawn(transform.position, inst => { inst.transform.localScale = inst.transform.localScale * 5 * Size; })
-
-                    });
 
 
-                Singleton.Try<Pool_ECS_HeatSmoke>(p =>
-                {
-                    // for (int i = 0; i < 5; i++)
-                    //{
-                    //if (!
-                    p.TrySpawn(_origin + UnityEngine.Random.insideUnitCircle.ToVector3XZ() * (1f + iteration) * 0.4f);
-                           //break;
-                    //}
-                });
-                
                 /*
                 Singleton.Try<Pool_PhisXEmissiveParticles>(s =>
                 {

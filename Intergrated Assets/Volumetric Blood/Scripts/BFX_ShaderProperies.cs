@@ -1,13 +1,11 @@
 using UnityEngine;
 using System;
 using QuizCanners.Utils;
-using static UnityEditor.AddressableAssets.Build.BuildPipelineTasks.GenerateLocationListsTask;
 
 namespace QuizCanners.IsItGame
 {
     public class BFX_ShaderProperies : MonoBehaviour
     {
-
         public BFX_BloodController BloodSettings;
         [SerializeField] private Renderer rend;
 

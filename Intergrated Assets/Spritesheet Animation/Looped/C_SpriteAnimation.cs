@@ -28,6 +28,8 @@ namespace QuizCanners.IsItGame.Develop
 
         public float Health;
 
+        public void UpscaleBy(float upscale) => transform.localScale *= upscale;
+
         private bool IsIntro 
         {
             get => _isIntro;
@@ -194,6 +196,11 @@ namespace QuizCanners.IsItGame.Develop
                     IsIntro = progress < 1;
                     Animation = progress % 1;
                     IsLooping = IsIntro ? QcMath.SmoothStep(0.4f, 1f, progress) : QcMath.SmoothStep(0.4f, 1f, 3-progress);
+
+                    if (IsIntro)
+                    {
+                        _emission.latestValue = QcMath.SmoothStep(1f, 0.75f, IsLooping);
+                    }
                 }
             }
 

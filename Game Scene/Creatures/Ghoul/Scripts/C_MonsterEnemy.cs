@@ -36,6 +36,8 @@ namespace QuizCanners.IsItGame.Develop
         private readonly LogicWrappers.TimeFixedSegmenter _turnTimer = new(segmentLength: DnDTime.SECONDS_PER_TURN);
         private readonly LogicWrappers.Timer _postDeathTimer = new();
 
+        private Gate.Vector3Value _deltaPosition = new Gate.Vector3Value();
+
         private bool IsTestDummy => _unit == null;
 
         public bool IsAlive
@@ -440,10 +442,21 @@ namespace QuizCanners.IsItGame.Develop
                             {
                                 var mgmt = Singleton.Get<Pool_MonstersController>();
 
-                                if (mgmt.VacancyPortion > 0.5f && Camera.main.IsInCameraViewArea(GetActivePosition()))
+                                if (mgmt.VacancyPortion < 0.5f) 
+                                {
+                                    Disintegrate();
+                                } else 
+                                if (_deltaPosition.TryChange(transform.position, changeTreshold: 1))
+                                {
                                     _postDeathTimer.Restart(3f);
+                                }
                                 else
-                                    Disintegrate();//Giblets();
+                                {
+                                    if (Camera.main.IsInCameraViewArea(GetActivePosition()))
+                                        _postDeathTimer.Restart(3f);
+                                    else
+                                        Disintegrate();//Giblets();
+                                }
                             }
                             break;
                         default:

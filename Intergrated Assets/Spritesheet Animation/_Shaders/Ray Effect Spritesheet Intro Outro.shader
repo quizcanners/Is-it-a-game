@@ -185,7 +185,7 @@ Category {
 			    TopDownSample(i.worldPos, vol.rgb, outOfBounds);
 			    float3 ambientCol = lerp(vol, _RayMarchSkyColor.rgb * MATCH_RAY_TRACED_SKY_COEFFICIENT, outOfBounds);
 
-                  col.rgb = ambientCol * (1 + col.rgb)*0.5 + col.rgb * brightness*0.5;
+                  col.rgb = ambientCol * (0.25f + col.rgb*0.75f) + col.rgb * brightness*0.5;
               //  col.rgb = col.rgb * (ambientCol + brightness);
 
                 col.a = smoothstep(0,1.5, col.a * toCamera * fade);

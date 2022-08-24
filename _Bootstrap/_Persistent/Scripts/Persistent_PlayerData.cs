@@ -33,7 +33,6 @@ namespace QuizCanners.IsItGame.Develop
             {
                 if (!QcFile.Load.FromPersistentPath.JsonTry(GetLocation(userName), out Persistent_PlayerData ent))
                 {
-                    Debug.LogError("Couldn't load " + userName);
                     _userName = userName;
                     return;
                 }

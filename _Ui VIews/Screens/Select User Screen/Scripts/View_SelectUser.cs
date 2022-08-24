@@ -1,5 +1,6 @@
 using QuizCanners.Inspect;
 using QuizCanners.IsItGame.UI;
+using QuizCanners.Utils;
 
 namespace QuizCanners.IsItGame.Develop
 {
@@ -10,8 +11,13 @@ namespace QuizCanners.IsItGame.Develop
             pegi.Nl();
             var users = Game.Persistent.Application.AvailableUsers;
 
-            foreach(var user in users) 
+            for(int i=0; i< users.Count; i++) 
             {
+                var user = users[i];
+
+                if (Icon.Delete.ClickConfirm(confirmationTag: "DelUsr" + user, toolTip: "Are You sure you want to Delete User Name {0}".F(user)))
+                    Game.Persistent.DeleteUser(user);
+
                 user.PegiLabel().Write();
                 "Select".PegiLabel().Click(()=> Game.Persistent.User.Load(user)).Nl();
             }

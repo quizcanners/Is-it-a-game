@@ -18,6 +18,11 @@ namespace QuizCanners.IsItGame.Develop
 
         [NonSerialized] private string _currentLocation = "";
 
+        public void LoadDefaultLocation() 
+        {
+
+        }
+
         #region Encode & Decode
         public CfgEncoder Encode() => new CfgEncoder()
            .Add_String("l", _currentLocation);

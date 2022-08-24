@@ -25,6 +25,8 @@ namespace QuizCanners.IsItGame.StateMachine
                 base.OnEnter();
                 Game.Persistent.User.Campaign.LoadGameToServices();
                 _nodeNodesConfigVersion = new Gate.Integer();
+
+                Singleton.Try<Singleton_ConfigNodes>(s => s.SetDefaultNode());
             }
 
             internal override void OnExit()
@@ -49,8 +51,11 @@ namespace QuizCanners.IsItGame.StateMachine
             {
                 Singleton.Try<Singleton_ConfigNodes>(s =>
                 {
-                    if (s.AnyEntered && _nodeNodesConfigVersion.TryChange(s.Version))
-                        s.CurrentChain.LoadConfigsIntoServices();
+                    if (s.AnyEntered)
+                    {
+                        if (_nodeNodesConfigVersion.TryChange(s.Version))
+                            s.CurrentChain.LoadConfigsIntoServices();
+                    } 
                 });
             }
         }
