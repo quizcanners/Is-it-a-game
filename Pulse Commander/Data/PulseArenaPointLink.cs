@@ -37,33 +37,98 @@ namespace QuizCanners.IsItGame.Pulse
             public Point Start => _start.GetEntity();
             public Point End => _end.GetEntity();
 
-            public Vector3 GetPosition(float progress, Point.Id start, Vector2 offsetFraction = default)
+            public Vector3 GetPosition(Unit unit)
             {
-                var s =  Start;
-                var e =  End;
-
-                if (s == null || e == null)
-                    return Vector3.zero;
-
-                bool fromStart = _start.SameAs(start);
-
-                if (!fromStart)
-                    progress = 1 - progress;
-
-                var pos = curve.GetPoint(progress, s.position, e.position);
-
-                if (offsetFraction.magnitude > 0)
+                if (!TryGetPoints(unit, out Point start, out Point end, out bool swapped))
                 {
-                    float theWidth = Mathf.Lerp(s.Radius, e.Radius, progress);
-                    pos += offsetFraction.ToVector3XZ() * theWidth;
+                    return Vector3.zero;
+                }
+
+                var pos = curve.GetPoint(unit.Progress, start.position, end.position, inverted: swapped);
+
+                if (unit.LinkOffsetFraction.magnitude > 0)
+                {
+                    float theWidth = Mathf.Lerp(start.Radius, end.Radius, swapped ? 1- unit.Progress : unit.Progress);
+                    pos += unit.LinkOffsetFraction.ToVector3XZ() * theWidth;
                 }
 
                 return pos;
             }
 
+            public Vector3 GetNormal(Unit unit) 
+            {
+                bool swapped = !unit.startPoint.Equals(_start);
+
+                return curve.GetNormal(unit.Progress, Start.position, End.position, inverted: swapped);
+            }
+
+            public void Move(Unit unit, Vector3 vector, out float leftoverFraction) 
+            {
+                if (!TryGetPoints(unit, out Point start, out Point end, out bool swapped)) 
+                {
+                    leftoverFraction = 1;
+                    return;
+                }
+
+                var normal = curve.GetNormal(unit.Progress, start.position, end.position, inverted: swapped);
+
+                float forward = Vector3.Dot(normal, vector.normalized);
+
+                float direction;
+
+              ///  if (unit.previousDirection == 0 || Mathf.Abs(forward) > 0.33f)
+                //{
+                    direction = forward > 0f ? 1f : -1f;
+                    unit.previousDirection = direction;
+              //  }
+              //  else
+                  //  direction = unit.previousDirection;
+
+                if (swapped)
+                    direction = -direction;
+
+                float moveAmount =  (vector.magnitude / Length.ToMeters);
+
+                unit.Progress += direction * moveAmount;
+
+                if (unit.Progress < 0 || unit.Progress > 1) 
+                {
+                    float extra = Mathf.Abs(unit.Progress - 0.5f) - 0.5f;
+
+                    leftoverFraction = Mathf.Abs(extra/moveAmount);
+
+                    unit.Progress = Mathf.Clamp01(unit.Progress);
+                }
+                else 
+                {
+                    leftoverFraction = 0;
+                }
+            }
+
             public bool Contains(Point point) =>
                 (_start.TryGetEntity(out var entA) && entA == point) ||
                 (_end.TryGetEntity(out var entB) && entB == point);
+
+            private bool TryGetPoints(Unit unit, out Point start, out Point end, out bool swapped)
+            {
+                start = Start;
+                end = End;
+
+                if (start == null || end == null)
+                {
+                    swapped = false;
+                    return false;
+                }
+
+                swapped = !_start.Equals(unit.startPoint);
+
+                return true;
+            }
+
+       
+
+            public Point.Id GetDifferentFrom(Point.Id point) => point.Equals(_start) ? _end : _start;
+
 
             private static PulsePath GetArena() => Singleton.Get<Singleton_PulsePath>().Data;
 
@@ -123,7 +188,6 @@ namespace QuizCanners.IsItGame.Pulse
 
                     if (_paintCurve)
                         curve.OnSceneDraw();
-
                 } 
             }
 

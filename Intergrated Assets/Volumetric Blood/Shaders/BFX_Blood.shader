@@ -22,11 +22,15 @@
         Tags{ "Queue" = "AlphaTest+1"}
 
         CGINCLUDE
+
+         #define RENDER_DYNAMICS
+
 		   #include "Assets/Ray-Marching/Shaders/PrimitivesScene_Sampler.cginc"
 			#include "Assets/Ray-Marching/Shaders/Signed_Distance_Functions.cginc"
 			#include "Assets/Ray-Marching/Shaders/RayMarching_Forward_Integration.cginc"
 			#include "Assets/Ray-Marching/Shaders/Sampler_TopDownLight.cginc"
 
+           
 		
             float3 ModifyPositionBySDF(float pos)
             {

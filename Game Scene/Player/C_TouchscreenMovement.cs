@@ -1,6 +1,7 @@
 using QuizCanners.Inspect;
 using QuizCanners.IsItGame.Pulse;
 using QuizCanners.Utils;
+using System;
 using UnityEngine;
 
 namespace QuizCanners.IsItGame.Develop
@@ -9,8 +10,13 @@ namespace QuizCanners.IsItGame.Develop
     {
         [Header("Settings")]
         [SerializeField] protected Vector3 cameraOffset = new(5, 10, 5);
+
         private Vector2 direction;
         [SerializeField] private bool _targetControllingCameraState;
+        [NonSerialized] private PulsePath.Unit _unit;
+
+
+        private Gate.Frame frame = new Gate.Frame();
 
         protected bool ControllingCamera 
         {
@@ -63,11 +69,6 @@ namespace QuizCanners.IsItGame.Develop
             right = (Input.GetKey(KeyCode.D) ? 1f : 0f) + (Input.GetKey(KeyCode.A) ? -1f : 0f);
         }
 
-    
-
-        private PulsePath.Point.Id point;
-        private Gate.Frame frame = new Gate.Frame();
-
         private void Update()
         {
             CheckPosition();
@@ -78,14 +79,32 @@ namespace QuizCanners.IsItGame.Develop
             if (frame.TryEnter()) 
             {
                 GetRawDirection(out float forward, out float right);
-                var direction = RotatedDirection(forward: forward, right: right);
 
-                transform.position += direction * (Input.GetKey(KeyCode.LeftShift) ? 10 : 5) * Time.deltaTime;
+                bool handled = false;
 
                 Singleton.Try<Singleton_PulsePath>(s =>
                 {
+                    if (_unit == null)
+                    {
+                        _unit = Singleton.TryGetValue<Singleton_PulsePath, PulsePath.Unit>(
+                            s => s.CreateUnit(isPlayer: true));
+                    }
 
+                    if (_unit != null)
+                    {
+                        if (forward != 0 || right != 0)
+                        {
+                            var direction = RotatedDirection(forward: forward, right: right);
+                            _unit.TryMove(direction * 10 * Time.deltaTime);
+                        }
+                        transform.position = _unit.GetPosition();
+                        handled = true;
+                    }
                 });
+
+               //if (!handled)
+                   // transform.position += direction * (Input.GetKey(KeyCode.LeftShift) ? 10 : 5) * Time.deltaTime;
+                
             }
         }
              
@@ -94,6 +113,13 @@ namespace QuizCanners.IsItGame.Develop
         public void Inspect()
         {
             pegi.Nl();
+
+            if (Application.isPlaying == false)
+            {
+                pegi.TryDefaultInspect(this);
+                return;
+            }
+
             "Offset".PegiLabel().Edit(ref direction).Nl();
 
             Singleton.Try<Singleton_CameraOperatorGodMode>(s => 
@@ -104,6 +130,10 @@ namespace QuizCanners.IsItGame.Develop
                 s.ClickHighlight().Nl();
 
             } , logOnServiceMissing: false);
+
+            "Path Curve".PegiLabel(pegi.Styles.ListLabel).Nl();
+            _unit.Nested_Inspect();
+
         }
 
         public string NeedAttention()

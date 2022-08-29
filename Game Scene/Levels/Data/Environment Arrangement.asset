@@ -40,7 +40,7 @@ MonoBehaviour:
         Floor|i|118|n|23|Reflective Floor(Clone)|pos|30|x|6|-17.59|y|4|4.07|z|5|10.74||scaling|18|x|1|1|y|1|8|z|1|5||rot|13|x|8|2.561182|||||lnks|0||
   - name: Bigger Stuff
     data:
-      _value: inst|8199|e|119|key|4|Cube|i|101|n|4|Cube|pos|31|x|6|-25.62|y|4|6.46|z|6|-24.79||scaling|20|x|2|20|y|1|5|z|2|20||rot|13|y|8|329.7858||||e|154|key|21|Pillar_Square_05
+      _value: inst|8197|e|119|key|4|Cube|i|101|n|4|Cube|pos|31|x|6|-25.62|y|4|6.46|z|6|-24.79||scaling|20|x|2|20|y|1|5|z|2|20||rot|13|y|8|329.7858||||e|154|key|21|Pillar_Square_05
         Prim|i|118|n|21|Pillar_Square_05 Prim|pos|31|x|6|-54.42|y|5|-0.11|z|5|-6.21||scaling|33|x|6|2.9976|y|6|2.9976|z|6|2.9976||rot|0||||e|184|key|16|Reflective
         Floor|i|153|n|16|Reflective Floor|pos|27|x|5|-77.2|y|4|23.6|z|3|-21||scaling|37|x|8|72.05322|y|8|46.67642|z|6|23.817||rot|39|x|8|353.6567|y|8|253.4766|z|8|357.5555||||e|138|key|21|Pillar_Square_05
         Prim|i|102|n|21|Pillar_Square_05 Prim|pos|30|x|5|3.146|y|5|0.151|z|5|0.555||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|198|key|20|Volumetric
@@ -68,9 +68,9 @@ MonoBehaviour:
         Fire Entrance|i|133|n|32|Ray FIreplace Etrance(Clone) (4)|pos|36|x|9|-20.99457|y|4|0.05|z|8|15.85172||scaling|18|x|1|2|y|1|2|z|1|2||rot|13|y|8|165.5027||||e|159|key|17|Ray
         Fire Entrance|i|127|n|32|Ray FIreplace Etrance(Clone) (5)|pos|30|x|6|-16.52|y|4|0.05|z|5|10.61||scaling|18|x|1|1|y|1|1|z|1|1||rot|13|y|8|263.9763||||e|177|key|28|Volumetric
         SDF Mesh Baked TF|i|134|n|32|Volumetric SDF Mesh Baked TF (1)|pos|30|x|6|-21.71|y|4|5.23|z|5|20.56||scaling|39|x|8|5.039606|y|8|5.039606|z|8|5.039606||rot|0||||e|128|key|15|stump_01_1_LOD1|i|99|n|22|stump_01_1_LOD1(Clone)|pos|20|x|6|-59.96|z|4|9.75||scaling|24|x|3|0.1|y|3|0.1|z|3|0.1||rot|0||||e|144|key|21|Beech
-        Forest Stump 02|i|108|n|28|Beech Forest Stump 02(Clone)|pos|29|x|6|-38.45|y|4|0.07|z|4|0.47||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|176|key|21|Beech
-        Forest Stump 02|i|140|n|28|Beech Forest Stump 02(Clone)|pos|32|x|7|-40.776|y|4|0.33|z|6|3.3581||scaling|33|x|6|1.2386|y|6|1.2386|z|6|1.2386||rot|13|y|8|32.61741||||e|149|key|21|Beech
-        Forest Stump 02|i|113|n|32|Beech Forest Stump 02(Clone) (1)|pos|30|x|6|-46.68|y|4|0.36|z|5|-0.34||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|148|key|21|Beech
+        Forest Stump 02|i|108|n|28|Beech Forest Stump 02(Clone)|pos|29|x|6|-44.52|y|4|0.07|z|4|7.71||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|176|key|21|Beech
+        Forest Stump 02|i|140|n|28|Beech Forest Stump 02(Clone)|pos|32|x|7|-40.776|y|4|0.33|z|6|3.3581||scaling|33|x|6|1.2386|y|6|1.2386|z|6|1.2386||rot|13|y|8|32.61741||||e|147|key|21|Beech
+        Forest Stump 02|i|111|n|32|Beech Forest Stump 02(Clone) (1)|pos|28|x|6|-36.51|y|4|0.36|z|3|3.8||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|148|key|21|Beech
         Forest Stump 02|i|112|n|32|Beech Forest Stump 02(Clone) (2)|pos|29|x|6|-44.63|y|4|0.36|z|4|4.57||scaling|18|x|1|1|y|1|1|z|1|1||rot|0||||e|162|key|21|Beech
         Forest Stump 02|i|126|n|32|Beech Forest Stump 02(Clone) (3)|pos|29|x|6|-52.88|y|4|0.31|z|4|3.35||scaling|18|x|1|1|y|1|1|z|1|1||rot|13|y|8|73.44807||||e|163|key|21|Beech
         Forest Stump 02|i|127|n|32|Beech Forest Stump 02(Clone) (4)|pos|30|x|6|-56.26|y|4|0.36|z|5|-2.96||scaling|18|x|1|2|y|1|2|z|1|2||rot|13|y|8|174.4967||||e|139|key|9|Glass

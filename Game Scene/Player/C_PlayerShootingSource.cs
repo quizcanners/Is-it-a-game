@@ -13,7 +13,7 @@ namespace QuizCanners.IsItGame.Develop
     public class C_PlayerShootingSource : MonoBehaviour, IPEGI, INeedAttention
     {
         [SerializeField] private SO_PlayerConfig _config;
-       
+        [SerializeField] private GameObject _shootingSource;
         [SerializeField] private Weapon _weapon;
         private enum Weapon { Machinegun, RocketLauncher, BoltGun }
 
@@ -25,6 +25,8 @@ namespace QuizCanners.IsItGame.Develop
         private readonly LogicWrappers.TimeFixedSegmenter _delayBetweenRockets = new( 1.1f, returnOnFirstRequest: 1);
 
         Singleton_ChornobaivkaController Mgmt => Singleton.Get<Singleton_ChornobaivkaController>();
+
+        Vector3 ShootingPosition => _shootingSource ? _shootingSource.transform.position : transform.position;
 
         private bool TryHit(out RaycastHit hit) 
         {
@@ -38,7 +40,7 @@ namespace QuizCanners.IsItGame.Develop
             var ray = cam.ScreenPointToRay(Input.mousePosition);
             if (Mgmt.CastAll(ray, out hit))
             {
-                return Mgmt.CastAll(new Ray(transform.position, hit.point - transform.position), out hit);
+                return Mgmt.CastAll(new Ray(ShootingPosition, hit.point - ShootingPosition), out hit);
             }
 
             return false;
@@ -71,7 +73,7 @@ namespace QuizCanners.IsItGame.Develop
                         {
                             if (TryHit(out var hit))
                             {
-                                _config.MachineGun.Shoot(transform.position, hit.point, _machineGunState);
+                                _config.MachineGun.Shoot(ShootingPosition, hit.point, _machineGunState);
                             }
                         }
                     }
@@ -91,7 +93,7 @@ namespace QuizCanners.IsItGame.Develop
                         if (TryHit(out var hit))
                         {
                             _delayBetweenRockets.GetSegmentsAndUpdate();
-                            _config.RocketLauncher.Explosion(hit, hit.point - transform.position, _rocketState);
+                            _config.RocketLauncher.Explosion(hit, hit.point - ShootingPosition, _rocketState);
                         }
                     }
                 }
@@ -108,7 +110,7 @@ namespace QuizCanners.IsItGame.Develop
             {
                 var target = hit.transform.GetComponentInParent<C_PaintingReceiver>();
                 Gizmos.color = target ? Color.green : Color.blue;
-                Gizmos.DrawLine(transform.position, hit.point);
+                Gizmos.DrawLine(ShootingPosition, hit.point);
             }
         }
 

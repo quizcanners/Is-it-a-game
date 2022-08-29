@@ -2,6 +2,7 @@ using Dungeons_and_Dragons;
 using QuizCanners.Inspect;
 using QuizCanners.Utils;
 using System;
+using System.Linq;
 using UnityEngine;
 
 namespace QuizCanners.IsItGame.Pulse
@@ -11,10 +12,14 @@ namespace QuizCanners.IsItGame.Pulse
         [Serializable]
         public class Unit : IPEGI_ListInspect, IPEGI, IPEGI_Handles
         {
-            [SerializeField] private Point.Id _myPoint = new();
+            [SerializeField] public float Progress;
+            [SerializeField] internal Point.Id startPoint = new();
             [SerializeField] private Link.Id _link = new();
-            [SerializeField] private Vector2 _linkOffsetFraction;
-            [SerializeField] private float progress;
+            [SerializeField] internal Vector2 LinkOffsetFraction;
+           
+            [SerializeField] public bool isPlayer;
+
+            internal float previousDirection;
 
             private bool _initialized = false;
 
@@ -23,33 +28,48 @@ namespace QuizCanners.IsItGame.Pulse
                 if (!_initialized)
                     Update(deltaTime: 0, GridDistance.FromCells(6));
 
-                return (TryGetPath(out Link link)) ? link.GetPosition(progress, start: _myPoint, offsetFraction: _linkOffsetFraction) : Vector3.zero;
+                return (TryGetPath(out Link link)) ? link.GetPosition(this) : Vector3.zero;
             }
             private static PulsePath GetArena() => Singleton.Get<Singleton_PulsePath>().Data;
             private bool TryGetPath(out Link link) 
             {
-                link = null;
-                var start = _myPoint.GetEntity();
+             
+                Point start = startPoint.GetEntity();
 
                 if (start == null)
                 {
-                    _myPoint.SetEntity(GetArena().startingPoint);
+                    var arena = GetArena();
 
-                    start = _myPoint.GetEntity();
+                    startPoint.SetEntity(isPlayer ? arena.playerStartingPoint : arena.startingPoint);
+
+                    start = startPoint.GetEntity();
 
                     if (start == null)
+                    {
+                        link = null;
                         return false;
+                    }
 
-                    _linkOffsetFraction = UnityEngine.Random.insideUnitCircle;
+                    LinkOffsetFraction = UnityEngine.Random.insideUnitCircle;
                 }
 
                 link = _link.GetEntity();
 
                 if (link == null)
                 {
-                    _link.SetEntity(start.direction);
-
-                    link = _link.GetEntity();
+                    link = start.direction.GetEntity();
+                    if (link != null)
+                    {
+                        _link.SetEntity(link);
+                    } else 
+                    {
+                        var anyLink = start.GetLinks().FirstOrDefault();
+                        if (anyLink != null)
+                        {
+                            _link.SetEntity(anyLink);
+                            link = anyLink;
+                        }
+                    }
                 }
 
                 return link != null;
@@ -61,13 +81,13 @@ namespace QuizCanners.IsItGame.Pulse
                 if (!TryGetPath(out var path))
                     return;
 
-                if (progress < 1)
+                if (Progress < 1)
                 {
                     FeetDistance dis = path.Length;
                 
                     float moved = (speedPerTurn.TotalFeet.ToMeters / DnDTime.SECONDS_PER_TURN) * deltaTime;
                     float portion = moved / dis.ToMeters;
-                    progress = Mathf.Clamp01(progress + portion);
+                    Progress = Mathf.Clamp01(Progress + portion);
                 } else 
                 {
                     var newPoint = path.End;
@@ -76,11 +96,69 @@ namespace QuizCanners.IsItGame.Pulse
 
                     if (newPath != null)
                     {
-                        _myPoint = new Point.Id(newPoint);
-                        progress = 0;
+                        startPoint = new Point.Id(newPoint);
+                        Progress = 0;
                         _link = new Link.Id();
                     }
                 }
+            }
+
+            public bool TryMove (Vector3 vector) 
+            {
+                if (!_initialized)
+                    Update(deltaTime: 0, GridDistance.FromCells(6));
+
+                if (_link == null)
+                    return false;
+
+                Link currentLink = _link.GetEntity();
+
+                if (currentLink == null)
+                    return false;
+                
+                currentLink.Move(this, vector, out float leftoverFraction);
+
+                if (leftoverFraction > 0) 
+                {
+                    if (Progress > 0.99f)
+                    {
+                        startPoint = currentLink.GetDifferentFrom(startPoint);
+                        Progress = 0;
+                    }
+
+                    previousDirection = 1;
+
+                    var links = startPoint.GetEntity().GetLinks();
+
+                    if (links.Count > 1)
+                    {
+                        float closestDot = -10;
+
+                        foreach (Link potentialLink in links)
+                        {
+                            if (currentLink == potentialLink)
+                                continue;
+
+                            float dot = Vector3.Dot(potentialLink.GetNormal(this), vector);
+
+                            if (closestDot < dot)
+                            {
+                                closestDot = dot;
+                                currentLink = potentialLink;
+                            }
+                        }
+
+                        _link.SetEntity(currentLink);
+
+                        vector *= leftoverFraction;
+
+                        currentLink.Move(this, vector, out leftoverFraction);
+                        
+                    }
+
+                }
+
+                return true;
             }
 
             #region Inspector
@@ -97,9 +175,9 @@ namespace QuizCanners.IsItGame.Pulse
                     {
                         "From".PegiLabel(50).Write();
 
-                        _myPoint.InspectSelectPart().Nl();//InspectInList_Nested().Nl();
+                        startPoint.InspectSelectPart().Nl();//InspectInList_Nested().Nl();
 
-                        var p = _myPoint.GetEntity();
+                        var p = startPoint.GetEntity();
 
                         if (p != null)
                         {
@@ -112,7 +190,7 @@ namespace QuizCanners.IsItGame.Pulse
                         var lnk = _link.GetEntity();
                         if (lnk != null)
                         {
-                            "Progress".PegiLabel(width: 60).Edit_01(ref progress).Nl();
+                            "Progress".PegiLabel(width: 60).Edit_01(ref Progress).Nl();
                         }
                     }
                 }
@@ -120,7 +198,7 @@ namespace QuizCanners.IsItGame.Pulse
 
             public void InspectInList(ref int edited, int index)
             {
-                "Progress".PegiLabel(width: 60).Edit_01(ref progress).Nl();
+                "Progress".PegiLabel(width: 60).Edit_01(ref Progress).Nl();
 
                 if (Icon.Enter.Click())
                     edited = index;

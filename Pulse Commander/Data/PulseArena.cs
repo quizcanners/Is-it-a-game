@@ -9,6 +9,7 @@ namespace QuizCanners.IsItGame.Pulse
     public partial class PulsePath : IPEGI, IPEGI_Handles, IGotName
     {
         [SerializeField] internal Point.Id startingPoint = new();
+        [SerializeField] internal Point.Id playerStartingPoint = new();
         [SerializeField] internal Point.SerializableDictionary points = new();
         [SerializeField] internal List<Link> links = new();
         [SerializeField] internal List<Unit> testUnits = new();
@@ -36,8 +37,11 @@ namespace QuizCanners.IsItGame.Pulse
             {
                 if (!conext.IsAnyEntered)
                 {
-                    "Starting point".PegiLabel(90).Write();
+                    "Enemy Start Point".PegiLabel(90).Write();
                     startingPoint.InspectSelectPart().Nl();
+
+                    "Player Starting Point".PegiLabel().Write();
+                    playerStartingPoint.InspectSelectPart().Nl();
 
                     "Skip Time 1s".PegiLabel().Click().Nl().OnChanged(() => Update(1));
                 }

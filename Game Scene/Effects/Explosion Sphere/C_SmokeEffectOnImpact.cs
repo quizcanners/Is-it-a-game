@@ -83,6 +83,7 @@ namespace QuizCanners.IsItGame
             smokeDensity += density;
             _color.CurrentValue = new Color(0.5f, 0.4f, 0.3f);
             _animating = true;
+            _primitive.gameObject.SetActive(density > 1f);
         }
 
         internal void Refresh()
@@ -90,11 +91,12 @@ namespace QuizCanners.IsItGame
             smokeDensity = 0;
             PlayAnimateFromDot();
             CheckBlock();
+            _primitive.gameObject.SetActive(false);
             _primitive.transform.localScale = Vector3.zero;
             meshRenderer.SetPropertyBlock(block);
         }
 
-        public void PlayFromBigCloud(float size)
+        private void PlayFromBigCloud(float size)
         {
             Size = size;
             smokeDensity += size;
@@ -133,7 +135,14 @@ namespace QuizCanners.IsItGame
                 float fadeSpeed = Size * Size * Visibility * 0.1f * (1 + Singleton.TryGetValue<Pool_SmokeEffects, float>(s=> s.InstancesCount, 10));
                 smokeDensity = Mathf.Max(0, smokeDensity - fadeSpeed * Time.deltaTime);
 
-                _primitive.transform.localScale = Size * Visibility * Visibility * new Vector3(2,0.5f,0);
+                if (_primitive.gameObject.activeSelf)
+                {
+                    _primitive.transform.localScale = Size * new Vector3(1f, 0.25f, 1f);
+                    _primitive.Color = new Color(Visibility, Visibility, Visibility * Visibility);
+
+                    if (Visibility < 0.1f)
+                        _primitive.gameObject.SetActive(false);
+                }
 
                 if (smokeDensity < 0.01f && Visibility < 0.01f) 
                 {

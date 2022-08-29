@@ -15,7 +15,7 @@ namespace QuizCanners.IsItGame.Develop
 
         protected override void OnInstanciated(C_MonsterEnemy inst)
         {
-            var unit = Singleton.TryGetValue<Singleton_PulsePath, PulsePath.Unit>(s => s.CreateUnit());
+            var unit = Singleton.TryGetValue<Singleton_PulsePath, PulsePath.Unit>(s => s.CreateUnit(isPlayer: false));
             var character = Singleton.TryGetValue<Singleton_DnD, CharacterSheet>(s => s.DnDPrototypes.Characters.GetRandom());
             inst.RestartMonster(unit: unit, character: new CharacterSheet.SmartId(character));
             inst.Update();

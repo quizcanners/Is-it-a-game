@@ -11,9 +11,12 @@ namespace QuizCanners.IsItGame.Pulse
      
         internal static bool DrawCurves;
 
-        public PulsePath.Unit CreateUnit() 
+        public PulsePath.Unit CreateUnit(bool isPlayer) 
         {
-            var unit = new PulsePath.Unit();
+            var unit = new PulsePath.Unit()
+            {
+                isPlayer = isPlayer
+            };
 
             return unit;
         }

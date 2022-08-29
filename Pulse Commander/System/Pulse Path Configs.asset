@@ -15,6 +15,8 @@ MonoBehaviour:
   _pathConfigurations:
   - startingPoint:
       Id: Far Point
+    playerStartingPoint:
+      Id: Finish
     points:
       keys:
       - Finish
@@ -73,7 +75,7 @@ MonoBehaviour:
           listSectionStartIndex: 0
       - Radius: 1
         Explored: 0
-        position: {x: -60.32205, y: 0.1614474, z: 5.3215523}
+        position: {x: -63.438564, y: 0.25899982, z: 5.335428}
         direction:
           Id: 0
         rollResult:
@@ -89,7 +91,7 @@ MonoBehaviour:
           listSectionStartIndex: 0
       - Radius: 1
         Explored: 0
-        position: {x: -47.164253, y: 0.1201669, z: 2.5477753}
+        position: {x: -45.366413, y: 0.1201669, z: 2.4541397}
         direction:
           Id: 1
         rollResult:
@@ -105,44 +107,44 @@ MonoBehaviour:
           listSectionStartIndex: 0
     links:
     - _start:
+        Id: Junktion
+      _end:
         Id: Far Point
-      _end:
-        Id: Junktion
       curve:
-        StartVector: {x: 2.8996086, y: 0, z: -2.7092366}
-        EndVector: {x: -4.994957, y: 0.33028263, z: -2.9571018}
+        StartVector: {x: -6.3180237, y: 0, z: -9.8236065}
+        EndVector: {x: 6.8618774, y: 0, z: 11.398104}
     - _start:
         Id: Junktion
       _end:
         Id: A
       curve:
-        StartVector: {x: 5.7837524, y: 0, z: -0.029036522}
-        EndVector: {x: -12.082453, y: 0, z: 0.58711815}
+        StartVector: {x: 10.310448, y: 0.021061301, z: -8.107035}
+        EndVector: {x: -12.582243, y: 0, z: -21.427761}
     - _start:
+        Id: B
+      _end:
         Id: Junktion
-      _end:
-        Id: B
       curve:
-        StartVector: {x: 6.551918, y: 0, z: 1.4922695}
-        EndVector: {x: -7.2687454, y: 0, z: 0.987072}
+        StartVector: {x: -20.22718, y: 2.3336678, z: 5.9274044}
+        EndVector: {x: 17.512339, y: 0, z: -6.7468567}
     - _start:
+        Id: Finish
+      _end:
         Id: A
-      _end:
-        Id: Finish
       curve:
-        StartVector: {x: 6.2162457, y: 0.89595413, z: 1.1634531}
-        EndVector: {x: -6.140576, y: 0, z: -7.5169163}
+        StartVector: {x: 0.27129507, y: 1.3604841, z: -13.841169}
+        EndVector: {x: 14.854519, y: 0.89595413, z: -15.373888}
     - _start:
         Id: B
       _end:
         Id: Finish
       curve:
-        StartVector: {x: 6.944334, y: 0, z: 0.7936077}
-        EndVector: {x: -7.5516276, y: 0, z: 2.1050167}
+        StartVector: {x: 10.479085, y: 0.6040106, z: 6.6939754}
+        EndVector: {x: 8.272718, y: 0, z: 10.530439}
     testUnits: []
     _name: Test Path
     conext:
-      _currentlyEntered: -1
+      _currentlyEntered: 1
     _linksMeta:
       inspectedElement_Internal: -1
       listSectionStartIndex: 0
@@ -160,5 +162,5 @@ MonoBehaviour:
     - rid: 3945966433163018240
       type: {class: pegi/CollectionInspectorMeta, ns: QuizCanners.Inspect, asm: Quiz-cAnners}
       data:
-        inspectedElement_Internal: -1
+        inspectedElement_Internal: 0
         listSectionStartIndex: 0
