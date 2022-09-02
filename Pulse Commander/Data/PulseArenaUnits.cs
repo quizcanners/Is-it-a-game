@@ -81,24 +81,40 @@ namespace QuizCanners.IsItGame.Pulse
                 if (!TryGetPath(out var path))
                     return;
 
-                if (Progress < 1)
-                {
-                    FeetDistance dis = path.Length;
-                
-                    float moved = (speedPerTurn.TotalFeet.ToMeters / DnDTime.SECONDS_PER_TURN) * deltaTime;
-                    float portion = moved / dis.ToMeters;
-                    Progress = Mathf.Clamp01(Progress + portion);
-                } else 
-                {
-                    var newPoint = path.End;
+                float moved = (speedPerTurn.TotalFeet.ToMeters / DnDTime.SECONDS_PER_TURN) * deltaTime;
 
-                    var newPath = newPoint.direction.GetEntity();
+                int maxIterations = 100;
 
-                    if (newPath != null)
+                while (moved > 0)
+                {
+                    maxIterations--;
+                    if (maxIterations < 0) 
                     {
-                        startPoint = new Point.Id(newPoint);
+                        Debug.LogError("Infinite motion loop");
+                        break;
+                    }
+
+                    float linkLength = path.Length.ToMeters;
+
+                    Progress += moved / linkLength;
+
+                    if (Progress <= 1)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        moved = (Progress - 1) * linkLength;
                         Progress = 0;
-                        _link = new Link.Id();
+
+                        Point.Id newPointId = path.GetDifferentFrom(startPoint);
+                        startPoint = newPointId;
+
+                        Link.Id newPath = newPointId.GetEntity().direction;
+                        _link = newPath;
+
+                        if (!TryGetPath(out path))
+                            return;
                     }
                 }
             }

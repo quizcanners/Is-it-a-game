@@ -27,9 +27,9 @@ MonoBehaviour:
       values:
       - Radius: 1
         Explored: 0
-        position: {x: -5.187116, y: 0, z: -7.207388}
+        position: {x: -1.6116667, y: 0.020339966, z: -7.3060765}
         direction:
-          Id: -1
+          Id: 3
         rollResult:
           tableKey: 
           _data:
@@ -111,28 +111,28 @@ MonoBehaviour:
       _end:
         Id: Far Point
       curve:
-        StartVector: {x: -6.3180237, y: 0, z: -9.8236065}
-        EndVector: {x: 6.8618774, y: 0, z: 11.398104}
+        StartVector: {x: -2.9735146, y: -0.009628892, z: -4.2451797}
+        EndVector: {x: 5.8463135, y: 0, z: -4.1343966}
     - _start:
         Id: Junktion
       _end:
         Id: A
       curve:
-        StartVector: {x: 10.310448, y: 0.021061301, z: -8.107035}
-        EndVector: {x: -12.582243, y: 0, z: -21.427761}
+        StartVector: {x: 10.522469, y: 0.021061301, z: 3.8312402}
+        EndVector: {x: -1.3521252, y: 0, z: 1.0116291}
     - _start:
         Id: B
       _end:
         Id: Junktion
       curve:
         StartVector: {x: -20.22718, y: 2.3336678, z: 5.9274044}
-        EndVector: {x: 17.512339, y: 0, z: -6.7468567}
+        EndVector: {x: 4.068577, y: 0, z: 4.3755856}
     - _start:
         Id: Finish
       _end:
         Id: A
       curve:
-        StartVector: {x: 0.27129507, y: 1.3604841, z: -13.841169}
+        StartVector: {x: 5.9548764, y: 1.3604841, z: -13.336706}
         EndVector: {x: 14.854519, y: 0.89595413, z: -15.373888}
     - _start:
         Id: B
