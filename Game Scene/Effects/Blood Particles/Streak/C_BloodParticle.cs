@@ -91,7 +91,7 @@ namespace QuizCanners.IsItGame
          //   "Contatct point".PegiLabel().Edit_List(latestCollisionDebug).Nl();
         }
 
-        private class CollisionDebug : IPEGI_ListInspect, IGotReadOnlyName
+        private class CollisionDebug : IPEGI_ListInspect
         {
             private readonly ContactPoint _point;
 
@@ -100,7 +100,7 @@ namespace QuizCanners.IsItGame
                 _point = point;
             }
 
-            public string GetReadOnlyName() => _point.otherCollider.gameObject.name;
+            public override string ToString() => _point.otherCollider.gameObject.name;
 
             public void InspectInList(ref int edited, int index)
             {

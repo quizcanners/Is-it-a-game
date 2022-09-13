@@ -265,7 +265,7 @@ MonoBehaviour:
   _dependencyContext:
     _currentlyEntered: -1
   _context:
-    _currentlyEntered: 0
+    _currentlyEntered: -1
 --- !u!4 &32979238
 Transform:
   m_ObjectHideFlags: 0
@@ -634,7 +634,7 @@ MonoBehaviour:
   _startingNode:
     _book:
       Id: Whitehawk.nodeConfig
-    NodeIndex: 25
+    NodeIndex: 27
     _treeVersion: 0
 --- !u!1 &635623451
 GameObject:
@@ -2224,7 +2224,7 @@ MonoBehaviour:
   _enteredContent:
     _currentlyEntered: -1
   _modulesStd:
-    _value: mdls|33|StretchedOffset|13|b|0||s|3|100|||
+    _value: 
 --- !u!222 &2158376622022619361
 CanvasRenderer:
   m_ObjectHideFlags: 0

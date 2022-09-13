@@ -80,7 +80,7 @@ namespace QuizCanners.IsItGame.Develop
             {
                 GetRawDirection(out float forward, out float right);
 
-                bool handled = false;
+               // bool handled = false;
 
                 Singleton.Try<Singleton_PulsePath>(s =>
                 {
@@ -98,7 +98,7 @@ namespace QuizCanners.IsItGame.Develop
                             _unit.TryMove(direction * 10 * Time.deltaTime);
                         }
                         transform.position = _unit.GetPosition();
-                        handled = true;
+                       // handled = true;
                     }
                 });
 

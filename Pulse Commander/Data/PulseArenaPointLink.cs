@@ -10,7 +10,7 @@ namespace QuizCanners.IsItGame.Pulse
     public partial class PulsePath
     {
         [Serializable]
-        internal class Link : IPEGI_ListInspect, IPEGI_Handles, IGotReadOnlyName, IPEGI
+        internal class Link : IPEGI_ListInspect, IPEGI_Handles, IPEGI
         {
             [SerializeField] private Point.Id _start = new();
             [SerializeField] private Point.Id _end = new();
@@ -191,7 +191,7 @@ namespace QuizCanners.IsItGame.Pulse
                 } 
             }
 
-            public string GetReadOnlyName() => "{0} -> {1}".F(Start.GetNameForInspector(), End.GetNameForInspector());
+            public override string ToString() => "{0} -> {1}".F(Start.GetNameForInspector(), End.GetNameForInspector());
 
             public void Inspect()
             {

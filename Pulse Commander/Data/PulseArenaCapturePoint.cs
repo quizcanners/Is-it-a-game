@@ -102,13 +102,13 @@ namespace QuizCanners.IsItGame.Pulse
 
             [Serializable] private class LocationInstancer : TypedInstance.JsonSerializable<LocationBase> { }
 
-            private abstract class LocationBase : IGotReadOnlyName, IPEGI
+            private abstract class LocationBase : IPEGI
             {
-                public virtual string GetReadOnlyName() => GetType().Name;
+                public override string ToString() => GetType().Name;
 
                 public virtual void Inspect()
                 {
-                    GetReadOnlyName().PegiLabel().Nl();
+                    ToString().PegiLabel().Nl();
                 }
             }
 

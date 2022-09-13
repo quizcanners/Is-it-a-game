@@ -99,7 +99,8 @@ namespace QuizCanners.IsItGame
             set
             {
                 _ImpactDisintegration.latestValue = value;
-                _shadowRenderer.localScale = Vector3.one * 2 * (1-value);
+                if (_shadowRenderer)
+                    _shadowRenderer.localScale = Vector3.one * 2 * (1-value);
                 _updatePropertyBlockRequest.CreateRequest();
             }
         }
