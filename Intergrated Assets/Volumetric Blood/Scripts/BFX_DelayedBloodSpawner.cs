@@ -7,7 +7,7 @@ namespace QuizCanners.IsItGame.Develop
     {
         private Gate.UnityTimeScaled _bloodSpawnDelay = new Gate.UnityTimeScaled();
 
-        int _bloodSpawns = 3;
+        int _bloodSpawns = 2;
 
         public static BFX_DelayedBloodSpawner CreateOnHit(RaycastHit hit, Vector3 direction) 
         {

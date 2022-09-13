@@ -204,6 +204,12 @@ namespace QuizCanners.IsItGame.Develop
                 rb.angularVelocity = Vector3.zero;
             }
 
+            foreach (C_MonsterDismemberment dis in dismemberments)
+            {
+                dis.Demolished = false;
+                dis.AllowDemolition = false;
+            }
+
             Update();
         }
 
@@ -322,7 +328,7 @@ namespace QuizCanners.IsItGame.Develop
 
             Singleton.Try<Pool_VolumetricBlood>(s =>
             {
-                for (int i = 0; i < 3; i++)
+                for (int i = 0; i < 2; i++)
                     if (!s.TrySpawnRandom(origin, pushVector, out var inst, size: 2.5f))
                         break;
             });
@@ -503,12 +509,16 @@ namespace QuizCanners.IsItGame.Develop
                 ic.enabled = !alive;
             }
 
-            if (_animationInvalidated) //LimbsState == LimbsControllerState.Ragdoll || LimbsState == LimbsControllerState.Disintegrating) 
+            if (LimbsState == LimbsControllerState.Giblets || LimbsState == LimbsControllerState.Disintegrating || LimbsState == LimbsControllerState.Animation) 
             {
                 foreach (C_MonsterDismemberment dis in dismemberments)
-                {
-                    dis.DemolishIfMarked();
-                }
+                    dis.ClearCollars();
+            }
+
+            if (LimbsState == LimbsControllerState.Ragdoll) 
+            {
+                foreach (C_MonsterDismemberment dis in dismemberments)
+                    dis.AllowDemolition = true;
             } 
 
         }

@@ -634,7 +634,7 @@ MonoBehaviour:
   _startingNode:
     _book:
       Id: Whitehawk.nodeConfig
-    NodeIndex: 27
+    NodeIndex: 0
     _treeVersion: 0
 --- !u!1 &635623451
 GameObject:

@@ -161,13 +161,11 @@ namespace QuizCanners.IsItGame.Develop
 
             if (monster)
             {
-
                 if (visibleByCamera && monster.ShowDamage &&
                   (monster.LimbsState == C_MonsterEnemy.LimbsControllerState.Animation || monster.LimbsState == C_MonsterEnemy.LimbsControllerState.Ragdoll))
                 {
                     monster.ImpactController.Play(hit.point, 1, disintegrate: false, origin: hit.transform);
                 }
-
 
                 if (!monster.IsAlive && monster.LimbsState == C_MonsterEnemy.LimbsControllerState.Animation)
                 {
@@ -175,7 +173,13 @@ namespace QuizCanners.IsItGame.Develop
                     pierced = true;
                 }
 
-              
+                if (visibleByCamera) 
+                {
+                    var dismember = hit.collider.gameObject.GetComponentInParent<C_MonsterDismemberment>();
+                    if (dismember)
+                        dismember.MarkForDemolicion();
+                }
+
                 if (monster.TryTakeHit(WeaponAttack, RollInfluence.Advantage, C_MonsterEnemy.LimbsControllerState.Animation))
                 {
                     if (visibleByCamera)
@@ -184,7 +188,7 @@ namespace QuizCanners.IsItGame.Develop
 
                         SpawnBlood(hit, direction);
 
-                        Singleton.Try<Pool_VolumetricBlood>(s => s.TrySpawnFromHit(hit, direction, out BFX_BloodController controller));
+                        //Singleton.Try<Pool_VolumetricBlood>(s => s.TrySpawnFromHit(hit, direction, out BFX_BloodController controller));
                     }
 
                     if (monster.ImpactController && monster.IsAlive)
@@ -217,7 +221,6 @@ namespace QuizCanners.IsItGame.Develop
                                         monster.Giblets();
                                 }
                                 break;
-
                         }
                     }
 
@@ -235,7 +238,6 @@ namespace QuizCanners.IsItGame.Develop
             {
 
                 Game.Enums.SoundEffects.DefaultSurfaceImpact.PlayOneShotAt(hit.point);
-
 
                 if (!visibleByCamera)
                     return;
@@ -261,7 +263,7 @@ namespace QuizCanners.IsItGame.Develop
                 Singleton.Try<Pool_AnimatedExplosionOneShoot>(s => { s.TrySpawn(hit.point); });
              //Pool.TrySpawn<C_SpriteAnimationOneShot>(hit.point, out var spriteAnimation);
 
-             Singleton.Try<Pool_SmokeEffects>(s => s.TrySpawn(hit.point, out _));
+                Singleton.Try<Pool_SmokeEffects>(s => s.TrySpawn(hit.point, out _));
                
                 Singleton.Try<Pool_PhisXDebrisParticles>(s =>
                 {

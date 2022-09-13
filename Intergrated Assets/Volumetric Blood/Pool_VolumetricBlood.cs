@@ -1,6 +1,5 @@
 using QuizCanners.Inspect;
 using QuizCanners.Utils;
-using System;
 using UnityEngine;
 
 namespace QuizCanners.IsItGame.Develop
@@ -10,7 +9,21 @@ namespace QuizCanners.IsItGame.Develop
         public bool SpawnDecalOnTarget;
         public GameObject TargetDecalPrefab;
 
-        
+        protected override void OnInstanciated(BFX_BloodController inst) 
+        {
+            var tf = inst.transform;
+            tf.rotation = Quaternion.Euler(0, 360 * (UnityEngine.Random.value * 2 - 1), 0);
+            float size = GetScaleByDistance(tf.position);
+            tf.localScale = size * Vector3.one;
+
+            inst.AnimationSpeed = Mathf.Clamp(2f / size, min: 1f, max: 2.5f);
+        }
+
+        private float GetScaleByDistance(Vector3 position) 
+        {
+            float distance = QcMath.SmoothStep(0, 30, GetDistanceToCamera(position));
+            return (1f + distance) * 0.5f;
+        }
 
         public bool TrySpawnRandom(Vector3 position, Vector3 direction, out BFX_BloodController instance, float size = 2) 
         {
@@ -23,13 +36,7 @@ namespace QuizCanners.IsItGame.Develop
 
             tf.rotation = Quaternion.Euler(0, angle + 90 + 180 * (UnityEngine.Random.value * 2 - 1), 0);
 
-            float distance = QcMath.SmoothStep(0, 30, GetDistanceToCamera(position));
-
-            float distanceScale = (1f + distance) * 0.5f;
-
-            size *= distanceScale;
-
-            tf.localScale = distanceScale * size * Vector3.one;
+            tf.localScale *= size;
 
 
             instance.AnimationSpeed = Mathf.Clamp(2f / size, min: 1f, max: 2.5f);

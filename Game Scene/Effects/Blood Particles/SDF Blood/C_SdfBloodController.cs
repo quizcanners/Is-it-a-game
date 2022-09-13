@@ -23,6 +23,8 @@ namespace QuizCanners.IsItGame
         private float _progress;
         private bool _playing;
 
+        public float Scale = 1;
+
         const float MAX_SIZE = 6.5f;
 
 
@@ -43,7 +45,7 @@ namespace QuizCanners.IsItGame
 
                 _Down.SetOn(block, Mathf.Pow(Mathf.Abs(0.25f - sqRProgress) * 2, 2));
 
-                transform.localScale = Vector3.one * Mathf.Lerp(0.25f, MAX_SIZE, _progress);
+                transform.localScale = Vector3.one * Scale * Mathf.Lerp(0.25f, MAX_SIZE, _progress);
 
                 _renderer.SetPropertyBlock(block);
             }
@@ -57,6 +59,7 @@ namespace QuizCanners.IsItGame
             PushDirection = Vector3.zero;
             _RndSeed.latestValue = UnityEngine.Random.value;
             transform.rotation = Quaternion.identity;
+            Scale = 1;
         }
 
         void Update() 
