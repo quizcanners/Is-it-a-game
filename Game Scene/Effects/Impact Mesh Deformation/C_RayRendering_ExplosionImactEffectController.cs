@@ -163,9 +163,9 @@ namespace QuizCanners.IsItGame
                 if (block == null)
                     block = new MaterialPropertyBlock();
 
-                _ImpactPosition.SetOn(block);
-                _ImpactDeformation.SetOn(block);
-                _ImpactDisintegration.SetOn(block);
+                _ImpactPosition.SetLatestValueOn(block);
+                _ImpactDeformation.SetLatestValueOn(block);
+                _ImpactDisintegration.SetLatestValueOn(block);
 
                 _renderer.SetPropertyBlock(block);
             }

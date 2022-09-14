@@ -30,7 +30,7 @@ namespace QuizCanners.IsItGame
                 _visibilityValue = value;
                 CheckBlock();
                 _visibility.CurrentValue = Mathf.SmoothStep(0,1, value);
-                _visibility.Property.SetOn(block);
+                _visibility.Property.SetLatestValueOn(block);
                 _propertyBlockDirty.CreateRequest();
             }
         }
@@ -42,7 +42,7 @@ namespace QuizCanners.IsItGame
             {
                 CheckBlock();
                 _color.CurrentValue = value;
-                _color.Property.SetOn(block);
+                _color.Property.SetLatestValueOn(block);
                 _propertyBlockDirty.CreateRequest();
             }
         }

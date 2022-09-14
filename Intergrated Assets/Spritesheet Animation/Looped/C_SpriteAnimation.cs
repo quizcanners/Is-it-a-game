@@ -122,9 +122,9 @@ namespace QuizCanners.IsItGame.Develop
                 if (block == null)
                     block = new MaterialPropertyBlock();
 
-                _animation.SetOn(block);
-                _loopVisibility.SetOn(block);
-                _emission.SetOn(block);
+                _animation.SetLatestValueOn(block);
+                _loopVisibility.SetLatestValueOn(block);
+                _emission.SetLatestValueOn(block);
 
                 _meshRenderer.SetPropertyBlock(block);
             }

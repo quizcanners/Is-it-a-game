@@ -39,7 +39,7 @@ namespace QuizCanners.IsItGame
                 _Gap.SetOn(block, Mathf.Lerp(0.61f, 3f, _progress));
                 _Size.SetOn(block, Mathf.Lerp(0.055f, 0.02f, _progress));
               
-                _RndSeed.SetOn(block);
+                _RndSeed.SetLatestValueOn(block);
 
                 var sqRProgress = Mathf.Pow(_progress, 0.75f);
 
@@ -96,8 +96,8 @@ namespace QuizCanners.IsItGame
             "Renderer".PegiLabel(70).Edit(ref _renderer, gameObject).Nl();
             if (_renderer)
             {
-                _Gap.InspectInList_Nested().Nl().OnChanged(() => _Gap.SetOn(_renderer, block));
-                _Size.InspectInList_Nested().Nl().OnChanged(() => _Size.SetOn(_renderer, block));
+                _Gap.InspectInList_Nested().Nl().OnChanged(() => _Gap.SetLatestValueOn(_renderer, block));
+                _Size.InspectInList_Nested().Nl().OnChanged(() => _Size.SetLatestValueOn(_renderer, block));
 
                 "Progress".PegiLabel(0.3f).Edit_01(ref _progress).Nl().OnChanged(() => Progress = _progress);
             }

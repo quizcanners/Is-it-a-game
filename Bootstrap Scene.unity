@@ -488,7 +488,7 @@ MonoBehaviour:
     _enableNoise: 1
     _prerenderedNoiseTexture: {fileID: 2800000, guid: 6d18ef3e1c995d840833d599c661c60e, type: 3}
   enterExitContext:
-    _currentlyEntered: -1
+    _currentlyEntered: 4
 --- !u!114 &309239516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -736,6 +736,7 @@ RectTransform:
   - {fileID: 991965225}
   - {fileID: 4578268336318574232}
   - {fileID: 1947115144}
+  - {fileID: 6726314761627932243}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2259,6 +2260,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8443794502262168960}
   m_CullTransparentMesh: 1
+--- !u!114 &3086933999769820888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9140672937593370334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: cdc8ab4564145e14bba87b85e755ff96, type: 2}
+  m_Color: {r: 0.005, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 9d9913cf4e30d7145b1c70378182cb7c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!224 &3481806404083958355
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2299,6 +2330,14 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4474352222899430137
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9140672937593370334}
+  m_CullTransparentMesh: 1
 --- !u!1 &4536348075441481579
 GameObject:
   m_ObjectHideFlags: 0
@@ -2706,6 +2745,26 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+--- !u!224 &6726314761627932243
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9140672937593370334}
+  m_LocalRotation: {x: -0, y: 0, z: -0.1303534, w: -0.9914676}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 635623455}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -345.02}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 56, y: -143}
+  m_SizeDelta: {x: 0, y: -123.45001}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6748595971231611213
 GameObject:
   m_ObjectHideFlags: 0
@@ -2812,6 +2871,38 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &9140672937593370334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6726314761627932243}
+  - component: {fileID: 4474352222899430137}
+  - component: {fileID: 9140672937593370335}
+  - component: {fileID: 3086933999769820888}
+  m_Layer: 5
+  m_Name: Sprite Needs Mip Maps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &9140672937593370335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9140672937593370334}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f767a32cc2e78d4c88e2ac47713a188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 3086933999769820888}
 --- !u!222 &9181910045638579876
 CanvasRenderer:
   m_ObjectHideFlags: 0
