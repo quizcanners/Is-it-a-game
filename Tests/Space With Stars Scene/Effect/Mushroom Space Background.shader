@@ -81,7 +81,7 @@ Shader "Mushrooms/Effects/Space Background" {
 			sampler2D _Global_Noise_Lookup;
 			uniform float4 _Global_Noise_Lookup_TexelSize;
 
-			float _Effect_Time;
+			float4 _Effect_Time;
 			float _Parallax;
 			float _StarsScale;
 			float _Mushroom_Light_Visibility;
@@ -183,7 +183,7 @@ Shader "Mushrooms/Effects/Space Background" {
 
 				float starSdf =
 					
-					ray * (1 + sin(_Effect_Time * starGrid.r * 20)) * 0.1 +
+					ray * (1 + sin(_Effect_Time.x * starGrid.r * 20)) * 0.1 +
 					0.01  * (brightness  
 						//+ w * 200
 						) / length(starOff);
@@ -280,8 +280,8 @@ Shader "Mushrooms/Effects/Space Background" {
 
 						const float COLOR_TRANSITION_THOLD = 3.5;
 
-						float gyr = sdGyroid(float3(screenPos * (1.5 + qc_RND_SEEDS.w * 1.5) * _StarsScale + _Effect_Time - _Mushroom_Scroll_Position.xy * 20, sin(uv.x * 3 + uv.y * 3.7 + _Effect_Time) + qc_RND_SEEDS.w*5));
-						float gyr2 = sdGyroid(float3(screenPos * 2 * _StarsScale + gyr,  sin(uv.x * 3.2 + uv.y * 2.7 + _Effect_Time) + qc_RND_SEEDS.w));
+						float gyr = sdGyroid(float3(screenPos * (1.5 + qc_RND_SEEDS.w * 1.5) * _StarsScale + _Effect_Time.x - _Mushroom_Scroll_Position.xy * 20, sin(uv.x * 3 + uv.y * 3.7 + _Effect_Time.x) + qc_RND_SEEDS.w*5));
+						float gyr2 = sdGyroid(float3(screenPos * 2 * _StarsScale + gyr,  sin(uv.x * 3.2 + uv.y * 2.7 + _Effect_Time.x) + qc_RND_SEEDS.w));
 
 						const float SHARPNESS = 1.5;
 
@@ -314,10 +314,10 @@ Shader "Mushrooms/Effects/Space Background" {
 							+ qc_ParallaxOffset.xy) * 0.2//* STARS_PARALLAX) * 0.2
 							- offset  * lenFromStar * 0.4;
 
-						float cloud1 = tex2Dlod(_CloudsTex, float4(Rot(fogUV, deLen * _SinTime.x*0.3)  - float2(0, 0.02) * _Effect_Time, 0, 0));
+						float cloud1 = tex2Dlod(_CloudsTex, float4(Rot(fogUV, deLen * _SinTime.x*0.3)  - float2(0, 0.02) * _Effect_Time.x, 0, 0));
 						float cloud2 = tex2Dlod(_CloudsTex2, float4(
 							fogUV
-							+ float2(0.03, 0) * _Effect_Time, 0, 0));
+							+ float2(0.03, 0) * _Effect_Time.x, 0, 0));
 
 						float cloud = cloud1 * cloud2;
 

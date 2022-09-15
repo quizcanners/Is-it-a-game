@@ -49,7 +49,6 @@ Shader "Mushrooms/Effects/Sdf Lights Gyro" {
 			uniform float4 _MainTex_ST;
 			sampler2D _MainTex;
 			sampler2D _Global_Noise_Lookup;
-			float _Effect_Time;
 			float _Parallax;
 			float4 qc_ParallaxOffset;
 

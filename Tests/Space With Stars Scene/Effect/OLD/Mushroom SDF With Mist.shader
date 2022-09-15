@@ -52,7 +52,6 @@ Shader "Mushrooms/Effects/SDF Light With Mist" {
 				sampler2D _FogColor;
 				float _ShapeSoftness;
 				float _Cutoff;
-				float _Effect_Time;
 
 				v2f vert(appdata_full v) {
 					v2f o;

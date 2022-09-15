@@ -76,7 +76,6 @@ Shader "Mushrooms/Effects/Halo" {
 			uniform float4 _MainTex_TexelSize;
 
 			sampler2D _Global_Noise_Lookup;
-			float _Effect_Time;
 			float _Parallax;
 			float4 qc_ParallaxOffset;
 			float4 _Mushroom_Star_Color;
