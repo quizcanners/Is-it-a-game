@@ -144,7 +144,7 @@ namespace QuizCanners.IsItGame.Develop
                     else
                     {
                         "Will shoot from {0}".F(Camera.main.gameObject.name).PegiLabel().Write();
-                        Camera.main.ClickHighlight().Nl();
+                        pegi.ClickHighlight(Camera.main).Nl();
                     }
                 }
 

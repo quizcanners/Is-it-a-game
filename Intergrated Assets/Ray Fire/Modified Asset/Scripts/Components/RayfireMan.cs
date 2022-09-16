@@ -66,41 +66,28 @@ namespace RayFire
         // Set instance
         void SetInstance()
         {
-            // Inst not define, set to this
-            if (inst == null)
+            if (!inst)
             {
                 inst = this;
             }
 
-            // Inst defined
-            if (inst != null)
+            if (inst == this)
             {
-                // Instance is this mono - > Init
-                if (inst == this)
+                SetVariables();
+
+                if (Application.isPlaying) 
                 {
-                    // Set vars
-                    SetVariables();
-
-                    // Runtime ops
-                    if (Application.isPlaying == true) 
-                    {
-                        // Start pooling objects for fragments
-                        SetPooling();
-
-                        // Create storage and stat root check coroutine
-                        SetStorage();
-                    }
+                    SetPooling();
+                    SetStorage();
                 }
-
-                // Inst is not this mono. Destroy.
-                if (inst != this)
-                {
-                    if (Application.isPlaying == true)
-                        Destroy (gameObject);
-                    else if (Application.isEditor == true)
-                        DestroyImmediate (gameObject);
-                }
+            } else 
+            {
+                if (Application.isPlaying)
+                    Destroy (gameObject);
+                else 
+                    DestroyImmediate (gameObject);
             }
+            
         }
 
         /// /////////////////////////////////////////////////////////
@@ -299,7 +286,7 @@ namespace RayFire
         public static void DestroyFragment (RayfireRigid scr, Transform tm, float time = 0f)
         {
             // Decrement total amount.
-            if (Application.isPlaying == true)
+            if (Application.isPlaying && inst)
                 inst.advancedDemolitionProperties.currentAmount--;
             
             // Deactivate

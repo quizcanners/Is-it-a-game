@@ -127,7 +127,7 @@ namespace QuizCanners.IsItGame.Develop
                 bool connected = ControllingCamera;
 
                 "Controlling camera".PegiLabel().ToggleIcon(ref connected).OnChanged(()=> ControllingCamera = connected);
-                s.ClickHighlight().Nl();
+                pegi.ClickHighlight(s).Nl();
 
             } , logOnServiceMissing: false);
 

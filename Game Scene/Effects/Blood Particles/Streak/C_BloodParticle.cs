@@ -104,7 +104,7 @@ namespace QuizCanners.IsItGame
 
             public void InspectInList(ref int edited, int index)
             {
-                _point.otherCollider.gameObject.ClickHighlight();
+                pegi.ClickHighlight(_point.otherCollider.gameObject);
                 _point.otherCollider.gameObject.name.PegiLabel().Write();
             }
         }

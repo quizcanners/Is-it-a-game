@@ -535,7 +535,7 @@ namespace QuizCanners.IsItGame.Develop
             else if (gameObject.name.PegiLabel().ClickLabel() | Icon.Enter.Click())
                 edited = index;
 
-            gameObject.ClickHighlight();
+            pegi.ClickHighlight(gameObject);
         }
 
         public override string ToString() => _state == null ? gameObject.name : _state.ToString(); 

@@ -115,7 +115,7 @@ namespace QuizCanners.IsItGame.Develop
                 Demolished = dem;
 
             _limbToHide.ToString().PegiLabel().Write();
-            this.ClickHighlight();
+            pegi.ClickHighlight(this);
 
             if (Icon.Enter.Click())
                 edited = index;

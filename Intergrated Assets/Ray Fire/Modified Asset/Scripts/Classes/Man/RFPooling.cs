@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using QuizCanners.Utils;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -150,11 +151,17 @@ namespace RayFire
         /// Methods
         /// /////////////////////////////////////////////////////////
 
+        public void DestroyPool() 
+        {
+            poolInstance.gameObject.DestroyWhatever();
+            poolRoot.gameObject.DestroyWhatever();
+        }
+
         // Create pool root
         public void CreatePoolRoot (Transform manTm)
         {
             // Already has pool root
-            if (poolRoot != null)
+            if (poolRoot)
                 return;
             
             GameObject poolGo = new GameObject ("Pool_Fragments");

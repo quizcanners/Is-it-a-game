@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuizCanners.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -689,7 +690,7 @@ namespace RayFire
                 return;
             
             // Init inactive every frame update coroutine TODO activation check per shard properties
-            if (inactiveShards.Count > 0)
+            if (!inactiveShards.IsNullOrEmpty())
                 StartCoroutine (activation.InactiveCor(this));
             
             // Offset fade
