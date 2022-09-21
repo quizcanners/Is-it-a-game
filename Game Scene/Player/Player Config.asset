@@ -36,7 +36,7 @@ MonoBehaviour:
       range:
         ft: 5
       Damage:
-        DamageDice: 0a0000000a0000000a000000
+        DamageDice: 0a0000000a000000
         DamageType: 7
         DamageBonus: 2
     MaxDistance: 2000
