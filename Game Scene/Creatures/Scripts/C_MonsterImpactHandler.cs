@@ -19,11 +19,11 @@ namespace QuizCanners.IsItGame.Develop
 
             if (magn > 3f)
             {
-                Game.Enums.SoundEffects sound;
+                Game.Enums.UiSoundEffects sound;
 
                 if (magn > 13) 
                 {
-                    sound = Game.Enums.SoundEffects.BodyImpact;
+                    sound = Game.Enums.UiSoundEffects.BodyImpact;
 
                     if (!monster)
                         monster = GetComponentInParent<C_MonsterEnemy>();
@@ -36,7 +36,7 @@ namespace QuizCanners.IsItGame.Develop
                 else
                 if (magn > 8)
                 {
-                    sound = Game.Enums.SoundEffects.BodyImpact;
+                    sound = Game.Enums.UiSoundEffects.BodyImpact;
 
                     foreach (var c in collision.contacts)
                     {
@@ -58,14 +58,14 @@ namespace QuizCanners.IsItGame.Develop
                             var cnt = collision.contacts[0];
                             var tex = receiver.GetTexture();
                             var st = receiver.CreateStroke(cnt);
-                            BrushTypes.Sphere.Paint(receiver.CreatePaintCommandForSphereBrush(st, s.OnCollisionBrush.brush, 0));
+                                receiver.CreatePaintCommandFor(st, s.OnCollisionBrush.brush, 0).Paint();
                         }
 
                     });
                 }
                 else if (magn > 5)
                 {
-                    sound = Game.Enums.SoundEffects.ArmorImpact;
+                    sound = Game.Enums.UiSoundEffects.ArmorImpact;
 
                     if (Pool.TrySpawnIfVisible<C_SmokeEffectOnImpact>(transform.position, out var inst))
                     {
@@ -74,7 +74,7 @@ namespace QuizCanners.IsItGame.Develop
 
                 }
                 else
-                    sound = Game.Enums.SoundEffects.Ice;
+                    sound = Game.Enums.UiSoundEffects.Ice;
 
                 //const float GAP = 0.03f;
 

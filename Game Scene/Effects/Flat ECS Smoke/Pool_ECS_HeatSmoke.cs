@@ -1,7 +1,6 @@
 using QuizCanners.Inspect;
 using QuizCanners.TinyECS;
 using QuizCanners.Utils;
-using System.Security.Cryptography;
 using UnityEngine;
 
 namespace QuizCanners.IsItGame.Develop

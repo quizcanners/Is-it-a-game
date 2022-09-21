@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MainMenu
   m_EditorClassIdentifier: Assembly-CSharp:CoreLocator:MusicClipData
   Reference:
-    m_AssetGUID: 2c647aa2f80c08e40b1e3596a3b362f0
+    m_AssetGUID: 034cbe5f27b018b4e97de78ca63c0e0f
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0

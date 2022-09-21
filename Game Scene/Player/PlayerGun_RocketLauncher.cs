@@ -119,17 +119,17 @@ namespace QuizCanners.IsItGame.Develop
 
             if (splatterMonsters)
             {
-                Game.Enums.SoundEffects.Explosion_Gory.PlayOneShotAt(hit.point, clipVolume: volume);
+                Game.Enums.UiSoundEffects.Explosion_Gory.PlayOneShotAt(hit.point, clipVolume: volume);
             }
             else
                 Singleton.Try<Singleton_CameraOperatorGodMode>(
                     onFound: cam => {
                             if ((cam.transform.position - hit.point).magnitude < _explosionRadius)
-                                Game.Enums.SoundEffects.Explosion_Near.PlayOneShotAt(hit.point, clipVolume: volume);
+                                Game.Enums.UiSoundEffects.Explosion_Near.PlayOneShotAt(hit.point, clipVolume: volume);
                             else 
-                                Game.Enums.SoundEffects.Explosion.PlayOneShotAt(hit.point, clipVolume: volume);
+                                Game.Enums.UiSoundEffects.Explosion.PlayOneShotAt(hit.point, clipVolume: volume);
                         }, 
-                    onFailed: () => Game.Enums.SoundEffects.Explosion.PlayOneShotAt(hit.point, clipVolume: volume));
+                    onFailed: () => Game.Enums.UiSoundEffects.Explosion.PlayOneShotAt(hit.point, clipVolume: volume));
 
 
             if (!Camera.main.IsInCameraViewArea(hit.point))
@@ -237,7 +237,6 @@ namespace QuizCanners.IsItGame.Develop
             PainDamage(hit, brushConfig);
         }
 
-
         private void PainDamage(RaycastHit hit, PlaytimePainter_BrushConfigScriptableObject brush) 
         {
             var receivers = hit.transform.GetComponentsInParent<C_PaintingReceiver>();
@@ -249,7 +248,7 @@ namespace QuizCanners.IsItGame.Develop
                 if (receiver.GetTexture() is RenderTexture)
                 {
                     var stroke = receiver.CreateStroke(hit);
-                    BrushTypes.Sphere.Paint(receiver.CreatePaintCommandForSphereBrush(stroke, brush.brush, subMesh));
+                    receiver.CreatePaintCommandFor(stroke, brush.brush, subMesh).Paint();
                 }
             }
         }
@@ -264,15 +263,12 @@ namespace QuizCanners.IsItGame.Develop
             }
         }
 
-
         private State latestState;
         private Vector3 _origin;
         private Vector3 _latestNormal;
         private LogicWrappers.CountDown _explosionsLeft = new();
         private Gate.UnityTimeScaled _explosionDynamics = new();
         private int iteration;
-
-
 
         public void UpdateExplosions() 
         {
@@ -382,7 +378,6 @@ namespace QuizCanners.IsItGame.Develop
             }
         }
 
-
         [Serializable]
         public class State : IPEGI
         {
@@ -394,8 +389,5 @@ namespace QuizCanners.IsItGame.Develop
             }
         }
 
-
     }
-
-    
 }

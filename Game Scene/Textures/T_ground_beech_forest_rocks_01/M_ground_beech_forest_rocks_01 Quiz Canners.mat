@@ -10,7 +10,7 @@ Material:
   m_Name: M_ground_beech_forest_rocks_01 Quiz Canners
   m_Shader: {fileID: 4800000, guid: 1f71f005ba3c40a47a82d8cb165aaa10, type: 3}
   m_ValidKeywords:
-  - _BUMP_COMBINED
+  - _BUMP_REGULAR
   - _SURFACE_NONMETAL
   m_InvalidKeywords:
   - _DISPLACEMENT_LOCK_TILING_SCALE
@@ -37,6 +37,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _Ambient:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -78,7 +82,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Diffuse:
-        m_Texture: {fileID: 2800000, guid: a5834c0ff764b0e4a9df15774c59b6af, type: 3}
+        m_Texture: {fileID: 2800000, guid: cf1e6a2847c833540a4dc549a84c6c4b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DistortionVectorMap:
@@ -110,7 +114,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Map:
-        m_Texture: {fileID: 2800000, guid: 3fd5c718ac866de439c7e0ecb8a3df55, type: 3}
+        m_Texture: {fileID: 2800000, guid: 823bdbd38b24b8e41824579480e16fda, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
@@ -177,7 +181,7 @@ Material:
     - _AlphaCutoffPrepass: 0.5
     - _AlphaCutoffShadow: 0.5
     - _Anisotropy: 0
-    - _BUMP: 2
+    - _BUMP: 1
     - _BlendMode: 0
     - _BumpScale: 1
     - _CoatMask: 0
@@ -305,6 +309,7 @@ Material:
     - _ZWrite: 1
     - subSurfaceScattering: 0
     - thisDoesntMatter: 0
+    - useAmbient: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}

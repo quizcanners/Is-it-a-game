@@ -36,12 +36,12 @@ MonoBehaviour:
       range:
         ft: 5
       Damage:
-        DamageDice: 0a0000000a0000000a000000
+        DamageDice: 0a0000000a000000
         DamageType: 7
         DamageBonus: 2
     MaxDistance: 2000
     context:
-      _currentlyEntered: -1
+      _currentlyEntered: 0
   BoltGun:
     brushConfig: {fileID: 11400000, guid: 1923bf77c4f694e4e9cdfed090985213, type: 2}
     WeaponAttack:

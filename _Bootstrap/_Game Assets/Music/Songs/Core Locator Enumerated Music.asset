@@ -24,8 +24,18 @@ MonoBehaviour:
   - nameForInspector: Combat
     list:
     - {fileID: 11400000, guid: 1fe1be67b37819944b05509364da254d, type: 2}
+    - {fileID: 11400000, guid: c7b9004cbe018484d82c7ed19ba0d83b, type: 2}
+    - {fileID: 11400000, guid: 3fb3baac0c7c36c48a0c40c9e2153785, type: 2}
+    - {fileID: 11400000, guid: 1650798be98f98140904fd7f53f996ba, type: 2}
   - nameForInspector: Reward
     list:
     - {fileID: 11400000, guid: b839b2886b424cb4d966ee1e69938702, type: 2}
-  - nameForInspector: 5
-    list: []
+  - nameForInspector: Exploration
+    list:
+    - {fileID: 11400000, guid: f678efdca20034e41986fe5103c43cb2, type: 2}
+    - {fileID: 11400000, guid: c0bf7642dd406b04cb8d2728f4fc1678, type: 2}
+    - {fileID: 11400000, guid: 9fb210ebad33c5e4fb4d783aab14b322, type: 2}
+    - {fileID: 11400000, guid: 3de338006f7389642b1334379ccf0c2c, type: 2}
+  - nameForInspector: PauseMenu
+    list:
+    - {fileID: 11400000, guid: f137df69453e19e4b9c8f9b8b8e9377b, type: 2}

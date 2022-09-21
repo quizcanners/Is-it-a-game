@@ -6,6 +6,7 @@ using QuizCanners.Utils;
 using RayFire;
 using System;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
@@ -14,9 +15,8 @@ namespace QuizCanners.IsItGame.Develop
     [Serializable]
     public class PlayerGun_Machinegun :  IPEGI, INeedAttention
     {
-        public PlaytimePainter_BrushConfigScriptableObject brushConfig;
-      
-        public Attack WeaponAttack = new(name: "Gun", isRange: true, attackBonus: 3,
+        [SerializeField] private PlaytimePainter_BrushConfigScriptableObject brushConfig;
+        [SerializeField] private Attack WeaponAttack = new(name: "Gun", isRange: true, attackBonus: 3,
              new Damage()
              {
                  DamageBonus = 2,
@@ -24,22 +24,23 @@ namespace QuizCanners.IsItGame.Develop
                  DamageType = DamageType.Piercing
              });
 
-        public float MaxDistance = 2000;
+        [SerializeField] private float MaxDistance = 2000;
 
         public void Shoot(Vector3 from, Vector3 target, State state)
         {
-            Game.Enums.SoundEffects.Shot.PlayOneShotAt(from, clipVolume: 3);
+            Game.Enums.UiSoundEffects.Shot.PlayOneShotAt(from, clipVolume: 3);
 
             var spread = UnityEngine.Random.insideUnitSphere * state.WeaponKick;
 
-            var mgmt = Singleton.Get<Singleton_ChornobaivkaController>();
+            Singleton_ChornobaivkaController mgmt = Singleton.Get<Singleton_ChornobaivkaController>();
             if (!mgmt)
             {
                 QcLog.ChillLogger.LogErrorOnce("{0} not found".F(nameof(Singleton_ChornobaivkaController)), key: "NoChrnb");
                 return;
             }
 
-            var ray = new Ray(from + spread, target - from);
+
+            Ray ray = new(from + spread, target - from);
 
             RaycastHit firstHit;
 
@@ -56,7 +57,7 @@ namespace QuizCanners.IsItGame.Develop
                 Singleton.Try<Singleton_CameraOperatorGodMode>(c =>
                 {
                     var point = QcMath.GetClosestPointOnALine(lineA: from, lineB: firstHit.point, point: c.transform.position);
-                    Game.Enums.SoundEffects.BulletFlyBy.PlayOneShotAt(point, clipVolume: 0.5f);
+                    Game.Enums.UiSoundEffects.BulletFlyBy.PlayOneShotAt(point, clipVolume: 0.5f);
                 });
 
                 state.WeaponKick = Mathf.Clamp01(state.WeaponKick + 0.3f);
@@ -111,7 +112,7 @@ namespace QuizCanners.IsItGame.Develop
                         {
                             var tex = receiver.GetTexture();
 
-                            bool isSkinned = false;
+                           // bool isSkinned = false;
 
                             if (tex)
                             {
@@ -138,17 +139,17 @@ namespace QuizCanners.IsItGame.Develop
 
                                     st.posFrom -= hitVector * 0.2f;
 
-                                    isSkinned = receiver.type == C_PaintingReceiver.RendererType.Skinned;
+                                 /*   isSkinned = receiver.type == C_PaintingReceiver.RendererType.Skinned;
 
                                     if ((isSkinned && receiver.skinnedMeshRenderer)
                                         || (receiver.type == C_PaintingReceiver.RendererType.Regular && receiver.meshFilter))
-                                    {
-                                        BrushTypes.Sphere.Paint(receiver.CreatePaintCommandForSphereBrush(st, brushConfig.brush, subMesh));
-                                    }
+                                    {*/
+                                       receiver.CreatePaintCommandFor(st, brushConfig.brush, subMesh).Paint();
+                                    /*}
                                     else
                                     {
                                         QcLog.ChillLogger.LogErrorOnce("wasn't setup right for painting", "NoRtPntng");
-                                    }
+                                    }*/
                                 }
                             }
                         }
@@ -195,7 +196,7 @@ namespace QuizCanners.IsItGame.Develop
                             monster.ShowDamage = true;
                         }
 
-                        Game.Enums.SoundEffects.BodyImpact.PlayOneShotAt(monster.transform.position, clipVolume: 2);
+                        Game.Enums.UiSoundEffects.BodyImpact.PlayOneShotAt(monster.transform.position, clipVolume: 2);
                     }
                     else
                         if (visibleByCamera)
@@ -225,7 +226,7 @@ namespace QuizCanners.IsItGame.Develop
                 }
                 else
                 {
-                    Game.Enums.SoundEffects.ArmorImpact.PlayOneShotAt(monster.transform.position);
+                    Game.Enums.UiSoundEffects.ArmorImpact.PlayOneShotAt(monster.transform.position);
 
                     if (visibleByCamera)
                         Singleton.Try<Pool_ImpactLightsController>(s => s.TrySpawnIfVisible(hit.point, onInstanciate: l => l.SetSize(10f)));
@@ -233,7 +234,7 @@ namespace QuizCanners.IsItGame.Develop
             }
             else
             {
-                Game.Enums.SoundEffects.DefaultSurfaceImpact.PlayOneShotAt(hit.point);
+                Game.Enums.UiSoundEffects.DefaultSurfaceImpact.PlayOneShotAt(hit.point);
 
                 if (!visibleByCamera)
                     return;
@@ -253,6 +254,8 @@ namespace QuizCanners.IsItGame.Develop
                         state.Gun.Shoot(origin, direction);
                     }
                 }
+
+
 
                 //Singleton.Try<Pool_ECS_HeatSmoke>(s => s.TrySpawn(worldPosition: hit.point));
 
@@ -356,8 +359,7 @@ namespace QuizCanners.IsItGame.Develop
             [SerializeField] public RayfireGun Gun;
             [NonSerialized] public float WeaponKick = 0;
             
-
-            public readonly LogicWrappers.TimeFixedSegmenter DelayBetweenShots = new(0.1f, returnOnFirstRequest: 1);
+            public readonly LogicWrappers.TimeFixedSegmenter DelayBetweenShots = new(unscaledTime: false, 0.1f, returnOnFirstRequest: 1);
 
             public void Inspect()
             {

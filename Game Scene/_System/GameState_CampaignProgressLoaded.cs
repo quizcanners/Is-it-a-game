@@ -1,6 +1,8 @@
+using QuizCanners.IsItGame.Develop;
 using QuizCanners.IsItGame.NodeNotes;
 using QuizCanners.IsItGame.UI;
 using QuizCanners.Utils;
+using UnityEngine.UIElements;
 
 namespace QuizCanners.IsItGame.StateMachine
 {
@@ -12,8 +14,11 @@ namespace QuizCanners.IsItGame.StateMachine
             IDataFallback<UiObscureScreen>,
             IDataFallback<Game.Enums.PhisicalSimulation>
         {
-            public Game.Enums.Music Get() => Game.Enums.Music.Combat;
 
+            bool GotMonsters => Singleton.TryGetValue<Pool_MonstersController, bool>(s => s.Autospawn, defaultValue: false, logOnServiceMissing: false);
+
+            public Game.Enums.Music Get() => GotMonsters ? Game.Enums.Music.Combat : Game.Enums.Music.Exploration;
+            
             Game.Enums.PhisicalSimulation IDataFallback<Game.Enums.PhisicalSimulation>.Get() => Game.Enums.PhisicalSimulation.Active;
 
             UiObscureScreen IDataFallback<UiObscureScreen>.Get() => UiObscureScreen.Off;
@@ -47,8 +52,13 @@ namespace QuizCanners.IsItGame.StateMachine
                 });*/
             }
 
+            private Gate.Bool _monstersState = new Gate.Bool();
+
             internal override void Update()
             {
+                if (_monstersState.TryChange(GotMonsters))
+                    Machine.SetDirty();
+
                 Singleton.Try<Singleton_ConfigNodes>(s =>
                 {
                     if (s.AnyEntered)

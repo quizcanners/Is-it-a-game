@@ -38,7 +38,7 @@ MonoBehaviour:
     hardness: 1.43
     blurAmount: 1
     brush3DRadius: 0.12
-    brush2DRadius: 16
+    brush2DRadius: 28
     useAlphaBuffer: 0
     alphaLimitForAlphaBuffer: 0.5
     worldSpaceBrushPixelJitter: 1
@@ -46,5 +46,5 @@ MonoBehaviour:
     _dFlow:
       min: 0.1
       max: 20
-      _value: 20
+      _value: 4.5
     showingSize: 1

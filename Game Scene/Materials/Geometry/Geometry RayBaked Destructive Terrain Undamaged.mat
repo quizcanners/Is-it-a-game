@@ -123,6 +123,7 @@ Material:
     - _ZWrite: 1
     - _qcPp_AtlasTextures: 1
     - isDamaged: 0
+    - subSurfaceScattering: 0
     - thisDoesntMatter: 0
     - useImpact: 0
     m_Colors:
