@@ -23,6 +23,8 @@ namespace QuizCanners.IsItGame.Develop
             Vector3 _directionVector;
             private List<AnimatorValue.Base> _bases;
 
+            private Gate.UnityTimeScaled _hitReactionDelay = new() { StartArmed = true };
+
             public Vector3 Direction => _directionVector;
 
             protected List<AnimatorValue.Base> AllValues
@@ -67,10 +69,17 @@ namespace QuizCanners.IsItGame.Develop
                 AllValues.Reset(animator);
             }
 
-            public void PlayBlockAnimation() => Play(BLOCK);
+            public void PlayBlockAnimation()
+            {
+                if (_hitReactionDelay.TryUpdateIfTimePassed(0.5f))
+                    Play(BLOCK);
+            }
 
-            public void GetHit() => Play(HIT);
-
+            public void GetHit()
+            {
+                if (_hitReactionDelay.TryUpdateIfTimePassed(0.5f))
+                    Play(HIT);
+            }
             public bool Down
             {
                 get => DOWN.Get();

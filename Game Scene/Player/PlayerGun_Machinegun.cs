@@ -96,7 +96,6 @@ namespace QuizCanners.IsItGame.Develop
 
             if (visibleByCamera)
             {
-                bool isSkinned = false;
 
                 var receivers = hit.transform.GetComponentsInParent<C_PaintingReceiver>();
 
@@ -106,13 +105,13 @@ namespace QuizCanners.IsItGame.Develop
 
                     if (receiver)
                     {
-                        ApplyBrush(out isSkinned);
+                        ApplyBrush();
 
-                        void ApplyBrush(out bool isSkinned)
+                        void ApplyBrush()
                         {
                             var tex = receiver.GetTexture();
 
-                            isSkinned = false;
+                            bool isSkinned = false;
 
                             if (tex)
                             {
@@ -184,8 +183,6 @@ namespace QuizCanners.IsItGame.Develop
                 {
                     if (visibleByCamera)
                     {
-                        BFX_DelayedBloodSpawner.CreateOnHit(hit, direction);
-
                         SpawnBlood(hit, direction);
 
                         //Singleton.Try<Pool_VolumetricBlood>(s => s.TrySpawnFromHit(hit, direction, out BFX_BloodController controller));
@@ -236,7 +233,6 @@ namespace QuizCanners.IsItGame.Develop
             }
             else
             {
-
                 Game.Enums.SoundEffects.DefaultSurfaceImpact.PlayOneShotAt(hit.point);
 
                 if (!visibleByCamera)
@@ -261,7 +257,8 @@ namespace QuizCanners.IsItGame.Develop
                 //Singleton.Try<Pool_ECS_HeatSmoke>(s => s.TrySpawn(worldPosition: hit.point));
 
                 Singleton.Try<Pool_AnimatedExplosionOneShoot>(s => { s.TrySpawn(hit.point); });
-             //Pool.TrySpawn<C_SpriteAnimationOneShot>(hit.point, out var spriteAnimation);
+
+                //Pool.TrySpawn<C_SpriteAnimationOneShot>(hit.point, out var spriteAnimation);
 
                 Singleton.Try<Pool_SmokeEffects>(s => s.TrySpawn(hit.point, out _));
                
@@ -300,11 +297,11 @@ namespace QuizCanners.IsItGame.Develop
                         {
                             var big = UnityEngine.Random.value;
 
-                            debri.Size = (0.02f + big * 0.5f);
+                            debri.Size = (big * 0.5f);
 
                             var dir = Vector3.Lerp(reflected, hit.normal, big);
 
-                            debri.Push(pushVector: dir, pushForce: debri.Size * 12f, pushRandomness: 0.1f, torqueForce: 0);
+                            debri.Push(pushVector: dir, pushForce: debri.Size * 22f, pushRandomness: 0.1f, torqueForce: 0);
                         }
                         else break;
                     }
@@ -314,12 +311,18 @@ namespace QuizCanners.IsItGame.Develop
 
         private void SpawnBlood(RaycastHit hit, Vector3 direction)
         {
+
+            Pool.TrySpawn<C_BloodSquirt>(hit.point, inst => 
+            {
+                inst.transform.LookAt(hit.point - direction, Vector3.up);
+            });
+
             var poolOfBlood = Singleton.Get<Pool_BloodParticlesController>();
 
             if (poolOfBlood)
             {
 
-                int bloodParticles = Mathf.RoundToInt(Mathf.Max(1, poolOfBlood.VacancyPortion *2));
+                int bloodParticles = Mathf.RoundToInt(Mathf.Max(1, poolOfBlood.VacancyPortion * 2));
 
                 Vector3 from = hit.point;// + direction * 0.2f;
 
@@ -328,7 +331,7 @@ namespace QuizCanners.IsItGame.Develop
                     if (poolOfBlood.TrySpawn(hit.point, out var drop))
                     {
                         float front = UnityEngine.Random.value;
-                        drop.Restart(from, (Vector3.Lerp(-direction, hit.normal + UnityEngine.Random.insideUnitSphere * 0.2f, front)) * (1 + front * front * 3), scale: 1f + front);
+                        drop.Restart(from, (Vector3.Lerp(-direction, hit.normal + UnityEngine.Random.insideUnitSphere * 0.2f, front)) * (1 + front * front * 3), scale: 0.3f + front * 0.2f);
                     }
                     else
                         break;
@@ -340,7 +343,7 @@ namespace QuizCanners.IsItGame.Develop
                 {
                     float straight = UnityEngine.Random.value;
                     if (poolOfBlood.TrySpawn(hit.point, out var drop))
-                        drop.Restart(from, (direction + UnityEngine.Random.insideUnitSphere * 0.05f) * (1.5f + straight * straight * 6), scale: 1f + straight);
+                        drop.Restart(from, (direction + UnityEngine.Random.insideUnitSphere * 0.05f) * (1.5f + straight * straight * 6), scale: 0.3f + straight * 0.2f);
                     else
                         break;
                 }

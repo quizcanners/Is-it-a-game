@@ -1,3 +1,4 @@
+using Dungeons_and_Dragons;
 using QuizCanners.Inspect;
 using QuizCanners.Utils;
 using UnityEngine;
@@ -71,7 +72,10 @@ namespace QuizCanners.IsItGame.Develop
 
                     _instance = Instantiate(_demolishablePrefab, transform);
 
-                    Pool.TrySpawnIfVisible<BFX_BloodController>(_instance.Root.position);
+                    //Pool.TrySpawnIfVisible<BFX_BloodController>(_instance.Root.position);
+
+                    //if (!monster.IsAlive)
+                    BFX_DelayedBloodSpawner.CreateFromTransform(transform, Vector3.zero);
 
                     _limbToHide.gameObject.SetActive(false);
                 } else 

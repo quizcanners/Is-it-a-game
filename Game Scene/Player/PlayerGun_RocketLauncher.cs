@@ -206,7 +206,7 @@ namespace QuizCanners.IsItGame.Develop
 
                         var direction = Vector3.Lerp(reflected, hit.normal, 0.5f + big * 0.5f);
 
-                        debri.Push(pushVector: direction, pushForce: debri.Size * 3f, pushRandomness: 2f, torqueForce: 0);
+                        debri.Push(pushVector: direction, pushForce: debri.Size * 40f, pushRandomness: 2f, torqueForce: 0);
                     }
                     else break;
                 }
@@ -272,9 +272,11 @@ namespace QuizCanners.IsItGame.Develop
         private Gate.UnityTimeScaled _explosionDynamics = new();
         private int iteration;
 
+
+
         public void UpdateExplosions() 
         {
-            if (!_explosionsLeft.IsFinished && _explosionDynamics.TryUpdateIfTimePassed(0.02f)) 
+            if (!_explosionsLeft.IsFinished && _explosionDynamics.TryUpdateIfTimePassed(0.05f)) 
             {
                 iteration++;
                 _explosionsLeft.RemoveOne();
@@ -297,6 +299,21 @@ namespace QuizCanners.IsItGame.Develop
                     {
                         spawnOffset = spawnDirection * Mathf.Min(spawnOffset.magnitude, Vector3.Distance(hit.point, _origin));
                     }
+                });
+
+
+                
+                Singleton.Try<Pool_PhisXDebrisParticles>(s =>
+                {
+                    if (s.TrySpawnIfVisible(_origin, out var debri))
+                    {
+                        var big = UnityEngine.Random.value;
+
+                        debri.Reset(size: big * 0.5f);
+
+                        debri.Push(pushVector: spawnDirection, pushForce: 10.5f, pushRandomness: debri.Size * 5, torqueForce: 540, heat: big * 35);
+                    }
+                    
                 });
 
                 Singleton.Try<Pool_AnimatedSmoke>(s =>

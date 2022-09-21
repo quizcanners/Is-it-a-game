@@ -16,7 +16,7 @@ namespace QuizCanners.IsItGame.Develop
             {
                 var w = s.World;
 
-                inst.transform.localScale = Vector3.one * (0.25f + QcMath.SmoothStep(0, 5, GetDistanceToCamera(inst.transform.position)) * 0.75f);
+                inst.transform.localScale = GetScaleBasedOnDistance(inst.transform.position);
 
                 IEntity cloud = w.CreateEntity("Animated Smoke")
 

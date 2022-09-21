@@ -11,7 +11,7 @@ namespace QuizCanners.IsItGame.Develop
 
         protected override void OnInstanciated(C_SpriteAnimationSmokeOneShot inst)
         {
-            inst.transform.localScale = Vector3.one * (0.25f + QcMath.SmoothStep(0, 5, GetDistanceToCamera(inst.transform.position)) * 0.75f);
+            inst.transform.localScale = GetScaleBasedOnDistance(inst.transform.position);
 
             inst.Restart();
         }

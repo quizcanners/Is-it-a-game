@@ -100,6 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8903924281643758823}
   - component: {fileID: 6300929718664698082}
+  - component: {fileID: 7686993274560990045}
   - component: {fileID: 8100719944382064120}
   m_Layer: 0
   m_Name: Emmissive particle
@@ -131,6 +132,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7549922385775378249}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &7686993274560990045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7549922385775378249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9b3a1a9ffeac9145bbc751e1b1a4cd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _renderer: {fileID: 8100719944382064120}
+  _trackMotion: 1
 --- !u!23 &8100719944382064120
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -151,7 +166,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f7ae75e6cc247c2469b78c4b0258ae2d, type: 2}
+  - {fileID: 2100000, guid: d3fcce7bb9cd9ea45b97e75d5a868f2d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

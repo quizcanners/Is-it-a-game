@@ -56,7 +56,6 @@
             #pragma fragment frag
 
             #pragma multi_compile_instancing
-            //#pragma multi_compile_fog
             #pragma multi_compile_fwdbase
             #pragma multi_compile ___ TOP_DOWN_LIGHT_AND_SHADOW
 
@@ -80,7 +79,7 @@
                 float4 screenPos : TEXCOORD2;
                 float3 viewDir : TEXCOORD3;
                 float height : TEXCOORD4;
-                 float3 worldPos : TEXCOORD5;
+                float3 worldPos : TEXCOORD5;
 
                  SHADOW_COORDS(6)
 
@@ -102,9 +101,7 @@
             float4 _SunPos;
 
             UNITY_INSTANCING_BUFFER_START(Props)
-                //UNITY_DEFINE_INSTANCED_PROP(float, _UseCustomTime)
                 UNITY_DEFINE_INSTANCED_PROP(float4, _TimeInFrames)
-                //UNITY_DEFINE_INSTANCED_PROP(float, _LightIntencity)
             UNITY_INSTANCING_BUFFER_END(Props)
 
             v2f vert (appdata_bl v)
@@ -127,27 +124,10 @@
                 float3 textureN = tex2Dlod(_nTex,dataUv);
 
 
-             
-
-                //NextFrame
-                //frameUv = (ceiled + 2) / timeInFrames.w;
-                //dataUv.y = frameUv + v.uv.y;
-                //float4 texturePos2 = tex2Dlod(_posTex, dataUv);
-                //float3 textureN2 = tex2Dlod(_nTex,dataUv);
-
-
-                //float toNext = 0.9; //  abs(ceiled - timeInFrames.y);
-
-               // texturePos =  lerp(texturePos, texturePos2, toNext);
-                //textureN =  lerp(textureN, textureN2, toNext);
-
                 #if !UNITY_COLORSPACE_GAMMA
                     texturePos.xyz = LinearToGammaSpace(texturePos.xyz);
                     textureN = LinearToGammaSpace(textureN);
                 #endif
-
-
-
 
                 float expand = _boundingMax - _boundingMin;
                 texturePos.xyz *= expand;
@@ -158,12 +138,8 @@
 
 
                  float4 worldPos = mul(unity_ObjectToWorld, float4(v.vertex.xyz, 1));
-              //   worldPos.xyz = ModifyPositionBySDF(worldPos);
-                 //v.vertex = mul(worldPos, unity_WorldToObject);//mul(UNITY_MATRIX_VP, worldSpacePosition);
-               // o.pos = mul(UNITY_MATRIX_VP, worldPos);
 
-
-
+                 // TODO: Rotate Normal
 
                 o.worldNormal = textureN.xzy * 2 - 1;
                 o.worldNormal.x *= -1;

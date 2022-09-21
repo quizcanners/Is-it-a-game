@@ -90,8 +90,6 @@ Category {
 
                 float frame01 = UNITY_ACCESS_INSTANCED_PROP(Props, _Frame)*0.99;
               
-
-
                 float maxFrames = _GridSize * _GridSize;
 
                 float frame = frame01 * maxFrames;
@@ -110,6 +108,8 @@ Category {
                 return o;
             }
 
+                  
+
 
             float4 frag (v2f i) : SV_Target
             {
@@ -121,7 +121,7 @@ Category {
 
                 float4 colA = tex2D(_MainTex, i.texcoord.xy  + i.texcoordInternal);
                 float4 colB = tex2D(_MainTex, i.texcoord.zw + i.texcoordInternal);
-				float4 col = lerp(colA, colB, frameBlend);
+				float4 col = LerpTransparent(colA, colB, frameBlend);
 
                 float brightness = _Emission * length(col.rgb * col.gbr * col.brg); // Fire
                 float offCenter = length(i.texcoordInternal-0.5);

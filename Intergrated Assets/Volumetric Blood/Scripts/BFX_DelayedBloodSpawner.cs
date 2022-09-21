@@ -9,6 +9,23 @@ namespace QuizCanners.IsItGame.Develop
 
         int _bloodSpawns = 2;
 
+        public static BFX_DelayedBloodSpawner CreateFromTransform(Transform origin, Vector3 offset)
+        {
+            var root = new GameObject();
+
+            var cmp = root.AddComponent<BFX_DelayedBloodSpawner>();
+
+            var tf = root.transform;
+
+            tf.parent = origin;
+
+            tf.position = origin.position + offset;
+
+            tf.localRotation = Quaternion.identity;
+
+            return cmp;
+        }
+
         public static BFX_DelayedBloodSpawner CreateOnHit(RaycastHit hit, Vector3 direction) 
         {
             var root = new GameObject();
@@ -33,7 +50,7 @@ namespace QuizCanners.IsItGame.Develop
 
         void Update()
         {
-            if (_bloodSpawnDelay.TryUpdateIfTimePassed(0.15f)) 
+            if (_bloodSpawnDelay.TryUpdateIfTimePassed(0.2f)) 
             {
                 Singleton.Try<Pool_VolumetricBlood>(s => 
                 {

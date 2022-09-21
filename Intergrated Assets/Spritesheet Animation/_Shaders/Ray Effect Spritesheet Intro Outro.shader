@@ -126,6 +126,8 @@ Category {
             
 
 
+
+
             float4 frag (v2f i) : SV_Target
             {
               
@@ -146,9 +148,9 @@ Category {
 
                float frameBlend = i.blend.x;
 
-                float4 colA = tex2D(_MainTex, i.texcoord.xy  + i.texcoordInternal);
+                float4 colA = tex2D(_MainTex, i.texcoord.xy + i.texcoordInternal);
                 float4 colB = tex2D(_MainTex, i.texcoord.zw + i.texcoordInternal);
-				float4 colInto = lerp(colA, colB, frameBlend);
+				float4 colInto = LerpTransparent(colA, colB, frameBlend);
 
                 float emission = i.blend.y;
 
@@ -157,9 +159,9 @@ Category {
               
                 // TODO: Loop, upscale the next sprite from LoopVisibility
                 //_LoopTex
-                float4 colLA = tex2D(_LoopTex, i.texcoord.xy+ i.texcoordInternal);
+                float4 colLA = tex2D(_LoopTex, i.texcoord.xy + i.texcoordInternal);
                 float4 colLB = tex2D(_LoopTex, i.texcoord.zw + i.texcoordInternal);
-				float4 colLoop = lerp(colLA, colLB, frameBlend);
+				float4 colLoop = LerpTransparent(colLA, colLB, frameBlend);
 
 
               float offCenter = length(i.texcoordInternal-0.5);
