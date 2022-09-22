@@ -6,6 +6,7 @@ using QuizCanners.Utils;
 using RayFire;
 using System;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
@@ -14,9 +15,8 @@ namespace QuizCanners.IsItGame.Develop
     [Serializable]
     public class PlayerGun_Machinegun :  IPEGI, INeedAttention
     {
-        public PlaytimePainter_BrushConfigScriptableObject brushConfig;
-      
-        public Attack WeaponAttack = new(name: "Gun", isRange: true, attackBonus: 3,
+        [SerializeField] private PlaytimePainter_BrushConfigScriptableObject brushConfig;
+        [SerializeField] private Attack WeaponAttack = new(name: "Gun", isRange: true, attackBonus: 3,
              new Damage()
              {
                  DamageBonus = 2,
@@ -24,7 +24,7 @@ namespace QuizCanners.IsItGame.Develop
                  DamageType = DamageType.Piercing
              });
 
-        public float MaxDistance = 2000;
+        [SerializeField] private float MaxDistance = 2000;
 
         public void Shoot(Vector3 from, Vector3 target, State state)
         {
@@ -32,14 +32,15 @@ namespace QuizCanners.IsItGame.Develop
 
             var spread = UnityEngine.Random.insideUnitSphere * state.WeaponKick;
 
-            var mgmt = Singleton.Get<Singleton_ChornobaivkaController>();
+            Singleton_ChornobaivkaController mgmt = Singleton.Get<Singleton_ChornobaivkaController>();
             if (!mgmt)
             {
                 QcLog.ChillLogger.LogErrorOnce("{0} not found".F(nameof(Singleton_ChornobaivkaController)), key: "NoChrnb");
                 return;
             }
 
-            var ray = new Ray(from + spread, target - from);
+
+            Ray ray = new(from + spread, target - from);
 
             RaycastHit firstHit;
 
@@ -254,6 +255,8 @@ namespace QuizCanners.IsItGame.Develop
                     }
                 }
 
+
+
                 //Singleton.Try<Pool_ECS_HeatSmoke>(s => s.TrySpawn(worldPosition: hit.point));
 
                 Singleton.Try<Pool_AnimatedExplosionOneShoot>(s => { s.TrySpawn(hit.point); });
@@ -356,7 +359,6 @@ namespace QuizCanners.IsItGame.Develop
             [SerializeField] public RayfireGun Gun;
             [NonSerialized] public float WeaponKick = 0;
             
-
             public readonly LogicWrappers.TimeFixedSegmenter DelayBetweenShots = new(0.1f, returnOnFirstRequest: 1);
 
             public void Inspect()

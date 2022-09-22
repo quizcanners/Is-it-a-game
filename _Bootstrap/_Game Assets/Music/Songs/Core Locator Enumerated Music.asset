@@ -27,5 +27,3 @@ MonoBehaviour:
   - nameForInspector: Reward
     list:
     - {fileID: 11400000, guid: b839b2886b424cb4d966ee1e69938702, type: 2}
-  - nameForInspector: 5
-    list: []

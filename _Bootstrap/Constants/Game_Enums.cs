@@ -34,6 +34,7 @@ namespace QuizCanners.IsItGame
                 RayTracing = 1,
                 SpaceEffect = 2,
                 NodeCommander = 3,
+                MainMenu = 4,
             }
 
             public enum GameState

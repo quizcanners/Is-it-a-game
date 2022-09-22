@@ -11,7 +11,7 @@ namespace QuizCanners.IsItGame.Develop
         [SerializeField] private MeshRenderer currentRenderer;
         [SerializeField] private int Rows = 4; //tilesY
         [SerializeField] private int Columns = 4; //tilesX
-        [SerializeField] private float Speed = 1;
+        [SerializeField] private float theSpeed = 0.5f;
 
         [NonSerialized] public float Progress01;
 
@@ -65,7 +65,7 @@ namespace QuizCanners.IsItGame.Develop
 
             if (_isAnimating)
             {
-                Progress01 = Mathf.Min(Progress01 + Time.deltaTime * Speed, 1);
+                Progress01 = Mathf.Min(Progress01 + Time.deltaTime * theSpeed, 1);
             }
 
             float frame = Progress01 * 0.9999f * Columns * Rows;
@@ -111,7 +111,7 @@ namespace QuizCanners.IsItGame.Develop
 
             "Progress".PegiLabel(90).Edit_01(ref Progress01).Nl();
 
-            "Speed".PegiLabel(90).Edit(ref Speed).Nl();
+            "Speed".PegiLabel(90).Edit(ref theSpeed).Nl();
 
             if (_matInstancer != null && "Delete Material Instance".PegiLabel().Click().Nl())
                 _matInstancer = null;

@@ -237,7 +237,6 @@ namespace QuizCanners.IsItGame.Develop
             PainDamage(hit, brushConfig);
         }
 
-
         private void PainDamage(RaycastHit hit, PlaytimePainter_BrushConfigScriptableObject brush) 
         {
             var receivers = hit.transform.GetComponentsInParent<C_PaintingReceiver>();
@@ -264,15 +263,12 @@ namespace QuizCanners.IsItGame.Develop
             }
         }
 
-
         private State latestState;
         private Vector3 _origin;
         private Vector3 _latestNormal;
         private LogicWrappers.CountDown _explosionsLeft = new();
         private Gate.UnityTimeScaled _explosionDynamics = new();
         private int iteration;
-
-
 
         public void UpdateExplosions() 
         {
@@ -382,7 +378,6 @@ namespace QuizCanners.IsItGame.Develop
             }
         }
 
-
         [Serializable]
         public class State : IPEGI
         {
@@ -394,8 +389,5 @@ namespace QuizCanners.IsItGame.Develop
             }
         }
 
-
     }
-
-    
 }

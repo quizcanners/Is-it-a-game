@@ -5,7 +5,6 @@ namespace QuizCanners.IsItGame
 {
     public class Pool_SmokeEffects : PoolSingletonBase<C_SmokeEffectOnImpact> 
     {
-
         protected override void OnInstanciated(C_SmokeEffectOnImpact inst)
         {
             inst.Refresh();
@@ -15,8 +14,6 @@ namespace QuizCanners.IsItGame
                 inst.TryConsume(instances[i]);
             }
         }
-
-        
     }
 
     [PEGI_Inspector_Override(typeof(Pool_SmokeEffects))] internal class Singleton_SmokeEffectControllerDrawer : PEGI_Inspector_Override { }

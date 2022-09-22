@@ -1,16 +1,18 @@
 using QuizCanners.Inspect;
 using QuizCanners.Utils;
 using UnityEngine;
+using static QuizCanners.IsItGame.Game.Enums;
 
 namespace QuizCanners.IsItGame.StateMachine
 {
     partial class GameState
     {
-        public class Bootstrap : Base, IPEGI, IDataFallback<Game.Enums.PhisicalSimulation>
+        public class Bootstrap : Base, IPEGI, IDataFallback<Scene>, IDataFallback<PhisicalSimulation>
         {
-            Game.Enums.PhisicalSimulation IDataFallback<Game.Enums.PhisicalSimulation>.Get() => Game.Enums.PhisicalSimulation.Paused;
+            PhisicalSimulation IDataFallback<PhisicalSimulation>.Get() => PhisicalSimulation.Paused;
+            public Scene Get() => Scene.MainMenu;
 
-            private Gate.Integer _stateVersion = new Gate.Integer();
+            private readonly Gate.Integer _stateVersion = new();
 
             internal override void Update()
             {
@@ -38,7 +40,13 @@ namespace QuizCanners.IsItGame.StateMachine
                 }
                 else
                 {
-                    SetNextState<MainMenu>();
+                    Singleton.Try<Singleton_Scenes>(s =>
+                    {
+                        if (s.IsLoadedAndInitialized(Scene.MainMenu))
+                        {
+                            SetNextState<MainMenu>();
+                        }
+                    });
                 }
             }
         }

@@ -23,7 +23,7 @@ namespace QuizCanners.IsItGame.Develop
             Vector3 _directionVector;
             private List<AnimatorValue.Base> _bases;
 
-            private Gate.UnityTimeScaled _hitReactionDelay = new() { StartArmed = true };
+            private Gate.UnityTimeScaled _hitReactionDelay = new(Gate.InitialValue.StartArmed);
 
             public Vector3 Direction => _directionVector;
 

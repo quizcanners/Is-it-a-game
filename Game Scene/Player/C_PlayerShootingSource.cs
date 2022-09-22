@@ -18,7 +18,7 @@ namespace QuizCanners.IsItGame.Develop
         private enum Weapon { Machinegun, RocketLauncher, BoltGun }
 
         [SerializeField] private PlayerGun_Machinegun.State _machineGunState = new();
-        [SerializeField] private PlayerGun_RocketLauncher.State _rocketState = new();
+        [SerializeField] private PlayerGun_RocketLauncher.State _rocketWeaponState = new();
 
 
 
@@ -61,9 +61,8 @@ namespace QuizCanners.IsItGame.Develop
 
             switch (_weapon) 
             {
-                case Weapon.BoltGun:
+                case Weapon.BoltGun:  break;
 
-                    break;
                 case Weapon.Machinegun: 
                     if (isShooting)
                     {
@@ -93,7 +92,7 @@ namespace QuizCanners.IsItGame.Develop
                         if (TryHit(out var hit))
                         {
                             _delayBetweenRockets.GetSegmentsAndUpdate();
-                            _config.RocketLauncher.Explosion(hit, hit.point - ShootingPosition, _rocketState);
+                            _config.RocketLauncher.Explosion(hit, hit.point - ShootingPosition, _rocketWeaponState);
                         }
                     }
                 }
@@ -133,7 +132,7 @@ namespace QuizCanners.IsItGame.Develop
                             _machineGunState.Nested_Inspect();
                             break;
                         case Weapon.RocketLauncher:
-                            _rocketState.Nested_Inspect();
+                            _rocketWeaponState.Nested_Inspect();
                             break;
                     }
 

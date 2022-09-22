@@ -149,7 +149,7 @@ MonoBehaviour:
   currentRenderer: {fileID: 2300002}
   Rows: 8
   Columns: 4
-  Speed: 1
+  _speed: 0.2
 --- !u!1 &100004
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,7 +249,7 @@ MonoBehaviour:
   currentRenderer: {fileID: 2300000}
   Rows: 8
   Columns: 4
-  Speed: 1
+  _speed: 0.2
 --- !u!1 &100006
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,7 +349,7 @@ MonoBehaviour:
   currentRenderer: {fileID: 2300006}
   Rows: 8
   Columns: 4
-  Speed: 1
+  _speed: 0.2
 --- !u!1 &100008
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,7 +449,7 @@ MonoBehaviour:
   currentRenderer: {fileID: 2300004}
   Rows: 8
   Columns: 4
-  Speed: 1
+  _speed: 0.2
 --- !u!1 &100010
 GameObject:
   m_ObjectHideFlags: 0
