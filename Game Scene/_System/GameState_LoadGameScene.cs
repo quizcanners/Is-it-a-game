@@ -6,9 +6,11 @@ namespace QuizCanners.IsItGame.StateMachine
 {
     partial class GameState
     {
-        public class LoadGameScene : Base, IDataFallback<Scene>, IDataFallback<View>, IDataFallback<UiObscureScreen>
+        public class LoadGameScene : Base, IDataFallback<Scene>, IDataAdditive<Scene> , IDataFallback<View>, IDataFallback<UiObscureScreen>
         {
             Scene IDataFallback<Scene>.Get() => Scene.GameScene;
+            Scene IDataAdditive<Scene>.Get() => Scene.Terrain;
+
             View IDataFallback<View>.Get() => View.SceneLoading;
 
             System.IDisposable timer;
@@ -32,6 +34,8 @@ namespace QuizCanners.IsItGame.StateMachine
             }
 
             public UiObscureScreen Get() => UiObscureScreen.On;
+
+           
         }
     }
 }

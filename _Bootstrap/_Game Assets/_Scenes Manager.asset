@@ -31,3 +31,7 @@ MonoBehaviour:
       ScenePath: Assets/_Is-it-a-game/Intergrated Assets/Smoke & Ember FX/Demo/Scenes/Main
         Menu Scene.unity
       _asset: {fileID: 102900000, guid: 621db826b48c03d4e9e2cdbeff4f656d, type: 3}
+  - Type: 0
+    SceneReference:
+      ScenePath: Assets/CLIFF/Scene/Mountains_1.unity
+      _asset: {fileID: 102900000, guid: c1845c23d3f08f34a9c5e82defa670fd, type: 3}

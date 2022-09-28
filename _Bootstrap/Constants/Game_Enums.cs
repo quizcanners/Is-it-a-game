@@ -35,6 +35,7 @@ namespace QuizCanners.IsItGame
                 SpaceEffect = 2,
                 NodeCommander = 3,
                 MainMenu = 4,
+                Terrain = 5,
             }
 
             public enum GameState
