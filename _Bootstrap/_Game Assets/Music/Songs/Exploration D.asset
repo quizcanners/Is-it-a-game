@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 530c2e72832492f449b29a69461931cc, type: 3}
-  m_Name: MainMenu
-  m_EditorClassIdentifier: Assembly-CSharp:CoreLocator:MusicClipData
+  m_Name: Exploration D
+  m_EditorClassIdentifier: 
   Reference:
-    m_AssetGUID: 034cbe5f27b018b4e97de78ca63c0e0f
+    m_AssetGUID: f49e21af61460fb41a4c4f624603730d
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0

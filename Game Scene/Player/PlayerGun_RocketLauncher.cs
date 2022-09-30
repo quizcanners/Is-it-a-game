@@ -248,7 +248,7 @@ namespace QuizCanners.IsItGame.Develop
                 if (receiver.GetTexture() is RenderTexture)
                 {
                     var stroke = receiver.CreateStroke(hit);
-                    BrushTypes.Sphere.Paint(receiver.CreatePaintCommandForSphereBrush(stroke, brush.brush, subMesh));
+                    receiver.CreatePaintCommandFor(stroke, brush.brush, subMesh).Paint();
                 }
             }
         }

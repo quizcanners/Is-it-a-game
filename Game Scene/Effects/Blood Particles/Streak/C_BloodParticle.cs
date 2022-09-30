@@ -40,9 +40,7 @@ namespace QuizCanners.IsItGame
                     {
                         var vec = _rigidbody.velocity.normalized;
                         var st = new Stroke(transform.position - vec, _rigidbody.velocity + vec);
-                        var paintCommand = receiver.CreatePaintCommandForSphereBrush(st, brush, 0);
-                           
-                        BrushTypes.Sphere.Paint(paintCommand);
+                        receiver.CreatePaintCommandFor(st, brush, 0).Paint();
                     }
                 }
 

@@ -58,7 +58,7 @@ namespace QuizCanners.IsItGame.Develop
                             var cnt = collision.contacts[0];
                             var tex = receiver.GetTexture();
                             var st = receiver.CreateStroke(cnt);
-                            BrushTypes.Sphere.Paint(receiver.CreatePaintCommandForSphereBrush(st, s.OnCollisionBrush.brush, 0));
+                                receiver.CreatePaintCommandFor(st, s.OnCollisionBrush.brush, 0).Paint();
                         }
 
                     });

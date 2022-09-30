@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 530c2e72832492f449b29a69461931cc, type: 3}
-  m_Name: Combat
+  m_Name: Combat B
   m_EditorClassIdentifier: 
   Reference:
-    m_AssetGUID: 
+    m_AssetGUID: 02eb286beaabadf48a6df43391b870c6
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   AlwaysStartFromBeginning: 0
-  Volume: 1
+  Volume: 0.256

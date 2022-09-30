@@ -112,7 +112,7 @@ namespace QuizCanners.IsItGame.Develop
                         {
                             var tex = receiver.GetTexture();
 
-                            bool isSkinned = false;
+                           // bool isSkinned = false;
 
                             if (tex)
                             {
@@ -139,17 +139,17 @@ namespace QuizCanners.IsItGame.Develop
 
                                     st.posFrom -= hitVector * 0.2f;
 
-                                    isSkinned = receiver.type == C_PaintingReceiver.RendererType.Skinned;
+                                 /*   isSkinned = receiver.type == C_PaintingReceiver.RendererType.Skinned;
 
                                     if ((isSkinned && receiver.skinnedMeshRenderer)
                                         || (receiver.type == C_PaintingReceiver.RendererType.Regular && receiver.meshFilter))
-                                    {
-                                        BrushTypes.Sphere.Paint(receiver.CreatePaintCommandForSphereBrush(st, brushConfig.brush, subMesh));
-                                    }
+                                    {*/
+                                       receiver.CreatePaintCommandFor(st, brushConfig.brush, subMesh).Paint();
+                                    /*}
                                     else
                                     {
                                         QcLog.ChillLogger.LogErrorOnce("wasn't setup right for painting", "NoRtPntng");
-                                    }
+                                    }*/
                                 }
                             }
                         }

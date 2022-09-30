@@ -84,6 +84,8 @@ namespace QuizCanners.IsItGame
                 Loading = 2,
                 Combat = 3,
                 Reward = 4,
+                Exploration = 5,
+                PauseMenu = 6,
             }
 
             public enum PhisicalSimulation 

@@ -9,7 +9,7 @@ namespace QuizCanners.IsItGame.Develop
 {
     public class Pool_MonstersController : PoolSingletonBase<C_MonsterEnemy>, ITaggedCfg
     {
-        private bool _autospawn;
+        public bool Autospawn;
         protected override int MAX_INSTANCES => 300;
         public string TagForConfig => "Monster Spawner";
 
@@ -25,7 +25,7 @@ namespace QuizCanners.IsItGame.Develop
         
         void Update() 
         {
-            if (_autospawn && _betweenSpawns.GetSegmentsAndUpdate() > 0) 
+            if (Autospawn && _betweenSpawns.GetSegmentsAndUpdate() > 0) 
             {
                 TrySpawn();
                    
@@ -36,7 +36,7 @@ namespace QuizCanners.IsItGame.Develop
 
         public override void InspectInList(ref int edited, int ind)
         {
-            pegi.ToggleIcon(ref _autospawn);
+            pegi.ToggleIcon(ref Autospawn);
 
             base.InspectInList(ref edited, ind);
         }
@@ -45,9 +45,9 @@ namespace QuizCanners.IsItGame.Develop
         {
             if (Application.isPlaying)
             {
-                "Autospaw".PegiLabel().ToggleIcon(ref _autospawn).Nl();
+                "Autospaw".PegiLabel().ToggleIcon(ref Autospawn).Nl();
 
-                if (!_autospawn && "Spawn".PegiLabel().Click().Nl())
+                if (!Autospawn && "Spawn".PegiLabel().Click().Nl())
                     TrySpawn();
             }
             base.Inspect();
@@ -57,13 +57,13 @@ namespace QuizCanners.IsItGame.Develop
 
 
         #region Encode & Decode
-        public CfgEncoder Encode() => new CfgEncoder().Add_Bool("sp", _autospawn);
+        public CfgEncoder Encode() => new CfgEncoder().Add_Bool("sp", Autospawn);
 
         public void DecodeTag(string key, CfgData data)
         {
             switch (key) 
             {
-                case "sp": _autospawn = data.ToBool(); break;
+                case "sp": Autospawn = data.ToBool(); break;
             }
         }
         #endregion

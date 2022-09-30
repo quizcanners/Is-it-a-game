@@ -16,7 +16,57 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: b193987d30a9ed94991410b8cbeed859
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 89e99f59d3d5d984590e7489c2d9b757
+    m_Address: Assets/Total Music Collection/Massive Game Music Collection/Retro
+      Action Game Soundtrack/Retro Action Game Theme #1 (looped).wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ed3e0f99f2573f24ca2f5f9fb08bd2d6
+    m_Address: Assets/Total Music Collection/Massive Game Music Collection/Retro
+      Action Game Soundtrack/Retro Action Game Theme #8 (looped).wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f76518849fe85e941891925ff6c10d73
+    m_Address: Assets/Total Music Collection/Massive Game Music Collection/Casual
+      Game Music Pack/Casual Theme #1 (Looped).wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e67f43252f2e0594cadfc457a22368f9
+    m_Address: Assets/Total Music Collection/Massive Game Music Collection/Casual
+      Game Music Pack/Casual Theme #2 (Looped).wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9c3441e35638fb747a685708cc25cbee
+    m_Address: Assets/Total Music Collection/Massive Game Music Collection/Casual
+      Game Music Pack/Casual Theme #3 (Looped).wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8373efa577b94af4c83077a6b3240f77
+    m_Address: Assets/Total Music Collection/Massive Game Music Collection/Lyric
+      & Peaceful Space Music Pack/Lyric & Peaceful Space Theme #1.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 034cbe5f27b018b4e97de78ca63c0e0f
+    m_Address: Assets/Total Music Collection/_BONUS Remasters (Commercial Pop Music)/Simple
+      and Positive Corporate/Simple and Positive Corporate.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 90d5dfb536627d84c9d3d5f14ca6e8e4
+    m_Address: Assets/Total Music Collection/Massive Game Music Collection/Retro
+      Action Game Soundtrack/Retro Action Game Theme #2 (looped).wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 02eb286beaabadf48a6df43391b870c6
+    m_Address: Assets/Total Music Collection/Massive Game Music Collection/Retro
+      Action Game Soundtrack/Retro Action Game Theme #9 (looped).wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f49e21af61460fb41a4c4f624603730d
+    m_Address: Assets/Total Music Collection/Massive Game Music Collection/Casual
+      Game Music Pack/Casual Theme #4 (Looped).wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 15b6bd71e2d240c4eb290b0cb368ecec, type: 2}
   m_SchemaSet:
