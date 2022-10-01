@@ -7,11 +7,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Geometry RayBaked Destructive Terrain Undamaged
-  m_Shader: {fileID: 4800000, guid: 774be5eae4d429c4eb17b578ab945526, type: 3}
+  m_Name: Geometry RayBaked Triplanar
+  m_Shader: {fileID: 4800000, guid: f454d371007282a4a966037fb16dfe18, type: 3}
   m_ValidKeywords:
   - _BUMP_COMBINED
-  m_InvalidKeywords: []
+  - _SURFACE_NONMETAL
+  m_InvalidKeywords:
+  - _AMBIENT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -21,24 +23,16 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _BumpD:
-        m_Texture: {fileID: 2800000, guid: 2d35ddac88fdb3c43aebc3dac9bb2bbc, type: 3}
+    - _Ambient:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _BumpD2:
-        m_Texture: {fileID: 2800000, guid: a6632d37497fb4b499db483ae96e6520, type: 3}
+    - _AmbientTop:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DamDiffuse:
-        m_Texture: {fileID: 2800000, guid: 3bfad2a70a3556e4c8e347ac64073ec3, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DamDiffuse2:
-        m_Texture: {fileID: 2800000, guid: cf36bee4b189075448ad8af14e8f8921, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -54,28 +48,28 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Diffuse:
+        m_Texture: {fileID: 2800000, guid: 963e34d7b4af5d64984565a55337d3fa, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DiffuseTop:
         m_Texture: {fileID: 2800000, guid: 6454a6051debd404394d701039883a53, type: 3}
-        m_Scale: {x: 50, y: 50}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _FalloffTex:
-        m_Texture: {fileID: 2800000, guid: b7fdfbe5ad74fa04f962a034390a76f1, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: b435393d37601e84db1f10ed766d0206, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex_ATL_UvTwo:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Map:
+        m_Texture: {fileID: 2800000, guid: 43866032c9f85bd43bcafdf035f6b35a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MapTop:
         m_Texture: {fileID: 2800000, guid: b3c0000cd6ab2854a8bad20b5b769c69, type: 3}
-        m_Scale: {x: 20, y: 20}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
@@ -85,20 +79,16 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Overlay:
+        m_Texture: {fileID: 2800000, guid: 6f002fd74437b1c49815da5eb7248d50, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _ShadowTex:
-        m_Texture: {fileID: 2800000, guid: 7b4f1f9387bcc4e43bd0a151f02d49db, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _SkinMask:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _qcPp_PreviewTex:
-        m_Texture: {fileID: 2800000, guid: bf380d9e83ecd574dba18e5ae3deb0ea, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -111,26 +101,24 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _InvFade: 0.3
+    - _HorizontalTiling: 0.1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
+    - _OverlayTiling: 0.1
     - _Parallax: 0.02
+    - _SURFACE: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
+    - _VerticalTiling: 0.05
     - _ZWrite: 1
-    - _qcPp_AtlasTextures: 1
-    - isDamaged: 0
     - subSurfaceScattering: 0
     - thisDoesntMatter: 0
-    - useImpact: 0
+    - useAmbient: 1
     m_Colors:
-    - _AreaColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _HitColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SubSurface: {r: 1, g: 1, b: 1, a: 0}
-    - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    - _SubSurface: {r: 1, g: 0.5, b: 0, a: 0}
   m_BuildTextureStacks: []
