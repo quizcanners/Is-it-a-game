@@ -22,7 +22,7 @@ namespace QuizCanners.IsItGame.UI
                 Singleton.Try<Pool_CurrencyAnimationController>(s =>
                 {
                     testValue++;
-                    s.RequestAnimation(_currency, rect, targetValue: testValue * testValue);
+                    s.RequestAnimation(_currency, rect, targetValue: s.GetTargetValue(_currency) + testValue * testValue);
                 });
             });
         }

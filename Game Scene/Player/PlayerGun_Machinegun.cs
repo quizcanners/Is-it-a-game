@@ -359,7 +359,7 @@ namespace QuizCanners.IsItGame.Develop
             [SerializeField] public RayfireGun Gun;
             [NonSerialized] public float WeaponKick = 0;
             
-            public readonly LogicWrappers.TimeFixedSegmenter DelayBetweenShots = new(0.1f, returnOnFirstRequest: 1);
+            public readonly LogicWrappers.TimeFixedSegmenter DelayBetweenShots = new(unscaledTime: false, 0.1f, returnOnFirstRequest: 1);
 
             public void Inspect()
             {

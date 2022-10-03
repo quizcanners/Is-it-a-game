@@ -21,7 +21,7 @@ namespace QuizCanners.IsItGame.Develop
             inst.Update();
         }
 
-        private readonly LogicWrappers.TimeFixedSegmenter _betweenSpawns = new(segmentLength: 1f, 1);
+        private readonly LogicWrappers.TimeFixedSegmenter _betweenSpawns = new(unscaledTime: false, segmentLength: 1f, 1);
         
         void Update() 
         {

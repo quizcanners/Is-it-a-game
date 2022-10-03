@@ -34,7 +34,7 @@ namespace QuizCanners.IsItGame.Develop
         private bool _animationInvalidated;
 
         private readonly LogicWrappers.Timer _disruptMovementSeconds = new();
-        private readonly LogicWrappers.TimeFixedSegmenter _turnTimer = new(segmentLength: DnDTime.SECONDS_PER_TURN);
+        private readonly LogicWrappers.TimeFixedSegmenter _turnTimer = new(unscaledTime: false, segmentLength: DnDTime.SECONDS_PER_TURN);
         private readonly LogicWrappers.Timer _postDeathTimer = new();
 
         private Gate.Vector3Value _deltaPosition = new Gate.Vector3Value();

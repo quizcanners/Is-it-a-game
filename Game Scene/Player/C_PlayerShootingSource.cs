@@ -22,7 +22,7 @@ namespace QuizCanners.IsItGame.Develop
 
 
 
-        private readonly LogicWrappers.TimeFixedSegmenter _delayBetweenRockets = new( 1.1f, returnOnFirstRequest: 1);
+        private readonly LogicWrappers.TimeFixedSegmenter _delayBetweenRockets = new(unscaledTime: false, 1.1f, returnOnFirstRequest: 1);
 
         Singleton_ChornobaivkaController Mgmt => Singleton.Get<Singleton_ChornobaivkaController>();
 
