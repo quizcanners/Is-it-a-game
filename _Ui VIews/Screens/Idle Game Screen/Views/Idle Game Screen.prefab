@@ -239,7 +239,7 @@ GameObject:
   - component: {fileID: 7708444560359436043}
   - component: {fileID: 7588505578801450998}
   - component: {fileID: 7885822325405390669}
-  - component: {fileID: 6068096501231958161}
+  - component: {fileID: 2900060479726465572}
   m_Layer: 5
   m_Name: ROOT Currency
   m_TagString: Untagged
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6068096501231958161
+--- !u!114 &2900060479726465572
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -452,9 +452,9 @@ GameObject:
   - component: {fileID: 232340754537981253}
   - component: {fileID: 8215636714518436608}
   - component: {fileID: 933343772413576417}
-  - component: {fileID: 2636840809352585335}
+  - component: {fileID: 3482854026769825577}
   m_Layer: 5
-  m_Name: Coins
+  m_Name: 'V: Coins'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -522,7 +522,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: fttryrty
---- !u!114 &2636840809352585335
+--- !u!114 &3482854026769825577
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

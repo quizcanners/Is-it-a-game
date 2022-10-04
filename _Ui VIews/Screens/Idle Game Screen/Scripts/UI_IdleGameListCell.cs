@@ -17,6 +17,7 @@ namespace QuizCanners.IsItGame.UI
 
         private void Awake()
         {
+            if (_clickButton)
             _clickButton.onClick.AddListener(()=> 
             {
                 Singleton.Try<Pool_CurrencyAnimationController>(s =>
