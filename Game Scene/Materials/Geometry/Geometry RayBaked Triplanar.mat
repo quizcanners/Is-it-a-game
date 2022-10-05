@@ -48,7 +48,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Diffuse:
-        m_Texture: {fileID: 2800000, guid: 963e34d7b4af5d64984565a55337d3fa, type: 3}
+        m_Texture: {fileID: 2800000, guid: d0f92a4ed08135042b3f5c2a555f4076, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DiffuseTop:
@@ -64,7 +64,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Map:
-        m_Texture: {fileID: 2800000, guid: 43866032c9f85bd43bcafdf035f6b35a, type: 3}
+        m_Texture: {fileID: 2800000, guid: a6632d37497fb4b499db483ae96e6520, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MapTop:
@@ -101,18 +101,18 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _HorizontalTiling: 0.1
+    - _HorizontalTiling: 0.08
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OverlayTiling: 0.1
+    - _OverlayTiling: 0.05
     - _Parallax: 0.02
     - _SURFACE: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _VerticalTiling: 0.05
+    - _VerticalTiling: 0.1
     - _ZWrite: 1
     - subSurfaceScattering: 0
     - thisDoesntMatter: 0
