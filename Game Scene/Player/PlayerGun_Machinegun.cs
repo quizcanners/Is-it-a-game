@@ -28,7 +28,7 @@ namespace QuizCanners.IsItGame.Develop
 
         public void Shoot(Vector3 from, Vector3 target, State state)
         {
-            Game.Enums.SoundEffects.Shot.PlayOneShotAt(from, clipVolume: 3);
+            Game.Enums.UiSoundEffects.Shot.PlayOneShotAt(from, clipVolume: 3);
 
             var spread = UnityEngine.Random.insideUnitSphere * state.WeaponKick;
 
@@ -57,7 +57,7 @@ namespace QuizCanners.IsItGame.Develop
                 Singleton.Try<Singleton_CameraOperatorGodMode>(c =>
                 {
                     var point = QcMath.GetClosestPointOnALine(lineA: from, lineB: firstHit.point, point: c.transform.position);
-                    Game.Enums.SoundEffects.BulletFlyBy.PlayOneShotAt(point, clipVolume: 0.5f);
+                    Game.Enums.UiSoundEffects.BulletFlyBy.PlayOneShotAt(point, clipVolume: 0.5f);
                 });
 
                 state.WeaponKick = Mathf.Clamp01(state.WeaponKick + 0.3f);
@@ -196,7 +196,7 @@ namespace QuizCanners.IsItGame.Develop
                             monster.ShowDamage = true;
                         }
 
-                        Game.Enums.SoundEffects.BodyImpact.PlayOneShotAt(monster.transform.position, clipVolume: 2);
+                        Game.Enums.UiSoundEffects.BodyImpact.PlayOneShotAt(monster.transform.position, clipVolume: 2);
                     }
                     else
                         if (visibleByCamera)
@@ -226,7 +226,7 @@ namespace QuizCanners.IsItGame.Develop
                 }
                 else
                 {
-                    Game.Enums.SoundEffects.ArmorImpact.PlayOneShotAt(monster.transform.position);
+                    Game.Enums.UiSoundEffects.ArmorImpact.PlayOneShotAt(monster.transform.position);
 
                     if (visibleByCamera)
                         Singleton.Try<Pool_ImpactLightsController>(s => s.TrySpawnIfVisible(hit.point, onInstanciate: l => l.SetSize(10f)));
@@ -234,7 +234,7 @@ namespace QuizCanners.IsItGame.Develop
             }
             else
             {
-                Game.Enums.SoundEffects.DefaultSurfaceImpact.PlayOneShotAt(hit.point);
+                Game.Enums.UiSoundEffects.DefaultSurfaceImpact.PlayOneShotAt(hit.point);
 
                 if (!visibleByCamera)
                     return;

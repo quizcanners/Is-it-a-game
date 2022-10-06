@@ -119,17 +119,17 @@ namespace QuizCanners.IsItGame.Develop
 
             if (splatterMonsters)
             {
-                Game.Enums.SoundEffects.Explosion_Gory.PlayOneShotAt(hit.point, clipVolume: volume);
+                Game.Enums.UiSoundEffects.Explosion_Gory.PlayOneShotAt(hit.point, clipVolume: volume);
             }
             else
                 Singleton.Try<Singleton_CameraOperatorGodMode>(
                     onFound: cam => {
                             if ((cam.transform.position - hit.point).magnitude < _explosionRadius)
-                                Game.Enums.SoundEffects.Explosion_Near.PlayOneShotAt(hit.point, clipVolume: volume);
+                                Game.Enums.UiSoundEffects.Explosion_Near.PlayOneShotAt(hit.point, clipVolume: volume);
                             else 
-                                Game.Enums.SoundEffects.Explosion.PlayOneShotAt(hit.point, clipVolume: volume);
+                                Game.Enums.UiSoundEffects.Explosion.PlayOneShotAt(hit.point, clipVolume: volume);
                         }, 
-                    onFailed: () => Game.Enums.SoundEffects.Explosion.PlayOneShotAt(hit.point, clipVolume: volume));
+                    onFailed: () => Game.Enums.UiSoundEffects.Explosion.PlayOneShotAt(hit.point, clipVolume: volume));
 
 
             if (!Camera.main.IsInCameraViewArea(hit.point))

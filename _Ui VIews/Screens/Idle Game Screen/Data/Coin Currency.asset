@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Coin Currency
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300000, guid: 7b4f1f9387bcc4e43bd0a151f02d49db, type: 3}
+  - {fileID: 21300000, guid: 08a23186509245b4e88aa2101d8b992f, type: 3}
   onCreateSounds:
   - {fileID: 8300000, guid: 051de2aab93369643b5deccf02b81d21, type: 3}
   - {fileID: 8300000, guid: a3a3a3ebb02c5f545be02034b01994f0, type: 3}

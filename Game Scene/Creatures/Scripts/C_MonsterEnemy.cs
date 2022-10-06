@@ -287,7 +287,7 @@ namespace QuizCanners.IsItGame.Develop
 
             Vector3 origin = GetActivePosition();
 
-            Game.Enums.SoundEffects.BodyExplosion.PlayOneShotAt(origin);
+            Game.Enums.UiSoundEffects.BodyExplosion.PlayOneShotAt(origin);
 
             Singleton.Try<Pool_SdfGoreParticles>(s =>
             {

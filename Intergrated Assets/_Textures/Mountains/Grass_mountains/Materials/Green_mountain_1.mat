@@ -11,6 +11,7 @@ Material:
   m_Shader: {fileID: 4800000, guid: 1f71f005ba3c40a47a82d8cb165aaa10, type: 3}
   m_ValidKeywords:
   - _BUMP_REGULAR
+  - _DISABLE_VOLUME
   - _SURFACE_NONMETAL
   m_InvalidKeywords:
   - _NORMALMAP
@@ -23,6 +24,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _Ambient:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Bottom:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -221,8 +226,10 @@ Material:
     - _tiles3x: 0.03
     - _tiles3y: 0.03
     - _tiles3z: 0.03
+    - noRtxVolume: 1
     - subSurfaceScattering: 0
     - thisDoesntMatter: 0
+    - useAmbient: 0
     m_Colors:
     - _Color: {r: 0.8161765, g: 0.8161765, b: 0.8161765, a: 1}
     - _Color0: {r: 1, g: 1, b: 1, a: 1}

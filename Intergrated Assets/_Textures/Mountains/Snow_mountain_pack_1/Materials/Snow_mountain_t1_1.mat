@@ -11,6 +11,7 @@ Material:
   m_Shader: {fileID: 4800000, guid: 1f71f005ba3c40a47a82d8cb165aaa10, type: 3}
   m_ValidKeywords:
   - _BUMP_REGULAR
+  - _DISABLE_VOLUME
   - _SURFACE_NONMETAL
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -50,6 +51,7 @@ Material:
     m_Floats:
     - _BUMP: 1
     - _SURFACE: 0
+    - noRtxVolume: 1
     - subSurfaceScattering: 0
     - thisDoesntMatter: 0
     - useAmbient: 0

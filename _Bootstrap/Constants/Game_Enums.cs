@@ -49,7 +49,7 @@ namespace QuizCanners.IsItGame
                 Paused = 6,
             }
 
-            public enum SoundEffects
+            public enum UiSoundEffects
             {
                 None = 0,
                 Click = 1,
@@ -76,6 +76,35 @@ namespace QuizCanners.IsItGame
                 Explosion_Gory = 22,
                 Explosion_Near = 23,
             }
+
+            public enum WorldSoundEffects
+            {
+                None = 0,
+                Click = 1,
+                PressDown = 2,
+                MouseLeave = 3,
+                Tab = 4,
+                Coins = 5,
+                Process = 6,
+                ProcessFinal = 7,
+                Ice = 8,
+                Scratch = 9,
+                ItemPurchase = 10,
+                MouseEnter = 11,
+                MouseExit = 12,
+                HoldElement = 13,
+                Shot = 14,
+                DefaultSurfaceImpact = 15,
+                BodyImpact = 16,
+                BodyExplosion = 17,
+                BlotDrop = 18,
+                ArmorImpact = 19,
+                BulletFlyBy = 20,
+                Explosion = 21,
+                Explosion_Gory = 22,
+                Explosion_Near = 23,
+            }
+
 
             public enum Music
             {
