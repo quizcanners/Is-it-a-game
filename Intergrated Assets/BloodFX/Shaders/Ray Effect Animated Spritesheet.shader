@@ -107,7 +107,7 @@ Shader "RayTracing/Effect/Blood Atlas Animation"
 			float _InvFade;
 			
 			      
-
+			float4 _qc_BloodColor;
 
 			fixed4 frag (v2f i) : COLOR
 			{
@@ -120,7 +120,8 @@ Shader "RayTracing/Effect/Blood Atlas Animation"
                 float3 viewDir = normalize(i.viewDir);
 			//	float2 screenUV = i.screenPos.xy / i.screenPos.w;
 
-				fixed4 col = i.color * LerpTransparent( tex2D(_MainTex, i.texcoord.xy), tex2D(_MainTex, i.texcoord.zw), i.interpolation );
+				fixed4 col = //i.color *
+					LerpTransparent( tex2D(_MainTex, i.texcoord.xy), tex2D(_MainTex, i.texcoord.zw), i.interpolation );
 
 				float  outOfBounds;	
 				float4 vol = SampleVolume(i.worldPos, outOfBounds);
@@ -131,15 +132,16 @@ Shader "RayTracing/Effect/Blood Atlas Animation"
 
 			
 
-				float sceneZ = LinearEyeDepth (UNITY_SAMPLE_DEPTH(tex2Dproj(_CameraDepthTexture, UNITY_PROJ_COORD(i.projPos))));
-				float partZ = i.projPos.z;
-				float fade = saturate (_InvFade * (sceneZ-partZ));
-				col.a *= fade;
+				//float sceneZ = LinearEyeDepth (UNITY_SAMPLE_DEPTH(tex2Dproj(_CameraDepthTexture, UNITY_PROJ_COORD(i.projPos))));
+				//float partZ = i.projPos.z;
+				//float fade = saturate (_InvFade * (sceneZ-partZ));
+				//col.a *= fade;
 		
-					col.rgb *= (ambientCol + GetDirectional() * outOfBounds) * (3 - col.a * 2);
+					col.rgb =_qc_BloodColor.rgb * (1 - col.a*col.a) * ambientCol; // * (3 - col.a * 2);
 
+				col.a = smoothstep(0, 0.5, col.a);
 
-				ApplyBottomFog(col.rgb, i.worldPos.xyz, i.viewDir.y);
+				//ApplyBottomFog(col.rgb, i.worldPos.xyz, i.viewDir.y);
 
 				return col;
 			}

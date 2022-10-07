@@ -155,6 +155,8 @@
                 return o;
             }
 
+            float4 _qc_BloodColor;
+
             half4 frag(v2f i) : SV_Target
             {
                 UNITY_SETUP_INSTANCE_ID(i);
@@ -178,11 +180,10 @@
 				
 
 
-				float4 col = float4(0.6 , 0.005, 0.005,1);
+				float4 col = 1;
 
-				col.rgb *=
-				 
-					(ambientCol * 0.5
+				col.rgb =
+					(ambientCol 
 					+ lightColor * shadow
 					) ;
 
@@ -208,17 +209,10 @@
 				;*/
 
 
-				col.rgb = col.rgb 
-				+ bakeStraight * 0.5 * lerp( float3(1, 0.3, 0.3), float3(1, 0.01, 0.01), smoothstep(0,0.05 + fresnel*0.05, world)) 
-				 + bakeReflected * 0.5 *  float3(1, 0.02, 0.02) * (1.5 - showStright)
-					//trasparentPart + col.rgb
-					;
+				col.rgb = _qc_BloodColor * (col.rgb * showStright  + lerp(bakeReflected  , bakeStraight * 0.2 , showStright));
 
 				ApplyBottomFog(col.rgb, newPos, viewDir.y);
 
-
-
-     
                 return col;
 
             }

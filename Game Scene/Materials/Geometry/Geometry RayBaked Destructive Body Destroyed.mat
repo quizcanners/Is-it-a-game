@@ -37,7 +37,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DamDiffuse:
-        m_Texture: {fileID: 2800000, guid: 547bce0aebc9a9f4a8b99e2273411f67, type: 3}
+        m_Texture: {fileID: 2800000, guid: aa38d82f6cc3802449a4ed4ce84fedd9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DamDiffuse2:
