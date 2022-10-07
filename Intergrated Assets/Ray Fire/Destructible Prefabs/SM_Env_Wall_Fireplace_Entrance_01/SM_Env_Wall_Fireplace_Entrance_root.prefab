@@ -9218,7 +9218,6 @@ GameObject:
   - component: {fileID: 9142866473684995115}
   - component: {fileID: 9142866473684995108}
   - component: {fileID: 9142866473684995109}
-  - component: {fileID: 9142866473684995110}
   - component: {fileID: 9142866473684995111}
   - component: {fileID: 9142866473684995104}
   m_Layer: 0
@@ -12132,7 +12131,7 @@ MonoBehaviour:
   debrisList:
   - {fileID: 9142866473684995109}
   dustList:
-  - {fileID: 9142866473684995110}
+  - {fileID: 0}
   restriction: {fileID: 0}
   sound: {fileID: 0}
 --- !u!114 &9142866473684995109
@@ -12215,71 +12214,6 @@ MonoBehaviour:
   refScale: {x: 1, y: 1.0000002, z: 1.0000002}
   children: []
   amountFinal: 0
-  oldChild: 0
---- !u!114 &9142866473684995110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9142866473684995105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f5e79b13bbb1d74e8a4fe76b5c902d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onDemolition: 1
-  onActivation: 1
-  onImpact: 1
-  opacity: 0.521
-  dustMaterial: {fileID: 2100000, guid: e05209c27cf59e14c91928a59ffc2f66, type: 2}
-  dustMaterials: []
-  emissionMaterial: {fileID: 0}
-  emission:
-    burstType: 2
-    burstAmount: 10
-    distanceRate: 1
-    duration: 4.53
-    lifeMin: 4.2
-    lifeMax: 7
-    sizeMin: 0.9
-    sizeMax: 1.7
-  dynamic:
-    speedMin: 0.59
-    speedMax: 0.86
-    rotation: 0.221
-    gravityMin: 0.07
-    gravityMax: 0.9
-  noise:
-    enabled: 0
-    quality: 2
-    strengthMin: 0.3
-    strengthMax: 0.6
-    frequency: 0.3
-    scrollSpeed: 0.7
-    damping: 1
-  collision:
-    collidesWith:
-      serializedVersion: 2
-      m_Bits: 385
-    quality: 0
-    radiusScale: 1
-  limitations:
-    minParticles: 3
-    maxParticles: 13
-    percentage: 50
-    sizeThreshold: 0.5
-    demolitionDepth: 2
-  rendering:
-    castShadows: 1
-    receiveShadows: 1
-    lightProbes: 0
-  rigid: {fileID: 9142866473684995108}
-  pSystem: {fileID: 0}
-  hostTm: {fileID: 0}
-  initialized: 1
-  children: []
-  amountFinal: 5
   oldChild: 0
 --- !u!114 &9142866473684995111
 MonoBehaviour:

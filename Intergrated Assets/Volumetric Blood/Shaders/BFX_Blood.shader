@@ -174,7 +174,7 @@
 				float3 ambientCol = lerp(vol, _RayMarchSkyColor.rgb * MATCH_RAY_TRACED_SKY_COEFFICIENT, outOfBounds);
 
 				float direct = saturate((dot(normal, _RayMarchLightDirection.xyz)));
-				float3 lightColor = _RayMarchLightColor.rgb * _RayMarchLightDirection.a * MATCH_RAY_TRACED_SUN_COEFFICIENT * direct;
+				float3 lightColor = GetDirectional() * direct;
 				
 
 
