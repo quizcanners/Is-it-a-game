@@ -9,9 +9,13 @@ namespace QuizCanners.IsItGame.Develop
 {
     public class Singleton_ChornobaivkaController : Singleton.BehaniourBase
     {
+        [SerializeField] private SO_ChornobaivkaSettings _config;
         public LayerMask LayersToHit;
         public int Enemies;
         public int SoftLayerToPierce;
+
+
+      
 
         public PlaytimePainter_BrushConfigScriptableObject OnCollisionBrush;
 
@@ -50,6 +54,14 @@ namespace QuizCanners.IsItGame.Develop
 
         }
 
+
+        protected override void AfterEnable()
+        {
+            base.AfterEnable();
+
+            _config.UpdateShaderParameters();
+        }
+
         public override void Inspect()
         {
             base.Inspect();
@@ -57,6 +69,8 @@ namespace QuizCanners.IsItGame.Develop
 
             "Enemies".PegiLabel(80).Edit_Layer(ref Enemies).Nl();
             "Layer To Pierce".PegiLabel(80).Edit_Layer(ref SoftLayerToPierce).Nl();
+
+            "Config".PegiLabel().Edit_Inspect(ref _config).Nl();
 
             /*
             var dt = Time.fixedDeltaTime;
