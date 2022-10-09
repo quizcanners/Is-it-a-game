@@ -67,6 +67,16 @@ MonoBehaviour:
       Game Music Pack/Casual Theme #4 (Looped).wav
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 3dc88f48f49bb614e9c9029104838a55
+    m_Address: Assets/_Is-it-a-game/_Game Assets/UI Audio Clips/Audio Clips/Fireplace/Fireplace
+      loop 2.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 70cb7a6748112854ea1eac4aff23579e
+    m_Address: Assets/_Is-it-a-game/_Game Assets/UI Audio Clips/Audio Clips/Fireplace/Fireplace
+      loop 4.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 15b6bd71e2d240c4eb290b0cb368ecec, type: 2}
   m_SchemaSet:

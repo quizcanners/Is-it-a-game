@@ -167,7 +167,7 @@
 
                 float shadow = SHADOW_ATTENUATION(i);
 
-               	float fresnel = smoothstep(-1, 1 , dot(viewDir, normal));
+               	float fresnel = smoothstep(0.5, 1 , dot(viewDir, normal));
 
 				float outOfBounds;
 				float4 vol = SampleVolume(newPos, outOfBounds);
@@ -197,19 +197,21 @@
 				float3 bakeStraight = SampleRay(newPos, normalize(-viewDir - normal*0.2), shadow, straightHit, outOfBoundsStraight);
 				TopDownSample(straightHit, bakeStraight, outOfBoundsStraight);
 
-				float showStright = fresnel ;
+			
 	
 				float world = SceneSdf(newPos, 0.1);
 
-			/*	float3 trasparentPart =
-				bakeStraight * lerp(  1, float3(1, 0.01, 0.01), saturate(world)) 
-				*  showStright
-				+ 
-				bakeReflected *  float3(1, 0.02, 0.02) * (1.5 - showStright)
-				;*/
+                float farFromSurface = smoothstep(0, 0.5, world); 
 
+				_qc_BloodColor.rgb *= 0.25 + farFromSurface * 0.75;
 
-				col.rgb = _qc_BloodColor * (col.rgb * showStright  + lerp(bakeReflected  , bakeStraight * 0.2 , showStright));
+                	float showStright = fresnel ;
+				col.rgb =  _qc_BloodColor.rgb * col.rgb 
+				+ lerp(_qc_BloodColor.rgb * bakeReflected, (farFromSurface + _qc_BloodColor.rgb) * 0.5 * bakeStraight, showStright) 
+		
+					;
+
+			//	col.rgb = _qc_BloodColor * (col.rgb * showStright  + lerp(bakeReflected  , bakeStraight * 0.2 , showStright));
 
 				ApplyBottomFog(col.rgb, newPos, viewDir.y);
 

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Whitehawk.nodeConfig
   m_EditorClassIdentifier: 
   _encodedNodes:
-    _value: n|28|n|4|ROOT|i|1|0|c|0||cfgs|0|||
+    _value: n|113|n|4|ROOT|i|1|0|c|0||cfgs|84|Envrmnt|8|cfg|1|2||RayTrc|28|tM|8|act|1|0||lM|8|act|1|2|||Monster
+      Spawner|7|sp|1|y||||
   _encoded: 1
   _freeNodeIndex: 33
