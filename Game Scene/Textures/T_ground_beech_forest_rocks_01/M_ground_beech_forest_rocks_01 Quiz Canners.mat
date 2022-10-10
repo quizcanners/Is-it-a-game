@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: M_ground_beech_forest_rocks_01 Quiz Canners
-  m_Shader: {fileID: 4800000, guid: 1f71f005ba3c40a47a82d8cb165aaa10, type: 3}
+  m_Shader: {fileID: 4800000, guid: 7773dfd29922b574685db5532b400585, type: 3}
   m_ValidKeywords:
   - _BUMP_REGULAR
   - _SURFACE_NONMETAL
@@ -38,6 +38,10 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Ambient:
+        m_Texture: {fileID: 2800000, guid: 66ac166853363174984128ba518a1d32, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _AmbientTop:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -85,6 +89,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: cf1e6a2847c833540a4dc549a84c6c4b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _DiffuseTop:
+        m_Texture: {fileID: 2800000, guid: 6454a6051debd404394d701039883a53, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _DistortionVectorMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -114,7 +122,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Map:
-        m_Texture: {fileID: 2800000, guid: 823bdbd38b24b8e41824579480e16fda, type: 3}
+        m_Texture: {fileID: 2800000, guid: 35c67879cd7202246993b5fad84a9872, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MapTop:
+        m_Texture: {fileID: 2800000, guid: b3c0000cd6ab2854a8bad20b5b769c69, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
@@ -247,6 +259,7 @@ Material:
     - _IridescenceThickness: 1
     - _LinkDetailsWithBase: 1
     - _MaterialID: 1
+    - _MergeHeight: 1.99
     - _Metallic: 1
     - _Mode: 0
     - _NormalMapSpace: 0
@@ -303,10 +316,12 @@ Material:
     - _UVSec: 0
     - _UseEmissiveIntensity: 0
     - _UseShadowThreshold: 0
+    - _VerticalTiling: 0.1
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 4
     - _ZTestModeDistortion: 4
     - _ZWrite: 1
+    - noRtxVolume: 0
     - subSurfaceScattering: 0
     - thisDoesntMatter: 0
     - useAmbient: 0

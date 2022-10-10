@@ -158,7 +158,7 @@ namespace QuizCanners.IsItGame.Develop
             Singleton.Try<Pool_ImpactLightsController>(s =>
             {
                 if (s.TrySpawnIfVisible(origin, out var light))
-                    light.SetSize(128);
+                    light.SetSize(256);
             });
 
             if (Pool.TrySpawnIfVisible<C_SmokeEffectOnImpact>(origin, out var smoke))
@@ -252,6 +252,9 @@ namespace QuizCanners.IsItGame.Develop
                 }
             }
         }
+
+
+        public override string ToString() => "Rocket Launcher";
 
         [SerializeField] private pegi.EnterExitContext context = new();
         public void Inspect()

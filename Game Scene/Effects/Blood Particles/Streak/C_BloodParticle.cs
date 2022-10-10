@@ -22,7 +22,6 @@ namespace QuizCanners.IsItGame
 
         void OnTriggerEnter(Collider other)
         {
-
             if (_painted)
                 return;
 
@@ -34,14 +33,9 @@ namespace QuizCanners.IsItGame
 
                 if (brush != null) 
                 {
-                    var rendTex = receiver.GetTexture() as RenderTexture;
-
-                    if (rendTex)
-                    {
-                        var vec = _rigidbody.velocity.normalized;
-                        var st = new Stroke(transform.position - vec, _rigidbody.velocity + vec);
-                        receiver.CreatePaintCommandFor(st, brush, 0).Paint();
-                    }
+                    var vec = _rigidbody.velocity.normalized;
+                    var st = new Stroke(transform.position - vec, _rigidbody.velocity + vec);
+                    receiver.CreatePaintCommandFor(st, brush, 0).Paint();
                 }
 
                 _collider.enabled = false;

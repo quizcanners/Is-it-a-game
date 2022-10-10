@@ -9,13 +9,12 @@ namespace QuizCanners.IsItGame.Develop
 {
     public class Singleton_ChornobaivkaController : Singleton.BehaniourBase
     {
-        [SerializeField] private SO_ChornobaivkaSettings _config;
+        [SerializeField] public SO_ChornobaivkaSettings _config;
         public LayerMask LayersToHit;
+        public LayerMask WorldGeometryLayer;
         public int Enemies;
         public int SoftLayerToPierce;
 
-
-      
 
         public PlaytimePainter_BrushConfigScriptableObject OnCollisionBrush;
 
@@ -26,6 +25,10 @@ namespace QuizCanners.IsItGame.Develop
 
         public bool CastHardSurface(Ray ray, out RaycastHit hit, float maxDistance = MAX_DISTANCE)
           => Physics.Raycast(ray, out hit, maxDistance: maxDistance, LayersToHit);
+
+        public bool CastGeometry(Ray ray, out RaycastHit hit, float maxDistance = MAX_DISTANCE)
+            => Physics.Raycast(ray, out hit, maxDistance: maxDistance, WorldGeometryLayer);
+
 
         public bool CastPierce(Ray ray, out RaycastHit softHit, float maxDistance = MAX_DISTANCE)
             => Physics.Raycast(ray, out softHit, maxDistance: maxDistance, (1 << SoftLayerToPierce));

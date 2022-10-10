@@ -95,69 +95,11 @@ namespace QuizCanners.IsItGame.Develop
 
             pierced = false;
 
-            if (visibleByCamera)
-            {
-
-                var receivers = hit.transform.GetComponentsInParent<C_PaintingReceiver>();
-
-                if (receivers.Length > 0)
-                {
-                    C_PaintingReceiver receiver = receivers.GetByHit(hit, out int subMesh);
-
-                    if (receiver)
-                    {
-                        ApplyBrush();
-
-                        void ApplyBrush()
-                        {
-                            var tex = receiver.GetTexture();
-
-                           // bool isSkinned = false;
-
-                            if (tex)
-                            {
-                                if (tex is Texture2D d)
-                                {
-                                    if (hit.collider.GetType() != typeof(MeshCollider))
-                                        Debug.Log("Can't get UV coordinates from a Non-Mesh Collider");
-
-                                    BlitFunctions.Paint(receiver.useTexcoord2 ? hit.textureCoord2 : hit.textureCoord, 1, d, Vector2.zero, Vector2.one, brushConfig.brush);
-                                    var id = tex.GetTextureMeta();
-
-                                    return;
-                                }
-
-                                var rendTex = tex as RenderTexture;
-
-                                if (rendTex)
-                                {
-                                    float wallShootTrough = 0.5f;
-
-                                    var hitVector = direction;//(hit.point - from).normalized;
-
-                                    var st = receiver.CreateStroke(hit, hitVector.normalized * (wallShootTrough + 0.2f));
-
-                                    st.posFrom -= hitVector * 0.2f;
-
-                                 /*   isSkinned = receiver.type == C_PaintingReceiver.RendererType.Skinned;
-
-                                    if ((isSkinned && receiver.skinnedMeshRenderer)
-                                        || (receiver.type == C_PaintingReceiver.RendererType.Regular && receiver.meshFilter))
-                                    {*/
-                                       receiver.CreatePaintCommandFor(st, brushConfig.brush, subMesh).Paint();
-                                    /*}
-                                    else
-                                    {
-                                        QcLog.ChillLogger.LogErrorOnce("wasn't setup right for painting", "NoRtPntng");
-                                    }*/
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+            Vector3 damagePosition = hit.point;
 
             var monster = hit.transform.gameObject.GetComponentInParent<C_MonsterEnemy>();
+
+            bool dismemberment = false;
 
             if (monster)
             {
@@ -177,7 +119,15 @@ namespace QuizCanners.IsItGame.Develop
                 {
                     var dismember = hit.collider.gameObject.GetComponentInParent<C_MonsterDismemberment>();
                     if (dismember)
+                    {
                         dismember.MarkForDemolicion();
+
+                        if (!monster.IsAlive)
+                        {
+                            damagePosition = dismember.GetDetachPoint();
+                            dismemberment = true;
+                        }
+                    }
                 }
 
                 if (monster.TryTakeHit(WeaponAttack, RollInfluence.Advantage, C_MonsterEnemy.LimbsControllerState.Animation))
@@ -200,7 +150,7 @@ namespace QuizCanners.IsItGame.Develop
                     }
                     else
                         if (visibleByCamera)
-                        Singleton.Try<Pool_ImpactLightsController>(s => s.TrySpawnIfVisible(hit.point, onInstanciate: l => l.SetSize(10f)));
+                            Singleton.Try<Pool_ImpactLightsController>(s => s.TrySpawnIfVisible(hit.point, onInstanciate: l => l.SetSize(10f)));
 
                     if (visibleByCamera)
                     {
@@ -239,7 +189,7 @@ namespace QuizCanners.IsItGame.Develop
                 if (!visibleByCamera)
                     return;
 
-                Singleton.Try<Pool_ImpactLightsController>(s => s.TrySpawn(hit.point, onInstanciate: l => l.SetSize(10f)));
+                Singleton.Try<Pool_ImpactLightsController>(s => s.TrySpawn(hit.point, onInstanciate: l => l.SetSize(25f)));
 
                 if (state.Gun)
                 {
@@ -310,6 +260,64 @@ namespace QuizCanners.IsItGame.Develop
                     }
                 });
             }
+
+        
+
+            if (visibleByCamera)
+            {
+                var receivers = hit.transform.GetComponentsInParent<C_PaintingReceiver>();
+
+                if (receivers.Length > 0)
+                {
+                    C_PaintingReceiver receiver = receivers.GetByHit(hit, out int subMesh);
+
+                    if (receiver)
+                    {
+                        var tex = receiver.GetTexture();
+
+                        if (tex)
+                        {
+                            if (tex is Texture2D d)
+                            {
+                                if (hit.collider.GetType() != typeof(MeshCollider))
+                                    Debug.Log("Can't get UV coordinates from a Non-Mesh Collider");
+
+                                BlitFunctions.Paint(receiver.UseTexcoord2 ? hit.textureCoord2 : hit.textureCoord, 1, d, Vector2.zero, Vector2.one, brushConfig.brush);
+                                var id = tex.GetTextureMeta();
+
+                                return;
+                            }
+
+                            var rendTex = tex as RenderTexture;
+
+                            if (rendTex)
+                            {
+                                float wallShootTrough = 0.5f;
+
+                                var hitVector = direction;//(hit.point - from).normalized;
+
+                                var st = receiver.CreateStroke(hit, hitVector.normalized * (wallShootTrough + 0.2f));
+
+                                var brush = brushConfig.brush;
+
+                                if (dismemberment)
+                                {
+                                    st.posFrom = damagePosition;
+                                    st.posTo = damagePosition;
+
+                                    Singleton.Try<Singleton_ChornobaivkaController>(s => brush = s._config.DismembermentBrush.brush);
+                                }
+
+                                st.posFrom -= hitVector * 0.2f;
+
+                                receiver.CreatePaintCommandFor(st, brush, subMesh).Paint();
+                            }
+                        }
+
+                    }
+                }
+            }
+
         }
 
         private void SpawnBlood(RaycastHit hit, Vector3 direction)
@@ -368,6 +376,8 @@ namespace QuizCanners.IsItGame.Develop
         }
 
         #region Inspector
+
+        public override string ToString() => "Machine Gun";
 
         [SerializeField] private pegi.EnterExitContext context = new();
 

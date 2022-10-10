@@ -1,5 +1,5 @@
 using QuizCanners.Inspect;
-using QuizCanners.IsItGame.Pulse;
+using QuizCanners.IsItGame.SplinePath;
 using QuizCanners.Utils;
 using System;
 using UnityEngine;
@@ -13,19 +13,19 @@ namespace QuizCanners.IsItGame.Develop
 
         private Vector2 direction;
         [SerializeField] private bool _targetControllingCameraState;
-        [NonSerialized] private PulsePath.Unit _unit;
+        [NonSerialized] private SO_SplinePath.Unit _unit;
 
 
-        private Gate.Frame frame = new Gate.Frame();
+        private readonly Gate.Frame _frame = new();
 
         protected bool ControllingCamera 
         {
-            get => Singleton.TryGetValue<Singleton_CameraOperatorGodMode, bool>(s => s.controller == (IGodModeCameraController)this, defaultValue: false, logOnServiceMissing: false);
+            get => Singleton.TryGetValue<Singleton_CameraOperatorConfigurable, bool>(s => s.controller == (IGodModeCameraController)this, defaultValue: false, logOnServiceMissing: false);
             set
             {
                 if (ControllingCamera != value)
                 {
-                    Singleton.Try<Singleton_CameraOperatorGodMode>(s => s.controller = value ? this : null, logOnServiceMissing: false);
+                    Singleton.Try<Singleton_CameraOperatorConfigurable>(s => s.controller = value ? this : null, logOnServiceMissing: false);
                 }
             }
         }
@@ -76,18 +76,17 @@ namespace QuizCanners.IsItGame.Develop
 
         void CheckPosition() 
         {
-            if (frame.TryEnter()) 
+            if (_frame.TryEnter()) 
             {
                 GetRawDirection(out float forward, out float right);
 
-               // bool handled = false;
+                // bool handled = false;
 
-                Singleton.Try<Singleton_PulsePath>(s =>
+                Singleton.Try<Singleton_SplinePath>(s =>
                 {
                     if (_unit == null)
                     {
-                        _unit = Singleton.TryGetValue<Singleton_PulsePath, PulsePath.Unit>(
-                            s => s.CreateUnit(isPlayer: true));
+                        _unit = s.CreateUnit(isPlayer: true);
                     }
 
                     if (_unit != null)
@@ -153,6 +152,12 @@ namespace QuizCanners.IsItGame.Develop
             return transform.position;
         }
         Vector3 IGodModeCameraController.GetCameraOffsetPosition() => cameraOffset;
+
+        public bool TryGetCameraHeight(out float height)
+        {
+            height = 1;
+            return false;
+        }
     }
 
     [PEGI_Inspector_Override(typeof(C_TouchscreenMovement))] internal class TouchscreenMovementDrawer : PEGI_Inspector_Override { }

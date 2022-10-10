@@ -30,6 +30,8 @@ namespace QuizCanners.IsItGame.Develop
 
         #region Inspector
 
+        public override string ToString() => "Bolt Gun";
+
         [SerializeField] private pegi.EnterExitContext context = new();
 
         public void Inspect()

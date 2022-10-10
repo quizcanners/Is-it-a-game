@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Forest_stone_3_diffuse
-  m_Shader: {fileID: 4800000, guid: 1f71f005ba3c40a47a82d8cb165aaa10, type: 3}
+  m_Shader: {fileID: 4800000, guid: 7773dfd29922b574685db5532b400585, type: 3}
   m_ValidKeywords:
   - _BUMP_REGULAR
   - _SURFACE_NONMETAL
@@ -24,7 +24,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Ambient:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 078739a35ad0c9747a8821be39e6faac, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -56,6 +56,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Map:
+        m_Texture: {fileID: 2800000, guid: 23e9089c77b4c304d8859f52d1940d02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MapTop:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -89,6 +93,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.29
     - _GlossyReflections: 1
+    - _MergeHeight: 8.3
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -99,6 +104,7 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
+    - noRtxVolume: 0
     - subSurfaceScattering: 0
     - thisDoesntMatter: 0
     - useAmbient: 0

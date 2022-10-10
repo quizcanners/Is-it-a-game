@@ -3774,6 +3774,7 @@ MonoBehaviour:
   meshFilter: {fileID: 0}
   meshRenderer: {fileID: 3313739408547523865}
   skinnedMeshRenderer: {fileID: 3313739408547523865}
+  terrain: {fileID: 0}
   materialIndex: 0
   preferedDamageTextureSize: 128
   originalTexture: {fileID: 0}
