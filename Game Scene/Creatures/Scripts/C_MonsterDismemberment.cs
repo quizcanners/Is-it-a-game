@@ -1,6 +1,7 @@
 using Dungeons_and_Dragons;
 using QuizCanners.Inspect;
 using QuizCanners.Utils;
+using System.Net;
 using UnityEngine;
 
 namespace QuizCanners.IsItGame.Develop
@@ -16,6 +17,19 @@ namespace QuizCanners.IsItGame.Develop
         private bool _demolished;
         private bool _allowDemolition;
 
+        public Vector3 GetDetachPoint()
+        {
+            if (_instance)
+                return _instance.Root.position;
+
+            return _limbToHide.position;
+        }
+
+        public void Restart() 
+        {
+            Demolished = false;
+            AllowDemolition = false;
+        }
 
         public bool AllowDemolition 
         {
@@ -45,11 +59,11 @@ namespace QuizCanners.IsItGame.Develop
                 _instance.gameObject.DestroyWhatever();
         }
 
-        public void DemolishIfMarked() 
+        private void DemolishIfMarked() 
         {
             if (_dismambermentDelay.ValueIsDefined) 
             {
-                if (_dismambermentDelay.TryUpdateIfTimePassed(0.5f))
+                if (_dismambermentDelay.TryUpdateIfTimePassed(0.1f))
                     return;
 
                 Demolished = true;
@@ -75,7 +89,12 @@ namespace QuizCanners.IsItGame.Develop
                     //Pool.TrySpawnIfVisible<BFX_BloodController>(_instance.Root.position);
 
                     //if (!monster.IsAlive)
-                    BFX_DelayedBloodSpawner.CreateFromTransform(transform, Vector3.zero);
+                    //BFX_DelayedBloodSpawner.CreateFromTransform(transform, Vector3.zero);
+
+                    Singleton.Try<Pool_VolumetricBlood>(s =>
+                    {
+                        s.TrySpawnRandom(transform.position, transform.forward, out var instance);
+                    });
 
                     _limbToHide.gameObject.SetActive(false);
                 } else 
@@ -94,8 +113,11 @@ namespace QuizCanners.IsItGame.Develop
         {
             pegi.Nl();
 
-           
-            "Demolish Marked".PegiLabel().ToggleIcon(ref _allowDemolition).Nl().OnChanged(()=> AllowDemolition = _allowDemolition);
+
+            if (Application.isPlaying)
+            {
+                "Demolish Marked".PegiLabel().ToggleIcon(ref _allowDemolition).Nl().OnChanged(() => AllowDemolition = _allowDemolition);
+            }
 
             "Rayfire Prefab".PegiLabel().Edit(ref _demolishablePrefab, allowSceneObjects: false).Nl();
 

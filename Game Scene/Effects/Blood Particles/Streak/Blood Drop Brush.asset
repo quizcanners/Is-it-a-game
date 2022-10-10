@@ -46,5 +46,5 @@ MonoBehaviour:
     _dFlow:
       min: 0.1
       max: 4.5
-      _value: 1.5
+      _value: 3
     showingSize: 1

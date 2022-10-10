@@ -8,12 +8,12 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Forest_stone_14_diffuse
-  m_Shader: {fileID: 4800000, guid: 1f71f005ba3c40a47a82d8cb165aaa10, type: 3}
+  m_Shader: {fileID: 4800000, guid: 7773dfd29922b574685db5532b400585, type: 3}
   m_ValidKeywords:
-  - _AMBIENT
   - _BUMP_REGULAR
   - _SURFACE_NONMETAL
   m_InvalidKeywords:
+  - _AMBIENT
   - _NORMALMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -26,6 +26,10 @@ Material:
     m_TexEnvs:
     - _Ambient:
         m_Texture: {fileID: 2800000, guid: 944a94a49858fae4ba2e3b14ca1cfd96, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _AmbientTop:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -48,6 +52,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: e0dd0ca1316e4b748a327673ce5370d1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _DiffuseTop:
+        m_Texture: {fileID: 2800000, guid: 6454a6051debd404394d701039883a53, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -58,6 +66,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Map:
         m_Texture: {fileID: 2800000, guid: 7fdff0a7b81d9a848a8b7dde121fb35d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MapTop:
+        m_Texture: {fileID: 2800000, guid: b3c0000cd6ab2854a8bad20b5b769c69, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -90,6 +102,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.29
     - _GlossyReflections: 1
+    - _MergeHeight: 8.2
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -99,7 +112,9 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
+    - _VerticalTiling: 0.1
     - _ZWrite: 1
+    - noRtxVolume: 0
     - subSurfaceScattering: 0
     - thisDoesntMatter: 0
     - useAmbient: 1

@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90210830e0cea63468b0fce011cff505, type: 3}
   m_Name: Chornobaivka Settings
   m_EditorClassIdentifier: 
+  DismembermentBrush: {fileID: 11400000, guid: 6cd78f6195edd69499478ee5b2446550, type: 2}
+  GibletsSplatterBrush: {fileID: 11400000, guid: c852e0c408f35d4448787002a7f65744, type: 2}
   _bloodColor: {r: 0.46226418, g: 0, b: 0, a: 1}

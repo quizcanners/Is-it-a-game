@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: M_beech_forest_stumps_02
-  m_Shader: {fileID: 4800000, guid: 1f71f005ba3c40a47a82d8cb165aaa10, type: 3}
+  m_Shader: {fileID: 4800000, guid: 7773dfd29922b574685db5532b400585, type: 3}
   m_ValidKeywords:
   - _BUMP_REGULAR
   - _SURFACE_NONMETAL
@@ -38,6 +38,14 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _Ambient:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _AmbientTop:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -150,6 +158,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: efe9ba740dce8614cb7e9d6ac712e5d1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _DiffuseTop:
+        m_Texture: {fileID: 2800000, guid: 6454a6051debd404394d701039883a53, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _DistortionVectorMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -200,6 +212,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Map:
         m_Texture: {fileID: 2800000, guid: 14638357db41fb94fa7dc603772cd2a2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MapTop:
+        m_Texture: {fileID: 2800000, guid: b3c0000cd6ab2854a8bad20b5b769c69, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
@@ -490,6 +506,7 @@ Material:
     - _LinkDetailsWithBase2: 1
     - _LinkDetailsWithBase3: 1
     - _MaterialID: 1
+    - _MergeHeight: 5
     - _Metallic: 1
     - _Metallic0: 0
     - _Metallic1: 0
@@ -602,13 +619,16 @@ Material:
     - _UseMainLayerInfluence: 0
     - _UseShadowThreshold: 0
     - _VertexColorMode: 0
+    - _VerticalTiling: 0.1
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 4
     - _ZTestModeDistortion: 4
     - _ZWrite: 1
     - __dirty: 1
+    - noRtxVolume: 0
     - subSurfaceScattering: 0
     - thisDoesntMatter: 0
+    - useAmbient: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColor0: {r: 1, g: 1, b: 1, a: 1}

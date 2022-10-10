@@ -7,8 +7,8 @@ Shader "KriptoFX/BFX/BFX_Decal"
 		_LookupFade("Lookup Fade Texture", 2D) = "white" {}
 		_Cutout("Cutout", Range(0, 1)) = 1
 		_CutoutTex("CutoutDepth(XZ)", 2D) = "white" {}
-	[Space]
-		_SunPos("Sun Pos", Vector) = (1, 0.5, 1, 0)
+	//[Space]
+		//_SunPos("Sun Pos", Vector) = (1, 0.5, 1, 0)
 		//[Toggle(CLAMP_SIDE_SURFACE)] _ClampSideSurface("Clamp side surface", Int) = 0
 	}
 
@@ -77,7 +77,7 @@ Shader "KriptoFX/BFX/BFX_Decal"
 				half _AlphaPow;
 				half _DistortSpeed;
 				half _DistortScale;
-				float4 _SunPos;
+				//float4 _SunPos;
 				half _DepthMul;
 				half3 _DecalForwardDir;
 
@@ -214,25 +214,14 @@ Shader "KriptoFX/BFX/BFX_Decal"
 					col.a = saturate(alphaMask * projClipFade);
 
 
-					//float intencity = UNITY_ACCESS_INSTANCED_PROP(Props, _LightIntencity);
-					//float light = max(0.001, dot(normal, normalize(_SunPos.xyz)));
-					//light = pow(light, 150) * 3 * intencity;
-					//light *= (1 - mask.z * colorMask);
-
-
-
-
 					float4 tintColor = UNITY_ACCESS_INSTANCED_PROP(Props, _TintColor);
 					#if !UNITY_COLORSPACE_GAMMA
 							tintColor = tintColor * 1.35;
 					#endif
 
-				 // lerp(_qc_BloodColor.rgb, _qc_BloodColor.rgb * 0.25, saturate(mask.z * colorMask));// + light;
-
+	
 						float fresnel = smoothstep(-1, 1 , dot(viewDir, normal));
 
-					//half fresnel = (1 - dot(normal, normalize(i.viewDir)));
-					//fresnel = pow(fresnel + 0.1, 5);
 
 					float outOfBounds;
 					float4 vol = SampleVolume(newPos, outOfBounds);
@@ -241,28 +230,16 @@ Shader "KriptoFX/BFX/BFX_Decal"
 				
 					float shadow = getShadowAttenuation(newPos);	
 
-					/*	float3 reflectionPos;
-				float outOfBoundsRefl;
-				float3 bakeReflected = SampleReflection(newPos, viewDir, normal, shadow, reflectionPos, outOfBoundsRefl);
-				TopDownSample(reflectionPos, bakeReflected, outOfBoundsRefl);*/
-
 				float thickness = mask.z * colorMask * 0.5;
 
-					col.rgb = _qc_BloodColor.rgb * (1- thickness);
+				col.a *= 0.5 + thickness;
 
-						col.rgb = col.rgb * vol
-				//+ bakeStraight * 0.5 * lerp( float3(1, 0.3, 0.3), float3(1, 0.01, 0.01), smoothstep(0,0.05 + fresnel*0.05, world)) 
-				// + bakeReflected *  _qc_BloodColor.rgb * 0.2 //* (1.5 - showStright)
-					//trasparentPart + col.rgb
-					;
+					col.rgb = _qc_BloodColor.rgb * (1- col.a);
 
-					col.a *= 0.5 + thickness;
+						col.rgb = col.rgb * vol;
 
-					//res.a = smoothstep();;
+					
 
-					//return float4(vol.rgb,1);
-
-					//return lerp(0.5, res, res.a * tintColor.a);
 
 					ApplyBottomFog(col.rgb, newPos, viewDir.y);
 

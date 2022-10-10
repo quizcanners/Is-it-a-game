@@ -1,7 +1,6 @@
+using PainterTool;
 using QuizCanners.Inspect;
 using QuizCanners.Utils;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace QuizCanners.IsItGame.Develop
@@ -12,8 +11,13 @@ namespace QuizCanners.IsItGame.Develop
     {
         public const string FILE_NAME = "Chornobaivka Settings";
 
+        [SerializeField] public PlaytimePainter_BrushConfigScriptableObject DismembermentBrush;
+        [SerializeField] public PlaytimePainter_BrushConfigScriptableObject GibletsSplatterBrush;
         [SerializeField] private Color _bloodColor = new Color(0.5f, 0.1f, 0.1f, 1);
         private readonly ShaderProperty.ColorFloat4Value BLOOD_COLOR = new("_qc_BloodColor", new Color(0.5f, 0.1f, 0.1f, 1));
+
+
+
 
         public Color BloodColor 
         {
@@ -30,18 +34,28 @@ namespace QuizCanners.IsItGame.Develop
             BloodColor = _bloodColor;
         }
 
+
+        private pegi.EnterExitContext _context = new();
+
         public void Inspect()
         {
             var changes = pegi.ChangeTrackStart();
 
-            "_qc_BloodColor".PegiLabel().Edit(ref _bloodColor).Nl();
+            using (_context.StartContext())
+            {
+                "Dismemberment Brush".PegiLabel().Edit_Enter_Inspect(ref DismembermentBrush).Nl();
+                "Giblets Splatter Brush".PegiLabel().Edit_Enter_Inspect(ref GibletsSplatterBrush).Nl();
 
-            if (changes) 
+                if (_context.IsAnyEntered == false)
+                {
+                    "_qc_BloodColor".PegiLabel().Edit(ref _bloodColor).Nl();
+                }
+            }
+
+            if (changes)
             {
                 UpdateShaderParameters();
             }
-
-
         }
     }
 }

@@ -1,7 +1,8 @@
 using Dungeons_and_Dragons;
+using PainterTool;
 using PainterTool.Examples;
 using QuizCanners.Inspect;
-using QuizCanners.IsItGame.Pulse;
+using QuizCanners.IsItGame.SplinePath;
 using QuizCanners.RayTracing;
 using QuizCanners.Utils;
 using System;
@@ -28,7 +29,7 @@ namespace QuizCanners.IsItGame.Develop
         [NonSerialized] public int postDeathDamage;
 
         private CharacterState _state;
-        [NonSerialized] private PulsePath.Unit _unit;
+        [NonSerialized] private SO_SplinePath.Unit _unit;
         private LimbsControllerState _limbsState;
         private bool _fallbackAlive;
         private bool _animationInvalidated;
@@ -37,7 +38,7 @@ namespace QuizCanners.IsItGame.Develop
         private readonly LogicWrappers.TimeFixedSegmenter _turnTimer = new(unscaledTime: false, segmentLength: DnDTime.SECONDS_PER_TURN);
         private readonly LogicWrappers.Timer _postDeathTimer = new();
 
-        private Gate.Vector3Value _deltaPosition = new Gate.Vector3Value();
+        private readonly Gate.Vector3Value _deltaPosition = new();
 
         private bool IsTestDummy => _unit == null;
 
@@ -105,15 +106,14 @@ namespace QuizCanners.IsItGame.Develop
                 if (IsAlive)
                     return true;
 
-                switch (LimbsState) 
+                return LimbsState switch
                 {
-                    case LimbsControllerState.Giblets: return false;
-                    case LimbsControllerState.Disintegrating: return true;
-                    case LimbsControllerState.Animation: return true;
-                    case LimbsControllerState.Ragdoll: return true;
-                    default:
-                        return true;
-                }
+                    LimbsControllerState.Giblets => false,
+                    LimbsControllerState.Disintegrating => true,
+                    LimbsControllerState.Animation => true,
+                    LimbsControllerState.Ragdoll => true,
+                    _ => true,
+                };
             }
         }
 
@@ -177,7 +177,7 @@ namespace QuizCanners.IsItGame.Develop
                return transform.position + Vector3.up * 0.75f;
         }
 
-        public void RestartMonster(PulsePath.Unit unit = null, CharacterSheet.SmartId character = null)
+        public void RestartMonster(SO_SplinePath.Unit unit = null, CharacterSheet.SmartId character = null)
         {
             _unit = unit;
             if (_unit != null)
@@ -205,11 +205,8 @@ namespace QuizCanners.IsItGame.Develop
             }
 
             foreach (C_MonsterDismemberment dis in dismemberments)
-            {
-                dis.Demolished = false;
-                dis.AllowDemolition = false;
-            }
-
+                dis.Restart();
+            
             Update();
         }
 
@@ -295,7 +292,6 @@ namespace QuizCanners.IsItGame.Develop
 
                 if (s.TrySpawn(origin - dir * 0.3f, out var gore))
                     gore.PushDirection = dir;
-
             });
 
             ImpactController.Play(origin - pushVector.normalized * 0.5f, 1, disintegrate: true);
@@ -306,25 +302,51 @@ namespace QuizCanners.IsItGame.Develop
                 rb.velocity = rb.velocity.Y(0) * 0.15f;
             }
 
-            Singleton.Try<Pool_BloodParticlesController>(s =>
+            if (IsVisibleByCamera(maxDistance: 20))
             {
-                int count = (int)(1 + 5 * s.VacancyPortion);
-
-                for (int i = 0; i < count; i++)
+                Singleton.Try<Pool_BloodParticlesController>(s =>
                 {
-                    if (s.TrySpawn(origin, out var b))
+                    int count = (int)(1 + 5 * s.VacancyPortion);
+
+                    for (int i = 0; i < count; i++)
                     {
-                        Vector3 randomDirection = (0.5f + UnityEngine.Random.value * 0.5f) * UnityEngine.Random.insideUnitSphere;
-                        Vector3 direction = Vector3.Lerp(randomDirection, pushVector.normalized * 0.5f, pushForce01 * 0.5f);
-                        b.Restart(
-                            position: origin + randomDirection * 0.5f,
-                            direction: (1 + pushForce01) * 4 * direction,
-                            scale: 1.5f);
+                        if (s.TrySpawn(origin, out var b))
+                        {
+                            Vector3 randomDirection = (0.5f + UnityEngine.Random.value * 0.5f) * UnityEngine.Random.insideUnitSphere;
+                            Vector3 direction = Vector3.Lerp(randomDirection, pushVector.normalized * 0.5f, pushForce01 * 0.5f);
+                            b.Restart(
+                                position: origin + randomDirection * 0.5f,
+                                direction: (1 + pushForce01) * 4 * direction,
+                                scale: 1.5f);
+                        }
+                        else
+                            break;
                     }
-                    else
-                        break ;
-                }
-            });
+                });
+            }
+            else
+            {
+                // TODO: Paint Big Blood splatter
+
+                Singleton.Try<Singleton_ChornobaivkaController>(s =>
+                {
+                    if (s.CastGeometry(new Ray(origin, Vector3.down), out var hit, maxDistance: 5))
+                    {
+                        var receiver = hit.transform.gameObject.GetComponent<C_PaintingReceiver>();
+
+                        if (receiver)
+                        {
+                            var brush = s._config.GibletsSplatterBrush.brush;
+
+                            if (brush != null)
+                            {
+                                var st = new Stroke(origin);
+                                receiver.CreatePaintCommandFor(st, brush, 0).Paint();
+                            }
+                        }
+                    }
+                });
+            }
 
             Singleton.Try<Pool_VolumetricBlood>(s =>
             {
@@ -365,15 +387,18 @@ namespace QuizCanners.IsItGame.Develop
                         }
                         break;
                     default:
-                        if (isHit)
+                        if (IsVisibleByCamera())
                         {
-                            skeleton.GetHit();
-                            _disruptMovementSeconds.SetMax(0.3f);
-                        }
-                        else
-                        {
-                            skeleton.PlayBlockAnimation();
-                            _disruptMovementSeconds.SetMax(1f);
+                            if (isHit)
+                            {
+                                skeleton.GetHit();
+                                _disruptMovementSeconds.SetMax(0.3f);
+                            }
+                            else
+                            {
+                                skeleton.PlayBlockAnimation();
+                                _disruptMovementSeconds.SetMax(1f);
+                            }
                         }
                         break;
                 }
@@ -381,7 +406,10 @@ namespace QuizCanners.IsItGame.Develop
                 return isHit;
             } else 
             {
-                skeleton.GetHit();
+                if (IsVisibleByCamera())
+                {
+                    skeleton.GetHit();
+                }
                 return true;
             }
         }
@@ -390,6 +418,11 @@ namespace QuizCanners.IsItGame.Develop
         {
             foreach (var c in colliders)
                 c.enabled = areEnabled;
+        }
+
+        protected bool IsVisibleByCamera(float size = 1, float maxDistance = -1) 
+        {
+            return Camera.main.IsInCameraViewArea(GetActivePosition(), objectSize: size, maxDistance: maxDistance);
         }
 
         public void Update()
@@ -429,17 +462,18 @@ namespace QuizCanners.IsItGame.Develop
                     {
                         case LimbsControllerState.Giblets:
 
+                            /*
                             foreach (var rb in rigidbodies) 
                             {
                                 rb.velocity *= (1 - Time.deltaTime);
-                            }
+                            }*/
 
-                            if (!ImpactController || !ImpactController.IsPlaying)
+                            if (!ImpactController.IsPlaying)
                                 Pool.Return(this);
                             break;
 
                         case LimbsControllerState.Disintegrating:
-                            if (!ImpactController || !ImpactController.IsPlaying)
+                            if (!ImpactController.IsPlaying)
                                 Pool.Return(this);
                             break;
 
@@ -459,7 +493,7 @@ namespace QuizCanners.IsItGame.Develop
                                 }
                                 else
                                 {
-                                    if (Camera.main.IsInCameraViewArea(GetActivePosition()))
+                                    if (IsVisibleByCamera(maxDistance: 200f))//Camera.main.IsInCameraViewArea(GetActivePosition()))
                                         _postDeathTimer.Restart(3f);
                                     else
                                         Disintegrate();//Giblets();
@@ -515,14 +549,12 @@ namespace QuizCanners.IsItGame.Develop
                     dis.ClearCollars();
             }
 
-            if (LimbsState == LimbsControllerState.Ragdoll) 
+            if (IsVisibleByCamera(maxDistance: 30f) && LimbsState == LimbsControllerState.Ragdoll) 
             {
                 foreach (C_MonsterDismemberment dis in dismemberments)
                     dis.AllowDemolition = true;
             } 
-
         }
-
 
         #region Inspector
 
@@ -606,7 +638,7 @@ namespace QuizCanners.IsItGame.Develop
 
                 InspectChildList("Dynamic Primitives", dynamicPrimitives);
 
-                void InspectChildList<T>(string label, List<T> list) where T: UnityEngine.Object
+                void InspectChildList<T>(string label, List<T> list) where T: Component
                 {
                     label.PegiLabel().Enter_List_UObj(list).Nl();
 

@@ -10,7 +10,7 @@ namespace QuizCanners.IsItGame.Develop
     [Serializable]
     public partial class Persistent_CampaignState : IsItGameClassBase, IPEGI
     {
-        public SO_ConfigBook.Node.Reference LastSavedOnExitNode;
+        public SO_ConfigBook.Node.Id LastSavedOnExitNode;
         [SerializeField] private string _triggerValuesJson;
 
         public void SaveGameFromServices() 

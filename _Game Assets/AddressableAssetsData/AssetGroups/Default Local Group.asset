@@ -17,11 +17,6 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: b193987d30a9ed94991410b8cbeed859
   m_SerializeEntries:
-  - m_GUID: 89e99f59d3d5d984590e7489c2d9b757
-    m_Address: Assets/Total Music Collection/Massive Game Music Collection/Retro
-      Action Game Soundtrack/Retro Action Game Theme #1 (looped).wav
-    m_ReadOnly: 0
-    m_SerializedLabels: []
   - m_GUID: ed3e0f99f2573f24ca2f5f9fb08bd2d6
     m_Address: Assets/Total Music Collection/Massive Game Music Collection/Retro
       Action Game Soundtrack/Retro Action Game Theme #8 (looped).wav
@@ -47,11 +42,6 @@ MonoBehaviour:
       & Peaceful Space Music Pack/Lyric & Peaceful Space Theme #1.wav
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 034cbe5f27b018b4e97de78ca63c0e0f
-    m_Address: Assets/Total Music Collection/_BONUS Remasters (Commercial Pop Music)/Simple
-      and Positive Corporate/Simple and Positive Corporate.mp3
-    m_ReadOnly: 0
-    m_SerializedLabels: []
   - m_GUID: 90d5dfb536627d84c9d3d5f14ca6e8e4
     m_Address: Assets/Total Music Collection/Massive Game Music Collection/Retro
       Action Game Soundtrack/Retro Action Game Theme #2 (looped).wav
@@ -75,6 +65,11 @@ MonoBehaviour:
   - m_GUID: 70cb7a6748112854ea1eac4aff23579e
     m_Address: Assets/_Is-it-a-game/_Game Assets/UI Audio Clips/Audio Clips/Fireplace/Fireplace
       loop 4.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3878461f092fb9b4d879e5642d45a3c2
+    m_Address: Assets/Total Music Collection/Massive Game Music Collection/Retro
+      Action Game Soundtrack/Retro Action Game Theme #10 (looped).wav
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0

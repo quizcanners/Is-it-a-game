@@ -34,7 +34,6 @@
 		
             float3 ModifyPositionBySDF(float pos)
             {
-                 float4 nrmAndDist = SdfNormalAndDistance(pos);
 
                  return pos;
             }
@@ -169,6 +168,7 @@
 
                	float fresnel = smoothstep(0.5, 1 , dot(viewDir, normal));
 
+
 				float outOfBounds;
 				float4 vol = SampleVolume(newPos, outOfBounds);
 				TopDownSample(newPos, vol.rgb, outOfBounds);
@@ -205,11 +205,16 @@
 
 				_qc_BloodColor.rgb *= 0.25 + farFromSurface * 0.75;
 
-                	float showStright = fresnel ;
+                float showStright = fresnel * fresnel;
+
 				col.rgb =  _qc_BloodColor.rgb * col.rgb 
 				+ lerp(_qc_BloodColor.rgb * bakeReflected, (farFromSurface + _qc_BloodColor.rgb) * 0.5 * bakeStraight, showStright) 
 		
 					;
+
+                 //   return showStright * farFromSurface;
+
+                  //  col.rgb += bakeStraight;
 
 			//	col.rgb = _qc_BloodColor * (col.rgb * showStright  + lerp(bakeReflected  , bakeStraight * 0.2 , showStright));
 
