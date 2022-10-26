@@ -28,7 +28,7 @@ namespace QuizCanners.IsItGame.Develop
                 if (block == null)
                     block = new MaterialPropertyBlock();
 
-                _animation.SetOn(block, value);// 1-Mathf.Pow(1-value,1.2f));
+                _animation.SetOn(block, value % 1);// 1-Mathf.Pow(1-value,1.2f));
                 _meshRenderer.SetPropertyBlock(block);
             }
         }
@@ -55,10 +55,12 @@ namespace QuizCanners.IsItGame.Develop
 
             if (isAnimating)
             {
-                Animation += Time.deltaTime * _speed / (1 + transform.localScale.x*0.25f);
+                float newState = Animation + Time.deltaTime * _speed / (1 + transform.localScale.x * 0.25f);
 
-                if (Animation >= 1)
+                if (newState >= 1)
                     Pool.Return(this);
+                else
+                    Animation = newState;
             }
         }
 
@@ -71,15 +73,27 @@ namespace QuizCanners.IsItGame.Develop
 
         public void Inspect()
         {
-            "Is Animating".PegiLabel().ToggleIcon(ref isAnimating).Nl();
+            "Is Animating".PegiLabel().ToggleIcon(ref isAnimating);
 
-            "Speed".PegiLabel(60).Edit(ref _speed, 0.01f, 5).Nl();
+            if (isAnimating && Icon.Refresh.Click())
+                Animation = 0;
+
+            pegi.Nl();
+
+            
 
             if (!isAnimating)
             {
                 float anim = Animation;
                 if ("Animation".PegiLabel(60).Edit(ref anim, 0, 1).Nl())
                     Animation = anim;
+            } else 
+            {
+                "Speed".PegiLabel(60).Edit(ref _speed, 0.01f, 5).Nl(()=>
+                {
+                    if (Animation>0.5f)
+                        Animation = 0;
+                });
             }
         }
 

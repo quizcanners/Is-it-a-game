@@ -13,25 +13,25 @@ MonoBehaviour:
   m_Name: _Scenes Manager
   m_EditorClassIdentifier: 
   Scenes:
-  - Type: 1
-    SceneReference:
+  - SceneReference:
       ScenePath: Assets/Ray-Marching/Scene/Path Tracing.unity
       _asset: {fileID: 102900000, guid: 587ba1482a1210849bf1df82922d351b, type: 3}
-  - Type: 2
-    SceneReference:
+    Type: 1
+  - SceneReference:
       ScenePath: Assets/_Is-it-a-game/Tests/Space With Stars Scene/_For Test/Space
         Effect.unity
       _asset: {fileID: 102900000, guid: ceedc999a8aac0946923fac43fbf2a6f, type: 3}
-  - Type: 0
-    SceneReference:
-      ScenePath: Assets/_Is-it-a-game/Game Scene/GameScenes.unity
+    Type: 2
+  - SceneReference:
+      ScenePath: Assets/_Is-it-a-game/Scenes/Game Play Scene.unity
       _asset: {fileID: 102900000, guid: 12498f20f9d5eba48bfbf14141ecbea4, type: 3}
-  - Type: 4
-    SceneReference:
+    Type: 0
+  - SceneReference:
       ScenePath: Assets/_Is-it-a-game/Intergrated Assets/Smoke & Ember FX/Demo/Scenes/Main
         Menu Scene.unity
       _asset: {fileID: 102900000, guid: 621db826b48c03d4e9e2cdbeff4f656d, type: 3}
-  - Type: 5
-    SceneReference:
-      ScenePath: Assets/_Is-it-a-game/Intergrated Assets/Epic Mountains/Mountains_1.unity
+    Type: 4
+  - SceneReference:
+      ScenePath: Assets/_Is-it-a-game/Scenes/Features/Mountains And Terrain.unity
       _asset: {fileID: 102900000, guid: c1845c23d3f08f34a9c5e82defa670fd, type: 3}
+    Type: 5

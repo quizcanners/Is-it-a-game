@@ -9,7 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Blood 7
   m_Shader: {fileID: 4800000, guid: f9cfca90eb335414991bfd5b84eb14f8, type: 3}
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _MOTION_VECTORS
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -36,13 +37,21 @@ Material:
         m_Texture: {fileID: 2800000, guid: 6005b5be17e3c5c4aaaf61df49071416, type: 3}
         m_Scale: {x: 0.25, y: 0.125}
         m_Offset: {x: 0.5, y: 0.875}
+    - _MotionVectorsMap:
+        m_Texture: {fileID: 2800000, guid: a3d5894d854c7a24f9a906da1a8cb90d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _Angle: 1
     - _BumpAmt: 30
     - _ColorStrength: 1
+    - _FlowIntensity: 0.0508
+    - _GridSize_Col: 4
+    - _GridSize_Row: 8
     - _InvFade: 7
     - _Shininess: 0.01
+    - motVect: 1
     m_Colors:
     - _Color: {r: 0.49264705, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 1, g: 1, b: 1, a: 1}

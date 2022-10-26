@@ -14,7 +14,7 @@ namespace QuizCanners.IsItGame.Develop
                 var snd = s.WantSound;
                 if ("Sound".PegiLabel().ToggleIcon(ref snd).Nl())
                     Singleton.Get<Singleton_WorldSounds>().WantSound = s;
-            }, onFailed: ()=> "No {0}".F(nameof(Singleton_WorldSounds)).PegiLabel().WriteHint() , logOnServiceMissing: false);
+            }, onFailed: ()=> "No {0}".F(nameof(Singleton_WorldSounds)).PegiLabel().Write_Hint() , logOnServiceMissing: false);
         }
     }
 

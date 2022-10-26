@@ -47,8 +47,7 @@ Shader "KriptoFX/BFX/BFX_Decal"
 				#pragma shader_feature CLAMP_SIDE_SURFACE
 				#pragma multi_compile _ USE_CUSTOM_DECAL_LAYERS_IGNORE_MODE
 				#pragma multi_compile_fwdbase
-				  #pragma multi_compile ___ TOP_DOWN_LIGHT_AND_SHADOW
-
+			
 
 				#include "UnityCG.cginc"
 

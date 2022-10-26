@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 197eb8dcbf8d5484f8483443dcbe14b6, type: 3}
+  m_Name: Pulse Path Configs
+  m_EditorClassIdentifier: 
+  enemyStartingPoint:
+    Id: Points
+  playerStartingPoint:
+    Id: 
+  points:
+    keys:
+    - Points
+    - Points 1
+    - Points 2
+    - Points 3
+    - Points 4
+    - Points 5
+    - Points 6
+    values:
+    - Radius: 1
+      Explored: 0
+      position: {x: 17.567696, y: 0, z: 21.753717}
+      direction:
+        Id: 0
+      _name: Points
+      _overrideNode: 0
+      nodeId:
+        _book:
+          Id: 
+        NodeIndex: -1
+        _treeVersion: 0
+      context:
+        _currentlyEntered: -1
+    - Radius: 1
+      Explored: 0
+      position: {x: -18.200949, y: 0.13537025, z: 21.902048}
+      direction:
+        Id: 1
+      _name: Points 1
+      _overrideNode: 0
+      nodeId:
+        _book:
+          Id: 
+        NodeIndex: -1
+        _treeVersion: 0
+      context:
+        _currentlyEntered: -1
+    - Radius: 1
+      Explored: 0
+      position: {x: -20.080154, y: 0, z: 14.066921}
+      direction:
+        Id: 2
+      _name: Points 2
+      _overrideNode: 0
+      nodeId:
+        _book:
+          Id: 
+        NodeIndex: -1
+        _treeVersion: 0
+      context:
+        _currentlyEntered: -1
+    - Radius: 1
+      Explored: 0
+      position: {x: -15.712345, y: 0, z: 7.736479}
+      direction:
+        Id: 3
+      _name: Points 3
+      _overrideNode: 0
+      nodeId:
+        _book:
+          Id: 
+        NodeIndex: -1
+        _treeVersion: 0
+      context:
+        _currentlyEntered: -1
+    - Radius: 1
+      Explored: 0
+      position: {x: 14.992222, y: 0, z: 7.7987165}
+      direction:
+        Id: 4
+      _name: Points 4
+      _overrideNode: 0
+      nodeId:
+        _book:
+          Id: 
+        NodeIndex: -1
+        _treeVersion: 0
+      context:
+        _currentlyEntered: -1
+    - Radius: 1
+      Explored: 0
+      position: {x: 15.433614, y: 0, z: -4.72369}
+      direction:
+        Id: 5
+      _name: Points 5
+      _overrideNode: 0
+      nodeId:
+        _book:
+          Id: 
+        NodeIndex: -1
+        _treeVersion: 0
+      context:
+        _currentlyEntered: -1
+    - Radius: 1
+      Explored: 0
+      position: {x: -0.77041173, y: 0, z: -12.464228}
+      direction:
+        Id: 5
+      _name: Points 6
+      _overrideNode: 0
+      nodeId:
+        _book:
+          Id: 
+        NodeIndex: -1
+        _treeVersion: 0
+      context:
+        _currentlyEntered: -1
+  links:
+  - _start:
+      Id: Points
+    _end:
+      Id: Points 1
+    curve:
+      StartVector: {x: -6.3327274, y: 0, z: 1.1849823}
+      EndVector: {x: 2.6157913, y: 0, z: 2.354515}
+  - _start:
+      Id: Points 1
+    _end:
+      Id: Points 2
+    curve:
+      StartVector: {x: -3.675272, y: 0, z: -3.6084614}
+      EndVector: {x: 0, y: 0, z: 0}
+  - _start:
+      Id: Points 2
+    _end:
+      Id: Points 3
+    curve:
+      StartVector: {x: -1.1899109, y: 0, z: -2.594736}
+      EndVector: {x: -1.7228107, y: 0, z: -0.17630863}
+  - _start:
+      Id: Points 3
+    _end:
+      Id: Points 4
+    curve:
+      StartVector: {x: 2.8721952, y: 0, z: -0.605052}
+      EndVector: {x: -2.1520386, y: 0, z: 2.2091856}
+  - _start:
+      Id: Points 4
+    _end:
+      Id: Points 5
+    curve:
+      StartVector: {x: 2.4822235, y: 0, z: -1.8164172}
+      EndVector: {x: 2.9507399, y: 0, z: 1.4976726}
+  - _start:
+      Id: Points 5
+    _end:
+      Id: Points 6
+    curve:
+      StartVector: {x: -2.1363459, y: 0, z: -3.1765203}
+      EndVector: {x: 0, y: 0, z: 0}
+  _name: Pulse Arena
+  conext:
+    _currentlyEntered: 0
+  _linksMeta:
+    inspectedElement_Internal: -1
+    listSectionStartIndex: 0
+  _pointMeta:
+    inspectedElement_Internal: -1
+    listSectionStartIndex: 0

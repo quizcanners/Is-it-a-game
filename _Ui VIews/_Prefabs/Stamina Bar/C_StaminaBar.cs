@@ -112,9 +112,6 @@ namespace QuizCanners {
         // Update is called once per frame
         private void Update()
         {
-
-           
-
             if (Application.isPlaying)
             {
 
@@ -230,7 +227,7 @@ namespace QuizCanners {
 
             int points = (int)StaminaPoints;
 
-            if ("Points".PegiLabel().EditDelayed(ref points).Nl())
+            if ("Points".PegiLabel().Edit_Delayed(ref points).Nl())
                 StaminaPoints = points;
 
             InspectSkill("Shoot", 1); pegi.Nl();

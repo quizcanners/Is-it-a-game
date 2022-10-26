@@ -47,6 +47,6 @@ namespace QuizCanners.IsItGame.Develop
         }
     }
 
-    [CanEditMultipleObjects]
+    //[CanEditMultipleObjects]
     [PEGI_Inspector_Override(typeof(Pool_BloodSquirts))] internal class Pool_BloodSquirtsDrawer : PEGI_Inspector_Override { }
 }

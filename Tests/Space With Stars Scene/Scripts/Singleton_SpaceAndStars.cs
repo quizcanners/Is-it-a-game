@@ -42,7 +42,7 @@ namespace QuizCanners.IsItGame.SpaceEffect
 
         private readonly LerpData _lerpData = new LerpData(unscaledTime: true);
 
-        protected override void AfterEnable()
+        protected override void OnAfterEnable()
         {
             if (Application.isPlaying)
             {

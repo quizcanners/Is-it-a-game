@@ -17,7 +17,6 @@ MonoBehaviour:
     url: 
     pages: []
     _selectedPage: 0
-    columns: []
   _dicesToRoll: 080000000c000000
   elements:
   - Chances: 1

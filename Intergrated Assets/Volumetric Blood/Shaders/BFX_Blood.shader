@@ -56,7 +56,6 @@
 
             #pragma multi_compile_instancing
             #pragma multi_compile_fwdbase
-            #pragma multi_compile ___ TOP_DOWN_LIGHT_AND_SHADOW
 
             #include "UnityCG.cginc"
 
@@ -175,7 +174,7 @@
 
 				float3 ambientCol = lerp(vol, _RayMarchSkyColor.rgb * MATCH_RAY_TRACED_SKY_COEFFICIENT, outOfBounds);
 
-				float direct = saturate((dot(normal, _RayMarchLightDirection.xyz)));
+				float direct = saturate((dot(normal, _WorldSpaceLightPos0.xyz)));
 				float3 lightColor = GetDirectional() * direct;
 				
 

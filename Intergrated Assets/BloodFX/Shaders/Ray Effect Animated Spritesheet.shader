@@ -5,6 +5,13 @@ Shader "RayTracing/Effect/Blood Atlas Animation"
 		_TintColor ("Tint Color", Color) = (0.5,0.5,0.5,0.5)
 		_MainTex ("Particle Texture", 2D) = "white" {}
 		_InvFade ("Soft Particles Factor", Range(0.01,3.0)) = 1.0
+
+		[Toggle(_MOTION_VECTORS)] motVect("Has Flow Motion Vectors", Float) = 0
+		_MotionVectorsMap("Flow Motion Vetors", 2D) = "white" {}
+		_FlowIntensity("Flow Intensity", Range(0,1)) = 0
+
+		_GridSize_Col("Columns", Range(1,128)) = 1.0
+		_GridSize_Row("Rows", Range(1,128)) = 1.0
 	}
 
 	SubShader
@@ -27,7 +34,6 @@ Shader "RayTracing/Effect/Blood Atlas Animation"
 			#pragma vertex vert
 			#pragma fragment frag
 			#pragma multi_compile_instancing
-			#pragma multi_compile ___ TOP_DOWN_LIGHT_AND_SHADOW
 
 			#include "Assets/Ray-Marching/Shaders/PrimitivesScene_Sampler.cginc"
 			#include "Assets/Ray-Marching/Shaders/Signed_Distance_Functions.cginc"
@@ -37,6 +43,8 @@ Shader "RayTracing/Effect/Blood Atlas Animation"
 			sampler2D _MainTex;
 			fixed4 _TintColor;
 			
+			#pragma shader_feature_local __ _MOTION_VECTORS
+
 			struct appdata_t 
 			{
 				float4 vertex : POSITION;
@@ -58,11 +66,19 @@ Shader "RayTracing/Effect/Blood Atlas Animation"
                 float3 viewDir : TEXCOORD5;
 				float interpolation : TEXCOORD6;
 
+#if _MOTION_VECTORS
+				float4 motionVectorSampling : TEXCOORD7;
+#endif
+
 				UNITY_VERTEX_INPUT_INSTANCE_ID
                 UNITY_VERTEX_OUTPUT_STEREO
 			};
 			
 			float4 _MainTex_ST;
+			sampler2D _MotionVectorsMap;
+			float _FlowIntensity;
+			float _GridSize_Col;
+			float _GridSize_Row;
 
 			UNITY_INSTANCING_BUFFER_START(Props)
                 UNITY_DEFINE_INSTANCED_PROP(float4, _SpriteSegment)
@@ -100,6 +116,11 @@ Shader "RayTracing/Effect/Blood Atlas Animation"
 
 				o.interpolation = interpolation.x;
 
+#if _MOTION_VECTORS
+				float2 deGrid = 1 / float2(_GridSize_Col, _GridSize_Row);
+				o.motionVectorSampling = MotionVectorsVertex(_FlowIntensity, o.interpolation, deGrid);
+#endif
+
 				//o.texcoord = flaot4(v.texcoord.xy, 0,0); // TRANSFORM_TEX(v.texcoord,_MainTex);
 				return o;
 			}
@@ -114,6 +135,11 @@ Shader "RayTracing/Effect/Blood Atlas Animation"
 				UNITY_SETUP_INSTANCE_ID(i);
 
 				float4 interpolation = UNITY_ACCESS_INSTANCED_PROP(Props, InterpolationValue);// : 1;
+
+
+#if _MOTION_VECTORS
+				OffsetByMotionVectors(i.texcoord.xy, i.texcoord.zw, i.motionVectorSampling, _MotionVectorsMap);
+#endif
 
 
                 float3 normal = normalize(i.worldNormal);
@@ -137,7 +163,7 @@ Shader "RayTracing/Effect/Blood Atlas Animation"
 				//float fade = saturate (_InvFade * (sceneZ-partZ));
 				//col.a *= fade;
 		
-					col.rgb =_qc_BloodColor.rgb * (1 - col.a*col.a) * ambientCol; // * (3 - col.a * 2);
+				col.rgb =_qc_BloodColor.rgb * (1 - col.a*col.a) * ambientCol; // * (3 - col.a * 2);
 
 				col.a = smoothstep(0, 0.5, col.a);
 

@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca3e34e8583c510418c5c69dbb1dac4e, type: 3}
+  m_Name: Player Config
+  m_EditorClassIdentifier: 
+  RocketLauncher:
+    gun: {fileID: 0}
+    brushConfig: {fileID: 11400000, guid: 1605ad670cc200c4da0306cb4c779bac, type: 2}
+    fleshImpactBrushConfig: {fileID: 11400000, guid: 3f75f2398d51e374e8b5ed9c231c47ec, type: 2}
+    savingThrow:
+      Score: 1
+      DC: 17
+    Damage:
+      DamageDice: 0a000000
+      DamageType: 3
+      DamageBonus: 0
+    _pushForce: 200
+    _explosionRadius: 4
+    context:
+      _currentlyEntered: -1
+  MachineGun:
+    brushConfig: {fileID: 11400000, guid: 1923bf77c4f694e4e9cdfed090985213, type: 2}
+    WeaponAttack:
+      Name: Gun
+      AttackBonus: 3
+      IsRanged: 1
+      range:
+        ft: 5
+      Damage:
+        DamageDice: 0a0000000a000000
+        DamageType: 7
+        DamageBonus: 2
+    MaxDistance: 2000
+    context:
+      _currentlyEntered: -1
+  BoltGun:
+    speed: 50
+    brushConfig: {fileID: 11400000, guid: 1923bf77c4f694e4e9cdfed090985213, type: 2}
+    WeaponAttack:
+      Name: Gun
+      AttackBonus: 10
+      IsRanged: 1
+      range:
+        ft: 5
+      Damage:
+        DamageDice: 0a0000000a0000000a0000000a0000000a000000
+        DamageType: 7
+        DamageBonus: 10
+    _context:
+      _currentlyEntered: -1
+  context:
+    _currentlyEntered: -1

@@ -9,6 +9,8 @@ Properties {
   //  _InvFade ("Soft Particles Factor", Range(0.01,3.0)) = 1.0
     _GridSize ("Grid Size", Range(1,128)) = 1.0
     //_Frame ("Frame", Range(0,2)) = 1.0
+
+
 }
 
 Category {
@@ -29,7 +31,6 @@ Category {
             #pragma fragment frag
             	#pragma multi_compile_fwdbase
 				#pragma multi_compile_instancing
-				#pragma multi_compile ___ TOP_DOWN_LIGHT_AND_SHADOW
 
 			 	#include "Assets/Ray-Marching/Shaders/PrimitivesScene_Sampler.cginc"
 				#include "Assets/Ray-Marching/Shaders/Signed_Distance_Functions.cginc"
@@ -186,6 +187,9 @@ Category {
 			    float4 vol = SampleVolume(i.worldPos, outOfBounds);
 			    TopDownSample(i.worldPos, vol.rgb, outOfBounds);
 			    float3 ambientCol = lerp(vol, _RayMarchSkyColor.rgb * MATCH_RAY_TRACED_SKY_COEFFICIENT, outOfBounds);
+
+
+                //ColorCorrect(col.rgb);
 
                   col.rgb = ambientCol * (0.25f + col.rgb*0.75f) + col.rgb * brightness*0.5;
               //  col.rgb = col.rgb * (ambientCol + brightness);

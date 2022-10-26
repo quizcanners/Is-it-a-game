@@ -10390,7 +10390,7 @@ GameObject:
   - component: {fileID: 198762664254897677}
   - component: {fileID: 199982694761624103}
   m_Layer: 0
-  m_Name: SmokeFlowing (1)
+  m_Name: SmokeFlowing Motion Vectors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10435,7 +10435,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1323031955157849}
   serializedVersion: 8
   lengthInSec: 5
-  simulationSpeed: 1
+  simulationSpeed: 0.2
   stopAction: 0
   cullingMode: 3
   ringBufferMode: 0
@@ -10579,8 +10579,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.039215688, g: 0.05882353, b: 0.11764706, a: 0.7019608}
-      maxColor: {r: 0.27058825, g: 0.3137255, b: 0.43529412, a: 0.32156864}
+      minColor: {r: 0.29165182, g: 0.356614, b: 0.5471698, a: 1}
+      maxColor: {r: 0.39711642, g: 0.519936, b: 0.8679245, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -10642,8 +10642,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 4
-      minScalar: 2
+      scalar: 8
+      minScalar: 6
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -11116,7 +11116,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 15
+      scalar: 10
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -11508,7 +11508,7 @@ ParticleSystem:
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
-        ctime0: 13300
+        ctime0: 10216
         ctime1: 52621
         ctime2: 65535
         ctime3: 0
@@ -11517,8 +11517,8 @@ ParticleSystem:
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 17155
-        atime2: 48380
+        atime1: 5012
+        atime2: 60716
         atime3: 65535
         atime4: 65535
         atime5: 0
@@ -11561,7 +11561,7 @@ ParticleSystem:
     enabled: 1
     mode: 0
     timeMode: 2
-    fps: 25
+    fps: 30
     frameOverTime:
       serializedVersion: 2
       minMaxState: 1
@@ -19481,15 +19481,15 @@ ParticleSystemRenderer:
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
+  m_MotionVectors: 2
+  m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 01bf775b63908f34996451d3abdfa7c4, type: 2}
+  - {fileID: 2100000, guid: 4a254cea0a9a4e242996f3babe048ae5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19512,7 +19512,7 @@ ParticleSystemRenderer:
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
-  m_SortMode: 0
+  m_SortMode: 3
   m_MinParticleSize: 0
   m_MaxParticleSize: 0.5
   m_CameraVelocityScale: 0
@@ -19530,7 +19530,7 @@ ParticleSystemRenderer:
   m_AllowRoll: 1
   m_FreeformStretching: 0
   m_RotateWithStretchDirection: 1
-  m_VertexStreams: 00010304
+  m_VertexStreams: 000103040508
   m_Mesh: {fileID: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}

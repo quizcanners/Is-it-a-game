@@ -76,8 +76,8 @@ namespace QuizCanners.IsItGame.Develop
             {
                 Animation += Time.deltaTime * _speed;
 
-                if (_entity!= null)
-                    transform.position = _entity.GetComponent<ParticlePhisics.PositionData>().Position;
+                if (_entity!= null && _entity.TryGetComponent<ParticlePhisics.PositionData>(out var pos))
+                    transform.position = pos.Position;
 
                 if (IsIntro)
                 {

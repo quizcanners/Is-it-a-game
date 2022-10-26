@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 197eb8dcbf8d5484f8483443dcbe14b6, type: 3}
+  m_Name: Test Scene Pulse Path
+  m_EditorClassIdentifier: 
+  enemyStartingPoint:
+    Id: Enemy Spawn Point
+  playerStartingPoint:
+    Id: Player Base
+  points:
+    keys:
+    - A
+    - B
+    - C
+    - Enemy Spawn Point
+    - Player Base
+    values:
+    - Radius: 1
+      Explored: 0
+      position: {x: -80.8273, y: 0.24625278, z: 11.892704}
+      direction:
+        Id: 2
+      _name: A
+      _overrideNode: 1
+      nodeId:
+        _book:
+          Id: Whitehawk.nodeConfig
+        NodeIndex: 33
+        _treeVersion: 0
+      context:
+        _currentlyEntered: -1
+    - Radius: 1
+      Explored: 0
+      position: {x: -21.206825, y: 0.14890498, z: -22.772152}
+      direction:
+        Id: 3
+      _name: B
+      _overrideNode: 0
+      nodeId:
+        _book:
+          Id: 
+        NodeIndex: -1
+        _treeVersion: 0
+      context:
+        _currentlyEntered: -1
+    - Radius: 1
+      Explored: 0
+      position: {x: 4.990324, y: 0.14494616, z: -25.60374}
+      direction:
+        Id: 4
+      _name: C
+      _overrideNode: 0
+      nodeId:
+        _book:
+          Id: 
+        NodeIndex: -1
+        _treeVersion: 0
+      context:
+        _currentlyEntered: -1
+    - Radius: 1
+      Explored: 0
+      position: {x: -91.77918, y: -3.473854, z: 6.1556134}
+      direction:
+        Id: 0
+      _name: Enemy Spawn Point
+      _overrideNode: 0
+      nodeId:
+        _book:
+          Id: 
+        NodeIndex: -1
+        _treeVersion: 0
+      context:
+        _currentlyEntered: -1
+    - Radius: 1
+      Explored: 0
+      position: {x: -4.8109202, y: 0.12963307, z: -25.690998}
+      direction:
+        Id: 3
+      _name: Player Base
+      _overrideNode: 0
+      nodeId:
+        _book:
+          Id: 
+        NodeIndex: -1
+        _treeVersion: 0
+      context:
+        _currentlyEntered: -1
+  links:
+  - _start:
+      Id: Enemy Spawn Point
+    _end:
+      Id: A
+    curve:
+      StartVector: {x: 4.0434036, y: -1.356628, z: 1.1836982}
+      EndVector: {x: -4.4692535, y: 1.6962594, z: -2.1598158}
+  - _start:
+      Id: A
+    _end:
+      Id: B
+    curve:
+      StartVector: {x: 4.3491592, y: 0, z: -8.550398}
+      EndVector: {x: -1.9650078, y: 0, z: 0.17286682}
+  - _start:
+      Id: A
+    _end:
+      Id: C
+    curve:
+      StartVector: {x: 0.2332077, y: 0, z: 4.6724052}
+      EndVector: {x: -4.5783024, y: 0, z: 6.7577553}
+  - _start:
+      Id: B
+    _end:
+      Id: Player Base
+    curve:
+      StartVector: {x: 3.401392, y: 0, z: -2.0506172}
+      EndVector: {x: -9.33378, y: 0.3189602, z: 1.3828888}
+  - _start:
+      Id: C
+    _end:
+      Id: Player Base
+    curve:
+      StartVector: {x: -1.22369, y: 0.018110275, z: -1.4599571}
+      EndVector: {x: 1.8804646, y: -0.16526604, z: -1.6939163}
+  _name: Pulse Arena
+  conext:
+    _currentlyEntered: 0
+  _linksMeta:
+    inspectedElement_Internal: -1
+    listSectionStartIndex: 0
+  _pointMeta:
+    inspectedElement_Internal: -1
+    listSectionStartIndex: 0

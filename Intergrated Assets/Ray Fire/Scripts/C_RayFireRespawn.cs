@@ -9,9 +9,8 @@ namespace QuizCanners.IsItGame
 {
     [SelectionBase]
     [AddComponentMenu("PrimitiveTracing/Scene Prefab/Ray Fire Respawn")]
-    public class C_RayFireRespawn : C_RayT_EnvironmentElement, IPEGI
+    public class C_RayFireRespawn : MonoBehaviour, IPEGI, INeedAttention
     {
-
         [SerializeField] private GameObject _undestroyed;
         [SerializeField] private RayfireRigid _prefab;
         [SerializeField] private RayfireRigid _instance;
@@ -92,7 +91,9 @@ namespace QuizCanners.IsItGame
                 if (_respawnDelay.TryUpdateIfTimePassed(8f))
                 {
                     Clear();
-                    SetDamaged(false);
+
+                    if (Application.isEditor)
+                        SetDamaged(false);
                 }
 
                 return;
@@ -109,10 +110,8 @@ namespace QuizCanners.IsItGame
         }
 
         #region Inspector
-        public override void Inspect()
+        public void Inspect()
         {
-            base.Inspect();
-
             pegi.FullWindow.DocumentationClickOpen("This is a component to reinstanciate the Rayfire Prefab");
 
             pegi.Nl();
@@ -164,12 +163,12 @@ namespace QuizCanners.IsItGame
             }
         }
 
-        public override string NeedAttention()
+        public string NeedAttention()
         {
             if (!_prefab)
                 return " No prefab";
 
-            return base.NeedAttention();
+            return null;
         }
 
         #endregion
