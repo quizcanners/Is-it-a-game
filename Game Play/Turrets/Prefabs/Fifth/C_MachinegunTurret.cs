@@ -1,14 +1,16 @@
+using PainterTool;
 using QuizCanners.Inspect;
 using QuizCanners.Lerp;
 using QuizCanners.Utils;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using UnityEngine.Rendering;
+using static QuizCanners.IsItGame.Develop.C_Monster_Data;
 
 namespace QuizCanners.IsItGame.Develop.Turrets
 {
-    public class C_MachinegunTurret : Abstract_TurretHead, IPEGI
+
+    [SelectionBase]
+    public class C_MachinegunTurret : Abstract_TurretHead, IPEGI, IPEGI_Handles
     {
         [SerializeField] private Weapon_Prototype_Machinegun.State _machineGunState = new();
 
@@ -22,10 +24,14 @@ namespace QuizCanners.IsItGame.Develop.Turrets
         private bool _debugMode;
         private float _activeSpeed;
         private Quaternion targetRotation;
-        private readonly Gate.UnityTimeUnScaled _targetSerchDelay = new();
+        //private readonly Gate.UnityTimeUnScaled _targetSerchDelay = new();
+        private readonly Gate.UnityTimeScaled _sinceLastShotAtEnemy = new Gate.UnityTimeScaled();
         private readonly List<C_Monster_Data.InstanceReference> _trackedMonsters= new();
         private int _missTargetCount;
         private int _lastCheckedTarget;
+        private bool _anyEnemies;
+
+        
 
         Singleton_TurretsManager Mgmt => Singleton.Get<Singleton_TurretsManager>();
 
@@ -38,7 +44,6 @@ namespace QuizCanners.IsItGame.Develop.Turrets
 
             if (dist > 0.0001f)
             {
-
                 _activeSpeed = Mathf.Lerp(_activeSpeed, Mathf.Min(_max_rotationSpeed, dist * 10 + 1), _rotationSpeed * Time.deltaTime);
 
                 var rot = LerpUtils.LerpBySpeed(gun.rotation, targetRotation, _activeSpeed, unscaledTime: false);
@@ -58,6 +63,12 @@ namespace QuizCanners.IsItGame.Develop.Turrets
                     var toTarget = _targetMonster.enemy.GetActivePosition() - gun.position;
                     targetRotation = Quaternion.LookRotation(toTarget, Vector3.up);
                     TryShoot();
+
+                    if (_missTargetCount > 0) 
+                    {
+                        TryGetNewEnemy();
+                    }
+
                 }
                 else
                 {
@@ -74,22 +85,18 @@ namespace QuizCanners.IsItGame.Develop.Turrets
                             }
                             else
                             {
-                                _targetMonster = _trackedMonsters.TryTake(i);
+                                SetNewTarget(_trackedMonsters.TryTake(i));
+                                _missTargetCount = 0;
                                 break;
                             }
                         }  
                     }
 
                     //_lastCheckedTarget
+                    TryGetNewEnemy();
 
-                    Singleton.Try<Pool_Monsters_Data>(s =>
-                    {
-                        if (s.TryIterate(ref _lastCheckedTarget, out var newTarget))
-                        {
-                            _targetMonster = newTarget.GetReference();
-                        }
-                    });
 
+                
                     /*if (_targetSerchDelay.TryUpdateIfTimePassed(0.4f))
                     {
                         Singleton.Try<Pool_Monsters_Data>(s =>
@@ -101,7 +108,10 @@ namespace QuizCanners.IsItGame.Develop.Turrets
                         }
                         );
                     }*/
-                    _missTargetCount = 0;
+                  
+
+                    if (_anyEnemies && _sinceLastShotAtEnemy.GetDeltaWithoutUpdate() < 1) // Shooting even if there are no enemies in sight
+                        TryShoot();
                 }
             }
             else 
@@ -122,24 +132,35 @@ namespace QuizCanners.IsItGame.Develop.Turrets
                 }
             }
 
+
+
             bool TryShoot() 
             {
                 var shots = _machineGunState.DelayBetweenShots.GetSegmentsWithouUpdate();
 
                 if (shots > 0)
                 {
+                    if (_targetMonster.IsValid)
+                        _sinceLastShotAtEnemy.Update();
+
                     _machineGunState.DelayBetweenShots.Update();
                     Mgmt.config.MachineGun.Shoot(gunBarrel.position, gunBarrel.position + gun.forward, _machineGunState, out var actualHit, out List<C_Monster_Data> mosnters);
 
                     if (mosnters.Count == 0)
                     {
-                        _missTargetCount++;
-                        if (_missTargetCount > 5)
-                            _targetMonster = new();
+                        bool FinishedRotation() => dist < 0.01;
+
+                        if (FinishedRotation())
+                        {
+                            _missTargetCount++;
+                            if (_missTargetCount > 10)
+                                _targetMonster = new();
+                        }
                     }
                     else
                     {
-                        _missTargetCount = Mathf.Max(0, _missTargetCount - 1);
+                        _anyEnemies = true;
+                        _missTargetCount = Mathf.Max(0, _missTargetCount - mosnters.Count);
                         foreach (var m in mosnters)
                         {
                             var reff = m.GetReference();
@@ -158,10 +179,79 @@ namespace QuizCanners.IsItGame.Develop.Turrets
 
                 return false;
             }
+
+
+            void TryGetNewEnemy()
+            {
+                Singleton.Try<Pool_Monsters_Data>(s =>
+                {
+                    if (s.TryIterate(ref _lastCheckedTarget, out var newTarget))
+                    {
+                        Singleton.Try<Singleton_ChornobaivkaController>(ch =>
+                        {
+                            var from = gunBarrel.position;
+                            var to = newTarget.GetActivePosition();
+
+                            _debug_lastHitCheck = to;
+
+                            if (ch.CastHardSurface(new Ray(from, to - from), out var hit))
+                            {
+                                if (Vector3.Distance(hit.point, to) < 2)
+                                {
+                                    SetNewTarget(newTarget.GetReference());
+                                }
+                                else
+                                {
+                                    CreatureProxy_Base proxy = hit.transform.gameObject.GetComponentInParent<CreatureProxy_Base>();
+
+                                    if (proxy && proxy.IsAlive)
+                                    {
+                                        _lastHitCheckState = true;
+
+                                        if (_targetMonster.IsValid && _missTargetCount < 3)
+                                        {
+                                            float currentDist = (_targetMonster.enemy.GetActivePosition() - from).sqrMagnitude;
+                                            float newDist = (proxy.Parent.GetActivePosition() - from).sqrMagnitude;
+                                            if (newDist < currentDist)
+                                            {
+                                                SetNewTarget(proxy.Parent.GetReference());
+                                            }
+                                        }
+                                        else
+                                        {
+                                            SetNewTarget(proxy.Parent.GetReference());
+                                        }
+                                    }
+                                    else
+                                    {
+                                        _lastHitCheckState = false;
+                                    }
+                                }
+                            }
+
+                        }, onFailed: () =>
+                        {
+                            if (_targetMonster.IsValid == false)
+                                SetNewTarget(newTarget.GetReference());
+                        });
+                    }
+                }, logOnServiceMissing: false);
+
+            }
+
+            void SetNewTarget(InstanceReference data) 
+            {
+                _targetMonster = data;
+                _missTargetCount = 0;
+            }
+
         }
 
 
         #region Inspector
+
+        private Vector3 _debug_lastHitCheck;
+        private bool _lastHitCheckState;
 
         private readonly pegi.EnterExitContext _context = new();
 
@@ -187,6 +277,11 @@ namespace QuizCanners.IsItGame.Develop.Turrets
                 
 
             }
+        }
+
+        public void OnSceneDraw()
+        {
+            pegi.Handle.Line(gunBarrel.transform.position, _debug_lastHitCheck, _lastHitCheckState ? Color.green : Color.red);
         }
 
         #endregion

@@ -1,15 +1,9 @@
-﻿
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace QuizCanners.IsItGame
 {
     public class BFX_DecalSettings : MonoBehaviour
     {
-
-
         public BFX_BloodController BloodSettings;
         public Transform parent;
         [SerializeField] private Renderer _renderer;
@@ -143,6 +137,8 @@ namespace QuizCanners.IsItGame
             initializedPosition = transform.position;
         }
 
+
+        /*
         private void OnDrawGizmos()
         {
             if (t == null) t = transform;
@@ -152,8 +148,7 @@ namespace QuizCanners.IsItGame
 
             Gizmos.color = new Color(49 / 255.0f, 136 / 255.0f, 1, 0.85f);
             Gizmos.DrawWireCube(Vector3.zero, Vector3.one);
-
-
         }
+        */
     }
 }

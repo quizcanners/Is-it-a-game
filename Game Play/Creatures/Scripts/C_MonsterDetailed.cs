@@ -102,8 +102,8 @@ namespace QuizCanners.IsItGame.Develop
                     case LimbsControllerState.Giblets:
                     case LimbsControllerState.Ragdoll:
                         _animationInvalidated = true;
-                        if (parent)
-                            parent.IsAlive = false;
+                        if (Parent)
+                            Parent.IsAlive = false;
                         break;
                     case LimbsControllerState.Animation: _animationInvalidated = false; break;
                 }
@@ -197,7 +197,7 @@ namespace QuizCanners.IsItGame.Develop
 
         public void RestartMonster(C_Monster_Data data)
         {
-            parent = data;
+            Parent = data;
             
             ShowDamage = false;
           
@@ -372,9 +372,9 @@ namespace QuizCanners.IsItGame.Develop
 
             if (IsAlive) 
             {
-                if (parent)
+                if (Parent)
                 {
-                    transform.SetPositionAndRotation(parent.transform.position, parent.transform.rotation);
+                    transform.SetPositionAndRotation(Parent.transform.position, Parent.transform.rotation);
                     skeleton.OnMove(transform.position);
                 } else 
                 {

@@ -59,8 +59,8 @@ namespace QuizCanners.IsItGame.Develop
 
                 Singleton.Try<Pool_TrailEffectController>(s =>
                 {
-                    s.TrySpawn(from, out var trace);
-                    trace.FlyTo(firstHit.point);
+                    if (s.TrySpawn(from, out var trace))
+                        trace.FlyTo(firstHit.point);
                 });
 
                 Singleton.Try<Singleton_CameraOperatorGodMode>(c =>
@@ -106,13 +106,13 @@ namespace QuizCanners.IsItGame.Develop
 
             Vector3 damagePosition = hit.point;
 
-            var proxy = hit.transform.gameObject.GetComponentInParent<CreatureProxy_Base>();
+            CreatureProxy_Base proxy = hit.transform.gameObject.GetComponentInParent<CreatureProxy_Base>();
 
             bool dismemberment = false;
 
             if (proxy)
             {
-                var parent = proxy.parent;
+                var parent = proxy.Parent;
 
                 proxy.ApplyImpact(hit, ref pierced, 
                     onDismemberment: (detach) => 

@@ -84,7 +84,7 @@ namespace QuizCanners.IsItGame
 
             if (!needFreeze)
             {
-                float animationSpeed = 1 / (0.5f + Pool.VacancyFraction<BFX_BloodController>());
+                float animationSpeed = 3 / (0.5f + Pool.VacancyFraction<BFX_BloodController>());
                 var deltaTime = BloodSettings ? Time.deltaTime * BloodSettings.AnimationSpeed : Time.deltaTime;
                 timeLapsed += deltaTime * animationSpeed;
             }

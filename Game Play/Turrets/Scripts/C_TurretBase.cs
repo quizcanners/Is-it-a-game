@@ -6,6 +6,8 @@ using UnityEngine;
 
 namespace QuizCanners.IsItGame.Develop
 {
+
+    [SelectionBase]
     public class C_TurretBase : MonoBehaviour, IPEGI, IPEGI_Handles
     {
         const float CELL_SIZE = 3;

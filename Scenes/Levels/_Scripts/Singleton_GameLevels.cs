@@ -37,6 +37,12 @@ namespace QuizCanners.IsItGame
         }
         #endregion
 
+        protected override void OnBeforeOnDisableOrEnterPlayMode(bool afterEnableCalled)
+        {
+            base.OnBeforeOnDisableOrEnterPlayMode(afterEnableCalled);
+            foreach (var l in _levelsSo._levels)
+                l.IsCurrentLevel = false;
+        }
 
     }
 

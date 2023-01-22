@@ -72,9 +72,9 @@ namespace QuizCanners.IsItGame.Develop
 
                         bool pierced = false;
 
-                        if (proxy && proxy.parent) 
+                        if (proxy && proxy.Parent) 
                         {
-                            var parent = proxy.parent;
+                            var parent = proxy.Parent;
 
                             if (parent.TrySetProxy(C_Monster_Data.Proxy.Detailed))
                             {

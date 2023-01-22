@@ -97,7 +97,7 @@ namespace QuizCanners.IsItGame.Develop
             }
         }
 
-        public Vector3 GetActivePosition() => proxy_detailed ? proxy_detailed.GetActivePosition() : (transform.position + Vector3.up * 1.5f); // TODO: GIve position of proxies
+        public Vector3 GetActivePosition() => proxy_detailed ? proxy_detailed.GetActivePosition() : (transform.position + Vector3.up * 0.5f); // TODO: GIve position of proxies
 
         public void RestartMonster(CharacterSheet.SmartId character = null)
         {

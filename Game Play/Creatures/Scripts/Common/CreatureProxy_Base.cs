@@ -8,30 +8,30 @@ namespace QuizCanners.IsItGame.Develop
 {
     public abstract class CreatureProxy_Base : MonoBehaviour, IPEGI
     {
-        [NonSerialized] public C_Monster_Data parent;
+        [NonSerialized] public C_Monster_Data Parent;
 
         private bool _isAliveInternal;
         private bool _hadParent;
         public bool IsAlive
         {
-            get => parent ? parent.IsAlive : _isAliveInternal;
+            get => Parent ? Parent.IsAlive : _isAliveInternal;
             set
             {
-                if (parent)
-                    parent.IsAlive = value;
+                if (Parent)
+                    Parent.IsAlive = value;
                 _isAliveInternal = value;
             }
         }
 
         public virtual void Connect(C_Monster_Data data) 
         {
-            parent = data;
+            Parent = data;
             _hadParent = true;
         }
 
         public virtual void Disconnect() 
         {
-            parent = null;
+            Parent = null;
             _isAliveInternal = false;
         }
 

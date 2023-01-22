@@ -79,11 +79,11 @@ namespace QuizCanners.IsItGame.Develop
 
         public override void ApplyImpact(RaycastHit hit, ref bool pierced, Action<Vector3> onDismemberment)
         {
-            if (parent)
+            if (Parent)
             {
                 if (Camera.main.IsInCameraViewArea(hit.point))
                 {
-                    var oldParent = parent;
+                    var oldParent = Parent;
                     if (oldParent.TrySetProxy(C_Monster_Data.Proxy.Detailed))
                     {
                         oldParent.proxy_detailed.ApplyImpact(hit, ref pierced, onDismemberment);
@@ -94,9 +94,9 @@ namespace QuizCanners.IsItGame.Develop
 
         private void Update()
         {
-            if (parent)
+            if (Parent)
             {
-                var pTf = parent.transform;
+                var pTf = Parent.transform;
                 transform.SetPositionAndRotation(pTf.position, pTf.rotation); 
             }
 

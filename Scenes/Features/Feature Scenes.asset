@@ -13,43 +13,52 @@ MonoBehaviour:
   m_Name: Feature Scenes
   m_EditorClassIdentifier: 
   _features:
-  - _scene:
+  - Key: ' Mountains And Terrain'
+    _scene:
       SceneReference:
         ScenePath: Assets/_Is-it-a-game/Scenes/Features/Is It A Game - Mountains
           And Terrain.unity
         _asset: {fileID: 102900000, guid: c1845c23d3f08f34a9c5e82defa670fd, type: 3}
-  - _scene:
+  - Key: Silent Hill Fog Scene
+    _scene:
       SceneReference:
         ScenePath: Assets/_Is-it-a-game/Game Play/Effects/Silent Hill Fog/Is It A
           Game - Silent Hill Fog Scene.unity
         _asset: {fileID: 102900000, guid: 1483296e671ef6841b6fc36744b999cf, type: 3}
-  - _scene:
+  - Key: Zibra Liquid Blood
+    _scene:
       SceneReference:
         ScenePath: Assets/_Is-it-a-game/Intergrated Assets/Zibra Liquids Blood/Is
           It A Game - Zibra Liquid Blood.unity
         _asset: {fileID: 102900000, guid: 948af89dcc90c8142933769827e81488, type: 3}
-  - _scene:
+  - Key: Uni Storm
+    _scene:
       SceneReference:
         ScenePath: Assets/_Is-it-a-game/Scenes/Features/Is It A Game - Uni Storm.unity
         _asset: {fileID: 102900000, guid: 4e65389d5fb9ced4683403373af4e614, type: 3}
-  - _scene:
+  - Key: Monsters
+    _scene:
       SceneReference:
         ScenePath: Assets/_Is-it-a-game/Game Play/Creatures/Is It A Game - Monsters.unity
         _asset: {fileID: 102900000, guid: 65a8c893c5b14af4da986ff3275fde35, type: 3}
-  - _scene:
+  - Key: Effects
+    _scene:
       SceneReference:
         ScenePath: Assets/_Is-it-a-game/Game Play/Effects/Is It A Game - Effects.unity
         _asset: {fileID: 102900000, guid: 18b98f68be8f97347bfb97492033a22b, type: 3}
-  - _scene:
+  - Key: Turrets
+    _scene:
       SceneReference:
         ScenePath: Assets/_Is-it-a-game/Game Play/Turrets/Feature Scene/Is It A Game
           - Turrets.unity
         _asset: {fileID: 102900000, guid: 36f850490dfc2594392cb67b79f2c053, type: 3}
-  - _scene:
+  - Key: Volume Baker
+    _scene:
       SceneReference:
         ScenePath: Assets/_Is-it-a-game/Scenes/Features/Is It A Game - Volume Baker.unity
         _asset: {fileID: 102900000, guid: e359045b14b59884a99d72c842f2ca2a, type: 3}
-  - _scene:
+  - Key: NO SCENE PATH
+    _scene:
       SceneReference:
         ScenePath: Assets/_Is-it-a-game/Scenes/Features/Is It A Game - Cfg Levels.unity
         _asset: {fileID: 102900000, guid: fe0d627aba473a04ebd7718bd93a6cb8, type: 3}

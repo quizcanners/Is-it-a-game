@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 38537d5efa46d3a4baa60b55879b99b8, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 8a4de0f0087d67846bd44e15dea6507d, type: 2}
 --- !u!4 &42532495 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6179333341917497476, guid: 89807ca55fb5cec4d81f7bc4795d3f4f, type: 3}
@@ -167,11 +167,11 @@ Light:
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
-    m_CustomResolution: 1024
+    m_CustomResolution: 512
     m_Strength: 1
     m_Bias: 0
     m_NormalBias: 0
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -254,24 +254,24 @@ MonoBehaviour:
   denoiserShader: {fileID: 4800000, guid: 5232ddcfcd38ea64c990b192c91ce0ee, type: 3}
   NGSS_KEEP_ONDISABLE: 1
   NGSS_NO_UPDATE_ON_PLAY: 0
-  NGSS_SHADOWS_RESOLUTION: 1024
-  NGSS_SAMPLING_TEST: 14
-  NGSS_SAMPLING_FILTER: 40
-  NGSS_SAMPLING_DISTANCE: 102
-  NGSS_SHADOWS_SOFTNESS: 3
-  NGSS_PCSS_ENABLED: 1
+  NGSS_SHADOWS_RESOLUTION: 512
+  NGSS_SAMPLING_TEST: 7
+  NGSS_SAMPLING_FILTER: 26
+  NGSS_SAMPLING_DISTANCE: 0
+  NGSS_SHADOWS_SOFTNESS: 0
+  NGSS_PCSS_ENABLED: 0
   NGSS_PCSS_SOFTNESS_NEAR: 0
-  NGSS_PCSS_SOFTNESS_FAR: 2
+  NGSS_PCSS_SOFTNESS_FAR: 0
   NGSS_NOISE_TO_DITHERING_SCALE: 0
   NGSS_NOISE_TEXTURE: {fileID: 2800000, guid: 7dcc3b82e99bf8542b8348c6fcd86cd1, type: 3}
-  NGSS_DENOISER_ENABLED: 0
-  NGSS_DENOISER_PASSES: 1
-  NGSS_DENOISER_SOFTNESS: 1
-  NGSS_DENOISER_EDGE_SOFTNESS: 1
+  NGSS_DENOISER_ENABLED: 1
+  NGSS_DENOISER_PASSES: 3
+  NGSS_DENOISER_SOFTNESS: 0.609
+  NGSS_DENOISER_EDGE_SOFTNESS: 0.5
   NGSS_RECEIVER_PLANE_BIAS: 0
   NGSS_CASCADES_BLENDING: 0
-  NGSS_CASCADES_BLENDING_VALUE: 1
-  NGSS_CASCADES_SOFTNESS_NORMALIZATION: 1
+  NGSS_CASCADES_BLENDING_VALUE: 2
+  NGSS_CASCADES_SOFTNESS_NORMALIZATION: 0
 --- !u!1001 &206376590
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -410,7 +410,7 @@ GameObject:
   - component: {fileID: 403876182}
   - component: {fileID: 403876183}
   m_Layer: 0
-  m_Name: 'MGMT: World sounds'
+  m_Name: MGMT-World sounds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1241,7 +1241,7 @@ GameObject:
   - component: {fileID: 447976631}
   - component: {fileID: 447976633}
   m_Layer: 0
-  m_Name: Player
+  m_Name: MGMT-Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4896,6 +4896,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _levelsSo: {fileID: 11400000, guid: 7c7f4cf303e29d64585467645ebe7a46, type: 2}
+  _cfgData:
+    _value: ' Mountains And Terrain|1|n|Silent Hill Fog Scene|1|y|Zibra Liquid Blood|1|n|Uni
+      Storm|1|n|Monsters|1|n|Effects|1|y|Turrets|1|y|Volume Baker|1|y|NO SCENE PATH|1|n|'
 --- !u!4 &817274559
 Transform:
   m_ObjectHideFlags: 0
@@ -5183,6 +5186,7 @@ Transform:
   - {fileID: 498580359}
   - {fileID: 800438721}
   - {fileID: 756470483}
+  - {fileID: 1346058631}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5265,7 +5269,7 @@ GameObject:
   - component: {fileID: 1346058631}
   - component: {fileID: 1346058630}
   m_Layer: 0
-  m_Name: Textures Pool
+  m_Name: MGMT-Textures Pool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5293,12 +5297,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1346058629}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -3000, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1859090424}
-  m_RootOrder: 1
+  m_Father: {fileID: 1131031977}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1390572681
 GameObject:
@@ -6022,7 +6026,7 @@ GameObject:
   - component: {fileID: 1859090423}
   - component: {fileID: 1859090422}
   m_Layer: 0
-  m_Name: PainterCamera
+  m_Name: MGMT-PainterCamera
   m_TagString: Untagged
   m_Icon: {fileID: 2800000, guid: 083eab9c631e2aa44bb4833c0a34199e, type: 3}
   m_NavMeshLayer: 0
@@ -6156,7 +6160,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1662917745}
-  - {fileID: 1346058631}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

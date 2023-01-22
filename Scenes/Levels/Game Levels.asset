@@ -15,6 +15,10 @@ MonoBehaviour:
   _levels:
   - _scene:
       SceneReference:
+        ScenePath: Assets/_Is-it-a-game/Scenes/Levels/Tracing/Is It A Game - Level_RTX_Test.unity
+        _asset: {fileID: 102900000, guid: 62791c2ec1c494a49b1e8fa40722d99e, type: 3}
+  - _scene:
+      SceneReference:
         ScenePath: Assets/_Is-it-a-game/Scenes/Levels/Power Saving/Is It A Game -
           Level_Minimal.unity
         _asset: {fileID: 102900000, guid: 70103d054ba895b47a85c62e8ad05fed, type: 3}
