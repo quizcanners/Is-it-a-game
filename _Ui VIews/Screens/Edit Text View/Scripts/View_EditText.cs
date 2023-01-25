@@ -5,11 +5,13 @@ using UnityEngine;
 
 namespace QuizCanners.IsItGame.Develop
 {
-    public class View_EditText : IsItGameOnGuiBehaviourBase, IPEGI
+    public class View_EditText : UI_TypedView, IPEGI
     {
         [SerializeField] private TMP_InputField input;
 
-        public override void Inspect()
+        public override Game.Enums.View MyView => Game.Enums.View.PlayerNameEdit;
+
+        public void Inspect()
         {
             "Close".PegiLabel().Click().Nl().OnChanged(() => Game.Enums.View.PlayerNameEdit.Hide());
 

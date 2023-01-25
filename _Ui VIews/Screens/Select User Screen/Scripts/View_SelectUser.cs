@@ -4,9 +4,11 @@ using QuizCanners.Utils;
 
 namespace QuizCanners.IsItGame.Develop
 {
-    public class View_SelectUser : IsItGameOnGuiBehaviourBase, IPEGI
+    public class View_SelectUser : UI_TypedView, IPEGI
     {
-        public override void Inspect()
+        public override Game.Enums.View MyView => Game.Enums.View.SelectUser;
+
+        public void Inspect()
         {
             pegi.Nl();
             var users = Game.Persistent.Application.AvailableUsers;

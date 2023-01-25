@@ -14,10 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Scenes:
   - SceneReference:
-      ScenePath: Assets/Ray-Marching/Scene/Path Tracing.unity
-      _asset: {fileID: 102900000, guid: 587ba1482a1210849bf1df82922d351b, type: 3}
-    Type: 1
-  - SceneReference:
       ScenePath: Assets/_Is-it-a-game/Tests/Space With Stars Scene/_For Test/Space
         Effect.unity
       _asset: {fileID: 102900000, guid: ceedc999a8aac0946923fac43fbf2a6f, type: 3}

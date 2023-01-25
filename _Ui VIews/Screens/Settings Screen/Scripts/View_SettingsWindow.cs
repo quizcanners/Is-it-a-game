@@ -3,8 +3,10 @@ using QuizCanners.Utils;
 
 namespace QuizCanners.IsItGame.Develop
 {
-    public class View_SettingsWindow : IsItGameBehaviourBase, IPEGI
+    public class View_SettingsWindow : UI_TypedView, IPEGI
     {
+        public override Game.Enums.View MyView => Game.Enums.View.Settings;
+
         public void Inspect()
         {
             pegi.Nl();

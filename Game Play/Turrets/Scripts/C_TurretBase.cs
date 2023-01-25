@@ -75,6 +75,12 @@ namespace QuizCanners.IsItGame.Develop
 
         private bool TryPoint(out float dist) 
         {
+            if (!Camera.main)
+            {
+                dist = 0;
+                return false;
+            }
+
             if (Camera.main.GetMousePosRay().TryHit(new QcMath.Primitive.Box(GetBoxCenter(), boxSize: GetBoxSize()), out var hit))
             {
                 dist = hit.distance;

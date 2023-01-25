@@ -4,9 +4,11 @@ using UnityEngine;
 
 namespace QuizCanners.IsItGame.UI
 {
-    public class View_GyroscopeTest : MonoBehaviour
+    public class View_GyroscopeTest : UI_TypedView
     {
         [SerializeField] private RectTransform _gyroOffset;
+
+        public override Game.Enums.View MyView => Game.Enums.View.Gyroscope;
 
         private void Update()
         {
