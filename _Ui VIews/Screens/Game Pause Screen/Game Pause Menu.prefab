@@ -973,7 +973,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 581, y: 0}
+  m_SizeDelta: {x: 670, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &449537266905998928
 MonoBehaviour:
@@ -1573,6 +1573,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rect: {fileID: 8552987522671379885}
+  _clickButton: {fileID: 0}
+  _currency: {fileID: 0}
 --- !u!222 &1305077285579521891
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1994,6 +1996,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 27
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -2294,6 +2297,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rect: {fileID: 1347445983567124790}
+  _clickButton: {fileID: 0}
+  _currency: {fileID: 0}
 --- !u!222 &6000217854694096686
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2493,6 +2498,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rect: {fileID: 4255056188489080543}
+  _clickButton: {fileID: 0}
+  _currency: {fileID: 0}
 --- !u!222 &6978622543098882072
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2994,6 +3001,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rect: {fileID: 415219223795899361}
+  _clickButton: {fileID: 0}
+  _currency: {fileID: 0}
 --- !u!222 &2959337006032789163
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3578,6 +3587,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rect: {fileID: 8657795077842635897}
+  _clickButton: {fileID: 0}
+  _currency: {fileID: 0}
 --- !u!222 &1105613775228052489
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3758,7 +3769,7 @@ GameObject:
   - component: {fileID: 2409806932242408492}
   - component: {fileID: 7194255283767768693}
   m_Layer: 5
-  m_Name: Game Pause Screen
+  m_Name: Game Pause Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3779,7 +3790,7 @@ RectTransform:
   - {fileID: 6990238254010964391}
   - {fileID: 6105710568082498550}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5111,6 +5122,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rect: {fileID: 4655554806040315710}
+  _clickButton: {fileID: 0}
+  _currency: {fileID: 0}
 --- !u!222 &4951294517279877950
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6517,7 +6530,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 581, y: 0}
+  m_SizeDelta: {x: 670, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &3140160577624640398
 MonoBehaviour:
@@ -6577,6 +6590,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 27
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -6941,6 +6955,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 6105710568082498550}
     m_Modifications:
     - target: {fileID: 236709562044158209, guid: 053bfbdcdd5d06b4db6fd97a12ade96e, type: 3}
@@ -7088,6 +7103,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 236709562044158209, guid: 053bfbdcdd5d06b4db6fd97a12ade96e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4237651069465151143}
   m_SourcePrefab: {fileID: 100100000, guid: 053bfbdcdd5d06b4db6fd97a12ade96e, type: 3}
 --- !u!1 &7366070321585988990 stripped
 GameObject:
